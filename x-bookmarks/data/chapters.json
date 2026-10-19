@@ -1,7 +1,7 @@
 {
  "map": [
   {
-   "phase": "Align",
+   "phase": "Discovery",
    "weeks": [
     0,
     2
@@ -24,20 +24,47 @@
      "owner": "Joint",
      "letter": "E",
      "exit": "EB named; meeting scheduled or held"
+    }
+   ]
+  },
+  {
+   "phase": "Scoping and go/no-go",
+   "weeks": [
+    2,
+    4
+   ],
+   "steps": [
+    {
+     "step": "Scoping: quantify the as-is process and define the to-be process",
+     "owner": "Joint",
+     "letter": "M",
+     "exit": "As-is and to-be metrics with sources and owners"
     },
     {
-     "step": "Draft pilot scope: repositories, teams, use cases",
+     "step": "Implicate the pain: who suffers and what suffers",
+     "owner": "Joint",
+     "letter": "I",
+     "exit": "Named person and company measure most affected"
+    },
+    {
+     "step": "Draft cost justification and POV outline",
      "owner": "Cognition",
-     "letter": "D",
-     "exit": "Scope document reviewed by champion"
+     "letter": "M",
+     "exit": "One-page cost justification reviewed by champion"
+    },
+    {
+     "step": "Go/no-go meeting with the economic buyer",
+     "owner": "Joint",
+     "letter": "E",
+     "exit": "EB confirms priority and sponsors the POV, or a clean no"
     }
    ]
   },
   {
    "phase": "Clear the path",
    "weeks": [
-    2,
-    4
+    4,
+    6
    ],
    "steps": [
     {
@@ -59,18 +86,18 @@
      "exit": "Approved access pattern for the pilot"
     },
     {
-     "step": "Sign pilot success criteria tied to the baseline metric",
+     "step": "Sign the POV plan: criteria tied to the cost justification",
      "owner": "Joint",
      "letter": "M",
-     "exit": "Signed success criteria with thresholds"
+     "exit": "Signed POV plan with thresholds and time frame"
     }
    ]
   },
   {
-   "phase": "Pilot",
+   "phase": "Proof of value",
    "weeks": [
-    4,
-    10
+    6,
+    12
    ],
    "steps": [
     {
@@ -106,17 +133,23 @@
    ]
   },
   {
-   "phase": "Business case",
+   "phase": "Cost justification and pricing",
    "weeks": [
-    10,
-    12
+    12,
+    14
    ],
    "steps": [
     {
-     "step": "Build the business case against the baseline and SI or contractor spend",
+     "step": "Final cost justification: as-is vs to-be from POV results",
      "owner": "Joint",
      "letter": "M",
-     "exit": "Business case reviewed by champion and finance partner"
+     "exit": "Cost justification signed off by champion and finance partner"
+    },
+    {
+     "step": "Pricing proposal anchored to the cost justification",
+     "owner": "Cognition",
+     "letter": "P",
+     "exit": "Proposal reviewed with champion before the EB"
     },
     {
      "step": "Competitive and do-nothing comparison documented",
@@ -135,8 +168,8 @@
   {
    "phase": "Paper",
    "weeks": [
-    10,
-    14
+    12,
+    16
    ],
    "steps": [
     {
@@ -162,8 +195,8 @@
   {
    "phase": "Rollout",
    "weeks": [
-    14,
-    20
+    16,
+    22
    ],
    "steps": [
     {
@@ -825,6 +858,86 @@
    "listen": "Unhappy customers can hurt the brand.",
    "lvl": "Any",
    "area": "reputation"
+  },
+  {
+   "t": "Scoping",
+   "l": "M",
+   "p": "Champion",
+   "q": "Walk me through how this work gets done today, step by step, and how long each step takes.",
+   "listen": "As-is process and its metrics",
+   "lvl": "Any"
+  },
+  {
+   "t": "Scoping",
+   "l": "M",
+   "p": "Champion",
+   "q": "Where do those numbers come from, and who owns them?",
+   "listen": "Credible baseline and its owner",
+   "lvl": "Any"
+  },
+  {
+   "t": "Scoping",
+   "l": "M",
+   "p": "Champion",
+   "q": "If this worked the way you want, what would the same process look like, and what would the numbers be?",
+   "listen": "To-be process in their words",
+   "lvl": "Any"
+  },
+  {
+   "t": "Scoping",
+   "l": "I",
+   "p": "Champion",
+   "q": "What else is affected when this goes wrong: other teams, customers, programs?",
+   "listen": "More pains beyond the first",
+   "lvl": "Any"
+  },
+  {
+   "t": "Scoping",
+   "l": "I",
+   "p": "Champion",
+   "q": "Who feels this most when it goes wrong?",
+   "listen": "Who suffers: who to sell to",
+   "lvl": "Any"
+  },
+  {
+   "t": "Scoping",
+   "l": "E",
+   "p": "Champion",
+   "q": "Which company measure takes the hit: a target, a date, a margin, a risk rating?",
+   "listen": "What suffers: why the executive cares",
+   "lvl": "Any"
+  },
+  {
+   "t": "Scoping",
+   "l": "I",
+   "p": "Champion",
+   "q": "What happens if this is still unsolved a year from now?",
+   "listen": "Consequence and urgency",
+   "lvl": "Any"
+  },
+  {
+   "t": "Scoping",
+   "l": "I",
+   "p": "Champion",
+   "q": "If the people who understand this system left tomorrow, what would happen?",
+   "listen": "Key-person risk: the strongest implication in energy",
+   "lvl": "Any"
+  },
+  {
+   "t": "Scoping",
+   "l": "D",
+   "p": "Champion",
+   "q": "What would you need to see in a proof of value to take this to your leadership?",
+   "listen": "POV criteria tied to their metrics",
+   "lvl": "Any"
+  },
+  {
+   "t": "Scoping",
+   "l": "E",
+   "p": "Champion",
+   "q": "Who besides you would need to agree this is a priority to solve now?",
+   "listen": "Path to the go/no-go with the EB",
+   "lvl": "Any"
   }
  ],
  "trees": [
@@ -1091,6 +1204,62 @@
     }
    ],
    "group": "meddpicc"
+  },
+  {
+   "title": "Scoping: quantify and implicate",
+   "persona": "Champion or program owner",
+   "group": "meddpicc",
+   "open": "Walk me through how this work gets done today, and how long each step takes.",
+   "branches": [
+    {
+     "if": "Gives a clear process with rough numbers",
+     "say": "Where do those numbers come from, and who would confirm them? I want the cost picture to hold up with your leadership.",
+     "then": [
+      {
+       "if": "Names a source and owner",
+       "say": "Great. If this worked the way you want, what would the numbers look like?",
+       "next": "As-is and to-be captured; draft cost justification (M)."
+      },
+      {
+       "if": "\"They're my estimates.\"",
+       "say": "That's a good start. Who could validate them in the next two weeks?",
+       "next": "Baseline owner and date on the MAP (M)."
+      }
+     ]
+    },
+    {
+     "if": "Describes the pain but no numbers",
+     "say": "Roughly how many people, how many hours, how often? Order of magnitude is fine for now.",
+     "then": [
+      {
+       "if": "Estimates",
+       "say": "Who feels this most, and which company measure takes the hit?",
+       "next": "Who suffers and what suffers (I, E)."
+      },
+      {
+       "if": "Can't estimate",
+       "say": "Who would know? Could we spend 30 minutes with them?",
+       "next": "Find the person who owns the data (C)."
+      }
+     ]
+    },
+    {
+     "if": "Wants to see a demo first",
+     "say": "Happy to show you, and I want the demo to be about your problem. Two more questions so it is: what does this cost you today, and what happens if it isn't solved this year?",
+     "then": [
+      {
+       "if": "Answers",
+       "say": "Then the demo will use your scenario, and we'll talk about a proof of value against those numbers.",
+       "next": "Hold the presentation until the pain is quantified (M, I)."
+      },
+      {
+       "if": "Insists",
+       "say": "Of course. Let's keep it short and come back to your numbers after.",
+       "next": "Short demo, then return to scoping questions."
+      }
+     ]
+    }
+   ]
   },
   {
    "letter": "C",

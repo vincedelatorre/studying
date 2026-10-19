@@ -1,0 +1,92 @@
+{
+ "credit": "Adapted from John McMahon, The Qualified Sales Leader, chapters 21-22 (Scoping, and the lesson on implicating pain), applied to Devin in the energy vertical.",
+ "flow": [
+  {"n":"Discovery","d":"Find every pain, not just the first one. Don't present yet."},
+  {"n":"Scoping","d":"Quantify the as-is process, define the to-be process, implicate the pain: who suffers and what suffers."},
+  {"n":"Go/no-go","d":"Economic buyer confirms the pain is a priority to solve now."},
+  {"n":"Proof of value","d":"Prove business value on their use case, against the cost justification metrics."},
+  {"n":"Cost justification and price","d":"Before-and-after metrics justify the price and the deal size."}
+ ],
+ "principles": [
+  {"p":"Scoping comes right after discovery, and its job is to quantify and implicate the pain you found.","energy":"Turn \"our backlog is big\" into hours, dollars and dates for a named system, such as the custom-code estate behind an ERP cutover."},
+  {"p":"Measure the as-is process and define the to-be process. You need both.","energy":"As-is: hours per legacy component, review time per pull request, time to root cause, days a critical finding stays open, SI hours. To-be: the same measures with Devin doing the work."},
+  {"p":"The before-and-after numbers become the cost justification. Customers buy on business value, not on price.","energy":"When the gain is many times the price, price stops being the objection. Without quantified pain there are only small deals."},
+  {"p":"Run a proof of value, not a proof of concept. The product works; prove the value for their use case.","energy":"Every Devin pilot is a POV with success criteria tied to the cost justification metrics, never a technology demo."},
+  {"p":"Implicate the pain: what are the consequences of not solving it now, who suffers most, and which company measure suffers.","energy":"Who suffers tells you who to sell to. What suffers (a savings target, a cutover date, a margin goal) tells you why the executive will care."},
+  {"p":"Slow down in the early stages. Gather everything while the customer still needs you to connect the dots.","energy":"Once a buyer thinks they understand Devin, they stop sharing process metrics and ask only for price. Get the numbers first."},
+  {"p":"Don't stop at the first small pain and pitch. Find the biggest pain and all the pains.","energy":"A code review complaint is a small pain. The ERP cutover, the SI contract and the on-call burnout behind it are the large deal."},
+  {"p":"Executives buy solutions to strategic business issues, not features. Champions come from implicated pain.","energy":"Speak in revenue, profitability and risk at the top (see Pain by altitude). A contact who can't see the business consequence will stay a coach."}
+ ],
+ "journey": [
+  {"step":"Scoping","what":"Understand and quantify the business pain and outline a potential proof of value. Check that Devin's capabilities match the pain, and that the value is worth the customer's investment and yours.","out":"Draft as-is and to-be metrics; POV outline"},
+  {"step":"Go/no-go meeting","what":"Meet the economic buyer to confirm the pain is a priority to solve now.","out":"A decision to proceed, with the EB's sponsorship, or a clean no"},
+  {"step":"Proof of value","what":"Agree the criteria and time frame for the POV, tied directly to the cost justification.","out":"Signed POV plan"}
+ ],
+ "documents": [
+  {"doc":"Cost justification","has":["As-is metrics with sources and owners","To-be metrics with assumptions","Annual value by use case","Who suffers and what suffers, in the executive's words"]},
+  {"doc":"POV plan","has":["Use cases drawn from the cost justification","Success criteria as thresholds on those metrics","Time frame, environments and data to collect","Owners on both sides and the go-live decision"]},
+  {"doc":"Preliminary pricing proposal","has":["Price anchored to the value in the cost justification","Scope that matches the POV","Expansion path to the next business unit","Assumptions the POV will confirm"]}
+ ],
+ "gonogo": {
+  "purpose":"Confirm with the economic buyer that the pain is a priority to solve now, before investing in a POV.",
+  "bring":["One page with the quantified pain: as-is, to-be, annual value","Who suffers and what suffers, in their words","The draft POV outline and time frame","What you need from them: sponsorship, access, a decision date"],
+  "agenda":["Recap the business issue and the strategic initiative it touches (5 min)","Walk the as-is and to-be numbers; ask them to correct anything (10 min)","Consequences of waiting: what happens to the initiative if nothing changes (5 min)","POV outline: criteria, time frame, team (5 min)","Decision: go or no-go, and who sponsors (5 min)"],
+  "ask":["Is solving this a priority for you this year?","If the POV hits these numbers, what happens next?","Who on your team owns this with us?"],
+  "nogo":"A no is useful. Thank them, confirm what would need to change, and move your time to a better-qualified account."
+ },
+ "method": {
+  "title":"Implicating pain with questions",
+  "story":"McMahon tells of an insurance salesman who cold-called him and, in a few minutes, turned life insurance from something he'd never considered into an urgent purchase. He never pitched. He asked simple factual questions that built a cost picture (children, college costs, mortgage, income, family nearby), then asked one consequence question: what happens to all of that if you're gone tomorrow? McMahon connected the dots himself, and the urgency was his own.",
+  "steps":[
+   {"s":"Build the cost picture","d":"Ask easy, factual questions about their situation. Each answer is a number or a dependency. Don't comment or pitch."},
+   {"s":"Find the hotspots","d":"Listen for what they care about most: a date, a target, a person, a customer."},
+   {"s":"Ask the consequence question","d":"Ask what happens to those hotspots if the problem isn't solved, or if the person who holds it all together is gone."},
+   {"s":"Let them connect the dots","d":"Stay quiet. Urgency they reach on their own is real; urgency you assert is noise."},
+   {"s":"Name who and what suffers","d":"Confirm the person most affected and the company measure most affected. That is who you sell to, and why."}
+  ],
+  "energy":"In energy, the strongest version is key-person risk: \"If the two engineers who understand this system left tomorrow, what would happen to the cutover date?\" It is the direct equivalent of the insurance question, and it lands at every level."
+ },
+ "sequences": {
+  "exxonmobil":{"facts":["How many lines of custom code are in scope for the S/4HANA consolidation?","How much of it has been triaged into retire, rewrite or keep?","How many people, internal and SI, are working that triage today?","Which interfaces have to be rewritten and re-tested before cutover?","What is the cutover date tied to: the savings plan, a contract, the mainframe retirement?"],"consequence":"If remediation runs two quarters late, what happens to the 2028 date, the mainframe retirement and the savings tied to them?","keyperson":"Who are the few people who really understand the custom code, and what happens if they leave before cutover?","who":"Program sponsor and IT leaders for global projects and business transformation","what":"ERP cutover date and the $20B structural savings target"},
+  "chevron":{"facts":["How much engineering work moved to the Houston and Bengaluru centers this year?","How long does it take a new engineer to become productive on your core systems?","Which Hess applications still need to be integrated?","What AI tools are engineers already allowed to use?"],"consequence":"If the hubs take a year to reach full productivity, what happens to the integration plan and the $3-4B cost target?","keyperson":"How much system knowledge left with the people affected by the restructuring?","who":"Chief Technology and Engineering Officer's organization; hub leaders","what":"Structural cost savings and Hess integration value"},
+  "halliburton":{"facts":["How has Landmark's engineering capacity changed since the rightsizing?","What is on the roadmap for InformatiQ integration and DecisionSpace 365?","How long does it take to build, patch and validate a release for restricted iEnergy customers?","How are vulnerabilities in internal and product code tracked and fixed?"],"consequence":"If the roadmap slips while competitors ship cloud-native products, what happens to Landmark's growth and to customer renewals?","keyperson":"Who knows how to build and validate the restricted-mode releases, and what happens if they leave?","who":"Landmark leadership and the corporate CIO","what":"Software revenue growth, labor cost targets and cyber risk"},
+  "slb":{"facts":["How many engineers are tied up integrating Tachyus and the S&P Global portfolio?","How many cloud, on-prem and edge targets does each product release have to support?","How long does certification take for a marketplace listing?","How many Petrel plug-ins must stay compatible through each change?"],"consequence":"If integration work keeps pulling engineers off Lumi and Tela, what happens to the 2030 margin target?","keyperson":"Who holds the knowledge of the Ocean and Petrel internals, and what happens if they move on?","who":"President, Digital and the CTO","what":"Digital EBITDA margin and ARR growth"},
+  "bakerhughes":{"facts":["How many applications overlap between Baker Hughes and Chart?","Which systems have to be separated for the Waygate and sensors carve-outs, and by when?","How many cloud platforms do Cordant and Leucipa teams build for?","Who is doing the integration engineering today: internal teams or SIs?"],"consequence":"If application consolidation runs late, what happens to the $325M synergy plan and the transition service agreements?","keyperson":"Who understands the shared systems that have to be split, and what if they leave mid-carve-out?","who":"Chart integration lead and the CIOs","what":"Synergy capture and carve-out execution"},
+  "conocophillips":{"facts":["How many Marathon applications are still to be retired or integrated?","How many SAP BTP extensions does the team maintain?","How much contractor development spend goes to maintenance?","How is a new AI use case approved and funded?"],"consequence":"With a 20-25% smaller workforce, what happens to the Marathon integration and the $1B cost target if the backlog doesn't shrink?","keyperson":"Who built the in-house engineering tools, and are they still here?","who":"CFO and SVP Digital and Transformation; the digital organization","what":"$1B cost target and Marathon integration value"},
+  "enterpriseproducts":{"facts":["How many new assets, contracts and measurement points come online this year?","How many engineers maintain the nominations, scheduling and measurement systems?","How long does it take to patch a critical vulnerability across those systems?","How are TSA directive requirements tracked?"],"consequence":"If a vulnerability stays open on a commercial system with no cyber insurance, what is the exposure?","keyperson":"Who are the people who understand the measurement and accounting code, and what happens if they retire?","who":"Leadership over IT and the Cybersecurity Committee","what":"Revenue integrity on commercial systems and regulatory and cyber risk"}
+ },
+ "calc": {
+  "note":"Example numbers only. Replace every value with the customer's own figures during scoping, and record where each came from.",
+  "cases":[
+   {"key":"mod","name":"Modernization backlog","fields":[["items","Legacy items or components per year",40],["hours","Engineer hours per item",400],["rate","Loaded cost per engineer hour ($)",120]],"pct":["Share of effort Devin takes on (%)",50],"asis":"items*hours*rate"},
+   {"key":"si","name":"SI and contractor maintenance","fields":[["hours","SI or contractor hours per year",50000],["rate","Blended rate per hour ($)",85]],"pct":["Share of hours shifted to Devin (%)",25],"asis":"hours*rate"},
+   {"key":"rev","name":"Code review","fields":[["prs","Pull requests per month",2000],["hours","Review hours per pull request",1.5],["rate","Loaded cost per engineer hour ($)",120]],"pct":["Reduction in review time (%)",30],"asis":"prs*12*hours*rate"},
+   {"key":"inc","name":"Incidents and on-call","fields":[["inc","Incidents per month",40],["hours","Hours to root cause",6],["eng","Engineers per incident",3],["rate","Loaded cost per engineer hour ($)",120],["down","Business cost per incident ($)",0]],"pct":["Reduction in time to root cause (%)",40],"asis":"inc*12*(hours*eng*rate+down)"},
+   {"key":"sec","name":"Security remediation","fields":[["vulns","Critical and high findings per month",60],["hours","Hours to fix each",8],["rate","Loaded cost per engineer hour ($)",120]],"pct":["Share fixed by Devin (%)",50],"asis":"vulns*12*hours*rate"}
+  ]
+ },
+ "questions":[
+  {"q":"Walk me through how this work gets done today, step by step, and how long each step takes.","listen":"As-is process and its metrics"},
+  {"q":"Where do those numbers come from, and who owns them?","listen":"Credible baseline and its owner"},
+  {"q":"If this worked the way you want, what would the same process look like, and what would the numbers be?","listen":"To-be process in their words"},
+  {"q":"What else is affected when this goes wrong: other teams, customers, programs?","listen":"More pains beyond the first"},
+  {"q":"Who feels this most when it goes wrong?","listen":"Who suffers: who to sell to"},
+  {"q":"Which company measure takes the hit: a target, a date, a margin, a risk rating?","listen":"What suffers: why the executive cares"},
+  {"q":"What happens if this is still unsolved a year from now?","listen":"Consequence and urgency"},
+  {"q":"If the people who understand this system left tomorrow, what would happen?","listen":"Key-person risk: the strongest implication in energy"},
+  {"q":"What would you need to see in a proof of value to take this to your leadership?","listen":"POV criteria tied to their metrics"},
+  {"q":"Who besides you would need to agree this is a priority to solve now?","listen":"Path to the go/no-go with the EB"}
+ ],
+ "tree": {"title":"Scoping: quantify and implicate","persona":"Champion or program owner","group":"meddpicc",
+  "open":"Walk me through how this work gets done today, and how long each step takes.",
+  "branches":[
+   {"if":"Gives a clear process with rough numbers","say":"Where do those numbers come from, and who would confirm them? I want the cost picture to hold up with your leadership.","then":[
+     {"if":"Names a source and owner","say":"Great. If this worked the way you want, what would the numbers look like?","next":"As-is and to-be captured; draft cost justification (M)."},
+     {"if":"\"They're my estimates.\"","say":"That's a good start. Who could validate them in the next two weeks?","next":"Baseline owner and date on the MAP (M)."}]},
+   {"if":"Describes the pain but no numbers","say":"Roughly how many people, how many hours, how often? Order of magnitude is fine for now.","then":[
+     {"if":"Estimates","say":"Who feels this most, and which company measure takes the hit?","next":"Who suffers and what suffers (I, E)."},
+     {"if":"Can't estimate","say":"Who would know? Could we spend 30 minutes with them?","next":"Find the person who owns the data (C)."}]},
+   {"if":"Wants to see a demo first","say":"Happy to show you, and I want the demo to be about your problem. Two more questions so it is: what does this cost you today, and what happens if it isn't solved this year?","then":[
+     {"if":"Answers","say":"Then the demo will use your scenario, and we'll talk about a proof of value against those numbers.","next":"Hold the presentation until the pain is quantified (M, I)."},
+     {"if":"Insists","say":"Of course. Let's keep it short and come back to your numbers after.","next":"Short demo, then return to scoping questions."}]}]}
+}

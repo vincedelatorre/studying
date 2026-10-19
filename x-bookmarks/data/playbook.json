@@ -74,7 +74,7 @@
    "l": "M",
    "name": "Metrics",
    "def": "The quantified business outcome the customer expects, in their numbers, with a baseline.",
-   "energy": "Tie Devin to numbers the business already tracks: modernization program milestones, run-and-maintain spend, incident MTTR on production systems, vulnerability remediation time. Get a baseline from the customer, not from us.",
+   "energy": "Tie Devin to numbers the business already tracks: modernization program milestones, run-and-maintain spend, incident MTTR on production systems, vulnerability remediation time. Get a baseline from the customer, not from us. Translate each metric up the chain: review hours become delivery dates, delivery dates become program milestones, milestones become savings and margin.",
    "questions": [
     "Which modernization or upgrade items have slipped in the last year, and what does each delay cost?",
     "How many contractor or SI hours go to maintaining existing applications each year?",
@@ -96,7 +96,7 @@
    "l": "E",
    "name": "Economic buyer",
    "def": "The person with discretionary authority to spend the money, who can say yes when others say no.",
-   "energy": "Usually the CIO, Chief Digital Officer or a business-unit technology head (upstream, downstream, trading, midstream ops). The money often already exists in application maintenance and SI budgets. Find who owns that line.",
+   "energy": "Usually the CIO, Chief Digital Officer or a business-unit technology head (upstream, downstream, trading, midstream ops). The money often already exists in application maintenance and SI budgets. Find who owns that line. Speak to the EB in revenue, profitability and risk, never in tool features.",
    "questions": [
     "Who owns the budget for application maintenance and modernization?",
     "Who signed the last enterprise AI or developer tooling agreement?",
@@ -180,7 +180,7 @@
    "l": "I",
    "name": "Identify (implicate) pain",
    "def": "The business pain that makes change necessary, tied to consequences for the business and for people.",
-   "energy": "Go past 'developers want AI'. Find the legacy system nobody wants to touch, the on-call rotation burning out senior engineers, the audit finding, the SI contract that keeps growing.",
+   "energy": "Go past 'developers want AI'. Find the legacy system nobody wants to touch, the on-call rotation burning out senior engineers, the audit finding, the SI contract that keeps growing. Run discovery at every altitude: get the engineer's toil, the director's backlog, the CIO's run cost and the executive's revenue, profitability or risk, and connect them into one chain.",
    "questions": [
     "Which system would you modernize first if it cost a tenth as much?",
     "Who gets paged at 2 a.m., and what happens to their week after?",

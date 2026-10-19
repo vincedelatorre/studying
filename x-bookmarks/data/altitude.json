@@ -1,0 +1,563 @@
+{
+ "intro": [
+  "Every pain you uncover is the same pain at a different altitude. At the top of an energy company it is about revenue, profitability and risk. Lower down, the words change: production and program dates for business leaders, run cost and cyber exposure for the CIO, capacity and backlog for engineering leaders, pages and legacy code for the people doing the work.",
+  "Most vendors talk to every level in engineering language, which is why executives tune them out. Use each level's own words, then connect them: the engineer's toil is the director's backlog, which is the CIO's slipped program, which is the CFO's missed savings target. When you can trace one pain from the keyboard to the income statement, you are above the noise."
+ ],
+ "levels": [
+  {
+   "key": "L1",
+   "name": "Board, CEO, CFO",
+   "measured": "Revenue, profitability and risk. In energy that means production and cash flow, structural cost savings, return on capital, synergy capture, and license to operate.",
+   "words": [
+    "structural cost savings",
+    "free cash flow",
+    "return on capital employed",
+    "synergy capture",
+    "margin",
+    "license to operate",
+    "execution risk",
+    "cyber and regulatory exposure"
+   ],
+   "pain": "We committed a savings or margin number to the market, and software delivery is on the critical path to hitting it.",
+   "message": "Devin turns engineering capacity into a lever on the cost and risk commitments you have already made, with spend tied to measurable output.",
+   "questions": [
+    "Which commitments to the market depend on technology programs landing on time?",
+    "Where does technology show up in your structural cost or margin targets?",
+    "What execution risks keep you up at night on the big transformation programs?",
+    "How do you know today whether your AI spend is producing returns?"
+   ],
+   "avoid": "Models, benchmarks, tokens, IDE features, \"developer productivity\".",
+   "proof": "Cost per outcome (SWE-2 at up to 70% lower cost, cost visible per session); Cognition builds with Devin (95%+ AI-written code); named customer results."
+  },
+  {
+   "key": "L2",
+   "name": "Business-unit presidents, SVP operations, program sponsors",
+   "measured": "Production and uptime, program milestones, unit cost, synergy delivery, safety performance.",
+   "words": [
+    "uptime",
+    "deferred production",
+    "cutover date",
+    "integration milestones",
+    "unit cost",
+    "synergy plan",
+    "HSE"
+   ],
+   "pain": "A program I own is late or over budget because the technology work can't keep pace, and I'm accountable for the date.",
+   "message": "Devin adds engineering capacity to the programs you own, with a versioned plan and weekly evidence you can show your leadership.",
+   "questions": [
+    "Which program milestone are you least confident about this year?",
+    "What happens to your targets if the integration or cutover slips by two quarters?",
+    "Where do operational systems cause downtime or rework today?",
+    "Who on your team carries the most risk if key engineers leave?"
+   ],
+   "avoid": "Technical architecture, agent internals.",
+   "proof": "Codebase-wide migration work across parallel Devins; Devin Oncall on production alerts; AngelList on-call."
+  },
+  {
+   "key": "L3",
+   "name": "CIO, CTO, CDO, CISO",
+   "measured": "IT run cost versus change, modernization roadmap, SI and contractor spend, cyber posture, AI governance, talent.",
+   "words": [
+    "run versus change",
+    "technical debt",
+    "SI spend",
+    "modernization roadmap",
+    "attack surface",
+    "AI governance",
+    "shadow AI",
+    "talent"
+   ],
+   "pain": "Run-and-maintain eats the budget, the roadmap slips, the vulnerability backlog grows, and AI tools are spreading faster than I can govern them.",
+   "message": "Devin moves work from run to change: it takes on maintenance, migrations and security fixes with every change tested, recorded and governed, at a cost you can see.",
+   "questions": [
+    "How is the run-versus-change split trending, and where would you move the money if you could?",
+    "How is your SI spend measured, and what would you change about it?",
+    "How long does a critical vulnerability stay open today?",
+    "What does your AI governance council need to see before an agent touches source code?"
+   ],
+   "avoid": "Leading with features; claiming to replace teams.",
+   "proof": "Code Scans and Security Swarm; Windows, Linux and macOS machines; Teams and Microsoft 365; open memory format; Rox living evals."
+  },
+  {
+   "key": "L4",
+   "name": "VP engineering, directors, platform, SRE and AppSec leads",
+   "measured": "Delivery capacity, backlog, release cadence, quality, MTTR, vulnerability remediation time.",
+   "words": [
+    "backlog",
+    "throughput",
+    "review load",
+    "release cadence",
+    "MTTR",
+    "flaky tests",
+    "on-call burden"
+   ],
+   "pain": "My team can't clear the backlog, reviews pile up, and my senior people spend nights on incidents instead of the roadmap.",
+   "message": "Devin takes whole tasks off your team's plate and hands back tested, recorded pull requests, so reviews are faster and senior people get their time back.",
+   "questions": [
+    "What's on the backlog that never gets prioritized?",
+    "How much of your reviewers' week goes to AI-written code?",
+    "Who takes the first look at a 2 a.m. alert, and what does it do to their week?",
+    "What would you do with a 30% bigger team?"
+   ],
+   "avoid": "Executive financial language without the team's reality.",
+   "proof": "Tests and video recordings; Devin Review with REVIEW.md; Dynamic Workflows; Oncall #1 on SREGym."
+  },
+  {
+   "key": "L5",
+   "name": "Managers and practitioners",
+   "measured": "Tickets closed, incidents resolved, code shipped, quality of their own work.",
+   "words": [
+    "toil",
+    "pages",
+    "legacy code",
+    "waiting on review",
+    "test environments",
+    "nobody knows how this works"
+   ],
+   "pain": "I spend my days on toil and on code nobody documented, and I get paged for things I didn't build.",
+   "message": "Devin does the repetitive work in its own machine, shows you it works, and remembers how your team does things.",
+   "questions": [
+    "What did you spend most of last week on that you'd rather not do again?",
+    "Which part of the codebase do people avoid touching?",
+    "What's the most annoying part of being on call?"
+   ],
+   "avoid": "Talking about replacing engineers; ROI language.",
+   "proof": "Devin's VM as a devbox and devin ssh; Dreaming memory; recordings of tested work."
+  }
+ ],
+ "chains": {
+  "exxonmobil": [
+   {
+    "lvl": "L1",
+    "pain": "The $20B structural savings target by 2030 counts on the ERP consolidation, and a 2028 S/4HANA cutover slip is execution risk the market will notice."
+   },
+   {
+    "lvl": "L2",
+    "pain": "Consolidating 12 ERP systems into one by 2028 while Global Operations reorganizes; the program sponsor owns the date."
+   },
+   {
+    "lvl": "L3",
+    "pain": "About 65 million lines of custom ECC6 code to triage, remediate or retire, plus a mainframe to retire, with SI-billed labor and IT and OT cyber scrutiny."
+   },
+   {
+    "lvl": "L4",
+    "pain": "Not enough people to analyze, rewrite and regression-test interfaces after about 2,000 job cuts."
+   },
+   {
+    "lvl": "L5",
+    "pain": "Engineers reading custom code nobody documented and re-testing interfaces by hand."
+   }
+  ],
+  "chevron": [
+   {
+    "lvl": "L1",
+    "pain": "Structural cost savings raised to $3-4B by the end of 2026, a 15-20% workforce reduction, and Hess integration value to deliver."
+   },
+   {
+    "lvl": "L2",
+    "pain": "Programs depend on engineering capacity that just moved to Houston and Bengaluru; AI strategy changes hands in January."
+   },
+   {
+    "lvl": "L3",
+    "pain": "IT consolidated into Manila and Buenos Aires; Copilot and Claude already in use, so governance of autonomous agents is the next question."
+   },
+   {
+    "lvl": "L4",
+    "pain": "New hub teams ramping on unfamiliar codebases while Hess applications are folded in."
+   },
+   {
+    "lvl": "L5",
+    "pain": "Knowledge transfer from departing engineers to new teams, and integration work on top of the day job."
+   }
+  ],
+  "halliburton": [
+   {
+    "lvl": "L1",
+    "pain": "About $100M a quarter in labor cost reduction, Landmark software growth, and a 2024 breach that cost about $35M."
+   },
+   {
+    "lvl": "L2",
+    "pain": "Landmark roadmap commitments: InformatiQ integration and DecisionSpace 365 modernization with fewer people."
+   },
+   {
+    "lvl": "L3",
+    "pain": "An SAP S/4 migration that cost $50M in one quarter, plus cyber posture after the breach."
+   },
+   {
+    "lvl": "L4",
+    "pain": "Building, patching and validating releases for on-prem and air-gapped iEnergy deployments."
+   },
+   {
+    "lvl": "L5",
+    "pain": "Manual patch and test cycles for restricted customer environments."
+   }
+  ],
+  "slb": [
+   {
+    "lvl": "L1",
+    "pain": "Digital EBITDA margin of 26.1% in Q1 2026 against a 38-42% target by 2030, with Digital ARR above $1B to grow."
+   },
+   {
+    "lvl": "L2",
+    "pain": "The Digital business has to integrate Tachyus and the S&P Global upstream portfolio while shipping new Lumi and Tela capability."
+   },
+   {
+    "lvl": "L3",
+    "pain": "Products must run on three clouds plus on-prem and edge, and every marketplace listing needs security certification."
+   },
+   {
+    "lvl": "L4",
+    "pain": "Keeping 120+ Petrel plug-ins compatible while modernizing Microsoft-based desktop code."
+   },
+   {
+    "lvl": "L5",
+    "pain": "A large test matrix across clouds, versions and partner plug-ins."
+   }
+  ],
+  "bakerhughes": [
+   {
+    "lvl": "L1",
+    "pain": "About $325M of Chart synergies to capture, the $1.45B Waygate sale and other carve-outs to execute, and a continuing cost-out narrative."
+   },
+   {
+    "lvl": "L2",
+    "pain": "The Chart integration lead owns aligning technology platforms and engineering against the synergy plan."
+   },
+   {
+    "lvl": "L3",
+    "pain": "Two CIOs managing an estate split across Azure, AWS, Google Cloud and C3 AI, with internal productivity in the CIO's mandate."
+   },
+   {
+    "lvl": "L4",
+    "pain": "Separating shared applications and data for carve-outs under transition service agreements."
+   },
+   {
+    "lvl": "L5",
+    "pain": "Duplicate applications to consolidate and data to untangle, alongside Cordant and Leucipa releases."
+   }
+  ],
+  "conocophillips": [
+   {
+    "lvl": "L1",
+    "pain": "A $1B capital and cost reduction target for 2026 after a 20-25% workforce cut, and Marathon value to realize."
+   },
+   {
+    "lvl": "L2",
+    "pain": "Marathon systems integration still under way, with fewer people expected to deliver more."
+   },
+   {
+    "lvl": "L3",
+    "pain": "Digital reports to the CFO and AI is funded one use case at a time on proven value; custom logic lives as SAP BTP extensions."
+   },
+   {
+    "lvl": "L4",
+    "pain": "An in-house build culture with a large body of internally built engineering software to maintain."
+   },
+   {
+    "lvl": "L5",
+    "pain": "Maintaining extensions and integrations with a smaller team."
+   }
+  ],
+  "enterpriseproducts": [
+   {
+    "lvl": "L1",
+    "pain": "Revenue runs through nominations, scheduling and measurement systems; $2.9-3.4B of growth capex brings new assets online; TSA directives and no cyber insurance put risk on the balance sheet."
+   },
+   {
+    "lvl": "L2",
+    "pain": "Commercial operations must onboard new assets, contracts and measurement points without slowing down."
+   },
+   {
+    "lvl": "L3",
+    "pain": "IT has to patch promptly under TSA pipeline directives across a large in-house application estate."
+   },
+   {
+    "lvl": "L4",
+    "pain": "An in-house .NET, SQL Server and Angular estate in Azure DevOps with a growing maintenance and testing backlog."
+   },
+   {
+    "lvl": "L5",
+    "pain": "Patching, testing and onboarding new assets on top of daily support."
+   }
+  ]
+ },
+ "exec_questions": [
+  {
+   "t": "Executive",
+   "l": "I",
+   "p": "CEO / CFO",
+   "q": "Which commitments you've made to the market depend most on technology programs landing on time?",
+   "listen": "Savings targets, synergy plans, program dates"
+  },
+  {
+   "t": "Executive",
+   "l": "M",
+   "p": "CEO / CFO",
+   "q": "How does technology spending show up in your structural cost or margin targets?",
+   "listen": "Whether IT and engineering are counted in the savings ledger"
+  },
+  {
+   "t": "Executive",
+   "l": "I",
+   "p": "CEO / CFO",
+   "q": "What would it mean for the year if your largest transformation program slipped by two quarters?",
+   "listen": "Cost of delay in their language"
+  },
+  {
+   "t": "Executive",
+   "l": "I",
+   "p": "CEO / CFO",
+   "q": "Where does technology risk, cyber or execution, come up in board conversations?",
+   "listen": "Risk owner, regulatory exposure"
+  },
+  {
+   "t": "Executive",
+   "l": "M",
+   "p": "CEO / CFO",
+   "q": "How do you judge today whether AI spending is producing a return?",
+   "listen": "Measurement gap; appetite for cost per outcome"
+  },
+  {
+   "t": "Executive",
+   "l": "E",
+   "p": "Business-unit president",
+   "q": "Which program milestone are you least confident about this year, and what depends on it?",
+   "listen": "Owner of the date and the budget"
+  },
+  {
+   "t": "Executive",
+   "l": "I",
+   "p": "Business-unit president",
+   "q": "Where does operational software cause downtime, rework or delay in your business today?",
+   "listen": "Revenue or production impact"
+  },
+  {
+   "t": "Executive",
+   "l": "I",
+   "p": "Business-unit president",
+   "q": "Whose departure would put your programs most at risk, and why?",
+   "listen": "Key-person and knowledge risk"
+  }
+ ],
+ "exec_tree": {
+  "title": "Executive: revenue, profitability and risk",
+  "persona": "CEO, CFO or business-unit president",
+  "group": "situation",
+  "open": "You've committed publicly to a savings and margin number. Which technology programs does that depend on most?",
+  "branches": [
+   {
+    "if": "Names a transformation program",
+    "say": "If that program slipped two quarters, what would it do to the year?",
+    "then": [
+     {
+      "if": "Quantifies it",
+      "say": "Who owns that program day to day? I'd like to show them how we take engineering work off the critical path, with weekly evidence you can see.",
+      "next": "Introduction to the program owner; EB identified (E, I)."
+     },
+     {
+      "if": "\"It won't slip.\"",
+      "say": "What gives you that confidence, and what would change it?",
+      "next": "Probe execution risk with the program owner (I)."
+     }
+    ]
+   },
+   {
+    "if": "\"Technology isn't the constraint.\"",
+    "say": "Where does the run-and-maintain spend on your application portfolio sit in the cost targets?",
+    "then": [
+     {
+      "if": "It's in scope",
+      "say": "Then moving that work from people-hours to agent-hours is a savings line. Who would own that analysis?",
+      "next": "Finance partner or CIO for a business case (M, E)."
+     },
+     {
+      "if": "Out of scope",
+      "say": "What risk is the board asking about most this year?",
+      "next": "Find the risk angle: cyber, execution or key people (I)."
+     }
+    ]
+   },
+   {
+    "if": "Asks about AI returns",
+    "say": "Most companies can't tie AI spend to output yet. We show cost per task and the work it produced. Which part of the business would you want to see that in first?",
+    "then": [
+     {
+      "if": "Picks a business",
+      "say": "Who leads technology for that business?",
+      "next": "Referral down to L3 with executive air cover (E, C)."
+     }
+    ]
+   }
+  ]
+ },
+ "areas_intro": "The Qualified Sales Leader groups customer pain into five areas: regulation, competition, security, productivity/cost/quality, and reputation. Each one shows up at every altitude, in different words. Use them to find which area is live in an account, then translate it up and down the chain.",
+ "areas": [
+  {
+   "key": "regulation",
+   "name": "Regulation and compliance",
+   "general": "Non-compliance with regulations such as HIPAA or GDPR.",
+   "energy": "Pipeline security directives (TSA), financial controls on ERP changes (SOX), safety and environmental reporting, data privacy for global workforces and customers (GDPR), export controls on technical data.",
+   "top": "A compliance failure is a fine, a consent order or a hit to license to operate.",
+   "middle": "Every change to regulated systems needs evidence, controls and an audit trail, and that slows delivery.",
+   "bottom": "Patching deadlines, change tickets and documentation on top of the real work.",
+   "devin": "Every Devin change comes with tests, a recording and a reviewable pull request, which is audit evidence by default. Code Scans and Security Swarm shorten time to patch.",
+   "accounts": [
+    [
+     "enterpriseproducts",
+     "TSA pipeline directives require prompt patching; no cyber insurance"
+    ],
+    [
+     "exxonmobil",
+     "ERP consolidation touches financial controls"
+    ],
+    [
+     "conocophillips",
+     "Combined IT/OT security program under the CISO"
+    ]
+   ],
+   "questions": [
+    "Which regulations put the most pressure on how you change software today?",
+    "What evidence do auditors ask for when a regulated system changes, and how long does it take to produce?",
+    "Where would a missed patching deadline hurt most?"
+   ],
+   "stories": [
+    "security",
+    "harness"
+   ]
+  },
+  {
+   "key": "competition",
+   "name": "Competition",
+   "general": "Continuous improvement to keep a competitive edge, which may mean moving to the cloud.",
+   "energy": "For operators: cost per barrel and capital efficiency against peers. For oilfield services: digital products and platforms competing on features and margin (Delfi, Lumi, Landmark, Cordant, Leucipa). For everyone: how fast they adopt AI compared with peers.",
+   "top": "Peers are lowering costs and growing digital revenue faster, and the market is comparing.",
+   "middle": "Roadmaps, cloud migrations and integrations lag behind competitors' releases.",
+   "bottom": "Engineers maintain old platforms instead of building what wins.",
+   "devin": "Devin adds engineering capacity to the roadmap and to cloud and platform migrations without adding headcount, and its cost per task makes the economics visible.",
+   "accounts": [
+    [
+     "slb",
+     "Digital margin target of 38-42% by 2030 and acquired software to integrate"
+    ],
+    [
+     "halliburton",
+     "Landmark competes on cloud-native software and agentic AI"
+    ],
+    [
+     "bakerhughes",
+     "Cordant and Leucipa compete as software products"
+    ]
+   ],
+   "questions": [
+    "Where are competitors moving faster than you in software or digital products?",
+    "Which platform or cloud migration would most change your position if it finished a year early?",
+    "How are you comparing your AI adoption with your peers?"
+   ],
+   "stories": [
+    "frontier",
+    "cost",
+    "swarms"
+   ]
+  },
+  {
+   "key": "security",
+   "name": "Security",
+   "general": "Multiple cloud vendors, remote work, ML and AI can open new attack surfaces.",
+   "energy": "Multi-cloud estates, connected OT and field equipment, remote and global teams, and AI tools spreading through the business. State-actor and ransomware threats are real in this sector.",
+   "top": "A breach means downtime, costs, regulators and headlines. Halliburton's 2024 incident cost about $35M.",
+   "middle": "More findings than the team can fix, and more AI tools than governance can review.",
+   "bottom": "Security tickets pile up behind feature work; nobody owns old code.",
+   "devin": "Security Swarm finds exploitable issues, proves them in a sandbox and opens the fix. Devin works in its own isolated machines with every change reviewed by a person.",
+   "accounts": [
+    [
+     "halliburton",
+     "August 2024 breach, about $35M cost"
+    ],
+    [
+     "bakerhughes",
+     "Multi-cloud estate across Azure, AWS, Google Cloud and C3 AI"
+    ],
+    [
+     "chevron",
+     "10-K highlights cyber threats to OT and digital infrastructure"
+    ]
+   ],
+   "questions": [
+    "How has your attack surface changed with cloud, remote work and AI over the last two years?",
+    "How long does a critical finding stay open, and where does it wait?",
+    "What controls would you require on an agent's access before it touches code?"
+   ],
+   "stories": [
+    "security",
+    "sandbox"
+   ]
+  },
+  {
+   "key": "productivity",
+   "name": "Productivity, cost and quality",
+   "general": "Procedures, processes, labor and systems that create problems.",
+   "energy": "Structural cost programs and workforce reductions, legacy and custom applications, SI-billed maintenance, slow reviews and manual testing, ERP and integration programs.",
+   "top": "Committed savings targets depend on doing more with fewer people.",
+   "middle": "Backlogs grow, programs slip, run cost crowds out change.",
+   "bottom": "Toil, manual testing, waiting on reviews and environments.",
+   "devin": "Devin does whole tasks end to end: migrations, upgrades, audits, on-call triage. It hands back tested, recorded work at a cost per task you can see.",
+   "accounts": [
+    [
+     "exxonmobil",
+     "$20B structural savings target and about 2,000 job cuts"
+    ],
+    [
+     "chevron",
+     "$3-4B cost target and a 15-20% workforce reduction"
+    ],
+    [
+     "conocophillips",
+     "$1B cost target after a 20-25% workforce cut"
+    ]
+   ],
+   "questions": [
+    "Which processes or systems create the most rework for your teams?",
+    "How much of your engineering capacity goes to maintenance versus new work?",
+    "Where do quality problems show up first: in testing, in production, or with customers?"
+   ],
+   "stories": [
+    "harness",
+    "enterprise",
+    "swarms"
+   ]
+  },
+  {
+   "key": "reputation",
+   "name": "Reputation",
+   "general": "Unhappy customers can hurt the brand.",
+   "energy": "For oilfield services and software vendors: customers who depend on their platforms and field software. For midstream: shippers who depend on accurate nominations, scheduling and measurement. For everyone: outages, breaches and safety events that make the news.",
+   "top": "A visible failure, such as a breach, an outage or a safety event, damages trust with customers, regulators and investors.",
+   "middle": "Customer-reported bugs and slow fixes hurt renewals and relationships.",
+   "bottom": "Firefighting customer escalations instead of preventing them.",
+   "devin": "Devin Oncall takes the first pass on production alerts, and Devin in Pylon fixes customer-reported issues to shorten time to fix.",
+   "accounts": [
+    [
+     "enterpriseproducts",
+     "Shippers rely on accurate nominations and measurement"
+    ],
+    [
+     "slb",
+     "Marketplace listings carry SLB's security certification"
+    ],
+    [
+     "halliburton",
+     "Landmark customers run restricted and sovereign deployments"
+    ]
+   ],
+   "questions": [
+    "What do your customers complain about most when software lets them down?",
+    "How long does it take to fix a customer-reported issue today?",
+    "What kind of incident would end up in front of your board or in the press?"
+   ],
+   "stories": [
+    "enterprise",
+    "security"
+   ]
+  }
+ ]
+}

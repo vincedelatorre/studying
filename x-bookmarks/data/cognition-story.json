@@ -170,5 +170,22 @@
    "proves": "Time to root cause drops without giving up control."
   }
  ],
- "email": "Over the last quarter the way leading engineering teams use AI changed. Strong models got much cheaper, and the teams getting results moved to agents that test their own work, remember how the team works, run in parallel and work on real machines. Devin, from Cognition, packages that: it works in its own Windows, Linux and macOS environments, tests and records what it builds, runs codebase-wide scans and security reviews, takes first pass on production alerts, and lets you choose between frontier models and Cognition's SWE-2, which scores on par with recent frontier models at up to 70% lower cost. I'd suggest a short pilot starting with a Code Scan on one of your legacy repositories."
+ "email": "Over the last quarter the way leading engineering teams use AI changed. Strong models got much cheaper, and the teams getting results moved to agents that test their own work, remember how the team works, run in parallel and work on real machines. Devin, from Cognition, packages that: it works in its own Windows, Linux and macOS environments, tests and records what it builds, runs codebase-wide scans and security reviews, takes first pass on production alerts, and lets you choose between frontier models and Cognition's SWE-2, which scores on par with recent frontier models at up to 70% lower cost. I'd suggest a short pilot starting with a Code Scan on one of your legacy repositories.",
+ "levels": [
+  {
+   "who": "For executives",
+   "h": "Revenue, profitability and risk",
+   "p": "Engineering capacity stops being the constraint on cost and transformation commitments. Routine work moves to SWE-2 at up to 70% lower cost, spend is visible per task, and every change carries its own evidence, which lowers execution and audit risk."
+  },
+  {
+   "who": "For technology leaders",
+   "h": "Run less, change more",
+   "p": "Maintenance, migrations and security fixes move from people-hours and SI contracts to agents that work in isolated Windows, Linux and macOS machines, with governed memory and a human approving every change."
+  },
+  {
+   "who": "For engineering teams",
+   "h": "Less toil, faster reviews",
+   "p": "Devin takes whole tasks, tests them and sends a recording, takes the first pass on alerts, and remembers how the team works, so engineers spend their time on design and domain problems."
+  }
+ ]
 }

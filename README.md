@@ -2,12 +2,13 @@
 
 ## Technical Bookmark Library
 
-**[Read the storylines](https://vincedelatorre.github.io/studying/x-bookmarks/storylines.html)** · **[Open the full library](https://vincedelatorre.github.io/studying/x-bookmarks/)**
+**[Customer brief: Devin and the Agent Shift](https://vincedelatorre.github.io/studying/x-bookmarks/devin-agent-shift.html)** · **[Read the storylines](https://vincedelatorre.github.io/studying/x-bookmarks/storylines.html)** · **[Open the full library](https://vincedelatorre.github.io/studying/x-bookmarks/)**
 
 506 technical X bookmarks saved Aug 18 – Oct 18, 2026, sorted into 12 chapters and 74 topics. Each entry has a summary, a takeaway, the tools it names, the links from the post, and the full saved text. Politics, everyday life, gossip and memes are left out.
 
 | Path | What it is |
 | --- | --- |
+| [`x-bookmarks/devin-agent-shift.html`](x-bookmarks/devin-agent-shift.html) | Customer-ready brief: seven shifts, what Devin does about each, proof, industrial and energy fit, four-step pilot |
 | [`x-bookmarks/storylines.html`](x-bookmarks/storylines.html) | 11 dated storylines with turning points, key numbers and customer talking points, every claim linked to its post |
 | [`x-bookmarks/data/storylines.json`](x-bookmarks/data/storylines.json) | The storylines as structured data |
 | [`x-bookmarks/index.html`](x-bookmarks/index.html) | The website (one self-contained page with search and month filter) |

@@ -1,0 +1,174 @@
+{
+ "headline": "Software engineering is moving from writing code to directing agents that write, test and verify it. Devin is built for that shift.",
+ "intro": [
+  "Between August and October 2026, three things changed at once. Frontier-level coding capability became abundant and much cheaper. The teams getting results stopped tuning prompts and started building systems around the model: verification loops, memory, parallel agents and real computers to run them on. And the first large companies moved agents out of pilots and into pull requests, support queues and the on-call rotation.",
+  "Devin is Cognition's AI software engineer. Each of those shifts maps to something Devin already ships, so an engineering organization can adopt the new way of working without building the harness, the infrastructure and the guardrails itself."
+ ],
+ "pitch": "Devin gives your engineers a team of AI software engineers that work in their own cloud computers, test and record everything they build, remember how your team works, and run in parallel across your codebase. It does this at a cost you can see and control, using whichever frontier model fits the job and Cognition's own SWE-2 model for the rest.",
+ "shifts": [
+  {
+   "story": "cost",
+   "shift": "Capability is abundant. Cost is now the question.",
+   "means": "Every major lab shipped a stronger model this quarter, and cheap models closed most of the gap. The risk for an enterprise is paying frontier prices for routine work, or locking into one model that is overtaken next month.",
+   "devin": "Devin runs the leading frontier models in one place, plus Cognition's SWE-2. SWE-2 scores on par with recent frontier models on leading evals at up to 70% lower cost. Fusion lets a frontier model plan while a cheaper model executes, which Cognition says is 39% cheaper across coding benchmarks. Each session shows its own cost, and Devin flags what made a session expensive.",
+   "refs": [
+    "2026-09-10 cognition 823965",
+    "2026-09-11 cognition 024343",
+    "2026-09-01 cognition 374145",
+    "2026-09-04 dabit3 586132",
+    "2026-09-18 robinebers 862491",
+    "2026-10-13 inferwerk 815298"
+   ]
+  },
+  {
+   "story": "harness",
+   "shift": "Reliability comes from verification, not prompts.",
+   "means": "The teams moving fastest let agents check their own work end to end. An agent that cannot prove its change works just moves the review burden onto your engineers.",
+   "devin": "Devin tests every feature it builds and sends video recordings of the test session. Devin Review reads a REVIEW.md file with your team's own review rules, and Autofix cleans up pull requests before a human sees them. Rox uses Devin to rebuild each real production failure into an eval, delivered as a pull request; the suite now covers 72% of real usage.",
+   "refs": [
+    "2026-08-21 jaredpalmer 410088",
+    "2026-10-03 kr0der 509893",
+    "2026-09-20 kinopee_ai 355972",
+    "2026-10-14 devindevelopers 932193",
+    "2026-10-15 rox_ai 617997",
+    "2026-10-16 dabit3 226566"
+   ]
+  },
+  {
+   "story": "memory",
+   "shift": "Agents have to learn how your team works.",
+   "means": "An agent that starts every task from zero repeats the same mistakes. Memory that drifts or cannot be inspected is a governance problem.",
+   "devin": "With Dreaming, Devin builds a memory graph of how each person works across sessions and prunes stale records overnight. Cognition is publishing the format as an open standard, Agent Memory Repo, backed by git and markdown, so the memory is readable, versioned and usable by other agents. Setup happens through conversation: tell Devin how you want things done and it writes the playbook.",
+   "refs": [
+    "2026-10-05 cognition 867001",
+    "2026-10-05 walden_yan 144357",
+    "2026-10-03 Chris_Wozniczek 386689"
+   ]
+  },
+  {
+   "story": "swarms",
+   "shift": "Large work gets done by many agents in parallel.",
+   "means": "Codebase-wide jobs such as audits, upgrades and migrations are too big for one agent session. Parallel agents need a plan that people can read and approve.",
+   "devin": "Code Scans run an audit across a whole codebase for any goal, such as code that is safe to delete, slow queries or outdated libraries, then open the pull requests. Devin sessions can start managed child Devins several levels deep. Dynamic Workflows split a job across Devins and merge the results, and the plan lives in code you can read and version.",
+   "refs": [
+    "2026-09-16 cognition 803404",
+    "2026-09-16 jeffwang 674045",
+    "2026-10-09 devindevelopers 758936",
+    "2026-10-13 dabit3 320819"
+   ]
+  },
+  {
+   "story": "sandbox",
+   "shift": "Agents need real computers, not toy sandboxes.",
+   "means": "Where agents run became a contested layer this quarter. Enterprise software spans Windows, Linux, macOS and mobile targets, and a laptop-bound agent cannot reach most of it.",
+   "devin": "Devin is the first cloud agent to natively spin up macOS, Windows and Linux machines, rebuilt in Rust from storage and networking up; Android is available too. Engineers can SSH into Devin's machine with devin ssh, use it as their devbox, and hand work back to their own device with /handoff.",
+   "refs": [
+    "2026-09-15 MattSchrage 228884",
+    "2026-09-19 jkelleyrtp 143772",
+    "2026-09-21 cognition 406886",
+    "2026-09-21 morgantepell 696602",
+    "2026-10-10 devindevelopers 984412"
+   ]
+  },
+  {
+   "story": "security",
+   "shift": "Security is the gate to adoption.",
+   "means": "AI is raising the volume and speed of attacks, and security teams need defenders that can keep up. Agents that act also need to be governed.",
+   "devin": "Security Swarm sends parallel Devins through a codebase to build a threat model, find exploitable vulnerabilities, including ones chained across files, prove them in a sandbox and deliver the fixes as pull requests.",
+   "refs": [
+    "2026-10-08 devindevelopers 804464",
+    "2026-09-16 jaredpalmer 377812"
+   ]
+  },
+  {
+   "story": "enterprise",
+   "shift": "Agents are moving past code into operations.",
+   "means": "The next gains come from the work around code: production alerts, customer-reported bugs and the tools people already use every day.",
+   "devin": "Devin Oncall investigates alerts and bugs to diagnose and resolve production incidents, already handles thousands of alerts a day at large companies, and took the #1 spot on SREGym. AngelList put Devin on its on-call rotation, where it finds root cause and opens a tested fix. Devin in Pylon fixes customer-reported issues to cut time to fix, and Devin works natively in Microsoft Teams with a Microsoft 365 integration.",
+   "refs": [
+    "2026-10-15 cognition 010292",
+    "2026-10-15 HacksonClark 806072",
+    "2026-10-16 AngelList 809832",
+    "2026-10-13 cognition 725720",
+    "2026-09-23 cognition 259443"
+   ]
+  }
+ ],
+ "dogfood": {
+  "lead": "Cognition builds Cognition with Devin.",
+  "items": [
+   {
+    "text": "Over 95% of Cognition's code is written by AI; engineers spend their time on priorities and architecture.",
+    "ref": "2026-09-22 dforwardfeed 559900"
+   },
+   {
+    "text": "Devin migrated the devin.ai site from Astro to Next.js on its own, testing and recording itself to find and verify bugs.",
+    "ref": "2026-08-21 jaredpalmer 410088"
+   },
+   {
+    "text": "Cognition engineers completed a full 1:1 port of Minecraft, server and client, from Java to Rust.",
+    "ref": "2026-10-14 theodormarcu 322805"
+   },
+   {
+    "text": "Devin reads Cognition's own observability data to debug and improve Devin.",
+    "ref": "2026-10-06 imjaredz 922484"
+   }
+  ]
+ },
+ "industrial": {
+  "lead": "Why this matters for industrial and energy engineering teams",
+  "items": [
+   {
+    "need": "Large, long-lived codebases",
+    "fit": "Code Scans find dead code, outdated libraries and slow queries across the whole estate and open the fixes as pull requests."
+   },
+   {
+    "need": "Migrations and modernization",
+    "fit": "Parallel Devins with versioned Dynamic Workflows break a migration into reviewable pieces; Cognition's own Java-to-Rust and Astro-to-Next.js ports show the pattern."
+   },
+   {
+    "need": "Windows-heavy and mixed environments",
+    "fit": "Devin works on its own Windows, Linux and macOS machines, so it can build and test where your software actually runs."
+   },
+   {
+    "need": "24/7 operations",
+    "fit": "Devin Oncall takes the first pass on alerts and comes back with a root cause and a tested fix for your engineers to approve."
+   },
+   {
+    "need": "Security and compliance",
+    "fit": "Security Swarm proves vulnerabilities in a sandbox before proposing fixes, and agent memory is stored as readable, versioned files."
+   },
+   {
+    "need": "Cost control at scale",
+    "fit": "Route routine work to SWE-2, keep frontier models for the hard parts with Fusion, and see the cost of every session."
+   },
+   {
+    "need": "Microsoft 365 workplaces",
+    "fit": "Devin works natively inside Microsoft Teams and connects to mail, calendar, files and chats."
+   }
+  ]
+ },
+ "pilot": [
+  {
+   "step": "Audit",
+   "what": "Run a Code Scan on one legacy repository: dead code, outdated libraries, slow queries. Review the pull requests it opens.",
+   "proves": "Devin can read your codebase and produce mergeable work."
+  },
+  {
+   "step": "Review",
+   "what": "Add a REVIEW.md with your standards and let Devin Review and Autofix work on real pull requests for two weeks.",
+   "proves": "Quality holds to your rules, with less reviewer time."
+  },
+  {
+   "step": "Modernize",
+   "what": "Pick one bounded migration or upgrade and run it as a Dynamic Workflow across parallel Devins.",
+   "proves": "Large changes ship as readable, versioned plans."
+  },
+  {
+   "step": "Operate",
+   "what": "Put Devin Oncall on one service's alerts, with a human approving each fix.",
+   "proves": "Time to root cause drops without giving up control."
+  }
+ ],
+ "email": "Over the last quarter the way leading engineering teams use AI changed. Strong models got much cheaper, and the teams getting results moved to agents that test their own work, remember how the team works, run in parallel and work on real machines. Devin, from Cognition, packages that: it works in its own Windows, Linux and macOS environments, tests and records what it builds, runs codebase-wide scans and security reviews, takes first pass on production alerts, and lets you choose between frontier models and Cognition's SWE-2, which scores on par with recent frontier models at up to 70% lower cost. I'd suggest a short pilot starting with a Code Scan on one of your legacy repositories."
+}

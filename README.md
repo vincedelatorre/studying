@@ -2,12 +2,14 @@
 
 ## Technical Bookmark Library
 
-**[Customer brief: Devin and the Agent Shift](https://vincedelatorre.github.io/studying/x-bookmarks/devin-agent-shift.html)** · **[Read the storylines](https://vincedelatorre.github.io/studying/x-bookmarks/storylines.html)** · **[Open the full library](https://vincedelatorre.github.io/studying/x-bookmarks/)**
+**[Energy MEDDPICC playbook](https://vincedelatorre.github.io/studying/x-bookmarks/playbook.html)** · **[Customer brief: Devin and the Agent Shift](https://vincedelatorre.github.io/studying/x-bookmarks/devin-agent-shift.html)** · **[Read the storylines](https://vincedelatorre.github.io/studying/x-bookmarks/storylines.html)** · **[Open the full library](https://vincedelatorre.github.io/studying/x-bookmarks/)**
 
 506 technical X bookmarks saved Aug 18 – Oct 18, 2026, sorted into 12 chapters and 74 topics. Each entry has a summary, a takeaway, the tools it names, the links from the post, and the full saved text. Politics, everyday life, gossip and memes are left out.
 
 | Path | What it is |
 | --- | --- |
+| [`x-bookmarks/playbook.html`](x-bookmarks/playbook.html) | Internal MEDDPICC playbook for the energy vertical: value framework, question bank, talk track trees, mutual action plan, account plays |
+| [`x-bookmarks/data/accounts/`](x-bookmarks/data/accounts/) | Sourced account research: ExxonMobil, Chevron, Halliburton, SLB, Baker Hughes, ConocoPhillips, Enterprise Products |
 | [`x-bookmarks/devin-agent-shift.html`](x-bookmarks/devin-agent-shift.html) | Customer-ready brief: seven shifts, what Devin does about each, proof, industrial and energy fit, four-step pilot |
 | [`x-bookmarks/storylines.html`](x-bookmarks/storylines.html) | 11 dated storylines with turning points, key numbers and customer talking points, every claim linked to its post |
 | [`x-bookmarks/data/storylines.json`](x-bookmarks/data/storylines.json) | The storylines as structured data |

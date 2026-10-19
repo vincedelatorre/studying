@@ -1,0 +1,1220 @@
+{
+ "map": [
+  {
+   "phase": "Align",
+   "weeks": [
+    0,
+    2
+   ],
+   "steps": [
+    {
+     "step": "Discovery working session with champion and 2-3 engineering leads",
+     "owner": "Joint",
+     "letter": "I",
+     "exit": "Named systems, pains and the people who feel them, written down"
+    },
+    {
+     "step": "Agree the one metric that matters and capture its baseline",
+     "owner": "Customer",
+     "letter": "M",
+     "exit": "Baseline number, data source and owner"
+    },
+    {
+     "step": "Identify the economic buyer and confirm their priorities",
+     "owner": "Joint",
+     "letter": "E",
+     "exit": "EB named; meeting scheduled or held"
+    },
+    {
+     "step": "Draft pilot scope: repositories, teams, use cases",
+     "owner": "Cognition",
+     "letter": "D",
+     "exit": "Scope document reviewed by champion"
+    }
+   ]
+  },
+  {
+   "phase": "Clear the path",
+   "weeks": [
+    2,
+    4
+   ],
+   "steps": [
+    {
+     "step": "Submit to AI governance and cyber risk review",
+     "owner": "Customer",
+     "letter": "D",
+     "exit": "Review date booked; questionnaire received"
+    },
+    {
+     "step": "Start supplier onboarding and security questionnaires",
+     "owner": "Joint",
+     "letter": "P",
+     "exit": "Vendor record opened; questionnaires returned"
+    },
+    {
+     "step": "Architecture review: identity, repo access, network, data handling",
+     "owner": "Joint",
+     "letter": "D",
+     "exit": "Approved access pattern for the pilot"
+    },
+    {
+     "step": "Sign pilot success criteria tied to the baseline metric",
+     "owner": "Joint",
+     "letter": "M",
+     "exit": "Signed success criteria with thresholds"
+    }
+   ]
+  },
+  {
+   "phase": "Pilot",
+   "weeks": [
+    4,
+    10
+   ],
+   "steps": [
+    {
+     "step": "Audit: Code Scan on one legacy repository",
+     "owner": "Cognition",
+     "letter": "I",
+     "exit": "Findings reviewed; first pull requests merged"
+    },
+    {
+     "step": "Review: REVIEW.md plus Devin Review and Autofix on live pull requests",
+     "owner": "Joint",
+     "letter": "M",
+     "exit": "Review time and merge rate measured against baseline"
+    },
+    {
+     "step": "Modernize: one bounded migration as a Dynamic Workflow",
+     "owner": "Joint",
+     "letter": "M",
+     "exit": "Migration plan versioned; changes merged and tested"
+    },
+    {
+     "step": "Operate: Devin Oncall on one service, human approves fixes",
+     "owner": "Customer",
+     "letter": "M",
+     "exit": "Time to root cause measured on real alerts"
+    },
+    {
+     "step": "Weekly readout to champion; fortnightly to EB staff",
+     "owner": "Cognition",
+     "letter": "C",
+     "exit": "Readouts delivered on schedule"
+    }
+   ]
+  },
+  {
+   "phase": "Business case",
+   "weeks": [
+    10,
+    12
+   ],
+   "steps": [
+    {
+     "step": "Build the business case against the baseline and SI or contractor spend",
+     "owner": "Joint",
+     "letter": "M",
+     "exit": "Business case reviewed by champion and finance partner"
+    },
+    {
+     "step": "Competitive and do-nothing comparison documented",
+     "owner": "Cognition",
+     "letter": "C",
+     "exit": "Customer has stated why Devin over alternatives"
+    },
+    {
+     "step": "Economic buyer readout and decision",
+     "owner": "Customer",
+     "letter": "E",
+     "exit": "Verbal decision and budget source confirmed"
+    }
+   ]
+  },
+  {
+   "phase": "Paper",
+   "weeks": [
+    10,
+    14
+   ],
+   "steps": [
+    {
+     "step": "MSA, data processing and AI addendum redlines",
+     "owner": "Joint",
+     "letter": "P",
+     "exit": "Legal redlines closed"
+    },
+    {
+     "step": "Procurement approval and purchase order",
+     "owner": "Customer",
+     "letter": "P",
+     "exit": "PO issued"
+    },
+    {
+     "step": "Signature by authorized signatory",
+     "owner": "Customer",
+     "letter": "P",
+     "exit": "Signed agreement"
+    }
+   ]
+  },
+  {
+   "phase": "Rollout",
+   "weeks": [
+    14,
+    20
+   ],
+   "steps": [
+    {
+     "step": "Enablement for first teams; REVIEW.md and playbooks per team",
+     "owner": "Cognition",
+     "letter": "C",
+     "exit": "Teams active; usage and cost visible per team"
+    },
+    {
+     "step": "Expansion plan to the next business unit or program",
+     "owner": "Joint",
+     "letter": "E",
+     "exit": "Next scope and sponsor agreed"
+    }
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "t": "Situation",
+   "l": "I",
+   "p": "Any",
+   "q": "Walk me through how a change gets from idea to production in your most important application today.",
+   "listen": "Hand-offs, waiting on reviews or test environments, SI involvement"
+  },
+  {
+   "t": "Situation",
+   "l": "I",
+   "p": "Any",
+   "q": "How would you describe your application portfolio to someone new: what is strategic, what is legacy, and what is somewhere in between?",
+   "listen": "Systems nobody wants to touch; technical debt with a name"
+  },
+  {
+   "t": "Situation",
+   "l": "C",
+   "p": "VP Engineering",
+   "q": "How are your engineers using AI today, and where has it changed the work versus where has it only changed the typing?",
+   "listen": "IDE assistants with little impact on large jobs"
+  },
+  {
+   "t": "Situation",
+   "l": "D",
+   "p": "Any",
+   "q": "What has your AI governance group approved so far, and what did they push back on?",
+   "listen": "Written criteria; past rejections; data rules"
+  },
+  {
+   "t": "Pain",
+   "l": "I",
+   "p": "Modernization lead",
+   "q": "Which modernization item has slipped the most, and what has the delay cost you?",
+   "listen": "A dollar figure, a regulatory date, a person under pressure"
+  },
+  {
+   "t": "Pain",
+   "l": "I",
+   "p": "Any",
+   "q": "If you could retire one system this year at a tenth of the cost, which would it be and why that one?",
+   "listen": "The real priority, and who owns it"
+  },
+  {
+   "t": "Pain",
+   "l": "I",
+   "p": "SRE lead",
+   "q": "Tell me about the last incident that kept people up all night. What happened, and what happened afterwards?",
+   "listen": "MTTR, business impact, burnout of senior engineers"
+  },
+  {
+   "t": "Pain",
+   "l": "I",
+   "p": "CISO",
+   "q": "How do critical findings move from discovery to a merged fix today, and where do they wait?",
+   "listen": "Backlog age, ownership gaps, IT vs OT"
+  },
+  {
+   "t": "Pain",
+   "l": "I",
+   "p": "CIO",
+   "q": "How is the run-and-maintain share of your budget trending, and how do you feel about that?",
+   "listen": "SI contract growth; desire to shift to new capability"
+  },
+  {
+   "t": "Pain",
+   "l": "I",
+   "p": "Any",
+   "q": "What happens to the business if this backlog looks the same in two years?",
+   "listen": "Consequence, urgency, compelling event"
+  },
+  {
+   "t": "Pain",
+   "l": "I",
+   "p": "Enterprise architect",
+   "q": "When a senior engineer leaves, what knowledge leaves with them, and how do you capture it today?",
+   "listen": "Tribal knowledge risk; memory angle"
+  },
+  {
+   "t": "Metrics",
+   "l": "M",
+   "p": "Any",
+   "q": "How do you measure engineering productivity today, and which of those numbers does leadership actually look at?",
+   "listen": "Existing metrics to anchor to"
+  },
+  {
+   "t": "Metrics",
+   "l": "M",
+   "p": "CIO",
+   "q": "What would have to be true for you to call a pilot a clear success, in numbers?",
+   "listen": "Thresholds for success criteria"
+  },
+  {
+   "t": "Metrics",
+   "l": "M",
+   "p": "Finance partner",
+   "q": "How many contractor or SI hours go into maintaining existing applications, and how is that contract measured?",
+   "listen": "Budget that can be redeployed"
+  },
+  {
+   "t": "Metrics",
+   "l": "M",
+   "p": "SRE lead",
+   "q": "What is time to root cause on your critical services today, and how confident are you in that number?",
+   "listen": "Baseline quality"
+  },
+  {
+   "t": "Metrics",
+   "l": "M",
+   "p": "CIO",
+   "q": "How are you tracking AI spend today, and how do you tie it to what it produced?",
+   "listen": "Token cost visibility gap"
+  },
+  {
+   "t": "Economic buyer",
+   "l": "E",
+   "p": "Champion",
+   "q": "Who owns the budget for application maintenance and modernization, and how do they decide where it goes?",
+   "listen": "A name and a decision style"
+  },
+  {
+   "t": "Economic buyer",
+   "l": "E",
+   "p": "Champion",
+   "q": "What are your leader's top priorities this year, and how is their success measured?",
+   "listen": "Links to PBOs"
+  },
+  {
+   "t": "Economic buyer",
+   "l": "E",
+   "p": "Economic buyer",
+   "q": "Looking at your commitments for the next 12 months, where are you least confident you have the engineering capacity?",
+   "listen": "Direct pain at EB level"
+  },
+  {
+   "t": "Economic buyer",
+   "l": "E",
+   "p": "Champion",
+   "q": "How did the last significant technology investment get approved, and who made the final call?",
+   "listen": "Real authority vs titles"
+  },
+  {
+   "t": "Decision criteria",
+   "l": "D",
+   "p": "Platform lead",
+   "q": "What would an autonomous agent need to prove before you let it open pull requests against production repositories?",
+   "listen": "Verification, audit, isolation needs to shape criteria"
+  },
+  {
+   "t": "Decision criteria",
+   "l": "D",
+   "p": "CISO",
+   "q": "Where does code need to be processed, what can be retained, and who decides that?",
+   "listen": "Data residency and retention rules"
+  },
+  {
+   "t": "Decision criteria",
+   "l": "D",
+   "p": "Platform lead",
+   "q": "Which environments does this have to work in: Windows, Linux, mainframe, anything OT-adjacent?",
+   "listen": "Windows-heavy estates favor Devin's machines"
+  },
+  {
+   "t": "Decision criteria",
+   "l": "D",
+   "p": "VP Engineering",
+   "q": "How will you compare an agent that completes tasks end to end with an assistant that suggests code?",
+   "listen": "Chance to set outcome-based criteria"
+  },
+  {
+   "t": "Decision criteria",
+   "l": "D",
+   "p": "Any",
+   "q": "What evidence will your reviewers want to see attached to every change?",
+   "listen": "Tests, recordings, traceability"
+  },
+  {
+   "t": "Decision process",
+   "l": "D",
+   "p": "Champion",
+   "q": "Walk me through every step between a successful pilot and a signed agreement here.",
+   "listen": "Boards, reviews, owners, timing"
+  },
+  {
+   "t": "Decision process",
+   "l": "D",
+   "p": "Champion",
+   "q": "Who could stop this after a good pilot, and what would they need to hear?",
+   "listen": "Hidden blockers"
+  },
+  {
+   "t": "Decision process",
+   "l": "D",
+   "p": "Any",
+   "q": "What business dates matter here: budget cycles, program milestones, contract renewals?",
+   "listen": "Compelling event for the close plan"
+  },
+  {
+   "t": "Paper process",
+   "l": "P",
+   "p": "Procurement",
+   "q": "What does onboarding a new software supplier involve here, and how long does it usually take?",
+   "listen": "Start early"
+  },
+  {
+   "t": "Paper process",
+   "l": "P",
+   "p": "Legal",
+   "q": "How do your contracts treat AI services today, and is there a standard addendum?",
+   "listen": "AI terms that can stall the deal"
+  },
+  {
+   "t": "Paper process",
+   "l": "P",
+   "p": "Champion",
+   "q": "For an agreement of this size, who signs, and what approvals sit above that?",
+   "listen": "Signature thresholds"
+  },
+  {
+   "t": "Champion",
+   "l": "C",
+   "p": "Champion",
+   "q": "What would a successful rollout mean for you and your team personally?",
+   "listen": "Personal win"
+  },
+  {
+   "t": "Champion",
+   "l": "C",
+   "p": "Champion",
+   "q": "How would you explain this to your leader in two sentences?",
+   "listen": "Whether they can sell it without you"
+  },
+  {
+   "t": "Champion",
+   "l": "C",
+   "p": "Champion",
+   "q": "Who is likely to push back, and how would you handle them?",
+   "listen": "Internal politics; champion's influence"
+  },
+  {
+   "t": "Competition",
+   "l": "C",
+   "p": "Any",
+   "q": "What AI coding tools are licensed today, and what do teams actually use them for?",
+   "listen": "Incumbent assistants; usage depth"
+  },
+  {
+   "t": "Competition",
+   "l": "C",
+   "p": "Platform lead",
+   "q": "What has your internal AI team built so far, and what would you rather they spend time on?",
+   "listen": "Partner with the build team, not against it"
+  },
+  {
+   "t": "Competition",
+   "l": "C",
+   "p": "CIO",
+   "q": "How do your systems integrators fit into the next three years, and what would you change about those contracts?",
+   "listen": "SI budget in scope"
+  },
+  {
+   "t": "Competition",
+   "l": "C",
+   "p": "Any",
+   "q": "What happens if you decide to wait a year?",
+   "listen": "Cost of doing nothing"
+  },
+  {
+   "t": "Storyline: cost",
+   "l": "M",
+   "p": "CIO",
+   "q": "Agents now consume far more tokens than people do. How are you planning to budget for that, and how will you know it is paying off?",
+   "listen": "Cost governance gap",
+   "story": "cost"
+  },
+  {
+   "t": "Storyline: cost",
+   "l": "D",
+   "p": "Platform lead",
+   "q": "How do you decide which model handles which task today, and who makes that call?",
+   "listen": "Routing maturity; Fusion fit",
+   "story": "cost"
+  },
+  {
+   "t": "Storyline: verification",
+   "l": "D",
+   "p": "VP Engineering",
+   "q": "How much of your reviewers' week goes to AI-written code, and how do they decide what to trust?",
+   "listen": "Review burden; verification angle",
+   "story": "harness"
+  },
+  {
+   "t": "Storyline: verification",
+   "l": "M",
+   "p": "VP Engineering",
+   "q": "What would change if every change arrived already tested, with a recording of it working?",
+   "listen": "Value of proof-of-work",
+   "story": "harness"
+  },
+  {
+   "t": "Storyline: memory",
+   "l": "I",
+   "p": "Enterprise architect",
+   "q": "How do your teams write down how things should be done, and how often does anyone read it?",
+   "listen": "Documentation drift; Dreaming angle",
+   "story": "memory"
+  },
+  {
+   "t": "Storyline: parallel work",
+   "l": "I",
+   "p": "Modernization lead",
+   "q": "Which jobs are too big for one person or one team, such as upgrades across hundreds of repositories, and how do they get done today?",
+   "listen": "Codebase-wide jobs for Code Scans and Workflows",
+   "story": "swarms"
+  },
+  {
+   "t": "Storyline: parallel work",
+   "l": "D",
+   "p": "Modernization lead",
+   "q": "How do you plan and approve a large migration today, and how would you want to see an agent's plan before it starts?",
+   "listen": "Versioned plan requirement",
+   "story": "swarms"
+  },
+  {
+   "t": "Storyline: where agents run",
+   "l": "D",
+   "p": "Platform lead",
+   "q": "If agents worked on real tasks, where would you want them to run, and what would they need access to?",
+   "listen": "Isolation, OS coverage, network rules",
+   "story": "sandbox"
+  },
+  {
+   "t": "Storyline: security",
+   "l": "I",
+   "p": "CISO",
+   "q": "How has the volume of vulnerabilities you track changed this year, and how has your team's capacity changed?",
+   "listen": "Gap between findings and fixes",
+   "story": "security"
+  },
+  {
+   "t": "Storyline: security",
+   "l": "D",
+   "p": "CISO",
+   "q": "What controls would you want on an agent's credentials and tool access?",
+   "listen": "Guardrail requirements",
+   "story": "security"
+  },
+  {
+   "t": "Storyline: operations",
+   "l": "I",
+   "p": "SRE lead",
+   "q": "Who takes the first look at an alert at night, and what do they do in the first 30 minutes?",
+   "listen": "Oncall entry point",
+   "story": "enterprise"
+  },
+  {
+   "t": "Storyline: digital twins",
+   "l": "I",
+   "p": "Digital twin lead",
+   "q": "Where would a quick, interactive model of a facility or process help your engineers or trainees, and what stops you building one today?",
+   "listen": "Visualization and simulation backlog",
+   "story": "worlds"
+  },
+  {
+   "t": "Storyline: R&D",
+   "l": "I",
+   "p": "R&D lead",
+   "q": "Which research workflows spend more time on writing and running code than on the science?",
+   "listen": "Research software capacity",
+   "story": "physical"
+  }
+ ],
+ "trees": [
+  {
+   "letter": "M",
+   "title": "M · Metrics",
+   "persona": "Champion, then economic buyer",
+   "open": "If this works, what number changes, and who in leadership watches that number?",
+   "branches": [
+    {
+     "if": "Names a business number (backlog, MTTR, SI spend)",
+     "say": "What is it today, where does that figure come from, and what would a good year look like?",
+     "then": [
+      {
+       "if": "Has a baseline",
+       "say": "Let's write that into the pilot success criteria with a threshold we both agree on.",
+       "next": "Signed success criteria on the MAP. M confirmed."
+      },
+      {
+       "if": "No baseline",
+       "say": "Who could pull it in the next two weeks? We can't prove value without a starting point.",
+       "next": "Baseline owner and date on the MAP. M partly confirmed."
+      }
+     ]
+    },
+    {
+     "if": "\"Developer productivity\" in general",
+     "say": "How would your CFO see that show up: fewer contractor hours, programs delivered sooner, or fewer incidents?",
+     "then": [
+      {
+       "if": "Picks one",
+       "say": "Which program or team would show it first?",
+       "next": "Tie the metric to a named program. M hypothesis."
+      },
+      {
+       "if": "Can't say",
+       "say": "Teams like yours often use cost per merged change or time to retire a legacy component. Would either matter here?",
+       "next": "Offer two metrics to choose from. M still unknown."
+      }
+     ]
+    },
+    {
+     "if": "\"We don't measure that.\"",
+     "say": "How do leaders decide today whether an engineering investment paid off?",
+     "then": [
+      {
+       "if": "Gut feel or anecdote",
+       "say": "Then a pilot with one clear number would be new for them. What would they find most convincing?",
+       "next": "Co-design the metric with the champion. M hypothesis."
+      }
+     ]
+    }
+   ],
+   "group": "meddpicc"
+  },
+  {
+   "letter": "E",
+   "title": "E · Economic buyer",
+   "persona": "Champion",
+   "open": "Who would have to say yes to spend money on this, and whose budget would it come from?",
+   "branches": [
+    {
+     "if": "Names a person",
+     "say": "What does that person care about most this year, and how have they made similar decisions before?",
+     "then": [
+      {
+       "if": "Champion knows well",
+       "say": "Can you set up 30 minutes with them after our first pilot readout? I'll bring the numbers.",
+       "next": "EB meeting on the MAP. E partly confirmed."
+      },
+      {
+       "if": "Champion is vague",
+       "say": "Who on their staff would know? Could we meet them first?",
+       "next": "Find a path to the EB through staff. E hypothesis."
+      }
+     ]
+    },
+    {
+     "if": "\"A committee decides.\"",
+     "say": "Who on that committee carries the most weight, and who can stop a decision alone?",
+     "then": [
+      {
+       "if": "Names the power",
+       "say": "How do we get time with them before the committee meets?",
+       "next": "EB identified within the committee. E partly confirmed."
+      },
+      {
+       "if": "Truly collective",
+       "say": "Who sets the committee's agenda and budget?",
+       "next": "Find who owns the budget line. E still unknown."
+      }
+     ]
+    },
+    {
+     "if": "\"There's no budget for this.\"",
+     "say": "Where does application maintenance and SI spend sit today, and who owns it?",
+     "then": [
+      {
+       "if": "Names the owner",
+       "say": "If we show we can move some of that work faster, would they want to see it?",
+       "next": "Reframe budget as redeployed spend. E hypothesis."
+      }
+     ]
+    }
+   ],
+   "group": "meddpicc"
+  },
+  {
+   "letter": "D",
+   "title": "D · Decision criteria",
+   "persona": "Platform lead, architect, CISO",
+   "open": "When you look at an AI agent for real engineering work, what will it have to prove?",
+   "branches": [
+    {
+     "if": "Security and data first",
+     "say": "Can we get those requirements in writing so our security team can answer each one?",
+     "then": [
+      {
+       "if": "Shares criteria",
+       "say": "Thank you. Can we also add that every change must arrive tested and recorded? That protects your reviewers.",
+       "next": "Criteria include proof-of-work. D partly confirmed."
+      },
+      {
+       "if": "No written criteria",
+       "say": "Would it help if we drafted a starting list from what other energy teams ask, for you to edit?",
+       "next": "Draft criteria together. D hypothesis."
+      }
+     ]
+    },
+    {
+     "if": "Integration and platforms",
+     "say": "Which operating systems, repositories and tools does it have to work with?",
+     "then": [
+      {
+       "if": "Windows and Azure DevOps heavy",
+       "say": "Devin works in its own Windows, Linux and macOS machines and in Microsoft Teams. Can we make 'works on our real platforms' a criterion?",
+       "next": "Platform criterion favors Devin. D partly confirmed."
+      }
+     ]
+    },
+    {
+     "if": "Price",
+     "say": "How will you compare cost: per seat, per task, or against the work it replaces?",
+     "then": [
+      {
+       "if": "Per seat",
+       "say": "Agents do whole tasks, so cost per merged change is a fairer comparison. Would finance accept that?",
+       "next": "Shift to outcome-based cost. D hypothesis."
+      }
+     ]
+    }
+   ],
+   "group": "meddpicc"
+  },
+  {
+   "letter": "D",
+   "title": "D · Decision process",
+   "persona": "Champion",
+   "open": "Walk me through what happens between a pilot that works and a signed agreement.",
+   "branches": [
+    {
+     "if": "Clear steps",
+     "say": "Who owns each step, and how long did each take last time?",
+     "then": [
+      {
+       "if": "Gives owners and timing",
+       "say": "Let's put those on a shared plan with dates and work back from your budget date.",
+       "next": "MAP populated with owners. D confirmed."
+      }
+     ]
+    },
+    {
+     "if": "\"It depends.\"",
+     "say": "How did the last developer tool or platform get approved here?",
+     "then": [
+      {
+       "if": "Recalls it",
+       "say": "Who was involved, and what nearly stopped it?",
+       "next": "Map the real process from precedent. D partly confirmed."
+      },
+      {
+       "if": "No precedent",
+       "say": "Who would know? Could we ask procurement or the architecture board together?",
+       "next": "Joint discovery with procurement. D hypothesis."
+      }
+     ]
+    }
+   ],
+   "group": "meddpicc"
+  },
+  {
+   "letter": "P",
+   "title": "P · Paper process",
+   "persona": "Champion, procurement, legal",
+   "open": "Once the business says yes, what has to happen for a contract to get signed?",
+   "branches": [
+    {
+     "if": "Long onboarding",
+     "say": "Can we start supplier onboarding and the security questionnaire now, during the pilot?",
+     "then": [
+      {
+       "if": "Yes",
+       "say": "Who should I send the onboarding packet to today?",
+       "next": "Onboarding started. P partly confirmed."
+      },
+      {
+       "if": "Not until selection",
+       "say": "What is the usual time from selection to signature? Let's plan the pilot end date around it.",
+       "next": "Close date reflects paper time. P hypothesis."
+      }
+     ]
+    },
+    {
+     "if": "AI terms are new",
+     "say": "Is there a standard AI addendum, and who in legal owns it?",
+     "then": [
+      {
+       "if": "Names owner",
+       "say": "Could we share our terms with them early so redlines run in parallel?",
+       "next": "Legal engaged early. P partly confirmed."
+      }
+     ]
+    }
+   ],
+   "group": "meddpicc"
+  },
+  {
+   "letter": "I",
+   "title": "I · Identify pain",
+   "persona": "Any",
+   "open": "What is the engineering problem that is costing you the most right now?",
+   "branches": [
+    {
+     "if": "Names a system or program",
+     "say": "What has it cost so far, and who feels it most?",
+     "then": [
+      {
+       "if": "Cost and person named",
+       "say": "What happens if it is still a problem a year from now?",
+       "next": "Pain tied to cost, person and consequence. I confirmed."
+      },
+      {
+       "if": "Cost unclear",
+       "say": "Who could put a number on it? It matters for making the case to leadership.",
+       "next": "Find the cost owner. I partly confirmed."
+      }
+     ]
+    },
+    {
+     "if": "\"Things are fine.\"",
+     "say": "Where is your team spending time it would rather spend elsewhere?",
+     "then": [
+      {
+       "if": "Mentions toil",
+       "say": "Which piece of that toil is the most repetitive and the most painful?",
+       "next": "Narrow to a concrete pain. I hypothesis."
+      },
+      {
+       "if": "Truly fine",
+       "say": "What is leadership asking for that the team cannot deliver yet?",
+       "next": "Look for future pain. I still unknown."
+      }
+     ]
+    }
+   ],
+   "group": "meddpicc"
+  },
+  {
+   "letter": "C",
+   "title": "C · Champion",
+   "persona": "Your strongest contact",
+   "open": "If this goes well, what does it mean for you and your team?",
+   "branches": [
+    {
+     "if": "Clear personal win",
+     "say": "Who else needs to believe in this for it to happen, and can you get me in front of them?",
+     "then": [
+      {
+       "if": "Makes introductions",
+       "say": "What should I know about each of them before we meet?",
+       "next": "Champion shares access and insight. C confirmed."
+      },
+      {
+       "if": "Hesitates",
+       "say": "What would make you comfortable introducing us? Is there something you need from me first?",
+       "next": "Test whether they are a coach or a champion. C partly confirmed."
+      }
+     ]
+    },
+    {
+     "if": "Interested but no stake",
+     "say": "Who in your organization would be most affected by solving this?",
+     "then": [
+      {
+       "if": "Names someone",
+       "say": "Would you introduce us? It sounds like they own this problem.",
+       "next": "Find the real champion. C hypothesis."
+      }
+     ]
+    }
+   ],
+   "group": "meddpicc"
+  },
+  {
+   "letter": "C",
+   "title": "C · Competition",
+   "persona": "Champion, platform lead",
+   "open": "What else are you looking at, including building it yourselves or leaving things as they are?",
+   "branches": [
+    {
+     "if": "An IDE assistant",
+     "say": "What do you want it to do that it doesn't do today?",
+     "then": [
+      {
+       "if": "Large jobs, on-call, testing",
+       "say": "That's the work Devin does end to end. Could we compare on one of those jobs?",
+       "next": "Side-by-side on Devin's strengths. C partly confirmed."
+      }
+     ]
+    },
+    {
+     "if": "Internal build",
+     "say": "What would your team rather spend its time on than maintaining agent infrastructure?",
+     "then": [
+      {
+       "if": "Product work",
+       "say": "Then Devin can carry the engineering backlog while your team builds what's unique to you.",
+       "next": "Turn the build team into allies. C partly confirmed."
+      }
+     ]
+    },
+    {
+     "if": "An SI or outsourcer",
+     "say": "How is that work measured today, and what would you change?",
+     "then": [
+      {
+       "if": "Dissatisfied",
+       "say": "Would it help to show what the same work looks like with agents doing the heavy lifting?",
+       "next": "SI spend in the business case. C partly confirmed."
+      }
+     ]
+    },
+    {
+     "if": "Do nothing",
+     "say": "What does waiting a year cost, in backlog, risk or spend?",
+     "then": [
+      {
+       "if": "Real cost",
+       "say": "Let's put that cost next to the pilot cost for your leadership.",
+       "next": "Status quo priced. C partly confirmed."
+      }
+     ]
+    }
+   ],
+   "group": "meddpicc"
+  },
+  {
+   "title": "Cold open to a CIO on cost",
+   "persona": "CIO",
+   "open": "AI spend is turning into its own line item while modernization budgets stay flat. How are you deciding what AI work is worth paying for?",
+   "branches": [
+    {
+     "if": "\"We have a governance group handling that.\"",
+     "say": "What has that group approved so far, and what have they measured afterwards?",
+     "then": [
+      {
+       "if": "They have metrics",
+       "say": "Which of those would you want a software agent to move? We can baseline it in a pilot.",
+       "next": "Agree the metric and a discovery session (M, I)."
+      },
+      {
+       "if": "No metrics yet",
+       "say": "Most teams we talk to are in the same place. Teams moving fastest measure cost per merged change and time to retire legacy components. Would those work here?",
+       "next": "Offer a metric workshop with their team (M)."
+      }
+     ]
+    },
+    {
+     "if": "\"Mostly Copilot licenses; it's fine.\"",
+     "say": "Where has it helped, and which large jobs, like migrations or audits, still haven't moved?",
+     "then": [
+      {
+       "if": "Names a stuck program",
+       "say": "What has that delay cost, and who is accountable for it?",
+       "next": "Move to the modernization tree; find the owner (I, E)."
+      },
+      {
+       "if": "\"Nothing is stuck.\"",
+       "say": "How much of your budget goes to run-and-maintain, and is that where you want it in three years?",
+       "next": "Probe SI and maintenance spend (M, C)."
+      }
+     ]
+    },
+    {
+     "if": "\"Not a priority right now.\"",
+     "say": "Understood. What is the priority this year, and where is engineering capacity the constraint on it?",
+     "then": [
+      {
+       "if": "Capacity is the constraint",
+       "say": "That is the problem Devin is built for. Who runs that program?",
+       "next": "Ask for an introduction to the program owner (C)."
+      },
+      {
+       "if": "Not a constraint",
+       "say": "Then I'd suggest we stay in touch. Can I send you a short brief on what changed this quarter?",
+       "next": "Send the customer brief; nurture."
+      }
+     ]
+    }
+   ],
+   "group": "situation"
+  },
+  {
+   "title": "Modernization lead",
+   "persona": "Modernization or application portfolio lead",
+   "open": "If you could retire one system this year at a tenth of the usual cost, which would it be?",
+   "branches": [
+    {
+     "if": "Names a specific system",
+     "say": "What makes it hard: the code, the testing, the people who know it, or the integrations?",
+     "then": [
+      {
+       "if": "Code and testing",
+       "say": "We would start with a Code Scan to inventory and classify it, then split the work across parallel Devins with a plan you can read and version. Every change comes back tested and recorded.",
+       "next": "Propose an audit on that repository (I, D)."
+      },
+      {
+       "if": "Knowledge has left",
+       "say": "How is that knowledge captured today? Devin builds memory of how each team works, in readable files you can govern.",
+       "next": "Pair memory with the audit (I, D)."
+      },
+      {
+       "if": "Integrations",
+       "say": "Which systems does it touch, and where do they run? Devin works in its own Windows, Linux and macOS machines.",
+       "next": "Architecture session with platform lead (D)."
+      }
+     ]
+    },
+    {
+     "if": "\"There are too many to choose.\"",
+     "say": "How do you prioritize them today, and who signs off on that list?",
+     "then": [
+      {
+       "if": "There is a list",
+       "say": "Which item on that list has the clearest cost of delay?",
+       "next": "Pick a pilot target and its baseline (M)."
+      },
+      {
+       "if": "No list",
+       "say": "A Code Scan across a few candidates can rank them by effort and risk. Would that help you make the call?",
+       "next": "Offer a multi-repo scan (I)."
+      }
+     ]
+    },
+    {
+     "if": "\"Our SI handles that.\"",
+     "say": "How is that contract measured, and how do you feel about the pace?",
+     "then": [
+      {
+       "if": "Unhappy with pace or cost",
+       "say": "What would it mean if your own team could move faster with agents doing the heavy lifting?",
+       "next": "Bring SI spend into the business case (M, C)."
+      },
+      {
+       "if": "Happy",
+       "say": "Could the SI use Devin too? Some teams want their partners working faster on the same contract.",
+       "next": "Explore a partner-led motion (C)."
+      }
+     ]
+    }
+   ],
+   "group": "situation"
+  },
+  {
+   "title": "\"We already have Copilot\"",
+   "persona": "Any",
+   "open": "That's common. What do your teams use it for day to day?",
+   "branches": [
+    {
+     "if": "Code completion and chat",
+     "say": "How has it changed the big jobs, such as migrations, upgrades, audits and on-call?",
+     "then": [
+      {
+       "if": "It hasn't",
+       "say": "Devin is built for those. It works end to end in its own machine and hands back tested, recorded changes. The two can live side by side.",
+       "next": "Position as complementary; pick a large job (D, C)."
+      },
+      {
+       "if": "Some impact",
+       "say": "Where did it stop short, and what would finishing that work be worth?",
+       "next": "Quantify the gap (M)."
+      }
+     ]
+    },
+    {
+     "if": "\"We're piloting its agent features.\"",
+     "say": "What are you measuring in that pilot, and how is it going against those measures?",
+     "then": [
+      {
+       "if": "Mixed results",
+       "say": "What would you need to see to call an agent pilot a success? We'd be glad to run against the same criteria.",
+       "next": "Shape side-by-side criteria (D)."
+      },
+      {
+       "if": "Going well",
+       "say": "Which work is out of its reach today, such as Windows builds, codebase-wide scans or on-call?",
+       "next": "Find the gap Devin fills (D, C)."
+      }
+     ]
+    },
+    {
+     "if": "\"It's bundled in our Microsoft agreement.\"",
+     "say": "Makes sense. Devin works natively in Microsoft Teams and Microsoft 365, so it fits the same environment. What work would you want an agent to own?",
+     "then": [
+      {
+       "if": "Names work",
+       "say": "Let's scope that as a pilot with a clear baseline.",
+       "next": "Move to the MAP (M, D)."
+      },
+      {
+       "if": "Budget concern",
+       "say": "Where does application maintenance and SI spend sit? That is often where agent budgets come from.",
+       "next": "Find the EB and the budget line (E)."
+      }
+     ]
+    }
+   ],
+   "group": "situation"
+  },
+  {
+   "title": "\"We build our own\"",
+   "persona": "Platform or Enterprise AI lead",
+   "open": "Your team clearly knows this space. What have you built so far, and what's next on the roadmap?",
+   "branches": [
+    {
+     "if": "Strong internal platform",
+     "say": "Where is your team's time going: building the platform, or building the products the business is asking for?",
+     "then": [
+      {
+       "if": "Stretched",
+       "say": "Devin can carry the engineering backlog so your team focuses on what is unique to you. The agent's machines, verification and memory are already built.",
+       "next": "Position as capacity, not replacement (C)."
+      },
+      {
+       "if": "Well resourced",
+       "say": "Which parts would you rather not maintain yourselves, like isolated machines across operating systems, or on-call tooling?",
+       "next": "Find buy-versus-build seams (D)."
+      }
+     ]
+    },
+    {
+     "if": "Early experiments",
+     "say": "What have you learned about reliability on long tasks?",
+     "then": [
+      {
+       "if": "Reliability is hard",
+       "say": "That matches what builders reported all quarter: verification is where the work is. Devin tests and records each change. Want to compare on one of your tasks?",
+       "next": "Offer a bake-off on their task (D)."
+      },
+      {
+       "if": "Going fine",
+       "say": "How will you handle cost and model choice as models change every month?",
+       "next": "Introduce Fusion and per-session cost (D, M)."
+      }
+     ]
+    }
+   ],
+   "group": "situation"
+  },
+  {
+   "title": "Security and data concerns",
+   "persona": "CISO or security architect",
+   "open": "Before anything else, what would you need to know about how an agent handles your code and data?",
+   "branches": [
+    {
+     "if": "Data residency and retention",
+     "say": "Let's get your requirements in writing and have our security team respond in detail. Who should be in that session?",
+     "then": [
+      {
+       "if": "Gives names",
+       "say": "I'll set up the session and bring the documentation to it.",
+       "next": "Security review on the MAP (D, P). Confirm Cognition's terms internally first."
+      },
+      {
+       "if": "\"Send a questionnaire.\"",
+       "say": "Happy to. Can we start it now, in parallel with discovery, so it doesn't hold up a pilot?",
+       "next": "Start the paper process early (P)."
+      }
+     ]
+    },
+    {
+     "if": "Agent access and credentials",
+     "say": "What controls do you apply to service accounts and contractors today?",
+     "then": [
+      {
+       "if": "Clear controls",
+       "say": "We'd mirror those for Devin: scoped access, its own isolated machine, and every change reviewed by a person.",
+       "next": "Architecture review (D)."
+      },
+      {
+       "if": "Unclear",
+       "say": "Would it help to start with a read-only Code Scan, where Devin proposes changes but merges nothing?",
+       "next": "Low-risk first step (D)."
+      }
+     ]
+    },
+    {
+     "if": "Finding vulnerabilities faster",
+     "say": "How long does a critical finding stay open today, and what slows it down?",
+     "then": [
+      {
+       "if": "Long backlog",
+       "say": "Security Swarm finds exploitable issues, proves them in a sandbox and opens the fix as a pull request. Want to try it on one application?",
+       "next": "Security pilot (I, M)."
+      },
+      {
+       "if": "Fast already",
+       "say": "What about code your team doesn't own, like acquired or vendor-modified applications?",
+       "next": "Find the uncovered estate (I)."
+      }
+     ]
+    }
+   ],
+   "group": "situation"
+  },
+  {
+   "title": "Operations and on-call",
+   "persona": "SRE or operations engineering lead",
+   "open": "Who takes the first look at an alert at night, and how long until you know the root cause?",
+   "branches": [
+    {
+     "if": "Senior engineers, it takes a while",
+     "say": "What does that do to their week, and to the roadmap?",
+     "then": [
+      {
+       "if": "Burnout and delays",
+       "say": "Devin Oncall takes the first pass, investigates, and comes back with a root cause and a tested fix for a person to approve. AngelList put Devin on its on-call rotation.",
+       "next": "Pilot on one service (I, M)."
+      },
+      {
+       "if": "Manageable",
+       "say": "Which service generates the most noise, and what would it be worth to cut triage time there?",
+       "next": "Baseline MTTR (M)."
+      }
+     ]
+    },
+    {
+     "if": "\"We have an SRE vendor or tooling\"",
+     "say": "How does it go from detection to fix today? Where does a person still do the digging?",
+     "then": [
+      {
+       "if": "Manual investigation",
+       "say": "That is where Devin fits: investigation and the fix, alongside your existing tools.",
+       "next": "Map integration points (D)."
+      },
+      {
+       "if": "Mostly automated",
+       "say": "What about the code fix itself? Who writes and tests it?",
+       "next": "Position the fix-to-PR step (D)."
+      }
+     ]
+    }
+   ],
+   "group": "situation"
+  }
+ ]
+}

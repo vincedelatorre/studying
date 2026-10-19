@@ -1,0 +1,83 @@
+{
+  "account": "Enterprise Products Partners L.P. (midstream)",
+  "snapshot": [
+    {"fact": "Four business segments: NGL Pipelines & Services, Crude Oil Pipelines & Services, Natural Gas Pipelines & Services, Petrochemical & Refined Products Services.", "src": "https://www.sec.gov/Archives/edgar/data/1061219/000106121926000006/epd-20251231.htm", "date": "2026-02"},
+    {"fact": "FY2025 revenue $52.6B (vs $56.2B in 2024); net income to common unitholders $5.81B; DCF $8.0B; total gross operating margin $10.03B, of which NGL segment was $5.56B.", "src": "https://www.businesswire.com/news/home/20260203814850/en", "date": "2026-02"},
+    {"fact": "Record Q4 2025 volumes: 14.1 MMBPD equivalent pipeline transportation, 1.9 MMBPD NGL fractionation, 8.1 Bcf/d gas processing inlet.", "src": "https://www.businesswire.com/news/home/20260203814850/en", "date": "2026-02"},
+    {"fact": "FY2025 capital investment $5.6B net ($4.4B growth capex, $632M acquisitions incl. Permian gathering/Occidental midstream assets, $620M sustaining).", "src": "https://www.businesswire.com/news/home/20260203814850/en", "date": "2026-02"},
+    {"fact": "Q2 2026: record net income $1.8B (+28%), revenue $18.27B, record adjusted EBITDA $2.8B, record 14.7 MMBPD pipeline volumes; 2026 growth capex outlook $2.9-3.4B net.", "src": "https://finviz.com/news/375030/enterprise-products-tops-second-quarter-expectations-as-profit-reaches-record-high", "date": "2026-07"},
+    {"fact": "Headcount: about 8,480 employees as of March 2026 (third-party Revelio Labs estimate; ~30% classified as engineering). EPD has no direct employees; staff are employed by affiliate EPCO.", "src": "https://www.reveliolabs.com/companies/enterprise-products/employees", "date": "2026-03"},
+    {"fact": "Growth projects: Bahia NGL pipeline (in service Dec 2025, expanding to 1 MMBPD by Q4 2027), Neches River NGL export terminal, Houston Ship Channel LPG export expansion, Mentone West 2 and Athena gas plants.", "src": "https://www.businesswire.com/news/home/20260203814850/en", "date": "2026-02"},
+    {"fact": "Affiliate EPCO (Duncan family) owned about 32.5% of common units at Dec 31, 2025.", "src": "https://fortune.com/company-assets/1671/quartr/annual-report-10-k-70255-2026-02-27-03-42-23.pdf", "date": "2026-02"}
+  ],
+  "tech_posture": [
+    {"fact": "Co-CEO Teague: 'Our systems are highly automated and provide us with billions of data points... We're now using big data for everything from predictive maintenance, to market analytics, to asset optimization... our proprietary data will forever be an opportunity for Enterprise.'", "src": "https://www.fool.com/earnings/call-transcripts/2024/10/29/enterprise-products-partners-epd-q3-2024-earnings/", "date": "2024-10"},
+    {"fact": "Has an internal Data Science team (referenced in a tribute on the Q3 2025 earnings call).", "src": "https://allmind.ai/earnings/event/2818123", "date": "2025-10"},
+    {"fact": "Builds commercial pipeline software in-house: EPCO software engineering team develops apps for liquids nominations, scheduling, measurement, accounting and material-balance reconciliation on .NET, JavaScript (Angular/React), SQL Server, Redis, Kafka/RabbitMQ, Elasticsearch; uses Azure DevOps and Git; Scrum/Kanban.", "src": "https://jofdav.com/jobs/52458534-analyst-senior-systems", "date": "2026"},
+    {"fact": "In-house security developer roles build authentication/entitlement frameworks and multi-tenant data security for liquids transportation apps (contracts, tariffs, invoicing).", "src": "https://app.energyhire.com/job-board/analyst-senior-systems-houston-tx-8afd77ec-ff5e-48fd-9dde-c18983e61428", "date": "2026"},
+    {"fact": "Third-party providers support risk assessments, external penetration testing, IT/OT security assessments, incident response and threat intel; critical ICS/OT segregated from corporate network.", "src": "https://www.board-cybersecurity.com/annual-reports/tracker/20250228-enterprise-products-partners-l-p-cybersecurity-10k", "date": "2025-02"},
+    {"fact": "On data-center demand, Teague said many companies with pipe in Texas talk it up, but 'there's a very small list of companies with pipeline and storage assets best positioned to benefit.' AI is framed as a gas-demand driver, not as an internal program.", "src": "https://www.fool.com/earnings/call-transcripts/2024/10/29/enterprise-products-partners-epd-q3-2024-earnings/", "date": "2024-10"},
+    {"fact": "Evolutionary Technology group formed May 2021 for energy-transition opportunities (CCS, hydrogen, low-carbon fuels), commercial lead Carrie Weaver. This is commercial new-ventures work, not IT.", "src": "https://www.businesswire.com/news/home/20210810005764/en/Enterprise-Names-Weaver-Commercial-Lead-for-Evolutionary-Technology-Group/", "date": "2021-08"}
+  ],
+  "leaders": [
+    {"name": "W. Randall 'Randy' Fowler", "title": "Co-CEO; becomes sole CEO Jan 4, 2027. In the 2020 co-CEO split he kept oversight of finance, accounting, information technology and risk management.", "src": "https://ir.enterpriseproducts.com/node/45271/html", "date": "2026-07", "stale": false},
+    {"name": "A. James 'Jim' Teague", "title": "Co-CEO (commercial, operations, engineering); retiring Jan 4, 2027", "src": "https://ir.enterpriseproducts.com/node/45271/html", "date": "2026-07", "stale": false},
+    {"name": "R. Daniel Boss", "title": "Chief Financial Officer; joins expanded Office of the Chairman", "src": "https://ir.enterpriseproducts.com/node/45271/html", "date": "2026-07", "stale": false},
+    {"name": "Michael C. 'Tug' Hanley", "title": "Chief Commercial Officer; joins expanded Office of the Chairman", "src": "https://ir.enterpriseproducts.com/node/45271/html", "date": "2026-07", "stale": false},
+    {"name": "Randa Duncan Williams", "title": "Non-executive Chairman (Enterprise GP and EPCO)", "src": "https://ir.enterpriseproducts.com/node/45271/html", "date": "2026-07", "stale": false},
+    {"name": "Richard H. 'Hank' Bachmann", "title": "Non-executive Vice Chairman; President and CEO of EPCO", "src": "https://fortune.com/company-assets/1671/quartr/annual-report-10-k-70255-2026-02-27-03-42-23.pdf", "date": "2026-02", "stale": false},
+    {"name": "Randy Fowler (2020 structure)", "title": "Co-CEO and CFO overseeing finance, accounting, IT and risk management (structural reference for where IT reports)", "src": "https://www.oilandgas360.com/enterprise-products-partners-switches-to-co-ceo-system-among-other-leadership-changes/", "date": "2020-01", "stale": true},
+    {"name": "Not found", "title": "CIO / CISO / head of software engineering: not named in any public source found; cyber is governed by a cross-functional Cybersecurity Committee with IT and OT senior representatives", "src": "https://www.board-cybersecurity.com/annual-reports/tracker/20250228-enterprise-products-partners-l-p-cybersecurity-10k", "date": "2025-02", "stale": true}
+  ],
+  "recent_events": [
+    {"fact": "Jim Teague to retire Jan 4, 2027; Randy Fowler becomes sole CEO; Office of the Chairman expands to include CCO Tug Hanley and CFO Dan Boss.", "src": "https://ir.enterpriseproducts.com/node/45271/html", "date": "2026-07"},
+    {"fact": "Record Q2 2026 results: net income $1.8B (+28%), record pipeline volumes 14.7 MMBPD, marine terminal volumes +33%.", "src": "https://finviz.com/news/375030/enterprise-products-tops-second-quarter-expectations-as-profit-reaches-record-high", "date": "2026-07"},
+    {"fact": "2026 growth capex outlook raised to $2.9-3.4B net (from $1.9-2.3B net guided in Feb 2026).", "src": "https://finviz.com/news/375030/enterprise-products-tops-second-quarter-expectations-as-profit-reaches-record-high", "date": "2026-07"},
+    {"fact": "Bahia NGL pipeline began operations Dec 2025; Neches River ethane exports underway; multiple plants and export expansions due through 2026.", "src": "https://www.businesswire.com/news/home/20260203814850/en", "date": "2026-02"},
+    {"fact": "Closed acquisition of Occidental midstream assets (Aug 2025) and ~$632M of Permian gathering and Gulf Coast storage acquisitions in 2025, adding systems to integrate.", "src": "https://www.businesswire.com/news/home/20260203814850/en", "date": "2026-02"},
+    {"fact": "Data-center-driven gas power demand cited as an indirect upside on the Q3 2025 call.", "src": "https://allmind.ai/earnings/event/2818123", "date": "2025-10"}
+  ],
+  "agent_signals": [
+    {"fact": "Large in-house .NET / SQL Server / Angular application estate for core commercial pipeline operations (nominations, scheduling, measurement, accounting), with heavy stored-procedure logic. A good fit for Devin to work through backlog, tests, refactoring and upgrades.", "src": "https://jofdav.com/jobs/52458534-analyst-senior-systems", "date": "2026"},
+    {"fact": "Azure DevOps is the backlog/ALM tool, which suggests a Microsoft-centric developer toolchain.", "src": "https://jofdav.com/jobs/52458534-analyst-senior-systems", "date": "2026"},
+    {"fact": "Security developers build entitlement and zero-trust data controls in-house; multi-tenant data security is a stated concern.", "src": "https://app.energyhire.com/job-board/analyst-senior-systems-houston-tx-8afd77ec-ff5e-48fd-9dde-c18983e61428", "date": "2026"},
+    {"fact": "OT/ICS segregated from corporate network; quarterly board updates on threats to critical infrastructure and midstream regulation; no cyber insurance.", "src": "https://www.board-cybersecurity.com/annual-reports/tracker/20250228-enterprise-products-partners-l-p-cybersecurity-10k", "date": "2025-02"},
+    {"fact": "TSA pipeline security directives (SD-02 series) require critical pipeline operators to implement IT/OT segmentation, continuous monitoring, prompt patching and audit programs. This regulatory pressure favors fast, auditable vulnerability remediation.", "src": "https://www.everycrsreport.com/reports/IN12006.html", "date": "2022-09"},
+    {"fact": "Leadership treats proprietary operational data as 'the new currency' and runs predictive maintenance, market analytics and asset optimization on big data.", "src": "https://www.fool.com/earnings/call-transcripts/2024/10/29/enterprise-products-partners-epd-q3-2024-earnings/", "date": "2024-10"},
+    {"fact": "Many new assets coming online (Bahia, Neches River, gas plants) plus acquired Occidental/Permian systems, which expands what the in-house commercial and measurement apps must cover.", "src": "https://www.businesswire.com/news/home/20260203814850/en", "date": "2026-02"}
+  ],
+  "hypotheses": {
+    "pains": [
+      "HYPOTHESIS: Record volumes and a raised capex plan add new assets, tariffs and contracts faster than the in-house commercial app teams (nominations, scheduling, measurement, invoicing) can extend and test.",
+      "HYPOTHESIS: Heavy SQL Server stored-procedure and .NET Framework code needs modernization (.NET upgrades, test coverage, documentation) with a lean, long-tenured team.",
+      "HYPOTHESIS: Integrating acquired Occidental/Permian gathering systems into EPD's commercial and measurement stack is manual work.",
+      "HYPOTHESIS: TSA SD-02 patching and vulnerability-remediation obligations across IT and the OT boundary create a security backlog; Devin could do codebase-wide scans and remediation PRs.",
+      "HYPOTHESIS: The famously lean, cost-disciplined culture prefers adding output without adding headcount or SI contractors.",
+      "HYPOTHESIS: CEO transition (Fowler sole CEO Jan 2027) may open a window for a new productivity agenda in IT, which Fowler has historically overseen."
+    ],
+    "economic_buyer": [
+      "HYPOTHESIS: Randy Fowler (Co-CEO, sole CEO from Jan 2027), who historically oversees IT",
+      "HYPOTHESIS: R. Daniel Boss, CFO",
+      "HYPOTHESIS: Senior VP / VP of Information Technology at EPCO (name not public; identify via LinkedIn/ZoomInfo)"
+    ],
+    "champions": [
+      "HYPOTHESIS: Director/manager of application development for commercial liquids or natural gas systems",
+      "HYPOTHESIS: Software engineering or architecture lead on the .NET/Angular platform team",
+      "HYPOTHESIS: IT security engineering lead (entitlement/zero-trust developers)",
+      "HYPOTHESIS: Data Science team lead"
+    ],
+    "competition": [
+      "HYPOTHESIS: GitHub Copilot or Azure DevOps-adjacent Microsoft tools via an existing Microsoft EA (not publicly confirmed)",
+      "HYPOTHESIS: Status quo with in-house developers and a strong build-in-house culture, and caution toward new tools",
+      "HYPOTHESIS: Houston-area staff augmentation and contract developers",
+      "HYPOTHESIS: Bottom-up use of Cursor, Claude Code or ChatGPT by individual developers",
+      "HYPOTHESIS: Security posture or policy blocking cloud AI tools on sensitive commercial/OT code"
+    ],
+    "openers": [
+      "With record volumes, Bahia and Neches coming online and growth capex now $2.9-3.4B, how is your in-house commercial software team keeping up with new tariffs, contracts and measurement points, and where is the backlog longest?",
+      "Your nominations, scheduling and measurement systems are built in-house on .NET and SQL Server. What share of engineering time goes to maintenance, upgrades and testing versus new capability, and what would it be worth to flip that ratio without adding headcount?",
+      "Under TSA's pipeline directives and with no cyber insurance, how fast can you find and fix a vulnerability across your codebase today, and who owns that SLA?"
+    ]
+  },
+  "notes": "Enterprise Products is unusually quiet publicly about IT and AI: no CIO/CISO name, IT org size, cloud partner, outsourcing partner or AI-coding initiative was found in public sources. EPD has no employees of its own; staff are EPCO employees. The headcount of ~8,480 is a third-party Revelio estimate; the official 10-K human capital figure could not be read because the fetch truncated before that section and SEC.gov is blocked by the sandbox proxy. Tech-stack signals come from current EPCO job postings (dates approximate, posted 2026). Teague's big-data quote is from Oct 2024 (older than 12 months). The cyber governance summary is from the FY2024 10-K (Feb 2025) via a third-party tracker; the FY2025 10-K Item 1C could not be read. The 2020 note that Fowler oversees IT is old; confirm current IT reporting line. The Q2 2026 Business Wire release URL was blocked (permission prompt timed out: https://www.businesswire.com/news/home/20260730758757/en/Enterprise-Reports-Second-Quarter-2026-Earnings), so Q2 2026 figures come from a Finviz news summary. The panabee succession summary is AI-generated; the IR 8-K page was used as the primary source. TSA directive source dates from 2022; directives have since been renewed, but renewal status was not verified here."
+}

@@ -1,0 +1,79 @@
+{
+ "exxonmobil": {
+  "play": "Custom-code triage for the S/4HANA consolidation",
+  "why": "ExxonMobil is folding 12 ERP systems into one SAP S/4HANA instance by 2028 and has about 65 million lines of custom ECC6 code, plus a mainframe being retired. That is the largest code triage and remediation job in the vertical, and it sits inside a $20B structural savings program.",
+  "motion": "Lead with Code Scans to inventory and classify custom code as retire, rewrite or keep, then run Dynamic Workflows across parallel Devins to remediate and test interfaces. Use Devin's own isolated machines to answer the IT and OT security questions early. Confirm with your solutions engineer how Devin handles ABAP and SAP-side code before proposing this scope.",
+  "who": "Entry through the IT Global Projects and Business Transformation leaders; the CFO, who ran Global Business Solutions until this year, is the likely economic sponsor.",
+  "stories": [
+   "swarms",
+   "harness",
+   "security"
+  ]
+ },
+ "chevron": {
+  "play": "Delivery capacity for the global engineering hubs",
+  "why": "Chevron raised its structural cost target to $3-4B by the end of 2026, cut the workforce 15-20%, and moved IT support to Manila and Buenos Aires and engineering to Houston and Bengaluru. It already uses Copilot and Claude, and its Enterprise AI team builds agentic systems on Azure and .NET. Hess integration and an AI-strategy owner change in January add urgency.",
+  "motion": "Position Devin as the execution layer for the Houston and Bengaluru engineering centers: Hess application integration, backlog burn-down and code security. Meet the governance bar with tested, recorded pull requests and a human approving each one.",
+  "who": "Chief Technology and Engineering Officer as economic buyer (IT reports into that org); champions in Enterprise AI engineering and the Bengaluru center.",
+  "stories": [
+   "harness",
+   "enterprise",
+   "security"
+  ]
+ },
+ "halliburton": {
+  "play": "Landmark engineering velocity after the rightsizing",
+  "why": "Halliburton is cutting about $100M a quarter in labor cost, ran a $50M quarter on SAP S/4, and is integrating InformatiQ into Landmark. Landmark ships on-prem, air-gapped iEnergy deployments and is building multi-agent systems for customers. The August 2024 breach keeps security front of mind.",
+  "motion": "Two entry points. For Landmark: product engineering capacity (InformatiQ integration, DecisionSpace 365 modernization, release validation for restricted deployments). For corporate IT: Security Swarm and Code Scans on internal estates.",
+  "who": "SVP Landmark Software and Services for the product side; the COO, who owns worldwide technology, and the CIO for corporate IT. Confirm the CIO's name.",
+  "stories": [
+   "swarms",
+   "security",
+   "sandbox"
+  ]
+ },
+ "slb": {
+  "play": "Integration and modernization behind the 2030 digital margin target",
+  "why": "SLB calls itself digital-first, targets a 38-42% Digital EBITDA margin by 2030 (26.1% in Q1 2026), and is integrating Tachyus and the S&P Global upstream software portfolio. It maintains Petrel, Techlog and the Ocean plug-in ecosystem on Microsoft technology across three clouds plus on-prem, and certifies every marketplace listing.",
+  "motion": "Lead on engineering margin: parallel Devins for acquired-code integration and .NET modernization, Code Scans and Security Swarm to support marketplace certification, and Windows machines for desktop-product testing. Expect a build-it-ourselves reflex; frame Devin as capacity for the teams building Lumi and Tela.",
+  "who": "President, Digital as economic buyer; CTO and the Chief Performance Officer (who owns IT) as stakeholders.",
+  "stories": [
+   "swarms",
+   "sandbox",
+   "cost"
+  ]
+ },
+ "bakerhughes": {
+  "play": "Chart integration and carve-outs on a multi-cloud estate",
+  "why": "Baker Hughes closed Chart in July 2026 with about $325M in cost synergies, and the integration explicitly covers aligning technology platforms and engineering. It is also carving out Waygate and the sensors business. Cordant runs on Azure AI Foundry and Leucipa on AWS, with Google Cloud and C3 AI alongside.",
+  "motion": "Lead with application consolidation and separation work for integration and carve-outs, then expand to Cordant and Leucipa product engineering (tests, security fixes, upgrades) across the three clouds.",
+  "who": "CIO, whose remit includes internal productivity, plus the new OFSE CIO; the executive leading the Chart integration owns the synergy number.",
+  "stories": [
+   "swarms",
+   "enterprise",
+   "cost"
+  ]
+ },
+ "conocophillips": {
+  "play": "Value-gated pilot for Marathon integration and contractor spend",
+  "why": "Digital now reports to the CFO, who is also SVP Digital and Transformation. The workforce fell 20-25%, there is a $1B cost target for 2026, Marathon systems are still being integrated, and AI is funded one use case at a time on proven value. Custom logic lives as SAP BTP extensions and the culture builds software in-house.",
+  "motion": "Bring a single, quantified use case: Marathon application retirement or BTP extension maintenance, priced against contractor spend, with a four-week payback readout. Bring IT/OT security in early through the CISO.",
+  "who": "CFO and SVP Digital and Transformation as economic buyer; confirm the current Chief Digital and Information Officer; champions in the digital organization.",
+  "stories": [
+   "cost",
+   "enterprise",
+   "swarms"
+  ]
+ },
+ "enterpriseproducts": {
+  "play": "Commercial systems backlog and pipeline security directives",
+  "why": "Enterprise Products runs nominations, scheduling, measurement and accounting on an in-house .NET, SQL Server and Angular estate managed in Azure DevOps. New assets and acquired Permian systems expand that workload, TSA pipeline directives require prompt patching, and the company carries no cyber insurance. A CEO transition happens in January 2027.",
+  "motion": "Lead with Code Scans and Security Swarm on the commercial applications to shorten time to patch, then Devin on the maintenance and testing backlog for new assets. Windows machines and Azure DevOps fit the stack.",
+  "who": "The incoming sole CEO historically oversaw IT; find the current head of IT and the Cybersecurity Committee's IT lead. Public information is thin, so expect discovery-heavy first meetings.",
+  "stories": [
+   "security",
+   "enterprise",
+   "harness"
+  ]
+ }
+}

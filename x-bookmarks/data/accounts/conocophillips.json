@@ -1,0 +1,89 @@
+{
+  "account": "ConocoPhillips",
+  "snapshot": [
+    {"fact": "Employed approximately 9,900 people in 14 countries at December 31, 2025.", "src": "https://static.conocophillips.com/files/resources/2025-conocophillips-annual-report.pdf", "date": "2026-02"},
+    {"fact": "Five operating segments defined by geography: Alaska, Lower 48, Canada, Europe/Middle East/North Africa, Asia Pacific. Total assets about $122B.", "src": "https://static.conocophillips.com/files/resources/2025-conocophillips-annual-report.pdf", "date": "2026-02"},
+    {"fact": "FY2025 net income $8.0B ($6.35/share) vs $9.2B in 2024; adjusted earnings $7.7B. Cash from operations $19.9B; capex $12.6B; $9.0B returned to shareholders (45% of CFO). Revenue figure not stated in release.", "src": "https://www.conocophillips.com/news-media/story/conocophillips-reports-fourth-quarter-and-full-year-2025-results-announces-2026-guidance-and-quarterly-dividend/", "date": "2026-02"},
+    {"fact": "FY2025 production 2,375 MBOED (Lower 48 1,484 MBOED); year-end proved reserves 7.6 BBOE; realized price $47.01/BOE, down 14%.", "src": "https://www.conocophillips.com/news-media/story/conocophillips-reports-fourth-quarter-and-full-year-2025-results-announces-2026-guidance-and-quarterly-dividend/", "date": "2026-02"},
+    {"fact": "2026 guidance: capex ~$12B, adjusted operating costs $10.2B, production 2.33-2.36 MMBOED; targeting $7B incremental free cash flow by 2029.", "src": "https://www.conocophillips.com/news-media/story/conocophillips-reports-fourth-quarter-and-full-year-2025-results-announces-2026-guidance-and-quarterly-dividend/", "date": "2026-02"},
+    {"fact": "Major projects: Willow (Alaska), North Field East/South (Qatar), Port Arthur LNG; LNG offtake raised to 12 MTPA in Q2 2026.", "src": "https://www.sec.gov/Archives/edgar/data/0001163165/000116316526000030/cop-20260806x8kexx991.htm", "date": "2026-08"},
+    {"fact": "Q2 2026: net earnings $3.9B, CFO $7.2B, production 2,248 MBOED; full-year guidance reaffirmed.", "src": "https://www.sec.gov/Archives/edgar/data/0001163165/000116316526000030/cop-20260806x8kexx991.htm", "date": "2026-08"},
+    {"fact": "New CEO Andy O'Brien's stated priorities: operational excellence, capital discipline, portfolio strength, shareholder returns, long-term value creation.", "src": "https://www.conocophillips.com/spiritnow/story/building-on-a-strong-foundation-andy-obrien-and-experienced-leadership-team-usher-in-next-chapter/", "date": "2026-09"},
+    {"fact": "Calls itself the second-largest LNG liquefaction technology provider globally; Optimized Cascade technology licensed for 28 LNG trains (a technology/IP licensing business, not software).", "src": "https://static.conocophillips.com/files/resources/2025-conocophillips-annual-report.pdf", "date": "2026-02"}
+  ],
+  "tech_posture": [
+    {"fact": "CDIO Pragati Mathur: strategy 'centers on driving efficiencies, reducing costs, and improving safety'. AI use cases include artificial gas lift optimization (every well assessed daily vs ~a dozen per engineer per day), drill-motor failure prediction, gas demand forecasting, predictive decline curves.", "src": "https://www.cio.com/article/4045908/ai-powered-transformation-at-conocophillips-is-fueling-the-future.html", "date": "2025-08"},
+    {"fact": "Operating model: global matrixed product teams with business SMEs (e.g. reservoir engineers) as product owners; AI use cases funded per use case like a 'Silicon Valley venture capital model'. Team vetted ~100 small Silicon Valley AI companies and shortlisted 25.", "src": "https://www.cio.com/article/4045908/ai-powered-transformation-at-conocophillips-is-fueling-the-future.html", "date": "2025-08"},
+    {"fact": "Mathur: 'as an engineering company, we've always built everything from scratch' - a build-over-buy culture she is trying to shift toward partnerships.", "src": "https://www.cio.com/article/4045908/ai-powered-transformation-at-conocophillips-is-fueling-the-future.html", "date": "2025-08"},
+    {"fact": "SAP S/4HANA transformation (started Sept 2021, PwC as SI) completed Jan 1, 2025; legacy ECC held 8-9 million lines of custom code; now 97% standard with differentiating capabilities moved to SAP BTP; 25 regional legacy warehouses consolidated into one cloud instance on Azure.", "src": "https://www.asug.com/insights/how-conocophillips-and-pwc-set-a-new-benchmark-for-clean-core-transformation", "date": "2025"},
+    {"fact": "CEO Ryan Lance credited the technology platform for integrating the Marathon acquisition in seven months; leadership deliberately deferred AI during the S/4 program to deliver a clean platform first.", "src": "https://www.asug.com/insights/how-conocophillips-and-pwc-set-a-new-benchmark-for-clean-core-transformation", "date": "2025"},
+    {"fact": "Global digital twin program built on Microsoft Azure (APLNG, Norway North Sea rigs, planned Alaska/Canada); company claims >400% ROI in many cases.", "src": "https://www.abiresearch.com/market-research/insight/7782733-conocophillips-digital-twin-program-shows-?hsLang=en", "date": "2023-10"},
+    {"fact": "Deployed SLB DELFI reservoir engineering digital solutions globally (2022).", "src": "https://www.slb.com/news-and-insights/newsroom/press-release/2022/pr-2022-03-07-conocophillips-delfi", "date": "2022-03"},
+    {"fact": "2026 stockholder Q&A: AI is 'an increasingly important enabler' to 'reduce manual effort, accelerate decision cycles and improve consistency', letting the workforce focus on higher-value work, under an enterprise framework for governance, security and responsible use.", "src": "https://static.conocophillips.com/files/resources/2026-stockholder-questions.pdf", "date": "2026"},
+    {"fact": "ConocoPhillips presented its enterprise AI strategy, governance and use-case prioritization at an ASUG (SAP user group) Oil, Gas & Energy session (speaker Roger Bhalla, Head of Dept).", "src": "https://www.asug.com/events/oil-gas-energy-in-focus-beyond-ai-hype-conocophillips-practical-approach-to-enterprise-ai-2", "date": "undated"}
+  ],
+  "leaders": [
+    {"name": "Andy O'Brien", "title": "President and CEO (effective Sept 1, 2026; formerly CFO and EVP Strategy & Commercial)", "src": "https://www.conocophillips.com/spiritnow/story/building-on-a-strong-foundation-andy-obrien-and-experienced-leadership-team-usher-in-next-chapter/", "date": "2026-09", "stale": false},
+    {"name": "Konnie Haynes-Welsh", "title": "CFO and SVP, Digital and Transformation (digital technology reports into the CFO)", "src": "https://www.conocophillips.com/spiritnow/story/building-on-a-strong-foundation-andy-obrien-and-experienced-leadership-team-usher-in-next-chapter/", "date": "2026-09", "stale": false},
+    {"name": "Kirk Johnson", "title": "EVP, Global Operations and Technical Functions (10-K says the CD&IO reports to this role; may have shifted to the CFO under the Sept 2026 reorg)", "src": "https://www.conocophillips.com/spiritnow/story/building-on-a-strong-foundation-andy-obrien-and-experienced-leadership-team-usher-in-next-chapter/", "date": "2026-09", "stale": false},
+    {"name": "Pragati Mathur", "title": "Chief Digital and Information Officer (CD&IO)", "src": "https://www.cio.com/article/4045908/ai-powered-transformation-at-conocophillips-is-fueling-the-future.html", "date": "2025-08", "stale": true},
+    {"name": "Not named in source", "title": "Chief Information Security Officer - leads IT/OT Security Team, reports to the CD&IO", "src": "https://www.board-cybersecurity.com/annual-reports/tracker/20260217-conocophillips-cybersecurity-10k", "date": "2026-02", "stale": false},
+    {"name": "Nick Olds", "title": "EVP, Lower 48 and Global HSE", "src": "https://www.conocophillips.com/spiritnow/story/building-on-a-strong-foundation-andy-obrien-and-experienced-leadership-team-usher-in-next-chapter/", "date": "2026-09", "stale": false},
+    {"name": "Ryan Lance", "title": "Executive Chair (retired as CEO after 14 years)", "src": "https://drillingcontractor.org/conocophillips-taps-obrien-for-ceo-role-elevates-haynes-welsh-to-cfo-79347", "date": "2026-08", "stale": false}
+  ],
+  "recent_events": [
+    {"fact": "CEO succession: Andy O'Brien became CEO Sept 1, 2026, succeeding Ryan Lance; Konnie Haynes-Welsh promoted from controller to CFO.", "src": "https://drillingcontractor.org/conocophillips-taps-obrien-for-ceo-role-elevates-haynes-welsh-to-cfo-79347", "date": "2026-08"},
+    {"fact": "New leadership team announced; Haynes-Welsh holds both CFO and SVP Digital and Transformation.", "src": "https://www.conocophillips.com/spiritnow/story/building-on-a-strong-foundation-andy-obrien-and-experienced-leadership-team-usher-in-next-chapter/", "date": "2026-09"},
+    {"fact": "Announced cuts of 20-25% of workforce (employees and contractors), mostly in 2025.", "src": "https://www.worldoil.com/news/2025/9/3/conocophillips-says-it-will-cut-up-to-25-of-workforce-stocks-fall/", "date": "2025-09"},
+    {"fact": "Targeting a $1B reduction in capital and costs in 2026, on top of >$1B run-rate Marathon synergies captured in 2025; $216M severance recorded for the 2025 restructuring.", "src": "https://pgjonline.com/news/2026/february/conocophillips-plans-1-billion-cost-cuts-in-2026-as-oil-prices-weigh-on-earnings", "date": "2026-02"},
+    {"fact": "FY2025 10-K: $216M severance costs from 2025 restructuring; >$1B additional cost reduction and margin enhancement by YE2026.", "src": "https://www.autobound.ai/companies/conocophillips/10-k", "date": "2026-02"},
+    {"fact": "Met the $5B disposition target ahead of schedule with $1.7B of noncore Lower 48 sales closed in July 2026; agreed to acquire 42% of a Kirkuk, Iraq JV and to re-enter Syria.", "src": "https://www.sec.gov/Archives/edgar/data/0001163165/000116316526000030/cop-20260806x8kexx991.htm", "date": "2026-08"},
+    {"fact": "Q2 2026 production hit by the Middle East conflict's impact on Qatar.", "src": "https://www.sec.gov/Archives/edgar/data/0001163165/000116316526000030/cop-20260806x8kexx991.htm", "date": "2026-08"},
+    {"fact": "Q2 2026 10-Q: still integrating Marathon Oil business units, operating processes and technology systems.", "src": "https://www.autobound.ai/companies/conocophillips/10-q", "date": "2026-08"}
+  ],
+  "agent_signals": [
+    {"fact": "Legacy SAP estate had 8-9M lines of custom code; differentiating logic now lives as extensions on SAP BTP, a clean-core discipline that needs ongoing extension work and testing.", "src": "https://www.asug.com/insights/how-conocophillips-and-pwc-set-a-new-benchmark-for-clean-core-transformation", "date": "2025"},
+    {"fact": "Marathon Oil technology-systems integration still under way per the mid-2026 10-Q, which points to application rationalization and migration work.", "src": "https://www.autobound.ai/companies/conocophillips/10-q", "date": "2026-08"},
+    {"fact": "Combined IT/OT Security Program under a CISO; third parties support SOC, vulnerability assessments and penetration testing. This is the entry point for security review and vulnerability remediation work.", "src": "https://www.board-cybersecurity.com/annual-reports/tracker/20260217-conocophillips-cybersecurity-10k", "date": "2026-02"},
+    {"fact": "Microsoft Azure used for digital twins and the consolidated data warehouse, which suggests a Microsoft-centric estate.", "src": "https://www.asug.com/insights/how-conocophillips-and-pwc-set-a-new-benchmark-for-clean-core-transformation", "date": "2025"},
+    {"fact": "Workforce cut 20-25% while still expected to deliver more; company says AI should 'reduce manual effort' and let staff focus on higher-value work.", "src": "https://static.conocophillips.com/files/resources/2026-stockholder-questions.pdf", "date": "2026"},
+    {"fact": "Value-gated, use-case-by-use-case AI funding: a pitch must show quantified value against a specific use case.", "src": "https://www.cio.com/article/4045908/ai-powered-transformation-at-conocophillips-is-fueling-the-future.html", "date": "2025-08"},
+    {"fact": "Engineering culture of building everything in-house, so there is likely a large body of internally built engineering and production software (gas lift, decline curves, twins).", "src": "https://www.cio.com/article/4045908/ai-powered-transformation-at-conocophillips-is-fueling-the-future.html", "date": "2025-08"}
+  ],
+  "hypotheses": {
+    "pains": [
+      "HYPOTHESIS: Fewer people (20-25% cut) with the same software backlog: Marathon app rationalization, SAP BTP extensions and in-house engineering tools all compete for a smaller digital team.",
+      "HYPOTHESIS: Marathon Oil systems integration and decommissioning of duplicate apps is slow, manual migration work that Devin could take on in parallel.",
+      "HYPOTHESIS: Keeping the 97% clean core requires disciplined, well-tested BTP extension code and regression testing on each SAP upgrade.",
+      "HYPOTHESIS: In-house physics/AI models (gas lift, decline curves, twins) are built by engineers rather than software teams, so test coverage, documentation and maintainability lag.",
+      "HYPOTHESIS: IT/OT security vulnerability backlog and reliance on third parties for vuln work; Devin could do codebase-wide scans and auto-remediation PRs.",
+      "HYPOTHESIS: The $1B 2026 cost target needs measurable savings in third-party/contractor development spend."
+    ],
+    "economic_buyer": [
+      "HYPOTHESIS: Konnie Haynes-Welsh, CFO and SVP Digital and Transformation, who owns both the cost target and digital",
+      "HYPOTHESIS: Chief Digital and Information Officer (Pragati Mathur, if still in seat)",
+      "HYPOTHESIS: Kirk Johnson, EVP Global Operations and Technical Functions, for OT/engineering software"
+    ],
+    "champions": [
+      "HYPOTHESIS: Head of enterprise architecture / application development or digital product teams under the CDIO",
+      "HYPOTHESIS: SAP/BTP platform lead responsible for clean core and extensions",
+      "HYPOTHESIS: AI/analytics product lead running the use-case venture funding process",
+      "HYPOTHESIS: CISO or IT/OT security engineering lead (vulnerability remediation)",
+      "HYPOTHESIS: Marathon integration IT lead"
+    ],
+    "competition": [
+      "HYPOTHESIS: GitHub Copilot via a likely Microsoft EA (Azure-heavy estate). Not confirmed publicly.",
+      "HYPOTHESIS: SAP Joule / SAP Build code assistants for BTP work",
+      "HYPOTHESIS: PwC (S/4 SI) and other SIs/offshore providers for application maintenance and integration",
+      "HYPOTHESIS: Internal builds, given the stated 'build everything from scratch' culture",
+      "HYPOTHESIS: Other AI coding agents (Cursor, Claude Code, Codex) adopted bottom-up",
+      "HYPOTHESIS: The 25 Silicon Valley AI startups the CDIO's team shortlisted"
+    ],
+    "openers": [
+      "With the workforce down 20-25% and a $1B cost target for 2026, which parts of the software and integration backlog, such as Marathon app retirement, BTP extensions or engineering tools, are slipping, and what does that cost you?",
+      "Your venture-style funding model gates AI on value per use case. If an AI engineer cut contractor development spend or cleared the Marathon migration backlog, what payback would you need to see?",
+      "Now that digital reports into the CFO under the new leadership team, how are you measuring developer and contractor productivity, and what coding AI is already in use?"
+    ]
+  },
+  "notes": "Revenue for FY2025 was not found in the sources fetched (earnings release gives earnings, CFO and capex only). Pragati Mathur's CDIO title is confirmed as of Aug 2025 (CIO.com) and in the FY2025 10-K reporting structure (CD&IO, Feb 2026 filing). However, she was not listed on the Sept 2026 leadership-team article, and digital now sits with CFO Haynes-Welsh (SVP Digital and Transformation). Her current status should be checked. The 10-K says the CD&IO reports to the EVP Global Ops and Technical Functions; that line may have changed with the Sept 2026 reorg. No public evidence was found on GitHub Copilot, a Microsoft EA, AI coding initiatives, IT org size or named outsourcing partners beyond PwC (S/4) and SLB (DELFI). The 'autobound' and 'board-cybersecurity' pages are third-party summaries of SEC filings; verify against EDGAR. The ABI digital twin source is from 2023, older than 12 months. The ASUG event page is undated. The Anadarko sale to Stone Ridge (~$1.3B) was reported as in talks July 2025; closure was not confirmed in the fetched sources."
+}

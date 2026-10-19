@@ -1,0 +1,91 @@
+{
+  "account": "Chevron",
+  "snapshot": [
+    {"fact": "FY2025 total revenues and other income $189.0B (down from $202.8B in 2024); sales and other operating revenues $184.4B; reported net income $12.3B, adjusted earnings $13.5B.", "src": "https://www.nasdaq.com/press-release/chevron-reports-fourth-quarter-2025-results-2026-01-30", "date": "2026-01"},
+    {"fact": "FY2025 net production averaged a record 3,723 MBOED (+12% worldwide, +16% US); Hess contributed 261 MBOED.", "src": "https://www.nasdaq.com/press-release/chevron-reports-fourth-quarter-2025-results-2026-01-30", "date": "2026-01"},
+    {"fact": "43,039 employees at year-end 2025 (37,860 non-service-station, 5,179 service-station).", "src": "https://www.sec.gov/Archives/edgar/data/93410/000009341026000078/cvx-20251231.htm", "date": "2026-02"},
+    {"fact": "Two segments: Upstream (exploration, production, transport of crude and natural gas, LNG) and Downstream (refining, marketing, renewable fuels, chemicals, transportation).", "src": "https://www.sec.gov/Archives/edgar/data/93410/000009341026000078/cvx-20251231.htm", "date": "2026-02"},
+    {"fact": "Hess acquisition completed July 2025; initial $1B run-rate synergy target achieved.", "src": "https://www.nasdaq.com/press-release/chevron-reports-fourth-quarter-2025-results-2026-01-30", "date": "2026-01"},
+    {"fact": "Structural cost reduction: $1.5B achieved in 2025; target raised to $3-4B by end of 2026.", "src": "https://www.nasdaq.com/press-release/chevron-reports-fourth-quarter-2025-results-2026-01-30", "date": "2026-01"},
+    {"fact": "2025 capex $17.3B (vs $16.4B in 2024) plus $1.8B affiliate capex.", "src": "https://www.nasdaq.com/press-release/chevron-reports-fourth-quarter-2025-results-2026-01-30", "date": "2026-01"},
+    {"fact": "Chevron ranked No. 21 on the 2026 Fortune 500.", "src": "https://fortune.com/2026/06/11/chevron-cfo-finance-chiefs-defining-ai-business-value/", "date": "2026-06"},
+    {"fact": "Moving headquarters and all corporate functions from San Ramon, CA to Houston over five years.", "src": "https://abc13.com/post/chevron-move-texas-oil-gas-giant-lay-off-600-workers-california-relocates-corporate-operations-houston/16144517/", "date": "2025-04"}
+  ],
+  "tech_posture": [
+    {"fact": "Technology, Projects and Execution (TPE) organization houses technology, digital and data, and IT; the IT group covers computing, data management and analytics, cybersecurity and infrastructure as a 'digital foundation' for global operations.", "src": "https://www.sec.gov/Archives/edgar/data/93410/000009341026000078/cvx-20251231.htm", "date": "2026-02"},
+    {"fact": "10-K: Chevron applies AI to improve productivity and efficiency, assesses AI systems' readiness, and is a member of the Responsible AI Institute.", "src": "https://www.sec.gov/Archives/edgar/data/93410/000009341026000078/cvx-20251231.htm", "date": "2026-02"},
+    {"fact": "Uses Microsoft Copilot and Anthropic's Claude as enterprise AI tools; maintains a catalog of ~15 enterprise AI/advanced-analytics workflows; a 'Moonshot' program for high-impact AI (exploration, reservoir recovery); proprietary AI tool ApEX for resource discovery; a skunkworks AI team that has been scaled up.", "src": "https://fortune.com/2026/06/11/chevron-cfo-finance-chiefs-defining-ai-business-value/", "date": "2026-06"},
+    {"fact": "Enterprise AI organization (Houston) hiring software engineers to build agentic AI systems and GenAI workflows on Microsoft Azure (App Services, Functions, AKS, Azure DevOps, ADF, Azure SQL), AzureML and Databricks (incl. Databricks Genie); languages Python, Java, C#/.NET, TypeScript; CI/CD, IaC, Git, Docker, Kubernetes.", "src": "https://www.careerbuilder.com/job-details/software-engineer-enterprise-ai-houston-tx--63ef7576-35d8-429b-9a71-154e06be09bc", "date": "2026-03"},
+    {"fact": "Chevron ENGINE (Engineering and Innovation Excellence Center) in Bengaluru opened Oct 2025: 312,000 sq ft, ~$1B investment over several years, 1,000+ hires since 2024; focus on AI for drilling/machine performance, HPC geological modeling, digital twins of plants.", "src": "https://boereport.com/2025/10/09/chevron-expands-india-hub-to-boost-digital-and-ai-capabilities/amp/", "date": "2025-10"},
+    {"fact": "Chevron Technical Center joined SLB-TotalEnergies 'Arena' collaboration as second global operator to co-develop digital reservoir engineering and geoscience software (embedding Chevron experts in SLB technology centers).", "src": "https://oceannews.com/news/energy/chevron-expands-slb-totalenergies-digital-subsurface-collaboration/", "date": "2026-10"},
+    {"fact": "20-year power purchase agreement with Microsoft for ~2.67 GW gas-fired West Texas data center project (with Engine No. 1, GE Vernova); FID targeted end-2026, first power 2028.", "src": "https://worldoil.com/news/2026/6/22/chevron-signs-20-year-microsoft-power-deal-for-west-texas-ai-project/", "date": "2026-06"},
+    {"fact": "Chevron Technology Ventures has backed 140+ startups via 10 funds; Chevron holds 4,000+ patents with ~3,400 pending.", "src": "https://www.sec.gov/Archives/edgar/data/93410/000009341026000078/cvx-20251231.htm", "date": "2026-02"},
+    {"fact": "Enterprise AI team launched ~2023 with goal of making AI 'as commonplace as Microsoft Word and Excel inside Chevron'; thousands trained via internal data science programs.", "src": "https://www.cmgl.ca/accelerate/with-the-launch-of-enterprise-ai-chevron-embarks-on-a-new-phase-of-digital-transformation/", "date": "2023-09"}
+  ],
+  "leaders": [
+    {"name": "T. Ryder Booth", "title": "Chief Technology and Engineering Officer (since June 2025); leads IT, innovation, capital projects, facilities engineering, HSE, supply chain, among others. Named by Fortune as part of senior leadership overseeing enterprise AI.", "src": "https://www.chevron.com/who-we-are/leadership/t-ryder-booth", "date": "2026-10", "stale": false},
+    {"name": "Brent Gros", "title": "President, New Energies effective Jan 1, 2027 (currently President, Offshore); will oversee Chevron's AI strategy focused on operational performance, cost efficiency and innovation.", "src": "https://www.worldoil.com/news/2026/10/5/chevron-announces-leadership-changes-across-oil-gas-and-new-energies-businesses/", "date": "2026-10", "stale": false},
+    {"name": "Jeff Gustavson", "title": "President, New Energies; becomes CFO Jan 1, 2027. Named by Fortune among senior leaders overseeing enterprise AI.", "src": "https://www.worldoil.com/news/2026/10/5/chevron-announces-leadership-changes-across-oil-gas-and-new-energies-businesses/", "date": "2026-10", "stale": false},
+    {"name": "Eimear Bonner", "title": "CFO (former CTO 2021-2023); becomes President, Oil, Products & Gas Jan 1, 2027. Publicly vocal on AI value; finance org (~3,500) uses Copilot and Claude.", "src": "https://fortune.com/2026/06/11/chevron-cfo-finance-chiefs-defining-ai-business-value/", "date": "2026-06", "stale": false},
+    {"name": "Mike Wirth", "title": "Chairman and CEO; part of senior leadership overseeing enterprise AI.", "src": "https://fortune.com/2026/06/11/chevron-cfo-finance-chiefs-defining-ai-business-value/", "date": "2026-06", "stale": false},
+    {"name": "Sherry Hunyadi", "title": "GM, Cyber Intelligence Center (speaker, 2026 Houston CISO Forum)", "src": "https://energyconferencenetwork.swoogo.com/cisoforum26/speakers", "date": "2026", "stale": false},
+    {"name": "Balaji Krishnamurthy", "title": "Vice President, Chevron Technical Center", "src": "https://www.chevron.com/newsroom/2025/q1/chevron-leaders-share-their-vision-for-the-future-at-ceraweek-2025", "date": "2025-03", "stale": true},
+    {"name": "Jim Gable", "title": "Vice President of Innovation and President, Chevron Technology Ventures", "src": "https://www.chevron.com/newsroom/2025/q1/chevron-leaders-share-their-vision-for-the-future-at-ceraweek-2025", "date": "2025-03", "stale": true},
+    {"name": "Justin Lo", "title": "Technical Manager, AI Engineering, Enterprise AI", "src": "https://www.cmgl.ca/accelerate/with-the-launch-of-enterprise-ai-chevron-embarks-on-a-new-phase-of-digital-transformation/", "date": "2023-09", "stale": true},
+    {"name": "William (Bill) Braun", "title": "Listed as FORMER CIO / president of Chevron IT Company (CIO from 2015); departure date not found - current CIO name not found in public sources.", "src": "https://www.sdabocconi.it/en/faculty-research/digital-strategies-roundtable/william-braun/", "date": "unknown", "stale": true},
+    {"name": "Akshay Sahni", "title": "Country Head, Chevron India (ENGINE Bengaluru)", "src": "https://boereport.com/2025/10/09/chevron-expands-india-hub-to-boost-digital-and-ai-capabilities/amp/", "date": "2025-10", "stale": false}
+  ],
+  "recent_events": [
+    {"fact": "Senior leadership reshuffle announced Oct 2026, effective Jan 1, 2027: Bonner to President Oil, Products & Gas; Gustavson to CFO; Gros to New Energies with AI strategy ownership; Nelson to Vice Chairman, Strategy & BD.", "src": "https://www.worldoil.com/news/2026/10/5/chevron-announces-leadership-changes-across-oil-gas-and-new-energies-businesses/", "date": "2026-10"},
+    {"fact": "Joined SLB-TotalEnergies Arena digital subsurface software collaboration.", "src": "https://oceannews.com/news/energy/chevron-expands-slb-totalenergies-digital-subsurface-collaboration/", "date": "2026-10"},
+    {"fact": "20-year power deal with Microsoft for West Texas data center (~2.67 GW).", "src": "https://worldoil.com/news/2026/6/22/chevron-signs-20-year-microsoft-power-deal-for-west-texas-ai-project/", "date": "2026-06"},
+    {"fact": "Structural cost target raised to $3-4B by end-2026 after $1.5B delivered in 2025.", "src": "https://www.nasdaq.com/press-release/chevron-reports-fourth-quarter-2025-results-2026-01-30", "date": "2026-01"},
+    {"fact": "Workforce reduction of 15-20% (up to ~9,000 roles) by end-2026; move from regional structure to global operational hubs; finance, HR and IT support consolidated into service centers in Manila and Buenos Aires; engineering consolidated into Houston and Bengaluru.", "src": "https://www.tipranks.com/news/chevron-cvx-cuts-5-of-global-workforce-in-3-billion-restructuring-plan", "date": "2025"},
+    {"fact": "ENGINE Bengaluru center formally opened (~$1B, 1,000+ hires).", "src": "https://boereport.com/2025/10/09/chevron-expands-india-hub-to-boost-digital-and-ai-capabilities/amp/", "date": "2025-10"},
+    {"fact": "Hess acquisition closed (July 2025) - integration and synergy capture ongoing.", "src": "https://www.sec.gov/Archives/edgar/data/93410/000009341026000078/cvx-20251231.htm", "date": "2026-02"},
+    {"fact": "Ryder Booth appointed Chief Technology and Engineering Officer (new combined role).", "src": "https://www.chevron.com/who-we-are/leadership/t-ryder-booth", "date": "2025-06"}
+  ],
+  "agent_signals": [
+    {"fact": "Explicit productivity mandate: restructuring statement cites 'leveraging technology to enhance productivity' and 'expanded use of global centers'.", "src": "https://abc13.com/post/chevron-move-texas-oil-gas-giant-lay-off-600-workers-california-relocates-corporate-operations-houston/16144517/", "date": "2025-04"},
+    {"fact": "IT support functions consolidated into Manila and Buenos Aires service centers; engineering to Houston + Bengaluru - knowledge transfer and distributed teams.", "src": "https://www.tipranks.com/news/chevron-cvx-cuts-5-of-global-workforce-in-3-billion-restructuring-plan", "date": "2025"},
+    {"fact": "Microsoft-centric stack (Azure, AKS, Azure DevOps, C#/.NET) plus Databricks in Enterprise AI engineering; actively building agentic AI systems.", "src": "https://www.careerbuilder.com/job-details/software-engineer-enterprise-ai-houston-tx--63ef7576-35d8-429b-9a71-154e06be09bc", "date": "2026-03"},
+    {"fact": "Already uses Microsoft Copilot and Anthropic Claude in the enterprise (finance cited); CFO exploring personal AI agents - receptive to agentic tools.", "src": "https://fortune.com/2026/06/11/chevron-cfo-finance-chiefs-defining-ai-business-value/", "date": "2026-06"},
+    {"fact": "10-K risk factors highlight cyber threats to operational technology and digital infrastructure (state actors, industrial espionage); dedicated Cyber Intelligence Center exists.", "src": "https://www.sec.gov/Archives/edgar/data/93410/000009341026000078/cvx-20251231.htm", "date": "2026-02"},
+    {"fact": "Integration of Hess systems and assets following $53B acquisition - likely application/data consolidation workload.", "src": "https://www.tipranks.com/news/chevron-cvx-cuts-5-of-global-workforce-in-3-billion-restructuring-plan", "date": "2025"},
+    {"fact": "Heavy proprietary/scientific software footprint: digital twins, HPC geological modeling, ApEX, co-developed reservoir simulation (Intersect via Arena).", "src": "https://oceannews.com/news/energy/chevron-expands-slb-totalenergies-digital-subsurface-collaboration/", "date": "2026-10"},
+    {"fact": "Responsible AI governance posture (Responsible AI Institute member; assesses AI systems' limitations and readiness) - expect rigorous security/governance review.", "src": "https://www.sec.gov/Archives/edgar/data/93410/000009341026000078/cvx-20251231.htm", "date": "2026-02"}
+  ],
+  "hypotheses": {
+    "pains": [
+      "HYPOTHESIS: $3-4B structural cost target and 15-20% headcount cut leave app/engineering backlogs larger than remaining staff can absorb; Devin as capacity multiplier rather than headcount replacement.",
+      "HYPOTHESIS: IT moved to Manila/Buenos Aires service centers and engineering to Bengaluru created tribal-knowledge loss on legacy apps; Devin codebase scans/DeepWiki-style documentation and on-call alert triage could de-risk.",
+      "HYPOTHESIS: Hess integration requires rationalizing duplicate applications, data pipelines and integrations - migration/refactor work suited to parallel agent sessions.",
+      "HYPOTHESIS: Large .NET/Windows and Azure estate with aging internal apps (OT-adjacent, refinery, HSE, supply chain) needing modernization and security remediation.",
+      "HYPOTHESIS: Enterprise AI team needs to ship agentic use cases faster across ~15 prioritized workflows; scientific/HPC codebases (subsurface, digital twins) are hard to staff."
+    ],
+    "economic_buyer": [
+      "HYPOTHESIS: T. Ryder Booth, Chief Technology and Engineering Officer (owns IT, innovation, capital projects).",
+      "HYPOTHESIS: Brent Gros (AI strategy owner from Jan 2027) - track as new power center.",
+      "HYPOTHESIS: Current CIO / head of IT under TPE (name not found publicly - must identify).",
+      "HYPOTHESIS: CFO office (Bonner now, Gustavson from Jan 2027) as value arbiter for AI investments."
+    ],
+    "champions": [
+      "HYPOTHESIS: Leaders in Enterprise AI organization (AI engineering managers, e.g., Justin Lo-type roles) building agentic systems on Azure/Databricks.",
+      "HYPOTHESIS: Head of application development / engineering platforms in IT, or DevOps/Azure DevOps platform owner.",
+      "HYPOTHESIS: ENGINE Bengaluru digital leadership seeking productivity gains.",
+      "HYPOTHESIS: Cyber Intelligence Center / AppSec leads for vulnerability remediation at scale."
+    ],
+    "competition": [
+      "HYPOTHESIS: Microsoft GitHub Copilot (incl. coding agent) bundled via Microsoft EA - strongest incumbent given Copilot use and Azure DevOps.",
+      "HYPOTHESIS: Anthropic Claude / Claude Code (Claude already in use) and Cursor.",
+      "HYPOTHESIS: Global SIs and offshore delivery (Infosys, TCS, Accenture, Wipro etc.) plus Chevron's own India/Manila/Buenos Aires centers as the 'internal build/insourced labor' alternative.",
+      "HYPOTHESIS: Internal agent builds by Enterprise AI team on Azure AI / Databricks."
+    ],
+    "openers": [
+      "With $3-4B in structural savings due by year-end and IT/engineering consolidated into global hubs, where is software delivery capacity now the bottleneck - and what backlog is not getting done?",
+      "You already run Copilot and Claude for knowledge work; what's your bar for letting an autonomous agent open pull requests against production repos, and who signs off on that governance (TPE, Cyber, Enterprise AI)?",
+      "As Hess systems are folded in and AI strategy moves to Brent Gros in January, which modernization or integration programs must show results in 2027 - and how are you measuring engineering productivity today?"
+    ]
+  },
+  "notes": "Current Chevron CIO name not found in public 2025-2026 sources; Bill Braun is listed as former CIO with no departure date, and IT now appears to roll up under Ryder Booth's TPE / Chief Technology and Engineering Officer role. Layoff figures vary across sources (15-20%, up to 8,000-9,000 roles); the TipRanks article URL slug says 5% but body says 20%, and its publish date was not confirmed (2025). TipRanks says ENGINE ~600 engineers; Reuters/BOE Report says 1,000+ hired since 2024. Cost target was $2-3B originally, raised to $3-4B in the Q4 2025 release. CareerBuilder job posting date approximate (applications closed Apr 17, 2026). No public evidence found of GitHub Copilot (coding) use, a Microsoft EA, Palantir/AWS/NVIDIA partnerships, or cyber incidents in the last 12 months. Chevron newsroom page for the Oct 2026 leadership release failed to load; relied on World Oil coverage. Brent Railey (Chief Data & Analytics Officer) is at Chevron Phillips Chemical, a JV, not Chevron Corp - excluded."
+}

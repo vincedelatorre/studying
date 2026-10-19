@@ -1,0 +1,361 @@
+{
+ "value": {
+  "before": [
+   "Large estates of long-lived custom software (well planning, production accounting, scheduling, trading, maintenance, HSE reporting) that a mix of internal teams and systems integrators maintain. Modernization backlogs grow faster than teams can clear them.",
+   "AI coding tools are deployed as IDE assistants. Individual developers type faster, but reviews pile up and the large jobs, such as migrations, upgrades and audits, still don't move.",
+   "24/7 operations for plant, field, logistics and trading systems. Alert triage and root-cause work are manual and land on a small group of senior engineers.",
+   "Security teams face more vulnerabilities and faster attacks with the same headcount, across IT and connected OT systems.",
+   "Cost discipline is the norm, and AI spend is starting to show up as its own line item with no clear tie to output."
+  ],
+  "negative": [
+   "Modernization programs slip, technical debt compounds, and money keeps flowing to run-and-maintain contracts instead of new capability.",
+   "Outages and slow fixes in operational software hit production, scheduling or safety reporting.",
+   "Unpatched vulnerabilities stay open longer, which raises cyber and regulatory exposure.",
+   "Developers bring in unsanctioned AI tools and the company loses control of code, data and spend.",
+   "Engineers with deep domain knowledge get spent on toil, and their knowledge leaves when they do."
+  ],
+  "required": [
+   "Agents that do whole tasks end to end in their own isolated machines, including Windows, and not just suggest lines in an IDE.",
+   "Proof of work: every change is tested, recorded and reviewable before a human approves it.",
+   "Codebase-wide jobs (audits, upgrades, migrations) split across parallel agents with a plan people can read and version.",
+   "Memory of how each team works, stored in a format that can be inspected and governed.",
+   "Choice of model per task and visible cost per session, so spend is tied to output.",
+   "First-pass incident triage with a human approving every fix.",
+   "Works where people already are: Microsoft Teams and Microsoft 365, existing repos and CI."
+  ],
+  "pbos": [
+   "Modernization backlog burns down quarter over quarter.",
+   "Lower run cost of the application portfolio, including outsourced maintenance hours.",
+   "Faster time to root cause and resolution on operational systems.",
+   "Shorter time to remediate vulnerabilities.",
+   "Senior engineers spend their time on architecture and domain work, not toil.",
+   "AI adoption that is governed, measured and defensible to the board."
+  ],
+  "metrics": [
+   "Modernization items or legacy components retired per quarter",
+   "Agent-authored pull requests merged, and review time per pull request",
+   "Mean time to root cause and mean time to resolve on chosen services",
+   "Mean time to remediate vulnerabilities; findings proven and fixed per scan",
+   "Contractor or SI hours redeployed",
+   "Cost per merged pull request or per session",
+   "Lines of dead code removed and libraries brought current"
+  ],
+  "how": [
+   "Devin works in its own cloud machines (Windows, Linux, macOS and Android) and engineers can SSH in or hand work back to their own laptop.",
+   "Devin tests what it builds and sends recordings; Devin Review follows your REVIEW.md, and Autofix cleans pull requests up before people see them.",
+   "Code Scans, Security Swarm and Dynamic Workflows run codebase-wide jobs across parallel Devins with a plan written in code.",
+   "Dreaming memory in an open, git-and-markdown format.",
+   "Frontier models plus SWE-2 (on par with recent frontier models at up to 70% lower cost), Fusion, and cost shown per session.",
+   "Devin Oncall (#1 on SREGym) and native Microsoft Teams and Microsoft 365."
+  ],
+  "proof": [
+   "2026-09-10 cognition 823965",
+   "2026-09-11 cognition 024343",
+   "2026-09-15 MattSchrage 228884",
+   "2026-09-16 cognition 803404",
+   "2026-10-08 devindevelopers 804464",
+   "2026-10-15 cognition 010292",
+   "2026-10-16 AngelList 809832",
+   "2026-10-15 rox_ai 617997",
+   "2026-09-23 cognition 259443",
+   "2026-10-05 cognition 867001",
+   "2026-09-22 dforwardfeed 559900"
+  ],
+  "after": [
+   "Legacy components retire on a schedule because agents take the inventory, remediation and testing work off the critical path.",
+   "Engineers review verified, recorded changes instead of writing boilerplate and chasing regressions.",
+   "Alerts arrive with a root cause and a proposed fix; on-call is a review, not a hunt.",
+   "Security findings come with proof and a pull request, and the backlog shrinks.",
+   "AI spend is tied to output per team, and leadership can see it."
+  ]
+ },
+ "letters": [
+  {
+   "l": "M",
+   "name": "Metrics",
+   "def": "The quantified business outcome the customer expects, in their numbers, with a baseline.",
+   "energy": "Tie Devin to numbers the business already tracks: modernization program milestones, run-and-maintain spend, incident MTTR on production systems, vulnerability remediation time. Get a baseline from the customer, not from us.",
+   "questions": [
+    "Which modernization or upgrade items have slipped in the last year, and what does each delay cost?",
+    "How many contractor or SI hours go to maintaining existing applications each year?",
+    "What is mean time to root cause on your most critical operational systems today?",
+    "How long does a critical vulnerability stay open on average?",
+    "If you cleared 30% of the backlog this year, what would that be worth?"
+   ],
+   "good": "A number with a baseline, an owner and a date, written in the customer's words.",
+   "flags": [
+    "Metrics are only 'developer productivity' or lines of code",
+    "No baseline exists and no one will produce one"
+   ],
+   "stories": [
+    "cost",
+    "enterprise"
+   ]
+  },
+  {
+   "l": "E",
+   "name": "Economic buyer",
+   "def": "The person with discretionary authority to spend the money, who can say yes when others say no.",
+   "energy": "Usually the CIO, Chief Digital Officer or a business-unit technology head (upstream, downstream, trading, midstream ops). The money often already exists in application maintenance and SI budgets. Find who owns that line.",
+   "questions": [
+    "Who owns the budget for application maintenance and modernization?",
+    "Who signed the last enterprise AI or developer tooling agreement?",
+    "What does that person need to see to move money from SI contracts to a platform?",
+    "What are their top three priorities this year?"
+   ],
+   "good": "You have met the EB, know their priorities and have heard them connect Devin to one of them.",
+   "flags": [
+    "Only IT procurement or an architect is engaged",
+    "'The committee decides' with no named person"
+   ],
+   "stories": [
+    "cost",
+    "enterprise"
+   ]
+  },
+  {
+   "l": "D",
+   "name": "Decision criteria",
+   "def": "The technical, business and legal criteria the customer will use to choose.",
+   "energy": "Expect cyber and data controls first: data retention, where code and data are processed, identity and access, audit logs, model governance. Then fit: Windows and .NET support, Azure DevOps or GitHub, integration with Teams and Microsoft 365, cost predictability. Shape criteria toward verified, end-to-end work and governed memory.",
+   "questions": [
+    "What does your AI governance council require before a tool touches source code?",
+    "Where does code need to be processed and what retention is allowed?",
+    "Which platforms must it work on: Windows, Linux, mainframe, OT-adjacent systems?",
+    "How will you compare an autonomous agent against an IDE assistant?",
+    "What evidence of quality will reviewers need on every change?"
+   ],
+   "good": "Written criteria that include proof-of-work (tests and recordings), Windows machines and cost per task, which favor Devin.",
+   "flags": [
+    "Criteria copied from an IDE-assistant RFP",
+    "Security review not yet scheduled"
+   ],
+   "stories": [
+    "security",
+    "sandbox",
+    "harness"
+   ]
+  },
+  {
+   "l": "D",
+   "name": "Decision process",
+   "def": "The steps, people and timeline from evaluation to selection.",
+   "energy": "Large energy companies run architecture review boards, cyber risk assessments, AI governance reviews and pilot gates. Map every step with dates and owners, and line up the pilot success criteria with the Metrics.",
+   "questions": [
+    "Walk me through how the last developer platform got approved.",
+    "Who has to sign off after the pilot, and in what order?",
+    "What would stop this after a successful pilot?",
+    "Is there a fiscal or budget-cycle date we need to hit?"
+   ],
+   "good": "A mutual action plan with named owners and dates from pilot to signature.",
+   "flags": [
+    "Pilot has no success criteria",
+    "No date tied to a business event"
+   ],
+   "stories": [
+    "enterprise"
+   ]
+  },
+  {
+   "l": "P",
+   "name": "Paper process",
+   "def": "How the contract actually gets signed: legal, procurement, security paperwork, vendor onboarding.",
+   "energy": "Supplier qualification, MSAs, data processing and AI addenda, insurance and cyber questionnaires can take months at a major. Start them during the pilot.",
+   "questions": [
+    "What vendor onboarding does a new software supplier go through here?",
+    "Do you have an AI-specific contract addendum?",
+    "Who in procurement owns developer tooling?",
+    "How long did your last software contract of this size take from verbal yes to signature?"
+   ],
+   "good": "Onboarding and security questionnaires started in parallel with the pilot; legal redlines known.",
+   "flags": [
+    "Paper starts only after technical win",
+    "Unknown signature authority thresholds"
+   ],
+   "stories": [
+    "security"
+   ]
+  },
+  {
+   "l": "I",
+   "name": "Identify (implicate) pain",
+   "def": "The business pain that makes change necessary, tied to consequences for the business and for people.",
+   "energy": "Go past 'developers want AI'. Find the legacy system nobody wants to touch, the on-call rotation burning out senior engineers, the audit finding, the SI contract that keeps growing.",
+   "questions": [
+    "Which system would you modernize first if it cost a tenth as much?",
+    "Who gets paged at 2 a.m., and what happens to their week after?",
+    "What did the last major incident cost, in downtime or penalties?",
+    "What happens if this backlog is still here in two years?"
+   ],
+   "good": "Pain is tied to a named system, a cost and a person who feels it.",
+   "flags": [
+    "Pain is generic curiosity about AI",
+    "No consequence if nothing changes"
+   ],
+   "stories": [
+    "harness",
+    "swarms",
+    "enterprise"
+   ]
+  },
+  {
+   "l": "C",
+   "name": "Champion",
+   "def": "A person with power and influence who sells for you when you are not in the room, and has a personal win.",
+   "energy": "Strong candidates: head of platform engineering or developer experience, SRE or operations engineering lead, a modernization program lead, an enterprise architect with a mandate. Test them by asking for access to the EB and for internal information.",
+   "questions": [
+    "What would a successful rollout mean for you personally?",
+    "Can you set up a meeting with the budget owner?",
+    "Who will object, and how should we handle them?",
+    "Will you share how the last tooling decision was made?"
+   ],
+   "good": "Champion has arranged EB access, shared internal criteria and is building the business case with you.",
+   "flags": [
+    "'Coach' who likes us but has no influence",
+    "Champion won't introduce you upward"
+   ],
+   "stories": [
+    "harness",
+    "memory",
+    "swarms"
+   ]
+  },
+  {
+   "l": "C",
+   "name": "Competition",
+   "def": "Any alternative the customer could choose, including doing nothing or building in-house.",
+   "energy": "Expect IDE assistants bundled with existing enterprise agreements, other coding agents, internal platforms built on cloud AI services, systems integrators who sell maintenance labor, and the status quo. Compete on outcomes: end-to-end verified work, Windows machines, codebase-wide jobs, cost per task, and on-call.",
+   "questions": [
+    "What AI coding tools are licensed today, and what are they used for?",
+    "What has an internal AI platform team already built?",
+    "Which SIs maintain these applications, and how is that contract measured?",
+    "What happens if you do nothing this year?"
+   ],
+   "good": "You know every alternative, the customer has said why Devin is different, and the SI budget is in scope.",
+   "flags": [
+    "Positioned as 'another Copilot'",
+    "Internal build team sees Devin as a threat with no role for them"
+   ],
+   "stories": [
+    "frontier",
+    "cost",
+    "sandbox"
+   ]
+  }
+ ],
+ "unlockers": [
+  {
+   "story": "cost",
+   "persona": "CIO, CFO's technology partner",
+   "open": "Agents are now the main consumer of AI tokens. Do you know your AI spend per team, and what it produced?",
+   "refs": [
+    "2026-08-22 a16z 857328",
+    "2026-10-03 AiEvolutio58513 896855",
+    "2026-08-20 Hesamation 268851",
+    "2026-09-10 cognition 823965"
+   ]
+  },
+  {
+   "story": "harness",
+   "persona": "VP Engineering, head of developer experience",
+   "open": "Teams moving fastest let agents verify their own work end to end. How much of your reviewers' time goes to AI-written code today?",
+   "refs": [
+    "2026-10-17 addyosmani 326393",
+    "2026-10-13 thorstenball 747457",
+    "2026-08-30 AYi_AInotes 208512",
+    "2026-10-03 kr0der 509893"
+   ]
+  },
+  {
+   "story": "swarms",
+   "persona": "Modernization or application portfolio lead",
+   "open": "What is the oldest system you would retire if the migration cost a tenth as much?",
+   "refs": [
+    "2026-10-09 PrimeIntellect 047952",
+    "2026-10-14 theodormarcu 322805",
+    "2026-10-13 dabit3 320819",
+    "2026-10-18 jullerino 078321"
+   ]
+  },
+  {
+   "story": "memory",
+   "persona": "Enterprise architect, knowledge management",
+   "open": "When a senior engineer retires, how much of how the system works leaves with them?",
+   "refs": [
+    "2026-10-05 cognition 867001",
+    "2026-10-05 walden_yan 144357",
+    "2026-09-07 rohanpaul_ai 139447"
+   ]
+  },
+  {
+   "story": "sandbox",
+   "persona": "Platform and infrastructure lead",
+   "open": "If you let agents work on real tasks, where would they run in your estate, and on which operating systems?",
+   "refs": [
+    "2026-09-15 MattSchrage 228884",
+    "2026-09-20 rakyll 909976",
+    "2026-10-18 confusedqubit 631437"
+   ]
+  },
+  {
+   "story": "security",
+   "persona": "CISO, application security lead",
+   "open": "Critical vulnerability volume rose sharply this year while headcount didn't. How long does a critical finding stay open today?",
+   "refs": [
+    "2026-10-07 levie 039269",
+    "2026-10-08 AndrewCurran_ 092323",
+    "2026-10-08 devindevelopers 804464",
+    "2026-09-14 sarahookr 072586"
+   ]
+  },
+  {
+   "story": "enterprise",
+   "persona": "SRE or operations engineering lead",
+   "open": "Who takes the first pass on alerts for your production systems at night, and how long until root cause?",
+   "refs": [
+    "2026-10-15 cognition 010292",
+    "2026-10-16 AngelList 809832",
+    "2026-10-15 nerdsane 625132"
+   ]
+  },
+  {
+   "story": "worlds",
+   "persona": "Digital twin, engineering visualization or training lead",
+   "open": "Frontier models now build interactive 3D simulations from a floor plan or factory layout. Where would a quick, interactive model of a facility help your teams?",
+   "refs": [
+    "2026-10-04 NilsEdison 145641",
+    "2026-10-13 everestchris6 884998"
+   ]
+  },
+  {
+   "story": "physical",
+   "persona": "R&D, subsurface or materials science lead",
+   "open": "Teams are running dozens of agents for days on materials searches. Which research workflows are bottlenecked on writing and running code?",
+   "refs": [
+    "2026-10-05 ValsAI 256749"
+   ]
+  }
+ ],
+ "plan": [
+  {
+   "when": "Weeks 1-2",
+   "what": "Tier the accounts. For each, confirm the technology leaders and map one modernization program, one operations pain and one security priority from public sources. Score every account on the scorecard so the gaps are visible."
+  },
+  {
+   "when": "Weeks 2-4",
+   "what": "Open with persona-led outreach using the conversation openers and the customer brief. Aim for platform engineering, SRE and modernization leads first; they become champions. Ask each for the name of the budget owner."
+  },
+  {
+   "when": "Weeks 4-6",
+   "what": "Run discovery against the eight letters. Get a baseline for one metric per account and the written AI governance and security criteria. Start supplier onboarding and security questionnaires as soon as there is interest."
+  },
+  {
+   "when": "Weeks 6-10",
+   "what": "Propose the four-step pilot from the customer brief (audit, review, modernize, operate) with success criteria tied to the baseline. Build a mutual action plan with named owners through to signature."
+  },
+  {
+   "when": "Weeks 10-13",
+   "what": "Run the pilot and report against the metric every week. Bring the champion's results to the economic buyer and frame the expansion around the application maintenance and SI budget line."
+  }
+ ]
+}

@@ -2,12 +2,14 @@
 
 ## Technical Bookmark Library
 
-**[Open the website](https://vincedelatorre.github.io/studying/x-bookmarks/)**
+**[Read the storylines](https://vincedelatorre.github.io/studying/x-bookmarks/storylines.html)** · **[Open the full library](https://vincedelatorre.github.io/studying/x-bookmarks/)**
 
 506 technical X bookmarks saved Aug 18 – Oct 18, 2026, sorted into 12 chapters and 74 topics. Each entry has a summary, a takeaway, the tools it names, the links from the post, and the full saved text. Politics, everyday life, gossip and memes are left out.
 
 | Path | What it is |
 | --- | --- |
+| [`x-bookmarks/storylines.html`](x-bookmarks/storylines.html) | 11 dated storylines with turning points, key numbers and customer talking points, every claim linked to its post |
+| [`x-bookmarks/data/storylines.json`](x-bookmarks/data/storylines.json) | The storylines as structured data |
 | [`x-bookmarks/index.html`](x-bookmarks/index.html) | The website (one self-contained page with search and month filter) |
 | [`x-bookmarks/data/technical-bookmarks.json`](x-bookmarks/data/technical-bookmarks.json) | All 506 entries with chapter, topic, title, summary, takeaway, tools, links and full text |
 | [`x-bookmarks/data/excluded.json`](x-bookmarks/data/excluded.json) | The 297 saves that were left out, with the reason for each |

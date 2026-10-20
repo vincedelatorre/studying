@@ -46,7 +46,8 @@
    "Code Scans, Security Swarm and Dynamic Workflows run codebase-wide jobs across parallel Devins with a plan written in code.",
    "Dreaming memory in an open, git-and-markdown format.",
    "Frontier models plus SWE-2 (on par with recent frontier models at up to 70% lower cost), Fusion, and cost shown per session.",
-   "Devin Oncall (#1 on SREGym) and native Microsoft Teams and Microsoft 365."
+   "Devin Oncall (#1 on SREGym) and native Microsoft Teams and Microsoft 365.",
+   "Customer results: Nubank 8-12x efficiency and about 20x cost savings on a multi-million-line migration; AngelList 5.2x faster Snowflake migration and Oncall root-causing about 70% of incidents; Ramp tens of thousands of hours of debt cleared; Gumroad 1,500+ merged PRs."
   ],
   "proof": [
    "2026-09-10 cognition 823965",
@@ -224,7 +225,7 @@
    "l": "C",
    "name": "Competition",
    "def": "Any alternative the customer could choose, including doing nothing or building in-house.",
-   "energy": "Expect IDE assistants bundled with existing enterprise agreements, other coding agents, internal platforms built on cloud AI services, systems integrators who sell maintenance labor, and the status quo. Compete on outcomes: end-to-end verified work, Windows machines, codebase-wide jobs, cost per task, and on-call.",
+   "energy": "Expect IDE assistants bundled with existing enterprise agreements, other coding agents, internal platforms built on cloud AI services, systems integrators who sell maintenance labor, and the status quo. Compete on outcomes: end-to-end verified work, Windows machines, codebase-wide jobs, cost per task, and on-call. Use the sales play positioning: Copilot is a pair programmer that lives in the IDE; Devin is a teammate that lives in the backlog, and most sophisticated teams run both. Anthropic's OSS Scanner discovers issues in public open-source code; Devin closes the private-codebase loop from discovery to validated fix and PR.",
    "questions": [
     "What AI coding tools are licensed today, and what are they used for?",
     "What has an internal AI platform team already built?",

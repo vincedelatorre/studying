@@ -187,5 +187,27 @@
    "h": "Less toil, faster reviews",
    "p": "Devin takes whole tasks, tests them and sends a recording, takes the first pass on alerts, and remembers how the team works, so engineers spend their time on design and domain problems."
   }
+ ],
+ "results": [
+  {
+   "who": "Nubank",
+   "result": "8-12x engineering efficiency and about 20x cost savings on a multi-million-line monolith and ETL migration"
+  },
+  {
+   "who": "AngelList",
+   "result": "5.2x faster Redshift to Snowflake migration (14,000 dashboards); Oncall now root-causes about 70% of incidents (a 3.5x improvement) and handles about 50% end to end"
+  },
+  {
+   "who": "Ramp",
+   "result": "Tens of thousands of hours of technical debt cleared; feature-flag removal and Airflow fixes dramatically accelerated"
+  },
+  {
+   "who": "Gumroad",
+   "result": "Devin became the #1 contributor with 1,500+ merged PRs"
+  },
+  {
+   "who": "Also",
+   "result": "Mercedes-Benz, AHEAD (8-40x), WPP, the Rivian/VW joint venture, and multiple large Brazilian banks and fintechs"
+  }
  ]
 }

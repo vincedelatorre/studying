@@ -1,0 +1,70 @@
+{
+ "title": "Cognition Sales Play: Devin, the autonomous AI software engineer",
+ "positioning": "Devin is not another coding assistant. It is an autonomous AI software engineer that plans, executes, tests, and ships production-ready work, turning engineering backlogs, migrations, security remediation, and on-call into measurable output instead of capacity constraints.",
+ "oneliner": "Assistants make developers faster. Devin makes the engineering organization larger, without the headcount.",
+ "closing": "This play positions Cognition as the company that turns AI from a coding productivity tool into actual engineering capacity. Use the proof points aggressively and always bring the conversation back to measurable throughput and risk reduction.",
+ "icp": {
+  "primary": ["Mid-to-large engineering organizations (100 to 5,000+ engineers) with significant technical debt, migration backlogs, or security vulnerability queues","Companies already investing heavily in AI coding tools (GitHub Copilot, Cursor, Claude Code) but still bottlenecked on execution capacity","Security and platform teams drowning in scanner findings that never get fixed","Organizations running frequent on-call rotations or high-incident environments"],
+  "secondary": ["High-growth startups scaling engineering faster than they can hire","Enterprises undergoing major platform modernization (monolith to services, database migrations, framework upgrades)"],
+  "buyers": ["VP or Director of Engineering","CTO","Head of Platform","CISO or Head of Security","Engineering productivity leaders"],
+  "energy": "Every target account fits the primary profile: large engineering estates, active ERP and integration programs, cost programs with workforce reductions, and OT-adjacent security exposure. Add the energy buying centers from the Pain by altitude chapter: CIO, Chief Technology and Engineering Officer, Digital presidents at the oilfield services companies, and program sponsors for ERP and integration work."
+ },
+ "pains": [
+  {"pain":"Engineering capacity is the constraint","now":"Backlog grows faster than headcount","outcome":"Devin absorbs scoped work and ships PRs","energy":"Workforce cuts at Chevron, ConocoPhillips and ExxonMobil with the same or larger programs"},
+  {"pain":"Security findings sit unfixed","now":"Scanners generate noise; engineers lack time","outcome":"Security Swarm finds, validates, and opens remediation PRs","energy":"TSA directives at Enterprise Products; the 2024 breach at Halliburton; OT exposure everywhere"},
+  {"pain":"Migrations take quarters or years","now":"High risk, high coordination cost","outcome":"Parallel agents deliver 5-12x faster","energy":"ExxonMobil's 12-to-1 ERP consolidation; Hess, Marathon and Chart integrations; SLB's acquired software"},
+  {"pain":"On-call drains senior talent","now":"Engineers spend nights diagnosing alerts","outcome":"Devin Oncall root-causes and often remediates first","energy":"24/7 operational, commercial and trading systems"},
+  {"pain":"AI tools only assist","now":"Copilot or Claude help write code; humans still own the full loop","outcome":"Devin owns the full loop: plan, code, test, PR","energy":"Chevron already runs Copilot and Claude; the next question is delegation"}
+ ],
+ "diff": [
+  {"vs":"GitHub Copilot and similar assistants","text":"Copilot is an excellent pair programmer that lives in the IDE. Devin is an autonomous teammate that lives in the backlog. Copilot amplifies individual developers; Devin multiplies team throughput on well-scoped work. Most sophisticated teams run both: Copilot for daily flow and Devin for delegated execution."},
+  {"vs":"Anthropic OSS Scanner and Claude Security","text":"The OSS Scanner is strong at discovery on public open-source projects. Devin owns the private-codebase loop: discover, validate exploitability in a sandbox, write the patch, open the PR. They are complementary, not competitive."}
+ ],
+ "unique": ["Security Swarm: highest-recall vulnerability discovery, runtime validation and automated remediation PRs","Code Scans: codebase-wide investigations turned into actionable PRs","Devin Oncall: first-responder investigation and mitigation","True multi-hour, multi-file, multi-agent execution in isolated environments","Integration into existing workflows: Linear, Jira, Slack, Teams, GitHub and more"],
+ "proof": [
+  {"who":"Nubank","result":"8-12x engineering efficiency and about 20x cost savings on a multi-million-line monolith and ETL migration","fit":"Closest analog for ERP and legacy migrations at the majors"},
+  {"who":"AngelList","result":"5.2x faster Redshift to Snowflake migration (14,000 dashboards); Oncall now root-causes about 70% of incidents (a 3.5x improvement) and handles about 50% end to end","fit":"Data platform moves and on-call for operations teams"},
+  {"who":"Ramp","result":"Tens of thousands of hours of technical debt cleared; feature-flag removal and Airflow fixes dramatically accelerated","fit":"Technical debt in long-lived internal applications"},
+  {"who":"Gumroad","result":"Devin became the #1 contributor with 1,500+ merged PRs","fit":"Shows sustained output, not a one-off demo"},
+  {"who":"Also","result":"Mercedes-Benz, AHEAD (8-40x), WPP, the Rivian/VW joint venture, and multiple large Brazilian banks and fintechs","fit":"Industrial and regulated logos for credibility with energy buyers"}
+ ],
+ "discovery": [
+  {"q":"Where is engineering capacity currently the biggest constraint: feature velocity, tech debt, security remediation, or migrations?","l":"I"},
+  {"q":"How large is your current vulnerability backlog, and what percentage of high and critical findings actually get fixed in a reasonable window?","l":"M"},
+  {"q":"What major migrations or platform modernizations are planned or already underway?","l":"I"},
+  {"q":"How much senior engineer time is spent on on-call investigation versus product work?","l":"M"},
+  {"q":"Which AI coding tools are already in use, and what work still requires full human ownership of the loop?","l":"C"},
+  {"q":"If you could 5-10x the throughput on a specific class of work (security fixes, migrations, debt cleanup), what would that unlock for the business?","l":"M"}
+ ],
+ "pitch": [
+  {"part":"Hook","time":"1 min","say":"Most teams have already adopted AI coding assistants. The next question is: what work can you actually delegate instead of just accelerate?","energy":"Add the altitude: for an executive, tie delegation to the savings or integration commitment."},
+  {"part":"Problem","time":"2-3 min","say":"Frame the capacity, security, migration, and on-call pains using their language.","energy":"Use the account's pain chain and its implication sequence from Scoping."},
+  {"part":"Solution","time":"3-4 min","say":"Position Devin as the autonomous engineer. Contrast assistant versus teammate. Highlight Security Swarm and Oncall as high-ROI entry points.","energy":"Mention Windows machines and Teams for Microsoft-heavy estates."},
+  {"part":"Proof","time":"4-5 min","say":"Walk one or two relevant case studies with hard numbers. Emphasize: review the PR, don't own the process.","energy":"Nubank for migrations, AngelList for on-call and data platforms."},
+  {"part":"Differentiation","time":"2 min","say":"Explicitly address Copilot and Anthropic offerings. Position as complementary where true.","energy":"Most energy majors have a Microsoft agreement; position alongside Copilot, not against it."},
+  {"part":"Vision and next step","time":"2 min","say":"The teams getting the most leverage treat Devin like a new class of engineering capacity, not another tool. Let's identify one high-value workflow and run a focused pilot.","energy":"Following McMahon, propose scoping first: quantify the workflow, then a go/no-go with the economic buyer before the POV."}
+ ],
+ "objections": [
+  {"o":"We already have Copilot, Cursor or Claude Code","r":"Great. Those make individual developers faster. Devin makes the team faster by owning end-to-end work. Most of our best customers run both."},
+  {"o":"AI-generated code still needs heavy review","r":"Correct. Devin is designed for human review of finished PRs, not unsupervised production pushes. The value is collapsing the time from ticket to reviewable PR."},
+  {"o":"Security scanning already exists","r":"Most scanners create findings. Security Swarm creates validated, exploit-confirmed findings plus the remediation PR. That's the missing half of the loop."},
+  {"o":"Too expensive, or usage will explode","r":"We now have efficiency-based controls that raise limits for high-output users and surface low-efficiency usage. Customers actively manage ROI, not just spend."},
+  {"o":"Our codebase is too complex or proprietary","r":"Devin is used on multi-million-line monoliths and highly regulated environments. The parallel agent architecture (Agentic MapReduce) was built exactly for this."}
+ ],
+ "pilot": {
+  "length":"30-45 day focused pilot",
+  "options":["Security vulnerability backlog clearance (highest emotional and measurable ROI)","A concrete migration or large-scale refactor","On-call or incident response augmentation","Technical debt or feature-flag cleanup"],
+  "metrics":["PRs merged","Engineering hours saved","Reduction in open high and critical vulnerabilities","Reduction in on-call load"],
+  "energy":"Run it as McMahon's proof of value: the 30-45 days sit inside the Proof of value phase of the mutual action plan, and the success metrics come straight from the cost justification."
+ },
+ "cta": ["Schedule a technical deep-dive with a Solutions Engineer focused on their highest-pain workflow","Run a paid pilot with clear success criteria","Executive briefing for the CTO or VP Engineering on capacity multiplication strategy"],
+ "entry": {
+  "exxonmobil":"Migration or large-scale refactor: custom-code remediation for the S/4HANA consolidation",
+  "chevron":"Migration and technical debt: Hess application integration and backlog for the new engineering hubs",
+  "halliburton":"Security backlog clearance: Security Swarm on corporate and Landmark code after the 2024 breach",
+  "slb":"Migration or large-scale refactor: integrating Tachyus and the S&P Global software portfolio",
+  "bakerhughes":"Migration: application consolidation and separation for the Chart integration and carve-outs",
+  "conocophillips":"Technical debt: Marathon application retirement and SAP BTP extension upkeep",
+  "enterpriseproducts":"Security backlog clearance: patching under TSA directives across the commercial applications"
+ }
+}

@@ -216,6 +216,54 @@
  ],
  "questions": [
   {
+   "t": "Sales play",
+   "l": "M",
+   "p": "VP Engineering",
+   "q": "If you could 5-10x the throughput on a specific class of work (security fixes, migrations, debt cleanup), what would that unlock for the business?",
+   "listen": "From the Devin sales play discovery set",
+   "lvl": "L4"
+  },
+  {
+   "t": "Sales play",
+   "l": "C",
+   "p": "VP Engineering",
+   "q": "Which AI coding tools are already in use, and what work still requires full human ownership of the loop?",
+   "listen": "From the Devin sales play discovery set",
+   "lvl": "L4"
+  },
+  {
+   "t": "Sales play",
+   "l": "M",
+   "p": "VP Engineering",
+   "q": "How much senior engineer time is spent on on-call investigation versus product work?",
+   "listen": "From the Devin sales play discovery set",
+   "lvl": "L4"
+  },
+  {
+   "t": "Sales play",
+   "l": "I",
+   "p": "VP Engineering",
+   "q": "What major migrations or platform modernizations are planned or already underway?",
+   "listen": "From the Devin sales play discovery set",
+   "lvl": "L4"
+  },
+  {
+   "t": "Sales play",
+   "l": "M",
+   "p": "VP Engineering",
+   "q": "How large is your current vulnerability backlog, and what percentage of high and critical findings actually get fixed in a reasonable window?",
+   "listen": "From the Devin sales play discovery set",
+   "lvl": "L4"
+  },
+  {
+   "t": "Sales play",
+   "l": "I",
+   "p": "VP Engineering",
+   "q": "Where is engineering capacity currently the biggest constraint: feature velocity, tech debt, security remediation, or migrations?",
+   "listen": "From the Devin sales play discovery set",
+   "lvl": "L4"
+  },
+  {
    "t": "Executive",
    "l": "I",
    "p": "CEO / CFO",
@@ -1709,6 +1757,69 @@
     }
    ],
    "group": "situation"
+  },
+  {
+   "title": "Objections from the sales play",
+   "persona": "Any",
+   "group": "situation",
+   "open": "Listen fully, confirm you understood, answer, then ask a question that moves a MEDDPICC letter.",
+   "branches": [
+    {
+     "if": "\"We already have Copilot, Cursor or Claude Code.\"",
+     "say": "Great. Those make individual developers faster. Devin makes the team faster by owning end-to-end work. Most of our best customers run both.",
+     "then": [
+      {
+       "if": "They engage",
+       "say": "Which work still needs a person to own the whole loop today?",
+       "next": "Find the delegable work (D, C)."
+      }
+     ]
+    },
+    {
+     "if": "\"AI-generated code still needs heavy review.\"",
+     "say": "Correct. Devin is designed for human review of finished PRs, not unsupervised production pushes. The value is collapsing the time from ticket to reviewable PR.",
+     "then": [
+      {
+       "if": "They engage",
+       "say": "How long does it take today to go from ticket to a PR that's ready for review?",
+       "next": "Baseline for the cost justification (M)."
+      }
+     ]
+    },
+    {
+     "if": "\"Security scanning already exists.\"",
+     "say": "Most scanners create findings. Security Swarm creates validated, exploit-confirmed findings plus the remediation PR. That's the missing half of the loop.",
+     "then": [
+      {
+       "if": "They engage",
+       "say": "What share of high and critical findings get fixed within your target window?",
+       "next": "Quantify the remediation gap (M, I)."
+      }
+     ]
+    },
+    {
+     "if": "\"Too expensive, or usage will explode.\"",
+     "say": "We now have efficiency-based controls that raise limits for high-output users and surface low-efficiency usage. Customers actively manage ROI, not just spend.",
+     "then": [
+      {
+       "if": "They engage",
+       "say": "How would you want to measure return: per team, per workflow, per PR merged?",
+       "next": "Shape cost criteria around output (D, M)."
+      }
+     ]
+    },
+    {
+     "if": "\"Our codebase is too complex or proprietary.\"",
+     "say": "Devin is used on multi-million-line monoliths and highly regulated environments. The parallel agent architecture (Agentic MapReduce) was built exactly for this.",
+     "then": [
+      {
+       "if": "They engage",
+       "say": "Which part of the codebase would be the hardest test? Let's scope the POV around it.",
+       "next": "Scope a POV on their hardest case (D)."
+      }
+     ]
+    }
+   ]
   }
  ]
 }

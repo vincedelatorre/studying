@@ -1,0 +1,417 @@
+{
+ "intro": "McMahon's method for building use cases: start from differentiators only you have, find the pains they solve, turn those pains into specific use cases, put numbers on the benefit and on the cost of doing nothing, find the companies that have those use cases and the people who own them, then rank by customer value. Here it is applied to Devin in the energy vertical.",
+ "diffs": [
+  {
+   "k": "D1",
+   "name": "Its own machines on every OS",
+   "what": "Devin works in its own isolated cloud machines running Windows, Linux, macOS and Android. Engineers can SSH in, use the machine as a devbox, and hand work back to their laptop.",
+   "why": "Cognition rebuilt storage, networking, VNC and computer use in Rust to be the first cloud agent to natively run macOS, Windows and Linux machines. Hard to copy, and it matters in Windows-heavy energy estates."
+  },
+  {
+   "k": "D2",
+   "name": "Proof of work on every change",
+   "what": "Devin tests what it builds and sends a recording; Devin Review follows the team's REVIEW.md; Autofix cleans up PRs before people see them.",
+   "why": "Reviewers get evidence, not just code. That is what governance councils and auditors ask for."
+  },
+  {
+   "k": "D3",
+   "name": "Parallel agents at codebase scale",
+   "what": "Code Scans (Agentic MapReduce), managed child Devins several levels deep, and Dynamic Workflows whose plan is code you can read and version.",
+   "why": "Built for multi-million-line monoliths. Single-session assistants can't split, coordinate and merge a migration."
+  },
+  {
+   "k": "D4",
+   "name": "Validated security remediation",
+   "what": "Security Swarm builds a threat model, finds exploitable issues including ones chained across files, proves them in a sandbox and opens the fix.",
+   "why": "Scanners produce findings; Devin closes the private-codebase loop to a merged fix."
+  },
+  {
+   "k": "D5",
+   "name": "First responder for production",
+   "what": "Devin Oncall investigates alerts and bugs, finds root cause and often remediates first, with a person approving the fix.",
+   "why": "#1 on SREGym; already handles thousands of alerts a day at large companies; AngelList root-causes about 70% of incidents with it."
+  },
+  {
+   "k": "D6",
+   "name": "Model choice with cost control",
+   "what": "Every frontier model plus Cognition's SWE-2, Fusion to pair a frontier planner with a cheaper executor, cost per session, and efficiency-based usage controls.",
+   "why": "SWE-2 scores on par with recent frontier models at up to 70% lower cost. Owning a model lets Cognition set price-performance."
+  },
+  {
+   "k": "D7",
+   "name": "Governed, open memory",
+   "what": "Dreaming builds a memory graph of how each team works and prunes stale records; the Agent Memory Repo format is open, git-backed markdown.",
+   "why": "Memory that can be read, versioned and audited, and isn't locked to one vendor."
+  },
+  {
+   "k": "D8",
+   "name": "Works where teams already work",
+   "what": "Microsoft Teams and Microsoft 365, Jira, Linear, Slack, GitHub, Pylon.",
+   "why": "Fits Microsoft-centric energy estates without a new front door."
+  }
+ ],
+ "cases": [
+  {
+   "k": "erp",
+   "name": "ERP custom-code remediation and consolidation",
+   "pain": "Millions of lines of custom ERP code and interfaces must be triaged, rewritten or retired before a fixed cutover date.",
+   "diffs": [
+    "D3",
+    "D2",
+    "D1"
+   ],
+   "benefit": "Fewer engineer and SI hours per component; cutover risk reduced; legacy retired sooner.",
+   "metric": "Components remediated per month; hours per component; SI hours; months of schedule risk removed",
+   "proof": "Nubank: 8-12x engineering efficiency and about 20x cost savings on a multi-million-line monolith and ETL migration.",
+   "calc": "mod",
+   "neg": "Cutover slips, the savings tied to it slip with it, SI spend keeps running, and the mainframe or legacy ERP stays on the books.",
+   "accounts": [
+    [
+     "exxonmobil",
+     3,
+     "12 ERPs into one S/4HANA by 2028; about 65M lines of custom ECC6 code"
+    ],
+    [
+     "conocophillips",
+     2,
+     "Custom logic in SAP BTP extensions after S/4"
+    ],
+    [
+     "halliburton",
+     2,
+     "SAP S/4 migration that cost $50M in one quarter"
+    ]
+   ],
+   "refs_out": "Nubank; large Brazilian banks and fintechs",
+   "owner": "ERP or business transformation program lead",
+   "eb": "CFO or business-unit sponsor of the transformation",
+   "champion": "IT director for global projects or the SAP platform lead",
+   "score": {
+    "value": 5,
+    "urgency": 5,
+    "fit": 4,
+    "proof": 4
+   },
+   "short": "ERP code"
+  },
+  {
+   "k": "mna",
+   "name": "M&A integration and carve-outs",
+   "pain": "Acquired applications must be integrated, duplicated ones retired, and divested systems separated on deal timelines.",
+   "diffs": [
+    "D3",
+    "D2",
+    "D7"
+   ],
+   "benefit": "Synergies captured on schedule; transition service agreements exited sooner; less duplicate run cost.",
+   "metric": "Applications retired or separated per quarter; TSA months; duplicate run cost",
+   "proof": "AngelList: 5.2x faster Redshift to Snowflake migration across 14,000 dashboards.",
+   "calc": "mod",
+   "neg": "Synergy targets slip, TSAs extend at a cost, and teams run two of everything.",
+   "accounts": [
+    [
+     "bakerhughes",
+     3,
+     "About $325M Chart synergies; Waygate and sensors carve-outs"
+    ],
+    [
+     "chevron",
+     3,
+     "Hess systems still being folded in"
+    ],
+    [
+     "conocophillips",
+     3,
+     "Marathon systems integration under way"
+    ],
+    [
+     "slb",
+     3,
+     "Tachyus and the S&P Global upstream software portfolio"
+    ],
+    [
+     "halliburton",
+     1,
+     "InformatiQ into Landmark"
+    ]
+   ],
+   "refs_out": "AngelList",
+   "owner": "Integration management office or CIO",
+   "eb": "Executive accountable for the synergy number",
+   "champion": "Enterprise architect or integration engineering lead",
+   "score": {
+    "value": 5,
+    "urgency": 4,
+    "fit": 4,
+    "proof": 3
+   },
+   "short": "M&A and carve-outs"
+  },
+  {
+   "k": "sec",
+   "name": "Security backlog remediation",
+   "pain": "High and critical findings pile up faster than teams can fix them, across IT and OT-adjacent code.",
+   "diffs": [
+    "D4",
+    "D2"
+   ],
+   "benefit": "Shorter time to remediate; fewer open criticals; compliance deadlines met.",
+   "metric": "Open high and critical findings; mean time to remediate; findings fixed per month",
+   "proof": "Security Swarm delivers exploit-validated findings with the fix as a pull request.",
+   "calc": "sec",
+   "neg": "Exposure stays open, regulatory deadlines are missed, and one incident costs more than the program.",
+   "accounts": [
+    [
+     "enterpriseproducts",
+     3,
+     "TSA pipeline directives; no cyber insurance"
+    ],
+    [
+     "halliburton",
+     3,
+     "August 2024 breach, about $35M"
+    ],
+    [
+     "exxonmobil",
+     2,
+     "Dedicated IT and OT cybersecurity operations"
+    ],
+    [
+     "slb",
+     2,
+     "Marketplace listings require security certification"
+    ]
+   ],
+   "refs_out": "Highly regulated customers per the sales play",
+   "owner": "Application security lead",
+   "eb": "CISO, or CIO where security reports to IT",
+   "champion": "AppSec or vulnerability management lead",
+   "score": {
+    "value": 4,
+    "urgency": 5,
+    "fit": 5,
+    "proof": 3
+   },
+   "short": "Security backlog"
+  },
+  {
+   "k": "oncall",
+   "name": "On-call and incident response",
+   "pain": "Senior engineers lose nights and roadmap time diagnosing alerts on operational, commercial and trading systems.",
+   "diffs": [
+    "D5",
+    "D1"
+   ],
+   "benefit": "Faster time to root cause; fewer escalations; senior time returned to the roadmap.",
+   "metric": "Mean time to root cause and to resolve; incidents handled end to end; senior hours on call",
+   "proof": "AngelList: Oncall root-causes about 70% of incidents (3.5x improvement) and handles about 50% end to end.",
+   "calc": "inc",
+   "neg": "Longer outages on systems that run production and commerce, and burnout of the few people who know the systems.",
+   "accounts": [
+    [
+     "enterpriseproducts",
+     2,
+     "Nominations, scheduling and measurement run the business"
+    ],
+    [
+     "chevron",
+     2,
+     "Operational systems across a consolidated IT model"
+    ],
+    [
+     "exxonmobil",
+     1,
+     "Global Operations reorganization"
+    ]
+   ],
+   "refs_out": "AngelList; Devin Oncall handles thousands of alerts a day at large companies",
+   "owner": "SRE or operations engineering lead",
+   "eb": "CIO or business-unit technology head",
+   "champion": "SRE manager or production support lead",
+   "score": {
+    "value": 4,
+    "urgency": 3,
+    "fit": 5,
+    "proof": 5
+   },
+   "short": "On-call"
+  },
+  {
+   "k": "debt",
+   "name": "Legacy modernization and technical debt",
+   "pain": "In-house engineering and business applications built over decades need upgrades, framework moves and cleanup nobody has time for.",
+   "diffs": [
+    "D1",
+    "D3",
+    "D2"
+   ],
+   "benefit": "Debt cleared without adding headcount; upgrades done on schedule; fewer people needed to keep old systems alive.",
+   "metric": "Hours of debt cleared; libraries brought current; dead code removed",
+   "proof": "Ramp: tens of thousands of hours of technical debt cleared. Gumroad: Devin is the #1 contributor with 1,500+ merged PRs.",
+   "calc": "mod",
+   "neg": "Run cost crowds out change, security exposure grows in unpatched libraries, and key-person risk rises.",
+   "accounts": [
+    [
+     "conocophillips",
+     3,
+     "Build-it-ourselves culture after a 20-25% workforce cut"
+    ],
+    [
+     "enterpriseproducts",
+     3,
+     "In-house .NET, SQL Server and Angular estate"
+    ],
+    [
+     "chevron",
+     2,
+     "Engineering moved to new hubs"
+    ],
+    [
+     "exxonmobil",
+     2,
+     "Fewer people after about 2,000 job cuts"
+    ]
+   ],
+   "refs_out": "Ramp; Gumroad",
+   "owner": "Application portfolio or engineering director",
+   "eb": "CIO",
+   "champion": "Platform or engineering productivity lead",
+   "score": {
+    "value": 3,
+    "urgency": 3,
+    "fit": 5,
+    "proof": 4
+   },
+   "short": "Tech debt"
+  },
+  {
+   "k": "product",
+   "name": "Software product engineering velocity",
+   "pain": "Digital product teams must ship roadmap features while testing across clouds, on-prem, edge and restricted customer environments.",
+   "diffs": [
+    "D1",
+    "D2",
+    "D6"
+   ],
+   "benefit": "More roadmap shipped per engineer; release validation faster; better digital margin.",
+   "metric": "Features shipped per quarter; release validation time; engineering cost per release",
+   "proof": "Cognition builds with Devin: 95%+ of its code is AI-written.",
+   "calc": "rev",
+   "neg": "Competitors ship faster, digital margin targets slip, and customers on restricted deployments wait for fixes.",
+   "accounts": [
+    [
+     "slb",
+     3,
+     "Digital margin 26.1% versus a 38-42% target; Petrel and Ocean plug-ins"
+    ],
+    [
+     "halliburton",
+     3,
+     "Landmark roadmap and air-gapped iEnergy releases"
+    ],
+    [
+     "bakerhughes",
+     3,
+     "Cordant on Azure and Leucipa on AWS"
+    ]
+   ],
+   "refs_out": "Cognition itself; Mercedes-Benz",
+   "owner": "Digital product engineering leader",
+   "eb": "President of the digital or software business",
+   "champion": "Head of engineering for a product line",
+   "score": {
+    "value": 4,
+    "urgency": 4,
+    "fit": 4,
+    "proof": 3
+   },
+   "short": "Product velocity"
+  },
+  {
+   "k": "knowledge",
+   "name": "Knowledge capture for new and global teams",
+   "pain": "Knowledge leaves with departing engineers while new hubs ramp on unfamiliar codebases.",
+   "diffs": [
+    "D7",
+    "D1",
+    "D2"
+   ],
+   "benefit": "New teams productive sooner; less dependency on a few experts.",
+   "metric": "Time to first merged change for new engineers; escalations to senior staff",
+   "proof": "Dreaming memory graph and the open Agent Memory Repo format.",
+   "calc": "",
+   "neg": "Hubs take a year to reach full productivity and programs wait on a few overloaded experts.",
+   "accounts": [
+    [
+     "chevron",
+     3,
+     "IT to Manila and Buenos Aires; engineering to Houston and Bengaluru"
+    ],
+    [
+     "exxonmobil",
+     2,
+     "Global business centers in Budapest, Bengaluru and elsewhere"
+    ],
+    [
+     "conocophillips",
+     2,
+     "Workforce down 20-25%"
+    ]
+   ],
+   "refs_out": "",
+   "owner": "Global engineering center leader",
+   "eb": "Chief Technology and Engineering Officer or CIO",
+   "champion": "Hub engineering manager",
+   "score": {
+    "value": 3,
+    "urgency": 3,
+    "fit": 3,
+    "proof": 2
+   },
+   "short": "Knowledge capture"
+  },
+  {
+   "k": "review",
+   "name": "Review and quality for AI-written code",
+   "pain": "AI assistants raise code volume, and review becomes the bottleneck and the risk.",
+   "diffs": [
+    "D2",
+    "D6"
+   ],
+   "benefit": "Faster, safer reviews with evidence attached; quality held to team rules.",
+   "metric": "Review hours per PR; escaped defects; time from ticket to reviewable PR",
+   "proof": "Rox: Devin rebuilds production failures into evals; the suite covers 72% of real usage.",
+   "calc": "rev",
+   "neg": "Unreviewed AI code reaches production, or reviews eat the time AI was supposed to save.",
+   "accounts": [
+    [
+     "chevron",
+     2,
+     "Copilot and Claude already in use"
+    ],
+    [
+     "slb",
+     1,
+     "Builds agentic AI internally"
+    ]
+   ],
+   "refs_out": "Rox",
+   "owner": "VP Engineering or developer experience lead",
+   "eb": "CTO or CIO",
+   "champion": "Developer experience lead",
+   "score": {
+    "value": 3,
+    "urgency": 2,
+    "fit": 4,
+    "proof": 3
+   },
+   "short": "AI code review"
+  }
+ ],
+ "weights": {
+  "value": 0.4,
+  "urgency": 0.25,
+  "fit": 0.2,
+  "proof": 0.15
+ }
+}

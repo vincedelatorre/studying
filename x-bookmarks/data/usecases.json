@@ -92,7 +92,12 @@
     "fit": 4,
     "proof": 4
    },
-   "short": "ERP code"
+   "short": "ERP code",
+   "levers": [
+    "cost",
+    "risk",
+    "prod"
+   ]
   },
   {
    "k": "mna",
@@ -145,7 +150,12 @@
     "fit": 4,
     "proof": 3
    },
-   "short": "M&A and carve-outs"
+   "short": "M&A and carve-outs",
+   "levers": [
+    "cost",
+    "rev",
+    "risk"
+   ]
   },
   {
    "k": "sec",
@@ -192,7 +202,11 @@
     "fit": 5,
     "proof": 3
    },
-   "short": "Security backlog"
+   "short": "Security backlog",
+   "levers": [
+    "risk",
+    "prod"
+   ]
   },
   {
    "k": "oncall",
@@ -234,7 +248,12 @@
     "fit": 5,
     "proof": 5
    },
-   "short": "On-call"
+   "short": "On-call",
+   "levers": [
+    "prod",
+    "rev",
+    "risk"
+   ]
   },
   {
    "k": "debt",
@@ -282,7 +301,12 @@
     "fit": 5,
     "proof": 4
    },
-   "short": "Tech debt"
+   "short": "Tech debt",
+   "levers": [
+    "prod",
+    "cost",
+    "risk"
+   ]
   },
   {
    "k": "product",
@@ -325,7 +349,11 @@
     "fit": 4,
     "proof": 3
    },
-   "short": "Product velocity"
+   "short": "Product velocity",
+   "levers": [
+    "rev",
+    "prod"
+   ]
   },
   {
    "k": "knowledge",
@@ -368,7 +396,11 @@
     "fit": 3,
     "proof": 2
    },
-   "short": "Knowledge capture"
+   "short": "Knowledge capture",
+   "levers": [
+    "prod",
+    "risk"
+   ]
   },
   {
    "k": "review",
@@ -405,7 +437,11 @@
     "fit": 4,
     "proof": 3
    },
-   "short": "AI code review"
+   "short": "AI code review",
+   "levers": [
+    "prod",
+    "risk"
+   ]
   }
  ],
  "weights": {
@@ -413,5 +449,62 @@
   "urgency": 0.25,
   "fit": 0.2,
   "proof": 0.15
- }
+ },
+ "levers": [
+  {
+   "k": "rev",
+   "name": "Increase revenue",
+   "def": "More revenue, or revenue protected or brought forward.",
+   "energy": "Digital and software product revenue for oilfield services (Delfi, Lumi, Landmark, Cordant, Leucipa) shipped sooner; production and commercial revenue protected by less downtime; midstream revenue integrity in nominations and measurement systems.",
+   "quantify": "Annual revenue tied to the roadmap or system × months delivered earlier ÷ 12 × share attributable to Devin; plus revenue lost per hour of downtime × hours avoided.",
+   "cases": [
+    "product",
+    "oncall",
+    "mna"
+   ],
+   "proof": "Customers ship more with the same team: Gumroad's #1 contributor is Devin, with 1,500+ merged PRs."
+  },
+  {
+   "k": "cost",
+   "name": "Decrease costs",
+   "def": "Less money spent for the same or better result.",
+   "energy": "SI and contractor maintenance spend, duplicate application run cost after acquisitions, transition service agreements, legacy ERP and mainframe run cost, AI spend tied to output.",
+   "quantify": "SI or contractor hours shifted × blended rate; duplicate run cost retired; TSA months avoided × monthly fee; model cost saved by routing to SWE-2.",
+   "cases": [
+    "erp",
+    "mna",
+    "debt"
+   ],
+   "proof": "Nubank: about 20x cost savings on a multi-million-line migration. SWE-2: near-frontier quality at up to 70% lower cost."
+  },
+  {
+   "k": "risk",
+   "name": "Decrease risk",
+   "def": "Lower chance or lower impact of a costly event.",
+   "energy": "Cyber incidents across IT and OT-adjacent code, regulatory exposure (TSA pipeline directives, controls on ERP changes), program execution risk on cutovers and integrations, key-person risk after workforce reductions.",
+   "quantify": "Cost of the event × annual likelihood × reduction in likelihood; plus penalties avoided; plus schedule risk removed on committed programs.",
+   "cases": [
+    "sec",
+    "erp",
+    "knowledge",
+    "review"
+   ],
+   "proof": "Security Swarm proves exploitability in a sandbox and opens the fix; every Devin change carries tests and a recording."
+  },
+  {
+   "k": "prod",
+   "name": "Improve productivity",
+   "def": "More output from the same people and time.",
+   "energy": "Engineering capacity after workforce cuts, review time on AI-written code, senior engineers pulled into on-call, new hubs ramping on unfamiliar code.",
+   "quantify": "Engineer hours freed × loaded rate, or the same hours expressed as backlog items delivered; review hours saved per PR × PR volume; on-call hours returned.",
+   "cases": [
+    "oncall",
+    "debt",
+    "review",
+    "knowledge",
+    "product"
+   ],
+   "proof": "Nubank 8-12x engineering efficiency; AngelList Oncall root-causes about 70% of incidents."
+  }
+ ]
 }

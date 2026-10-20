@@ -75,7 +75,7 @@
    "l": "M",
    "name": "Metrics",
    "def": "The quantified business outcome the customer expects, in their numbers, with a baseline.",
-   "energy": "Tie Devin to numbers the business already tracks: modernization program milestones, run-and-maintain spend, incident MTTR on production systems, vulnerability remediation time. Get a baseline from the customer, not from us. Translate each metric up the chain: review hours become delivery dates, delivery dates become program milestones, milestones become savings and margin.",
+   "energy": "Tie Devin to numbers the business already tracks: modernization program milestones, run-and-maintain spend, incident MTTR on production systems, vulnerability remediation time. Get a baseline from the customer, not from us. Translate each metric up the chain: review hours become delivery dates, delivery dates become program milestones, milestones become savings and margin. Express every metric through McMahon's four value levers: increase revenue, decrease costs, decrease risk, improve productivity.",
    "questions": [
     "Which modernization or upgrade items have slipped in the last year, and what does each delay cost?",
     "How many contractor or SI hours go to maintaining existing applications each year?",

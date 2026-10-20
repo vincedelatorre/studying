@@ -1,0 +1,48 @@
+{
+ "story": "worlds",
+ "id": "unity",
+ "title": "Build a playable Unity game with Opus 5.5, gate by gate",
+ "source": {"author": "rewind (@rewind02)", "date": "2026-10-14", "url": "https://x.com/rewind02/status/2110309991919853638"},
+ "thesis": "This is a course for going from an empty folder to a small game you can play, test and build. You connect Opus 5.5 to the Unity Editor, make a level and its rules, add enemies, bring in your own models and sound, and prove it all works. Its running example is a third-person courtyard: hack three relays while drones hunt you, then reach the exit. You can win, die and restart, and every run shuffles where things spawn.",
+ "labels": {"how": "What the two big builds really took", "gates": "Six gates from greybox to a shipped build", "renderers": "Three ways to connect Opus to Unity", "template": "The setup card and a reusable brief", "games": "Habits that keep a Unity project safe"},
+ "how": [
+  {"k":"Cyberpunk shooter","d":"Four enemy types, a three-phase boss and a new layout every run, built without opening a code editor. Opus planned it and worked through Meshy (models), Blender (city), ElevenLabs (sound) and Unity. It wrote a playtest and an autopilot. It also lit the city lavender and broke the hero's animation. The creator guided it step by step."},
+  {"k":"36-hour MMO","d":"Six races, four locations, a city of townspeople, with about ten agents running at once. It needed hours of research, hundreds of reference images, one very large brief and the creator's own methods packed as skills. Openly unfinished: awkward animations, a broken bridge, a bad collider."},
+  {"k":"The lesson","d":"Opus 5.5 executes clear instructions fast and checks much of its own work. Whether the game looks right, feels right and is fun is still your job, and the brief decides everything downstream."}
+ ],
+ "why": "Both headline builds are real, and both had help that's easy to miss: hours of preparation, other AI tools for models and sound, and a person watching and correcting. The course keeps the scope small enough to finish in a few evenings.",
+ "facts": [
+  {"stat":"7.85B tokens","ctx":"The 36-hour MMO, mostly cached context: about $2,200 at API prices and one full weekly usage limit"},
+  {"stat":"~7,000 credits","ctx":"Higgsfield for 300 models and 600 images on the MMO"},
+  {"stat":"900+ credits","ctx":"Meshy for the shooter's characters and props"},
+  {"stat":"$4 / $20","ctx":"Opus 5.5 API price per million input / output tokens"},
+  {"stat":"4 autopilot runs","ctx":"Found an unreachable roof, 9 stuck spots and a boss that died in 11 seconds"},
+  {"stat":"29 fps","ctx":"The build ran on the laptop's integrated GPU until the setting was fixed; on the gaming GPU it hit 140 fps and was capped at 60"}
+ ],
+ "renderers": [
+  {"name":"Unity's official plugin for Claude Code","when":"Used in the course. Readable, checkable skills from the engine maker, plus a recipe to prove the game is actually running. Install: /plugin marketplace add Unity-Technologies/unity-agent-plugin, then /plugin install unity@unity-agent-plugin."},
+  {"name":"Unity MCP (AI Assistant package)","when":"Used by both big builds. Needs Unity 6 and com.unity.ai.assistant 2.0 (pre-release). Enable under Project Settings → AI → Unity MCP, configure your client, and accept the first pending connection."},
+  {"name":"AI Game Developer (community)","when":"An npm command-line tool that sets up a project in three commands and generates skills for Claude Code. The project path can't contain spaces, and by default sign-in links your agent to a hosted endpoint; a local-only mode exists."}
+ ],
+ "gates": [
+  {"n":"Greybox level and player","d":"Player controls get a head start: import Unity's free Starter Assets third-person controller, commit, and have Claude build around it, or give a very precise movement request. A vague movement change once left an Unreal test game unplayable.","check":"Walk every pad, climb the walkway, try to fall off. Commit."},
+  {"n":"The rules","d":"Win, lose, restart and the relay-hacking loop, with UI through /unity:ui. Ask for a test of the core loop this early; it pays off every time a later batch breaks something quietly.","check":"Step on and off a pad, try the door after two hacks, press R mid-hack. Commit."},
+  {"n":"Drones","d":"Start with two enemy types, each with a tell: a visible or audible warning before attacking, like the shooter's blinking sniper lasers. Use /unity:initialize-ai-navigation for navigation and /unity:physics-3d-collision when shots or triggers misbehave.","check":"Win and lose against each type. Commit."},
+  {"n":"A fresh run every time","d":"A seed decides where everything spawns, so every run differs but any run can be replayed exactly. That also makes bugs reproducible.","check":"Start three runs, note one seed, replay it. Commit."},
+  {"n":"Models, light and sound","d":"Only now spend on looks. Character: photo to A-pose concept to a rigged, animated model in Meshy or Tripo; check the rest pose against the original (the shooter's hands clipped because Claude used each clip's first frame as rest pose). Level: build in Blender in real metres with named empty markers that become spawn points. Light: /unity:urp-postprocessing with before-and-after captures, and commit settings you like (one recompile wiped post-processing). Sound: check generated audio is real WAV and not clipping, then route with /unity:audio-setup-mixers.","check":"Clean animation, nothing blocks paths, scene reads at a glance, sounds fire on cue. Commit."},
+  {"n":"Test, build and ship","d":"Four test layers. Prove the game is really running: Unity throttles an unfocused editor, so Play mode can freeze on frame one while reporting it's playing; use the plugin's recipe (keep ticking, enter Play, prove the frame counter moves, capture the view, read the console, stop). Have Claude write an autopilot that plays with real controls and lists bugs before fixing. Keep PlayMode tests: unity test --mode PlayMode exits 0 on pass, 8 on failures, 6 with no verdict. Then make a real build early, play the build, and check which GPU it runs on.","check":"Tests green, autopilot list triaged, build plays at target frame rate on target hardware."}
+ ],
+ "template": "THE CARD (from the post)\n1. Install Unity 6 through Unity Hub. Create a project from the Universal 3D (URP) template. Commit.\n2. In Claude Code: /plugin marketplace add Unity-Technologies/unity-agent-plugin, then /plugin install unity@unity-agent-plugin\n3. Check unity --version. With the editor closed, run unity pipeline install --project-path <path>\n4. Open the editor and wait until unity status says ready. Start Claude Code in the project folder with Opus 5.5 on medium effort. Send a read-only prompt and confirm it names real objects in your scene.\n5. Build in order: greybox and player, rules, drones, seeded runs, models and sound. Commit at every gate.\n6. After every batch: it compiles, it really runs (the Play mode loop), then you play it.\n7. Write PlayMode tests for the core loop early. Run the autopilot before every gate; get the bug list before any fixes.\n8. Report bugs with seed, steps, expected and actual. Two failed fixes means roll back.\n9. Make a real build early, play the build, and check frame rate on the hardware you care about.\n\nREUSABLE BRIEF (built from the post's habits)\nSystem: <one system only, e.g. the relay-hacking rules>\nDone means: <a finish line you can test by playing, e.g. I can hack three relays and walk out the door>\nDon't change: <scripts, prefabs and scenes already accepted>\nWork through the connected editor; don't hand-edit scene files.\nIf a tool is missing or a step fails, stop and tell me. No silent workarounds.\nBefore you report success: compile, enter Play mode, prove the frame counter moves, capture the game view and read the console.\nReport every script, prefab and scene you created or changed.",
+ "habits": [
+  "Commit before every larger request and at every step that works; a bad batch then costs seconds.",
+  "Keep permission prompts on while learning. Turning them off also lets Claude run commands hidden in content it reads; only do that on a throwaway project.",
+  "Fix compile errors first. With C# errors Unity starts in Safe Mode, the Pipeline package doesn't load, and Claude can't reach the editor.",
+  "Treat Blender's MCP server with care: it runs model-generated code without guards. Use a VM or a machine without sensitive data.",
+  "Medium effort by default; /effort high only for a problem it keeps getting wrong.",
+  "Keep conversations short. Quality dropped once the context window was about half full, so /clear between tasks.",
+  "Running several agents: give each one different files. A scene or prefab is one file, so two agents on it overwrite each other. Split by system or scene and commit between rounds.",
+  "Time-box experiments and preview assets cheaply before refining the ones that are right."
+ ],
+ "related": ["2026-10-10 rewind02 584940","2026-10-12 rewind02 453986","2026-10-06 rewind02 732250","2026-09-29 hakimieiqbal 616340","2026-10-04 thebuggeddev 970076","2026-09-26 RoundtableSpace 555589","2026-10-15 _MaxBlade 067764","2026-10-13 frmdomi 148897"],
+ "sales": "The same pattern Devin sells: one system per task, a testable finish line, proof instead of a claim, separate files for parallel agents, and roll back after two failed fixes. The Roblox example in your bookmarks shows Devin testing a game more thoroughly than Codex by placing the character at every position."
+}

@@ -1,0 +1,38 @@
+{
+ "story": "worlds",
+ "title": "Run a motion studio, not a prompt",
+ "source": {"author": "rari (@0xwhrrari)", "date": "2026-10-01", "url": "https://x.com/0xwhrrari/status/2105643919119696297"},
+ "thesis": "Most Opus 5.5 videos look alike (big centered text, a gradient, fade-ins, logo at the end) because people judge the MP4 and skip everything that shapes it. The difference is the system around the model: the model writes a program, the program draws frames, a renderer turns frames into a film, and a review loop decides whether it ships. A prompt makes a clip; a studio makes the next clip without starting over.",
+ "how": [
+  {"k":"Frame function","d":"Opus writes code that answers: what does frame N look like? No frame is imagined as a separate image."},
+  {"k":"Renderer","d":"Calls the frame function across the timeline, captures frames and encodes the video."},
+  {"k":"Review loop","d":"Contact sheets and critique decide whether the film is ready, not the fact that the file exists."}
+ ],
+ "why": "Revision gets cheap and local. A title too early is one time value; an overshoot is one motion curve; a wrong product screen is an asset swap and a re-render. You never ask a video model to regenerate the whole shot and hope it remembers. Code-made motion fits product films, UI motion, data stories, typography, diagrams and explainers. Photoreal scenes, complex characters and organic movement may still need footage or generated video.",
+ "gates": [
+  {"n":"Director's brief","d":"A short production document, not a vibe prompt: the product, the one thing to remember, the allowed visual reference, what must come from the real product, and what makes the result unacceptable. It separates product facts the model may not invent from film choices it may.","check":"Brief answers all five questions"},
+  {"n":"Inspectable reference","d":"Give a frame, a short film or past work, and have the model write a style guide from it. Have it collect the real screens it will animate; if an asset is missing it stops and asks instead of drawing a fake.","check":"Style guide and approved asset list exist"},
+  {"n":"States and beats","d":"A storyboard says what the viewer knows at each moment. Every beat has an entry state, an exit state and a reason to exist; for UI, write the state list before the transitions. The shot list is a contract: a shot nobody can justify is cut.","check":"Every shot has entry, exit and reason"},
+  {"n":"Renderer chosen on purpose","d":"Canvas or SVG for a small one-off; a framework for a repeatable series: Remotion (video as React components at known frame numbers) or HyperFrames (editable HTML composition with explicit timing). The non-negotiable is seekability: no hidden clock, no unseeded randomness, every frame a deterministic query.","check":"Any frame renders identically on demand"},
+  {"n":"Motion with weight","d":"Motion should show mass, hierarchy and intent: small controls snap, large panels settle, the camera moves slowly enough to keep orientation, headlines arrive fast and hold. Use springs selectively and write a motion rule per class of object.","check":"Viewer always knows where to look"},
+  {"n":"Sound on the same timeline","d":"Treat audio as a timeline input. Measure the beats of a licensed or original track and cut to them, or place synthesized cues on the same timestamps as the picture.","check":"The film has shape with eyes closed"},
+  {"n":"Contact sheet before export","d":"Don't rewatch a full export ten times. Pull one frame per major beat plus strips around fast transitions, then give Opus the sheet with a specific critique task.","check":"Contact sheet reviewed and critiqued"},
+  {"n":"Variants from the source","d":"16:9 and 9:16 are different compositions: bigger type, fewer elements, a different camera path. Keep assets, timeline and states; define layout per format; contact-sheet every variant.","check":"Each format has its own contact sheet"},
+  {"n":"Package the studio","d":"Keep decisions in files another run can read: brief, style guide, render contract, review checklist, delivery structure. The next film swaps the brief and assets and keeps the rest; long runs resume from the last completed gate.","check":"A fresh run can resume from files alone"},
+  {"n":"Gates, not freedom","d":"Long autonomous runs need to know when to stop, ask or repair. No irreversible brand decisions; a missing real screen is a blocker; an unclear reference gets a question or a test frame, not 900 polished wrong frames.","check":"Stop conditions written into the run"}
+ ],
+ "renderers": [
+  {"name":"Canvas or SVG","when":"Small, self-contained one-off pieces"},
+  {"name":"Remotion","when":"Repeatable series; video as React components rendered at known frame numbers"},
+  {"name":"HyperFrames","when":"Editable HTML compositions with explicit timing and seekable animation runtimes"}
+ ],
+ "template": "You are directing a short film rendered from code. Work in gates and stop at each one for review.\n\nGATE 1 · BRIEF. Read brief.md. Restate: the product, the one thing the viewer must remember, the allowed reference, which elements must come from the real product, and what would make the result unacceptable. Do not invent product facts.\n\nGATE 2 · REFERENCE AND ASSETS. Study /reference and write style-guide.md (type, color, layout, motion character). Collect the exact real screens and assets you will use into /assets and list them in assets.md. If anything is missing, stop and ask. Never draw a stand-in for a real product screen.\n\nGATE 3 · STATES AND BEATS. Write shots.md: for each beat, the entry state, the exit state, what the viewer now knows, and why the beat exists. Cut any beat you cannot justify.\n\nGATE 4 · RENDER CONTRACT. Use [Remotion | HyperFrames | Canvas]. Every frame must be a pure function of the frame number: no wall-clock timers, no unseeded randomness. Write render-contract.md with fps, duration, resolution and formats.\n\nGATE 5 · MOTION AND SOUND. Write motion-rules.md (one rule per object class; springs only where mass matters). Put audio cues on the same timeline as the picture and cut to measured beats.\n\nGATE 6 · CONTACT SHEET. Render one frame per beat plus strips around the fastest transitions. Critique them against the brief and style guide: legibility, where the eye goes, continuity, brand accuracy. Fix, then re-render the sheet.\n\nGATE 7 · VARIANTS AND DELIVERY. Recompose each format (16:9, 9:16) from the source, not by cropping, and contact-sheet each one. Deliver to /out with a review-checklist.md showing every gate passed.\n\nThe film is done when the evidence says it works, not when the last command exits.",
+ "related": ["2026-09-26 pradeepXkapoor 599702","2026-10-05 p4nthera_ 589633","2026-09-27 yasinozmeen 254919","2026-10-10 sinaatalay 395421","2026-09-24 WinterArc2125 347650","2026-09-23 scheemunai 463902","2026-09-17 superalesha 331147","2026-09-25 gavinpurcell 854102"],
+ "games": [
+  "Trailers and teasers: the same gates apply. The brief names the gameplay moments that must be real captures, not generated stand-ins.",
+  "In-game UI and menus: the states-and-beats list is a UI state machine, and seekable rendering makes transitions testable frame by frame.",
+  "Cutscene animatics: block a scene as code first to lock timing, camera and sound beats, then hand off to Unreal or Blender for final art.",
+  "Store and social assets: recompose vertical and square variants from the same source instead of cropping the trailer."
+ ],
+ "sales": "The same lesson as the harness storyline: autonomy works when every stage leaves evidence and has a stop condition. It is a clean, non-coding example of why Devin attaches tests and recordings to every change."
+}

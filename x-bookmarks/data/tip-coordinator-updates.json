@@ -1,0 +1,14 @@
+{
+ "story": "swarms",
+ "id": "coordtip",
+ "tip": true,
+ "title": "Make the coordinator tell you when threads block or finish",
+ "source": {
+  "author": "X post (shared by you)",
+  "date": "2026-10-21",
+  "url": "https://x.com/search?q=%22send%20me%20more%20updates%22%20threads%20blocked%20project%20memory&f=live"
+ },
+ "thesis": "When a Claude Code project coordinator runs several threads, it tends to stay quiet until you ask. One instruction, saved to project memory, turns it into a proactive manager that posts a one-line note with a link whenever a thread is blocked or finishes something. The poster says it 10x'd their project experience.",
+ "instruction": "I want you to send me more updates on what's going on with the threads including when they're blocked and when they finish something, save this to the project memory.",
+ "why": "Saving it to project memory makes it stick across sessions, so you set it once. It's the same idea as Devin's live progress sidebar and session history: in multi-agent work, visibility into blocks and finishes is what lets one person steer many threads."
+}

@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ExxonMobil Key Players</title>
+<meta name="description" content="ExxonMobil IT leaders from LinkedIn Sales Navigator, with stated projects and how they connect to the playbook, account research and storylines.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --bg:#F2F4F3; --panel:#FFFFFF; --ink:#18211F; --muted:#5B6863; --line:#D9DFDC;
+  --accent:#0B7A6E; --accent-soft:#E0F0EC; --note:#9A5B00; --note-soft:#FBF0DE; --chip:#EAEEEC;
+  --bad:#B4432A; --ok:#2F7D3A;
+  --display:"Bricolage Grotesque",ui-sans-serif,system-ui,sans-serif;
+  --body:"IBM Plex Sans",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0F1513; --panel:#161E1B; --ink:#E4EBE8; --muted:#94A39D; --line:#27322E; --accent:#4FC7B6; --accent-soft:#16312C; --note:#E7A94A; --note-soft:#2E2414; --chip:#1F2926; --bad:#F08A70; --ok:#7BCB86; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0F1513; --panel:#161E1B; --ink:#E4EBE8; --muted:#94A39D; --line:#27322E; --accent:#4FC7B6; --accent-soft:#16312C; --note:#E7A94A; --note-soft:#2E2414; --chip:#1F2926; --bad:#F08A70; --ok:#7BCB86; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15.5px;line-height:1.6;margin:0;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 80px}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.wrap{max-width:1180px;margin:0 auto}
+header{padding-block:40px 26px;display:grid;gap:14px;border-bottom:2px solid var(--ink)}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{font-family:var(--display);font-weight:700;font-size:clamp(32px,5.4vw,54px);line-height:1.03;margin:0;letter-spacing:-.015em}
+h2{font-family:var(--display);font-weight:700;font-size:clamp(24px,3.4vw,34px);line-height:1.1;margin:0 0 6px;letter-spacing:-.01em}
+h3{font-family:var(--display);font-size:19px;margin:22px 0 6px}
+.lede{max-width:74ch;margin:0}
+.flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:13.5px}
+.flow a,.flow span.cur{padding:6px 11px;border-radius:999px;border:1px solid var(--line);background:var(--panel);text-decoration:none;color:var(--ink)}
+.flow span.cur{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.flow i{color:var(--muted);font-style:normal}
+nav.jump{display:flex;flex-wrap:wrap;gap:6px;padding-block:16px;position:sticky;top:0;background:var(--bg);z-index:5;border-bottom:1px solid var(--line)}
+nav.jump a{font-size:13px;padding:5px 10px;border:1px solid var(--line);border-radius:6px;text-decoration:none;color:var(--ink);background:var(--panel)}
+section{padding-block:34px 6px}
+.sub{color:var(--muted);max-width:76ch;margin:0 0 16px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin-block:8px 4px}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+.stat b{display:block;font-family:var(--display);font-size:30px;line-height:1.05}
+.stat span{font-size:13px;color:var(--muted)}
+.note{background:var(--note-soft);border-left:4px solid var(--note);padding:12px 16px;border-radius:6px;margin:16px 0;max-width:80ch}
+.note b{color:var(--note)}
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:var(--panel)}
+table{border-collapse:collapse;width:100%;min-width:760px;font-size:14px}
+th{font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;text-align:left;color:var(--muted);padding:10px 12px;border-bottom:1px solid var(--line);background:var(--bg)}
+td{padding:11px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child td{border-bottom:0}
+td ul{margin:0;padding-left:18px}
+td li{margin-bottom:3px}
+.name{font-weight:600}
+.small{font-size:12.5px;color:var(--muted)}
+.chip{display:inline-block;font-size:11.5px;font-family:var(--mono);padding:2px 8px;border-radius:999px;background:var(--chip);margin:0 4px 4px 0;white-space:nowrap}
+.chip.lv{background:var(--accent-soft);color:var(--accent)}
+.st{font-family:var(--mono);font-size:11.5px;padding:2px 8px;border-radius:999px;white-space:nowrap}
+.st.Confirmed,.st.Strengthened{background:var(--accent-soft);color:var(--ok)}
+.st.Partial,.st.Consistent{background:var(--note-soft);color:var(--note)}
+.st.Open{background:var(--chip);color:var(--bad)}
+.filters{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px}
+.filters button{font:inherit;font-size:13px;padding:5px 11px;border:1px solid var(--line);border-radius:999px;background:var(--panel);color:var(--ink);cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px 18px}
+.card h3{margin:0 0 6px;font-size:17px}
+.card p{margin:6px 0}
+.card .go{font-size:13.5px}
+.lv-row{display:grid;grid-template-columns:70px 1fr;gap:6px 16px;padding:12px 0;border-bottom:1px solid var(--line)}
+.lv-row:last-child{border-bottom:0}
+.lv-row b{font-family:var(--mono)}
+footer{margin-top:50px;border-top:1px solid var(--line);padding-top:18px;font-size:13px;color:var(--muted)}
+@media (max-width:640px){.lv-row{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header id="top">
+  <div class="eyebrow">Industrial &amp; Energy territory · ExxonMobil · LinkedIn pass of Oct 21, 2026</div>
+  <h1>ExxonMobil key players</h1>
+  <p class="lede">Who to engage first at ExxonMobil, what each says they are working on, and how that lines up with the account research, the MEDDPICC playbook and the storylines already in this library.</p>
+  <div class="flow"><a href="index.html">Bookmark library</a><i>→</i><a href="storylines.html">Storylines</a><i>→</i><a href="devin-agent-shift.html">Customer brief</a><i>→</i><a href="playbook.html">MEDDPICC playbook</a><i>→</i><span class="cur">ExxonMobil key players</span></div>
+</header>
+<nav class="jump" aria-label="Sections">
+  <a href="#found">What the pass found</a><a href="#players">Key players</a><a href="#themes">Project themes</a><a href="#ties">How this ties to everything else</a><a href="#lower">Lower tier</a><a href="#method">Method and gaps</a>
+</nav>
+
+<section id="found">
+  <h2>What the pass found</h2>
+  <p class="sub">A read-only sweep of ExxonMobil's Director, VP and CXO level in Information Technology, using Sales Navigator. Every project line is the person's own LinkedIn text, limited to ExxonMobil roles active since October 2023.</p>
+  <div class="stats">
+    <div class="stat"><b>29</b><span>IT leads at Director level or above</span></div>
+    <div class="stat"><b>27</b><span>profiles opened; 1 not visible, 2 left unopened</span></div>
+    <div class="stat"><b>18</b><span>priority players listed below</span></div>
+    <div class="stat"><b>0</b><span>mentions of Splunk, Datadog or Dynatrace</span></div>
+  </div>
+  <div class="note"><b>Read this first.</b> Most senior profiles list a title and nothing else. Concrete project language exists for a handful of people, led by Paolo Biagi. Observability tooling is not visible on LinkedIn for this group, so that part of the territory plan needs another source. Steve Comstock (CIO, Upstream) and William Cirioli (VP Global Technology) are restricted in Sales Navigator and need a manual look.</div>
+</section>
+
+<section id="players">
+  <h2>Key players</h2>
+  <p class="sub">Altitude uses the playbook's levels (L2 program sponsors, L3 CIO/CISO, L4 directors). The deal role is my inference from title and stated scope, not something the person said.</p>
+  <div class="filters" role="group" aria-label="Filter by theme">
+    <button type="button" data-f="all" aria-pressed="true">All</button>
+    <button type="button" data-f="Cloud" aria-pressed="false">Cloud</button>
+    <button type="button" data-f="Security" aria-pressed="false">Security</button>
+    <button type="button" data-f="ERP / legacy" aria-pressed="false">ERP / legacy</button>
+    <button type="button" data-f="Data" aria-pressed="false">Data</button>
+    <button type="button" data-f="AI" aria-pressed="false">AI</button>
+    <button type="button" data-f="OT" aria-pressed="false">OT</button>
+  </div>
+  <div class="tbl"><table id="ptable">
+    <thead><tr><th>Person</th><th>Level</th><th>Likely deal role</th><th>Stated projects (since Oct 2023)</th></tr></thead>
+    <tbody>
+<tr data-themes="Security" data-lv="L3"><td><div class="name">Michael Deal</div><div>Vice President of IT</div><div class="small">in role since May 2023</div></td><td><span class="chip lv">L3</span></td><td>Economic buyer candidate</td><td><ul><li>No project text on profile. Exxon&#x27;s 10-K says the VP of IT runs the cybersecurity program.</li></ul><span class="chip">Security</span></td></tr>
+<tr data-themes="ERP / legacy" data-lv="L2"><td><div class="name">Bill Keillor</div><div>Vice President, Business Transformation</div><div class="small">in role since ~May 2023</div></td><td><span class="chip lv">L2</span></td><td>Program sponsor candidate<div class="small">inference: business-transformation VP likely sits near the S/4HANA program</div></td><td><ul><li>Appeared in the Sales Navigator results; profile not read in full. Account research lists him as VP Business Transformation since May 2023.</li></ul><span class="chip">ERP / legacy</span></td></tr>
+<tr data-themes="Operations IT" data-lv="L3"><td><div class="name">Brad Harris</div><div>CIO Global Operations</div><div class="small">in role since Aug 2026</div></td><td><span class="chip lv">L3</span></td><td>Economic buyer candidate</td><td><ul><li>Head of Upstream IT to Mar 2024: global agile delivery teams, capability centers for Wells, Global Operations, and Global Gas Optimization &amp; Trading.</li><li>IT Discipline Manager Apr 2024 to Aug 2026 (talent and leadership development).</li></ul><span class="chip">Operations IT</span></td></tr>
+<tr data-themes="Supply chain" data-lv="L3"><td><div class="name">Carla Khan</div><div>CIO Commercial, Supply Chain &amp; Trading</div><div class="small">in role since Jul 2025</div></td><td><span class="chip lv">L3</span></td><td>Economic buyer candidate</td><td><ul><li>No description on profile.</li></ul><span class="chip">Supply chain</span></td></tr>
+<tr data-themes="" data-lv="L3"><td><div class="name">Steve Comstock</div><div>CIO, Upstream</div><div class="small">in role since n/a</div></td><td><span class="chip lv">L3</span></td><td>Economic buyer candidate</td><td><ul><li>Profile not visible in Sales Navigator. Needs a manual look.</li></ul></td></tr>
+<tr data-themes="" data-lv="L3"><td><div class="name">William Cirioli</div><div>Vice President Global Technology</div><div class="small">in role since n/a</div></td><td><span class="chip lv">L3</span></td><td>Unknown</td><td><ul><li>Profile not visible in Sales Navigator. Needs a manual look.</li></ul></td></tr>
+<tr data-themes="Security" data-lv="L3"><td><div class="name">Bryan P.</div><div>CISO and IT Risk Management Director</div><div class="small">in role since Jan 2025</div></td><td><span class="chip lv">L3</span></td><td>Security criteria owner<div class="small">surname not shown in Sales Navigator</div></td><td><ul><li>Hosting &amp; Platforms Manager Jun 2023 to Feb 2025. No descriptions.</li></ul><span class="chip">Security</span></td></tr>
+<tr data-themes="Security|OT" data-lv="L3"><td><div class="name">Shazad Shafi</div><div>OT Chief Information Security Officer</div><div class="small">in role since Dec 2023</div></td><td><span class="chip lv">L3</span></td><td>Security criteria owner (OT)</td><td><ul><li>Cybersecurity resilience for safe and secure operations; protecting sensitive data and critical infrastructure.</li></ul><span class="chip">Security</span><span class="chip">OT</span></td></tr>
+<tr data-themes="Cloud|Security|AI" data-lv="L4"><td><div class="name">Paolo Biagi</div><div>Senior IT Director, IT Global Projects</div><div class="small">in role since Apr 2023</div></td><td><span class="chip lv">L4</span></td><td>Champion candidate</td><td><ul><li>$150-200M annual IT portfolio, about 35 projects a year, 100+ steered under SAFe.</li><li>Cloud migration of 3,000+ on-prem applications and servers to AWS.</li><li>Zero Trust deployment for a new global client covering ~70K+ users.</li><li>Identity governance transformation on SailPoint.</li><li>Generative AI foundation: copilots and LLMs.</li></ul><span class="chip">Cloud</span><span class="chip">Security</span><span class="chip">AI</span></td></tr>
+<tr data-themes="ERP / legacy|Data" data-lv="L4"><td><div class="name">Ryan Seager</div><div>Senior IT Director, Global Operations IT Projects</div><div class="small">in role since Aug 2026</div></td><td><span class="chip lv">L4</span></td><td>Champion candidate</td><td><ul><li>Senior Technical Program Manager (Mar 2023 to Dec 2024): led a program to modernize the Energy Products supply chain, including SaaS and a Snowflake data platform.</li><li>Digital transformation for global operating sites; manages project portfolios and budgets.</li></ul><span class="chip">ERP / legacy</span><span class="chip">Data</span></td></tr>
+<tr data-themes="ERP / legacy" data-lv="L4"><td><div class="name">Aaron Surber</div><div>Head of Record to Report IT</div><div class="small">in role since Apr 2022</div></td><td><span class="chip lv">L4</span></td><td>Champion candidate<div class="small">inference: closest named leader to the 12-into-1 ERP consolidation</div></td><td><ul><li>Global finance transformation: 250+ staff across 17 teams.</li><li>Consolidating multiple legacy systems into modern ERP platforms.</li></ul><span class="chip">ERP / legacy</span></td></tr>
+<tr data-themes="Security" data-lv="L4"><td><div class="name">Matthew Knies</div><div>Senior Director, Identity and Access Management</div><div class="small">in role since Sep 2021</div></td><td><span class="chip lv">L4</span></td><td>Influencer (identity)</td><td><ul><li>Transformational program to modernize internal IAM tools, program and processes.</li><li>Leads 300+ people in Bangalore.</li></ul><span class="chip">Security</span></td></tr>
+<tr data-themes="Operations IT" data-lv="L4"><td><div class="name">Azmil Ab Aziz</div><div>General Manager, Upstream IT</div><div class="small">in role since Apr 2022</div></td><td><span class="chip lv">L4</span></td><td>Champion candidate</td><td><ul><li>Leads Production Technologies support to optimize upstream oil and gas production.</li><li>Recent post on IT workforce and location strategy for the Kuala Lumpur technology organization.</li></ul><span class="chip">Operations IT</span></td></tr>
+<tr data-themes="Supply chain" data-lv="L4"><td><div class="name">Sarah Parsons</div><div>Senior Director, Supply Chain &amp; Trading IT</div><div class="small">in role since Jan 2025</div></td><td><span class="chip lv">L4</span></td><td>Influencer</td><td><ul><li>Heads the global IT organization that architects, builds and supports Supply Chain and Trading enterprise IT.</li><li>Oct 2023 to Dec 2024: site infrastructure and end-user support across North and South America.</li></ul><span class="chip">Supply chain</span></td></tr>
+<tr data-themes="Architecture" data-lv="L4"><td><div class="name">LeAnne Fulton</div><div>Senior Director / Portfolio Manager, Technology Architecture</div><div class="small">in role since Jun 2025</div></td><td><span class="chip lv">L4</span></td><td>Technical gatekeeper candidate<div class="small">inference: architecture portfolio likely reviews new tooling</div></td><td><ul><li>No description. HCM implementation leader Apr 2023 to May 2025.</li></ul><span class="chip">Architecture</span></td></tr>
+<tr data-themes="Infrastructure" data-lv="L4"><td><div class="name">Rhoda G.</div><div>Director of IT Operations, Strathcona Refinery &amp; Canada Midstream</div><div class="small">in role since Oct 2021</div></td><td><span class="chip lv">L4</span></td><td>Influencer<div class="small">surname not shown in Sales Navigator</div></td><td><ul><li>New enterprise data center; IT infrastructure for a $750M bio-diesel facility; IT readiness for $100M+ refinery turnarounds.</li></ul><span class="chip">Infrastructure</span></td></tr>
+<tr data-themes="AI" data-lv="L4"><td><div class="name">James Lynch</div><div>Senior Director, Production, Distribution &amp; Wells IT</div><div class="small">in role since ~Jul 2026</div></td><td><span class="chip lv">L4</span></td><td>Unknown (new in role)</td><td><ul><li>No experience detail visible. Reshared a post on AI and skill atrophy about two weeks before collection.</li></ul><span class="chip">AI</span></td></tr>
+<tr data-themes="AI" data-lv="L4"><td><div class="name">Darien Mathews</div><div>Head of IT, AI Business and Strategy</div><div class="small">in role since Apr 2016</div></td><td><span class="chip lv">L4</span></td><td>Influencer (AI)</td><td><ul><li>Title is directly AI-relevant. The one description on the profile (Watson analytics) may belong to an earlier employer, so it is not counted.</li></ul><span class="chip">AI</span></td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section id="themes">
+  <h2>Project themes</h2>
+  <p class="sub">What the named programs cluster into, and who owns each.</p>
+  <div class="grid">
+    <div class="card"><h3>Cloud migration</h3><p>3,000+ on-prem applications and servers moving to AWS.</p><p class="small">Paolo Biagi</p></div>
+    <div class="card"><h3>Identity and security</h3><p>Zero Trust for ~70K+ users, SailPoint identity governance, IAM tool modernization, and a separate OT security function.</p><p class="small">Paolo Biagi · Matthew Knies · Shazad Shafi · Bryan P.</p></div>
+    <div class="card"><h3>ERP and legacy consolidation</h3><p>Multiple legacy finance systems into modern ERP platforms; a supply-chain modernization program.</p><p class="small">Aaron Surber · Ryan Seager · Bill Keillor (unread)</p></div>
+    <div class="card"><h3>Data platform</h3><p>Snowflake data platform delivered inside the Energy Products supply-chain program.</p><p class="small">Ryan Seager</p></div>
+    <div class="card"><h3>Generative AI</h3><p>Copilots and LLMs as a foundational capability; an AI business and strategy lead; AI as a live topic for the Wells IT head.</p><p class="small">Paolo Biagi · Darien Mathews · James Lynch</p></div>
+    <div class="card"><h3>Infrastructure and operations</h3><p>A new enterprise data center and bio-diesel facility IT in Canada; production-technology support for Upstream.</p><p class="small">Rhoda G. · Azmil Ab Aziz</p></div>
+  </div>
+</section>
+
+<section id="ties">
+  <h2>How this ties to everything else</h2>
+  <p class="sub">The account research in this library was built from public sources and listed hypotheses about who the buyer, champion and competition would be. This pass tests them against what the people say about themselves.</p>
+
+  <h3>1. Account research hypotheses, tested against LinkedIn</h3>
+  <p class="small">Source: <a href="data/accounts/exxonmobil.json">data/accounts/exxonmobil.json</a>, hypotheses block.</p>
+  <div class="tbl"><table>
+    <thead><tr><th>Hypothesis</th><th>What LinkedIn shows</th><th>Status</th></tr></thead>
+    <tbody>
+<tr><td>Economic buyer: VP of IT (Michael Deal per aggregator)</td><td>LinkedIn shows Michael Deal as Vice President of IT since May 2023. His profile carries no project text, so the title is confirmed and his priorities are not.</td><td><span class="st Confirmed">Confirmed</span><div class="small">Title only</div></td></tr>
+<tr><td>Champion: Paolo Biagi, Senior IT Director, IT Global Projects</td><td>His profile is the richest in the set: AWS migration of 3,000+ applications, Zero Trust, SailPoint IGA, a generative AI foundation, and a $150-200M portfolio.</td><td><span class="st Strengthened">Strengthened</span><div class="small">Best entry point</div></td></tr>
+<tr><td>Champion: Upstream IT GM (Azmil Ab Aziz)</td><td>Confirmed as GM, Upstream IT. His stated scope is production-technology support, not application modernization, so the fit is weaker than assumed.</td><td><span class="st Partial">Partial</span><div class="small">Re-test the angle</div></td></tr>
+<tr><td>Champion: engineering and DevOps leads at the Global Business Centers</td><td>Matthew Knies runs a 300+ person identity organization in Bangalore. Budapest and Bengaluru site IT chiefs sit in the lower tier. No DevOps platform head surfaced at director level.</td><td><span class="st Partial">Partial</span><div class="small">Search by platform titles</div></td></tr>
+<tr><td>Secondary entry: OT cybersecurity managers</td><td>A named OT Chief Information Security Officer (Shazad Shafi, since Dec 2023) sits above the manager roles the research found. The CISO (Bryan P.) was also found.</td><td><span class="st Strengthened">Strengthened</span><div class="small">Security path is real</div></td></tr>
+<tr><td>Economic buyer or sponsor: Global Business Solutions and the ERP program</td><td>An IT-function search does not reach these people. Aaron Surber (Record to Report IT) describes the legacy-to-ERP consolidation, and Bill Keillor (VP Business Transformation) appeared in results. The GBS president is still unnamed.</td><td><span class="st Open">Open</span><div class="small">Search Business Transformation next</div></td></tr>
+<tr><td>Stack: AWS, Snowflake, SailPoint, ServiceNow, Kubernetes, Celonis</td><td>AWS (Biagi), Snowflake (Seager) and SailPoint (Biagi) appear in profiles. ServiceNow, Kubernetes and Celonis do not.</td><td><span class="st Partial">Partial</span><div class="small">3 of 6 seen</div></td></tr>
+<tr><td>Observability stack: Splunk, Datadog, Dynatrace</td><td>None of the 27 profiles read mention any of the three, and the account research does not either. This gap has to be closed from job postings, talks or discovery.</td><td><span class="st Open">Open</span><div class="small">No signal yet</div></td></tr>
+<tr><td>Competition: Copilot-style assistants already in place</td><td>Biagi&#x27;s generative AI foundation names co-pilots and LLMs, with no vendor stated. It supports the hypothesis that an assistant is already deployed, but does not say which.</td><td><span class="st Partial">Partial</span><div class="small">Vendor unverified</div></td></tr>
+<tr><td>Pain: centralization and job cuts strain IT</td><td>Several senior IT roles changed hands recently: Harris to CIO Global Operations (Aug 2026), Seager (Aug 2026), Lynch (about Jul 2026), Khan (Jul 2025). That fits the Global Operations reorganization. Whether it strains delivery is not visible.</td><td><span class="st Consistent">Consistent</span><div class="small">Circumstantial</div></td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>2. Who sits at which altitude</h3>
+  <p class="small">The <a href="playbook.html#altitude">pain-by-altitude</a> section of the playbook says to use each level's own words. Here is who that is at ExxonMobil.</p>
+  <div class="tbl" style="padding:4px 16px"><div role="list">
+    <div class="lv-row" role="listitem"><b>L1</b><div><b style="font-family:inherit">Board, CEO, CFO.</b> Not covered by this IT-function pass. The account research names Darren Woods and CFO Neil Hansen, and the $20B structural savings target is the number to connect to.</div></div>
+    <div class="lv-row" role="listitem"><b>L2</b><div><b style="font-family:inherit">Program sponsors.</b> Bill Keillor (Business Transformation) is the one name found here. The Global Business Solutions president is still unidentified.</div></div>
+    <div class="lv-row" role="listitem"><b>L3</b><div><b style="font-family:inherit">CIO, CISO.</b> Michael Deal, Brad Harris, Carla Khan, Steve Comstock, Bryan P., Shazad Shafi. Their pain in the playbook's words: run-and-maintain eats the budget, the vulnerability backlog grows, AI tools spread faster than control.</div></div>
+    <div class="lv-row" role="listitem"><b>L4</b><div><b style="font-family:inherit">Directors and platform leads.</b> Paolo Biagi, Ryan Seager, Aaron Surber, Matthew Knies, Azmil Ab Aziz, Sarah Parsons, LeAnne Fulton, Rhoda G. Their pain: backlog, reviews piling up, senior people on incidents.</div></div>
+    <div class="lv-row" role="listitem"><b>L5</b><div><b style="font-family:inherit">Managers and practitioners.</b> Lower-tier list below, not prioritized yet.</div></div>
+  </div></div>
+
+  <h3>3. Where each player fits in MEDDPICC</h3>
+  <p class="small">See <a href="playbook.html#meddpicc">MEDDPICC, letter by letter</a>. Candidates only; none is confirmed by a conversation.</p>
+  <div class="grid">
+    <div class="card"><h3>Economic buyer</h3><p>Michael Deal (VP of IT, owns the cyber program per the 10-K), Brad Harris, Carla Khan, Steve Comstock. Bill Keillor if the ERP program is the entry point.</p></div>
+    <div class="card"><h3>Champion</h3><p>Paolo Biagi first, then Aaron Surber for the legacy and ERP angle and Ryan Seager for program delivery. Azmil Ab Aziz if an Upstream use case is found.</p></div>
+    <div class="card"><h3>Decision criteria</h3><p>Security sets the bar: Bryan P. and Shazad Shafi, with Matthew Knies for identity and access. LeAnne Fulton may hold architecture review.</p></div>
+    <div class="card"><h3>Identify pain</h3><p>Use the program language they already publish: 3,000+ applications to AWS, legacy systems into modern ERP, a Snowflake data platform, Zero Trust at ~70K users.</p></div>
+    <div class="card"><h3>Competition</h3><p>A copilot-style assistant is named in Biagi's AI foundation. Find out which one before the first meeting.</p></div>
+    <div class="card"><h3>Metrics</h3><p>Biagi's $150-200M annual portfolio and 35 projects a year is the cleanest unit to tie cost-per-project to the structural savings ledger.</p></div>
+  </div>
+
+  <h3>4. Entry point from the playbook</h3>
+  <p>The playbook's <a href="playbook.html#accounts">account play</a> for ExxonMobil is custom-code remediation for the S/4HANA consolidation. This pass adds two more routes: a security backlog play through the CISO, OT CISO and identity organization, and a migration play through Biagi's cloud program. The playbook's <a href="playbook.html#usecases">use case map</a> already carries both patterns (migration or large-scale refactor, and security backlog clearance).</p>
+  <p>For openers by persona, use <a href="playbook.html#openers">conversation openers</a>; for the first customer conversation, the pilot and proof-of-value path is in <a href="playbook.html#scoping">scoping and proof of value</a>.</p>
+
+  <h3>5. Storylines and the library</h3>
+  <div class="grid">
+    <div class="card"><h3>When Agents Act, Security Becomes the Gate</h3><p>Use with the CISO, OT CISO and identity leads. The account research notes the Audit Committee reviews cyber annually, so security is a real gate here.</p><p class="go"><a href="storylines.html">Open storylines</a></p></div>
+    <div class="card"><h3>Agents Clock In at Real Companies</h3><p>Adoption evidence for L3 and L4 conversations, alongside Biagi's own generative AI program.</p><p class="go"><a href="storylines.html">Open storylines</a></p></div>
+    <div class="card"><h3>Where Agents Run: The Sandbox Fight</h3><p>The account research expects security and OT teams to ask where an agent runs. This is the argument to bring.</p><p class="go"><a href="storylines.html">Open storylines</a></p></div>
+    <div class="card"><h3>Customer brief</h3><p>The ready-to-share version of the story: <a href="devin-agent-shift.html">Devin and the Agent Shift</a>, including the four-step pilot.</p></div>
+    <div class="card"><h3>Bookmark chapters to study</h3><p>Chapter 3 Cognition &amp; Devin, chapter 4 Sandboxes, VMs &amp; Cloud Environments, and chapter 10 Security &amp; Trust map to the three conversations above.</p><p class="go"><a href="index.html">Open the library</a></p></div>
+  </div>
+</section>
+
+<section id="lower">
+  <h2>Lower tier</h2>
+  <p class="sub">Kept for later, not a priority now. Includes people whose roles are outside the buyer path.</p>
+  <div class="tbl"><table>
+    <thead><tr><th>Person</th><th>Role</th><th>Note</th></tr></thead>
+    <tbody>
+<tr><td class="name">Tom Denslow</td><td>Applications &amp; Plant Computing Group Head (UK)</td><td>Process control, real-time optimization, plant information systems. OT-adjacent.</td></tr>
+<tr><td class="name">Sebastian Ronneberger</td><td>Head of IT Operations (Germany/Poland)</td><td>Affiliate-level infrastructure and desktop services.</td></tr>
+<tr><td class="name">Gergely Gabor Toth</td><td>IT Chief of Site (Budapest)</td><td>Cloud security role ended Aug 2022, outside the window.</td></tr>
+<tr><td class="name">Zeenat Patnaik</td><td>IT Business Capability Supervisor (Bengaluru)</td><td>Software development background, scrum.</td></tr>
+<tr><td class="name">Ariel Alejandro Natale</td><td>IT Chief of Site</td><td>New in role.</td></tr>
+<tr><td class="name">Arturo Gonzalez</td><td>Director de TI</td><td>Little visible detail.</td></tr>
+<tr><td class="name">Louis Archibong</td><td>GM, Nigeria IT &amp; CX Cluster</td><td>Africa and East Med. cluster; no detail visible.</td></tr>
+<tr><td class="name">Brad Crabtree</td><td>Sr Director, Global Head of Technology Policy, Low Carbon Solutions</td><td>Policy role, not a software buyer.</td></tr>
+    </tbody>
+  </table></div>
+  <p class="small" style="margin-top:12px">Held back as low confidence: Karam Mahmoud (profile not visible), Robert Bohan (title reads "Director of consultant security company"), Gabriel Silva and Rayne Fallon (location and spelling suggest a different "Exxon" or a retail site). Verify before adding.</p>
+</section>
+
+<section id="method">
+  <h2>Method and gaps</h2>
+  <p class="sub">Sales Navigator, ExxonMobil, seniority Director, Vice President and CXO, function Information Technology. A broader keyword string returned 162 leads but matched marketing and trading titles on "transformation", so it was dropped. No connection requests, messages or saves were made, and contact details were not collected.</p>
+  <ul>
+    <li>Review Steve Comstock and William Cirioli by hand.</li>
+    <li>Run the Engineering function (99 leads at the same seniority) and Business Transformation titles, which the IT filter misses.</li>
+    <li>Fill the observability gap from job postings, conference talks and press for Splunk, Datadog, Dynatrace, ServiceNow and AWS.</li>
+    <li>Repeat for Chevron, Halliburton and Enterprise Products once this format is approved.</li>
+  </ul>
+  <p class="small">Raw data: <a href="../exxon-key-players/key-players.json">exxon-key-players/key-players.json</a> · notes: <a href="../exxon-key-players/README.md">exxon-key-players/README.md</a></p>
+</section>
+
+<footer>All project statements are self-reported on LinkedIn and unverified. Titles and tenures were current when read on Oct 21, 2026.</footer>
+</div>
+<script>
+(function(){
+  var btns=document.querySelectorAll('.filters button');
+  var rows=document.querySelectorAll('#ptable tbody tr');
+  btns.forEach(function(b){b.addEventListener('click',function(){
+    var f=b.getAttribute('data-f');
+    btns.forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false')});
+    rows.forEach(function(r){
+      var th=r.getAttribute('data-themes')||'';
+      r.hidden = !(f==='all' || ('|'+th+'|').indexOf('|'+f+'|')>-1);
+    });
+  })});
+})();
+</script>
+</body>
+</html>

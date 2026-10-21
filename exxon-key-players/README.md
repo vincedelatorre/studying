@@ -7,7 +7,7 @@ First test of the LinkedIn / Sales Navigator comb for the Cognition Industrial &
 1. Sales Navigator > ExxonMobil account > "View all employees" (74K+ leads).
 2. Filters: Current company = ExxonMobil, Seniority = Director + Vice President + CXO.
 3. First try added a broad Boolean keyword string (software engineering, architecture, cloud, modernization, transformation, legacy, cybersecurity, DevOps, Splunk, Datadog, Dynatrace). That returned 162 leads but was noisy: marketing, trading and market-development titles matched on "transformation" and "architecture". Dropped it.
-4. Final filter: Function = Information Technology on top of the seniority filter. 29 leads. 27 profiles were read in full; 1 was not visible, and 2 page-2 results were held back as low confidence.
+4. Final filter: Function = Information Technology on top of the seniority filter. 29 leads. 27 profiles were opened; 1 was not visible, and 2 page-2 results were left unopened as low confidence.
 5. Per profile: current role, About, ExxonMobil experience entries and descriptions, recent LinkedIn activity (90 days).
 
 ## What to know first
@@ -22,6 +22,7 @@ First test of the LinkedIn / Sales Navigator comb for the Cognition Industrial &
 | Name | Role (ExxonMobil) | In role since | Project signals (last 3 yrs, self-reported) |
 | --- | --- | --- | --- |
 | Michael Deal | Vice President of IT | May 2023 | No description on profile. 29+ years at Exxon; prior VP roles in subsurface and digital delivery ended Aug 2023 (outside window). |
+| Bill Keillor | Vice President, Business Transformation | ~May 2023 | Appeared in the Sales Navigator results; profile not read in full. Likely near the S/4HANA program (inference). |
 | Brad Harris | CIO Global Operations | Aug 2026 | Previously Head of Upstream IT (to Mar 2024): global agile delivery teams, owned relationships with Upstream presidents and SVPs, capability centers for Wells, Global Operations, and Global Gas Optimization & Trading. IT Discipline Manager Apr 2024 to Aug 2026 (talent and leadership development). |
 | Carla Khan | CIO Commercial, Supply Chain & Trading | Jul 2025 | No description on profile. |
 | Steve Comstock | CIO, Upstream | n/a | Profile not visible in Sales Navigator. |

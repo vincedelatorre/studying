@@ -10,6 +10,7 @@
 | --- | --- |
 | [`x-bookmarks/playbook.html`](x-bookmarks/playbook.html) | Internal MEDDPICC playbook for the energy vertical: value framework, question bank, talk track trees, mutual action plan, account plays |
 | [`x-bookmarks/data/accounts/`](x-bookmarks/data/accounts/) | Sourced account research: ExxonMobil, Chevron, Halliburton, SLB, Baker Hughes, ConocoPhillips, Enterprise Products |
+| [`x-bookmarks/exxon.html`](x-bookmarks/exxon.html) | ExxonMobil key-players page on the site: players by altitude and deal role, project themes, and how it ties to the playbook, account research and storylines |
 | [`exxon-key-players/`](exxon-key-players/README.md) | ExxonMobil key-player pilot from LinkedIn / Sales Navigator (Oct 21, 2026): IT directors, VPs and CIOs with stated modernization, cloud and security projects, plus the structured data |
 | [`x-bookmarks/devin-agent-shift.html`](x-bookmarks/devin-agent-shift.html) | Customer-ready brief: seven shifts, what Devin does about each, proof, industrial and energy fit, four-step pilot |
 | [`x-bookmarks/storylines.html`](x-bookmarks/storylines.html) | 11 dated storylines with turning points, key numbers and customer talking points, every claim linked to its post |

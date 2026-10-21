@@ -4,33 +4,198 @@
   "method": "Sales Navigator, Current company = ExxonMobil, Seniority = Director + VP + CXO, Function = Information Technology (29 leads; 27 profiles read). Read-only, no engagement. Only ExxonMobil roles active on or after Oct 2023 are used. Self-reported LinkedIn content.",
   "observability_tools_mentioned": [],
   "tier1": [
-    {"name": "Michael Deal", "title": "Vice President of IT", "since": "2023-05", "signals": []},
-    {"name": "Brad Harris", "title": "CIO Global Operations", "since": "2026-08", "signals": ["Head of Upstream IT to Mar 2024: global agile delivery, capability centers for Wells, Global Operations, Global Gas Optimization & Trading"]},
-    {"name": "Carla Khan", "title": "CIO Commercial, Supply Chain & Trading", "since": "2025-07", "signals": []},
-    {"name": "Steve Comstock", "title": "CIO, Upstream", "since": null, "signals": [], "note": "profile not visible in Sales Navigator"},
-    {"name": "William Cirioli", "title": "Vice President Global Technology", "since": null, "signals": [], "note": "profile not visible in Sales Navigator"},
-    {"name": "Bryan P.", "title": "CISO and IT Risk Management Director", "since": "2025-01", "signals": ["Hosting & Platforms Manager Jun 2023 to Feb 2025"]},
-    {"name": "Shazad Shafi", "title": "OT Chief Information Security Officer", "since": "2023-12", "signals": ["OT cybersecurity resilience, critical infrastructure protection"]},
-    {"name": "Paolo Biagi", "title": "Senior IT Director, IT Global Projects", "since": "2023-04", "signals": ["$150-200M annual IT portfolio, ~35 projects/yr", "cloud migration of 3,000+ applications/servers to AWS", "Zero Trust for ~70K+ users", "SailPoint identity governance transformation", "generative AI foundation: copilots and LLMs", "SAFe portfolio management"]},
-    {"name": "Ryan Seager", "title": "Senior IT Director, Global Operations IT Projects", "since": "2026-08", "signals": ["Supply chain modernization program for Energy Products incl. SaaS and Snowflake data platform (Mar 2023 to Dec 2024)", "digital transformation for global operating sites"]},
-    {"name": "Matthew Knies", "title": "Senior Director, Identity and Access Management", "since": "2021-09", "signals": ["modernizing internal IAM tools, program and processes", "300+ staff in Bangalore"]},
-    {"name": "Aaron Surber", "title": "Head of Record to Report IT", "since": "2022-04", "signals": ["global finance transformation, 250+ staff in 17 teams", "consolidating multiple legacy systems into modern ERP platforms"]},
-    {"name": "LeAnne Fulton", "title": "Senior Director / Portfolio Manager, Technology Architecture", "since": "2025-06", "signals": ["HCM implementation leader Apr 2023 to May 2025"]},
-    {"name": "Sarah Parsons", "title": "Senior Director, Supply Chain & Trading IT", "since": "2025-01", "signals": ["global IT org architecting and supporting Supply Chain and Trading enterprise IT", "Oct 2023 to Dec 2024: Americas site infrastructure and end-user support"]},
-    {"name": "Azmil Ab Aziz", "title": "General Manager, Upstream IT", "since": "2022-04", "signals": ["Production Technologies support to optimize upstream production", "IT workforce and location strategy, Kuala Lumpur"]},
-    {"name": "Rhoda G.", "title": "Director of IT Operations, Strathcona Refinery & Canada Midstream", "since": "2021-10", "signals": ["new enterprise data center", "IT infrastructure for $750M bio-diesel facility", "IT readiness for $100M+ refinery turnarounds"]},
-    {"name": "James Lynch", "title": "Senior Director, Production, Distribution & Wells IT", "since": "2026-07", "signals": ["reshared post on AI skill atrophy (about 2 weeks before collection)"]},
-    {"name": "Darien Mathews", "title": "Head of IT, AI Business and Strategy", "since": "2016-04", "signals": [], "note": "only description (Watson analytics) may belong to an earlier employer; not counted"}
+    {
+      "name": "Michael Deal",
+      "title": "Vice President of IT",
+      "since": "2023-05",
+      "signals": []
+    },
+    {
+      "name": "Bill Keillor",
+      "title": "Vice President, Business Transformation",
+      "since": "2023-05",
+      "signals": [
+        "listed in Sales Navigator results; profile not read in full"
+      ],
+      "note": "account research lists him as VP Business Transformation since May 2023"
+    },
+    {
+      "name": "Brad Harris",
+      "title": "CIO Global Operations",
+      "since": "2026-08",
+      "signals": [
+        "Head of Upstream IT to Mar 2024: global agile delivery, capability centers for Wells, Global Operations, Global Gas Optimization & Trading"
+      ]
+    },
+    {
+      "name": "Carla Khan",
+      "title": "CIO Commercial, Supply Chain & Trading",
+      "since": "2025-07",
+      "signals": []
+    },
+    {
+      "name": "Steve Comstock",
+      "title": "CIO, Upstream",
+      "since": null,
+      "signals": [],
+      "note": "profile not visible in Sales Navigator"
+    },
+    {
+      "name": "William Cirioli",
+      "title": "Vice President Global Technology",
+      "since": null,
+      "signals": [],
+      "note": "profile not visible in Sales Navigator"
+    },
+    {
+      "name": "Bryan P.",
+      "title": "CISO and IT Risk Management Director",
+      "since": "2025-01",
+      "signals": [
+        "Hosting & Platforms Manager Jun 2023 to Feb 2025"
+      ]
+    },
+    {
+      "name": "Shazad Shafi",
+      "title": "OT Chief Information Security Officer",
+      "since": "2023-12",
+      "signals": [
+        "OT cybersecurity resilience, critical infrastructure protection"
+      ]
+    },
+    {
+      "name": "Paolo Biagi",
+      "title": "Senior IT Director, IT Global Projects",
+      "since": "2023-04",
+      "signals": [
+        "$150-200M annual IT portfolio, ~35 projects/yr",
+        "cloud migration of 3,000+ applications/servers to AWS",
+        "Zero Trust for ~70K+ users",
+        "SailPoint identity governance transformation",
+        "generative AI foundation: copilots and LLMs",
+        "SAFe portfolio management"
+      ]
+    },
+    {
+      "name": "Ryan Seager",
+      "title": "Senior IT Director, Global Operations IT Projects",
+      "since": "2026-08",
+      "signals": [
+        "Supply chain modernization program for Energy Products incl. SaaS and Snowflake data platform (Mar 2023 to Dec 2024)",
+        "digital transformation for global operating sites"
+      ]
+    },
+    {
+      "name": "Matthew Knies",
+      "title": "Senior Director, Identity and Access Management",
+      "since": "2021-09",
+      "signals": [
+        "modernizing internal IAM tools, program and processes",
+        "300+ staff in Bangalore"
+      ]
+    },
+    {
+      "name": "Aaron Surber",
+      "title": "Head of Record to Report IT",
+      "since": "2022-04",
+      "signals": [
+        "global finance transformation, 250+ staff in 17 teams",
+        "consolidating multiple legacy systems into modern ERP platforms"
+      ]
+    },
+    {
+      "name": "LeAnne Fulton",
+      "title": "Senior Director / Portfolio Manager, Technology Architecture",
+      "since": "2025-06",
+      "signals": [
+        "HCM implementation leader Apr 2023 to May 2025"
+      ]
+    },
+    {
+      "name": "Sarah Parsons",
+      "title": "Senior Director, Supply Chain & Trading IT",
+      "since": "2025-01",
+      "signals": [
+        "global IT org architecting and supporting Supply Chain and Trading enterprise IT",
+        "Oct 2023 to Dec 2024: Americas site infrastructure and end-user support"
+      ]
+    },
+    {
+      "name": "Azmil Ab Aziz",
+      "title": "General Manager, Upstream IT",
+      "since": "2022-04",
+      "signals": [
+        "Production Technologies support to optimize upstream production",
+        "IT workforce and location strategy, Kuala Lumpur"
+      ]
+    },
+    {
+      "name": "Rhoda G.",
+      "title": "Director of IT Operations, Strathcona Refinery & Canada Midstream",
+      "since": "2021-10",
+      "signals": [
+        "new enterprise data center",
+        "IT infrastructure for $750M bio-diesel facility",
+        "IT readiness for $100M+ refinery turnarounds"
+      ]
+    },
+    {
+      "name": "James Lynch",
+      "title": "Senior Director, Production, Distribution & Wells IT",
+      "since": "2026-07",
+      "signals": [
+        "reshared post on AI skill atrophy (about 2 weeks before collection)"
+      ]
+    },
+    {
+      "name": "Darien Mathews",
+      "title": "Head of IT, AI Business and Strategy",
+      "since": "2016-04",
+      "signals": [],
+      "note": "only description (Watson analytics) may belong to an earlier employer; not counted"
+    }
   ],
   "tier2": [
-    {"name": "Tom Denslow", "title": "Applications & Plant Computing Group Head", "note": "process control, real-time optimization, plant information"},
-    {"name": "Sebastian Ronneberger", "title": "Head of IT Operations (Germany/Poland)"},
-    {"name": "Gergely Gabor Toth", "title": "IT Chief of Site (Budapest)", "note": "cloud security role ended Aug 2022"},
-    {"name": "Zeenat Patnaik", "title": "IT Business Capability Supervisor"},
-    {"name": "Ariel Alejandro Natale", "title": "IT Chief of Site"},
-    {"name": "Arturo Gonzalez", "title": "Director de TI"},
-    {"name": "Louis Archibong", "title": "GM, Nigeria IT & CX Cluster"},
-    {"name": "Brad Crabtree", "title": "Senior Director, Global Head of Technology Policy, Low Carbon Solutions", "note": "policy role"}
+    {
+      "name": "Tom Denslow",
+      "title": "Applications & Plant Computing Group Head",
+      "note": "process control, real-time optimization, plant information"
+    },
+    {
+      "name": "Sebastian Ronneberger",
+      "title": "Head of IT Operations (Germany/Poland)"
+    },
+    {
+      "name": "Gergely Gabor Toth",
+      "title": "IT Chief of Site (Budapest)",
+      "note": "cloud security role ended Aug 2022"
+    },
+    {
+      "name": "Zeenat Patnaik",
+      "title": "IT Business Capability Supervisor"
+    },
+    {
+      "name": "Ariel Alejandro Natale",
+      "title": "IT Chief of Site"
+    },
+    {
+      "name": "Arturo Gonzalez",
+      "title": "Director de TI"
+    },
+    {
+      "name": "Louis Archibong",
+      "title": "GM, Nigeria IT & CX Cluster"
+    },
+    {
+      "name": "Brad Crabtree",
+      "title": "Senior Director, Global Head of Technology Policy, Low Carbon Solutions",
+      "note": "policy role"
+    }
   ],
-  "held_back_low_confidence": ["Karam Mahmoud", "Robert Bohan", "Gabriel Silva", "Rayne Fallon"]
+  "held_back_low_confidence": [
+    "Karam Mahmoud",
+    "Robert Bohan",
+    "Gabriel Silva",
+    "Rayne Fallon"
+  ]
 }

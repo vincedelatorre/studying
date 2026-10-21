@@ -1,0 +1,90 @@
+{
+ "id": "slb", "account": "SLB", "research": "slb", "tier": 1,
+ "stage": "Prospect: no relationship yet",
+ "play": "Integration and modernization behind the 2030 digital margin target",
+ "thesis": "SLB told investors it is 'becoming a digital-first company'. It plans to double Digital to ~$2B ARR and lift EBITDA margin from ~26% to 38-42% by 2030, while integrating ChampionX, Tachyus and the S&P Global upstream software portfolio and certifying ~200 marketplace products. That margin gap is mostly about engineering productivity. Devin closes it with parallel integration, modernization and certification work, as capacity for the teams building Lumi and Tela.",
+ "why_now": [
+  {"t": "The 2030 Digital targets are public, and the margin has to rise by 12-16 points.", "ref": "snapshot:6"},
+  {"t": "Q1 2026 Digital EBITDA margin fell to 26.1%.", "ref": "agent_signals:5"},
+  {"t": "Three acquired software stacks are being integrated now.", "ref": "agent_signals:0"},
+  {"t": "Q3 2026 results on Oct 23. Use the call commentary as a fresh trigger.", "ref": "snapshot:8"}
+ ],
+ "challenges": [
+  {"stated": "Double Digital revenue and ARR to ~$2B, with a 38-42% EBITDA margin by 2030.", "who": "Digital Investor Day, Jun 2026", "ref": "snapshot:6", "devin": "Ship more product without growing R&D at the same rate. Devin output is measured against margin."},
+  {"stated": "'Becoming a digital-first company'.", "who": "Olivier Le Peuch, CEO", "ref": "snapshot:5", "devin": "Use the CEO's phrase as the opener for the value story."},
+  {"stated": "Integrating ChampionX, Tachyus and the S&P Global upstream software into Delfi and Lumi.", "who": "Q2 2026 / Apr 2026 releases", "ref": "agent_signals:0", "devin": "Parallel Devins for adapters, migrations and regression tests."},
+  {"stated": "Marketplace certification for security, interoperability and compatibility on ~200 products from 30+ partners.", "who": "SLB marketplace launch", "ref": "agent_signals:3", "devin": "Code Scans and Security Swarm as a certification pipeline. Devin could also be a marketplace listing itself."},
+  {"stated": "Products must support multi-cloud, on-prem and edge deployment.", "who": "Investor Day", "ref": "agent_signals:2", "devin": "Build, test and upgrade work across every deployment target, run in parallel."},
+  {"stated": "More than 120 Petrel plug-ins built on Ocean, a Microsoft-based framework.", "who": "SLB developer docs", "ref": "agent_signals:1", "devin": "Windows machines for desktop-product testing and .NET modernization."}
+ ],
+ "pain_chain": [
+  {"level": "L1 CEO / CFO", "pain": "The digital-first story and the 2030 margin commitment to investors.", "measure": "Digital ARR; EBITDA margin 38-42%"},
+  {"level": "L2 President Digital / CTO / CPO", "pain": "Integration and modernization use up R&D capacity after $407M of workforce charges.", "measure": "Roadmap delivery; R&D as a share of revenue"},
+  {"level": "L3 Delfi/Lumi platform and product engineering heads", "pain": "Three codebases, multi-cloud targets, and a plug-in compatibility burden.", "measure": "Integration milestones; release cadence"},
+  {"level": "L4 Engineers", "pain": ".NET desktop debt, CVE toil, certification testing.", "measure": "Backlog; time-to-certify"}
+ ],
+ "com": {
+  "elevator": "You've committed to doubling Digital and adding 12-16 margin points by 2030 while integrating three acquired software stacks. Devin gives your platform teams autonomous engineers for integration, modernization and certification work, so you ship more without hiring at the same rate.",
+  "before": ["Senior engineers tied up integrating acquisitions", "Petrel and Ocean .NET modernization is slow and risky for plug-in compatibility", "Certification and multi-cloud testing are bottlenecks"],
+  "negative": ["Margin target missed; ARR growth limited by capacity", "Customers held back by compatibility breaks", "Partners are slower to list on the marketplace"],
+  "after": ["Integration work done in parallel with tests", "Modernization done incrementally with compatibility suites", "Certification pipeline run by Devin"],
+  "required": ["Windows and Linux machines", "Fits multi-cloud CI", "Protects IP and runs in isolated machines", "Works alongside SLB's own agent frameworks"],
+  "metrics": ["Integration milestones vs plan", "Engineering cost per release", "Time-to-certify a marketplace listing", "Digital EBITDA margin contribution"],
+  "how": ["Dynamic Workflows", "Code Scans and Security Swarm", "Windows VMs", "DeepWiki"],
+  "proof": ["Customer stories: swarms, harness, security", "Possible partnership: listing on the SLB marketplace"]
+ },
+ "meddpicc": [
+  {"l": "M", "score": 1, "known": "2030 ARR and margin targets; Q1 margin 26.1%.", "gap": "No R&D productivity baseline.", "next": "Ask about engineering cost per release and the size of the integration backlog."},
+  {"l": "E", "score": 1, "known": "Rakesh Jaggi (Digital), Demos Pafitis (CTO), Tarek Rizk (CPO, IT).", "gap": "Which budget pays: product R&D or internal IT.", "next": "The champion confirms who owns engineering tooling spend."},
+  {"l": "D1", "score": 0, "known": "-", "gap": "Criteria unknown; probably IP protection and build-vs-buy.", "next": "Seed isolation and Windows support as criteria."},
+  {"l": "D2", "score": 0, "known": "-", "gap": "Process unknown.", "next": "Map it with the champion."},
+  {"l": "P", "score": 0, "known": "Partners with Microsoft, AWS, Google.", "gap": "Path: vendor, partner or marketplace.", "next": "Explore a dual track: customer and marketplace partner."},
+  {"l": "I", "score": 1, "known": "The margin pain is public.", "gap": "No named owner of the gap.", "next": "Discovery with a platform engineering head."},
+  {"l": "C1", "score": 0, "known": "-", "gap": "No champion.", "next": "Target Delfi/Lumi platform engineering VPs."},
+  {"l": "C2", "score": 1, "known": "Own agent builds (Tela, Lumi agentic framework, NVIDIA).", "gap": "Which coding tools are used internally.", "next": "Frame Devin as capacity for the people building Lumi."}
+ ],
+ "stakeholders": [
+  {"name": "Rakesh Jaggi", "title": "President, Digital", "role": "Economic buyer (likely)", "letter": "E", "src": "leaders:1", "verify": false, "cares": "2030 Digital ARR and margin", "approach": "Exec letter tied to the margin gap."},
+  {"name": "Demosthenis Pafitis", "title": "Chief Technology Officer", "role": "Economic buyer / technical", "letter": "E", "src": "leaders:2", "verify": false, "cares": "Technology centers' productivity", "approach": "Pitch R&D velocity."},
+  {"name": "Tarek Rizk", "title": "Chief Performance Officer (incl. IT)", "role": "Economic buyer (internal IT)", "letter": "E", "src": "leaders:3", "verify": false, "cares": "Cost agenda; IT and digital enablement", "approach": "Second thread: internal IT and ChampionX system consolidation."},
+  {"name": "Stephane Biguet", "title": "EVP & CFO", "role": "Influencer", "letter": "I", "src": "leaders:4", "verify": false, "cares": "Digital margin path", "approach": "Use the savings narrative later."},
+  {"name": "TBD", "title": "CIO (Cybersecurity Director reports in)", "role": "Technical buyer", "letter": "D1", "src": "leaders:6", "verify": true, "cares": "Internal IT and security", "approach": "Find the name first.", "q": "SLB \"chief information officer\""},
+  {"name": "TBD", "title": "VP / Head of Delfi or Lumi platform engineering", "role": "Champion candidate", "letter": "C1", "src": "", "verify": true, "cares": "Integration and release cadence", "approach": "Primary champion target.", "q": "SLB (Delfi OR Lumi) \"platform engineering\" OR \"engineering director\""},
+  {"name": "TBD", "title": "Petrel / Ocean engineering manager", "role": "Technical buyer", "letter": "D1", "src": "", "verify": true, "cares": ".NET modernization; plug-in compatibility", "approach": "Pitch Windows VM testing.", "q": "SLB Petrel OR Ocean \"engineering manager\""},
+  {"name": "TBD", "title": "Marketplace partner program lead", "role": "Partner path", "letter": "P", "src": "", "verify": true, "cares": "Listings and certification", "approach": "Explore Devin as a listing and as a certification tool.", "q": "SLB digital marketplace partner"}
+ ],
+ "searches": [
+  {"label": "Digital engineering leaders", "q": "SLB Digital (\"VP\" OR director) engineering"},
+  {"label": "ChampionX digital integration", "q": "SLB ChampionX digital integration manager"},
+  {"label": "Tela / Lumi AI engineering", "q": "SLB (Tela OR Lumi) AI engineering"}
+ ],
+ "engagement": {
+  "entry": "Champion in Delfi/Lumi platform engineering; EB is Rakesh Jaggi, approached with a margin narrative. Run a parallel partner conversation with the marketplace team.",
+  "phases": [
+   {"when": "Weeks 1-2", "what": ["Use the Q3 call (Oct 23) as a trigger", "Build the Digital engineering list"]},
+   {"when": "Weeks 2-6", "what": ["Outreach sequence; discovery on integration backlog", "Open the marketplace partner conversation"]},
+   {"when": "Weeks 6-14", "what": ["Scope a POV: acquired-code integration or Petrel plug-in compatibility suite"]}
+  ],
+  "pg": [
+   {"to": "Platform engineering heads", "channel": "LinkedIn + email", "message": "Three acquisitions to integrate and a 38-42% margin target. Parallel Devins take the integration and test work."},
+   {"to": "Rakesh Jaggi", "channel": "Exec letter", "message": "Digital-first means engineering leverage. Here's a measured path to the margin gap."},
+   {"to": "Marketplace team", "channel": "Partner intro", "message": "Devin as a certification pipeline and a marketplace listing."}
+  ],
+  "events": ["SLB Digital Forum", "ADIPEC", "CERAWeek"],
+  "partners": ["AWS, Microsoft, Google (SLB's hyperscaler partners)", "SLB digital marketplace"]
+ },
+ "map": [
+  {"wk": 0, "step": "Discovery with a platform engineering head", "owner": "Joint", "letter": "I", "exit": "Backlog named"},
+  {"wk": 2, "step": "Baseline integration backlog and cost per release", "owner": "SLB", "letter": "M", "exit": "Numbers"},
+  {"wk": 4, "step": "EB meeting (Jaggi org)", "owner": "Joint", "letter": "E", "exit": "Sponsor"},
+  {"wk": 5, "step": "IP and security review", "owner": "SLB", "letter": "D2", "exit": "Approved"},
+  {"wk": 6, "step": "POV plan signed", "owner": "Joint", "letter": "D1", "exit": "Criteria"},
+  {"wk": 7, "step": "POV", "owner": "Cognition", "letter": "M", "exit": "Results"},
+  {"wk": 13, "step": "Readout, proposal and paper", "owner": "Joint", "letter": "P", "exit": "Signed"}
+ ],
+ "risks": [
+  {"r": "Build-it-ourselves reflex (Tela, Lumi agents)", "m": "Frame Devin as capacity for SLB's builders; explore the partner track."},
+  {"r": "IP sensitivity of the Petrel codebase", "m": "Isolated machines; start with less sensitive repos."}
+ ],
+ "next": ["Listen to the Q3 call on Oct 23", "Find the CIO and platform engineering heads", "Draft the exec letter to Jaggi"]
+}

@@ -1,0 +1,40 @@
+{
+ "title": "Oil & Gas Territory Plan",
+ "start": "2026-11-02",
+ "thesis": "Each account in this territory has made a public commitment that is mostly an engineering problem: ERP consolidation, digital-platform growth, cost-out, or cyber resilience, with fewer people. Lead every play with the customer's own stated challenge (Command of the Message). Qualify hard against MEDDPICC. Only forecast what the customer has agreed to in a mutual action plan.",
+ "principles": [
+  "Tier the territory, then time-block it. Tier 1 accounts get most of the hours.",
+  "Know the customer's pain at every level, from CEO down to engineer, before the first call. Use their numbers and their words.",
+  "Find the champion first, then the economic buyer. A champion has power, influence and a personal stake, and will sell for you when you're not in the room.",
+  "Every stage has a customer-verifiable exit. If it isn't in the mutual action plan, it doesn't count toward the forecast.",
+  "Scope before you prove. No proof of value without a go/no-go from the economic buyer and a cost justification.",
+  "Inspect, don't expect. Score MEDDPICC weekly and act on the gaps."
+ ],
+ "tiers": [
+  {"tier": 1, "label": "Tier 1: build a full plan", "rule": "A large public engineering program, a named sponsor, and a large cost-out target. Weekly multi-thread outreach; exec alignment within 60 days."},
+  {"tier": 2, "label": "Tier 2: run plays", "rule": "A clear public pain but no named program owner yet. Persona plays every two weeks; aim for a champion within 90 days."},
+  {"tier": 3, "label": "Tier 3: nurture", "rule": "Watch for triggers like leadership changes, earnings commentary or job postings. Monthly touch."}
+ ],
+ "pg": [
+  {"lever": "Trigger-based outbound", "how": "Watch earnings calls, 10-K/20-F filings, leadership moves and job postings for signals like 'S/4HANA', 'modernization', 'cyber' and 'GenAI'. Each trigger starts a 3-touch sequence within 48 hours.", "target": "2 new meetings per Tier 1 account per month"},
+  {"lever": "Persona sequences", "how": "Use 4 sequences: platform/DevOps lead (backlog), modernization program lead (dates), CISO org (vulnerability backlog), CIO/CFO (savings ledger). Each opens with a challenge the customer has stated publicly.", "target": "Reply rate above 8%"},
+  {"lever": "Executive letters", "how": "Cognition leadership writes to the CIO/CFO for each Tier 1 account, tied to the company's own target.", "target": "1 exec meeting per Tier 1 account per quarter"},
+  {"lever": "Partner co-sell", "how": "Use AWS and Azure account teams, the Marketplace private-offer path, and the SI already running the program.", "target": "1 partner-sourced intro per account"},
+  {"lever": "Events and community", "how": "Use Digitalization in Oil & Gas, ARC Forum, CERAWeek, AWS re:Invent energy and Houston DevOps meetups. Book meetings before the event.", "target": "3 booked meetings per event"},
+  {"lever": "Champion referrals", "how": "Every closed proof of value asks for 2 introductions to sister business units.", "target": "1 expansion thread per win"}
+ ],
+ "cadence": [
+  {"when": "Daily", "what": "PG block (90 minutes): triggers, sequences, LinkedIn research on one account"},
+  {"when": "Weekly", "what": "MEDDPICC scorecard update; MAP review with each active champion; forecast call with evidence only"},
+  {"when": "Monthly", "what": "Re-check stakeholders (leaders change often), refresh each account's public challenges, exec sponsor touch"},
+  {"when": "Quarterly", "what": "Territory review: re-tier accounts, add new oil & gas accounts, retire stale plays"}
+ ],
+ "linkedin": [
+  "LinkedIn is not scraped here. Names come from public sources: filings, press releases, conference agendas, and aggregators that copy LinkedIn. Each name links to its source.",
+  "'Verify' means you confirm the name on LinkedIn or Sales Navigator before any outreach: current title, start date, reporting line.",
+  "Each role has a search button. Save the results as a Sales Navigator lead list per account and record champion tests (power, influence, personal stake) in the CRM.",
+  "Re-check every month. Several leaders in this territory change roles in Jan 2027."
+ ],
+ "add_account": "To add an account, add data/accounts/<id>.json (research) and data/territory/<id>.json (plan), add the id to 'order' below, then run: python3 tools/build_territory.py",
+ "order": ["exxonmobil", "chevron", "halliburton", "slb", "enterpriseproducts"]
+}

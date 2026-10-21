@@ -1,0 +1,90 @@
+{
+ "id": "halliburton", "account": "Halliburton", "research": "halliburton", "tier": 2,
+ "stage": "Prospect: no relationship yet",
+ "play": "Landmark engineering velocity after the rightsizing",
+ "thesis": "Halliburton cut 20-40% of staff in several divisions and about $100M a quarter of labor cost, yet Landmark still has to ship DecisionSpace 365, integrate InformatiQ, and support air-gapped deployments, while corporate IT runs an SAP S/4 migration and recovers from the 2024 cyber incident. Devin adds product-engineering and security capacity without adding back headcount.",
+ "why_now": [
+  {"t": "Rightsizing is done and the labor savings are booked. Now delivery has to hold up with fewer people.", "ref": "recent_events:1"},
+  {"t": "The InformatiQ acquisition brings new cloud-native code to integrate.", "ref": "tech_posture:1"},
+  {"t": "Landmark is hiring AI agent architects. Agents are on the agenda, but they're building, not buying.", "ref": "tech_posture:4"},
+  {"t": "The Aug 2024 breach cost ~$35M. Security spending still gets approved.", "ref": "agent_signals:0"}
+ ],
+ "challenges": [
+  {"stated": "'Rightsizing our operations and overhead' cuts quarterly labor cost by ~$100M.", "who": "Jeff Miller, CEO, Q3 2025", "ref": "recent_events:1", "devin": "Keep the release cadence with a smaller team, using parallel Devins on tests, upgrades and fixes."},
+  {"stated": "Layoffs of roughly 20-40% in several divisions, according to reports.", "who": "Reuters", "ref": "recent_events:0", "devin": "Capture product knowledge in DeepWiki; work through the maintenance backlog."},
+  {"stated": "InformatiQ integration into the Landmark portfolio.", "who": "Halliburton release", "ref": "agent_signals:4", "devin": "Integration code, API adapters and test harnesses built in parallel."},
+  {"stated": "SAP S/4 migration cost $50M in Q3 2025 alone.", "who": "Q3 2025 earnings", "ref": "tech_posture:7", "devin": "Custom-code and interface remediation reduces SI spend."},
+  {"stated": "Cyber incident Aug 2024: data exfiltrated, ~$35M cost. AI-driven attacks cited as a risk.", "who": "10-K / 8-K", "ref": "agent_signals:0", "devin": "Security Swarm and Code Scans across internal and product estates."},
+  {"stated": "The iEnergy restricted mode has no outbound connectivity.", "who": "Landmark docs", "ref": "agent_signals:5", "devin": "Devin validates releases for restricted deployments in its own isolated test machines."}
+ ],
+ "pain_chain": [
+  {"level": "L1 CEO / CFO", "pain": "Margin expansion via 'differentiated technology' with a smaller labor base.", "measure": "Operating margin; labor cost per quarter"},
+  {"level": "L2 SVP Landmark / COO (worldwide technology)", "pain": "The Landmark roadmap and integrations have fewer engineers to deliver them.", "measure": "Release dates; ARR from digital"},
+  {"level": "L3 Landmark engineering directors, IT directors", "pain": "Test and release validation for many deployment modes; S/4 interfaces.", "measure": "Release cycle time; escaped defects"},
+  {"level": "L4 Engineers", "pain": "Legacy DecisionSpace code, upgrades, CVEs.", "measure": "Backlog age; CVE count"}
+ ],
+ "com": {
+  "elevator": "You've taken $100M a quarter out of labor and still have to ship Landmark and land S/4. Devin is an autonomous AI engineer that works the product and security backlog in parallel, with tests and recordings, so the roadmap holds without rehiring.",
+  "before": ["Fewer engineers on a large legacy portfolio", "InformatiQ integration queued", "Restricted and air-gapped release validation done by hand", "Security remediation after the 2024 breach"],
+  "negative": ["Landmark slips against SLB and Shape Digital partners", "Customers churn over quality", "Another incident hits a regulated customer"],
+  "after": ["Parallel Devins on upgrades, tests and integrations", "Repeatable release validation in isolated machines", "Vulnerability backlog shrinking, with evidence"],
+  "required": ["Windows and Linux test machines", "No code leaves approved boundaries", "Azure fit", "Proof of work on every PR"],
+  "metrics": ["Release cycle time", "Backlog closed per month", "Vulnerability time-to-fix", "Integration milestones for InformatiQ"],
+  "how": ["Dynamic Workflows", "Code Scans and Security Swarm", "DeepWiki", "Isolated Windows VMs"],
+  "proof": ["Customer stories: swarms, security", "Show Devin as a tool Landmark's AI architects can use, not a competitor"]
+ },
+ "meddpicc": [
+  {"l": "M", "score": 1, "known": "~$100M a quarter labor savings; $50M a quarter on S/4.", "gap": "No engineering baseline.", "next": "Ask Landmark for release cycle time and backlog."},
+  {"l": "E", "score": 1, "known": "Tony Antoun (Landmark); Slocum (COO, worldwide technology); Pope (CAO, CISO reports to him).", "gap": "CIO and CISO unnamed.", "next": "Find the CIO and CISO on LinkedIn."},
+  {"l": "D1", "score": 0, "known": "-", "gap": "Criteria unknown.", "next": "Co-write with the champion."},
+  {"l": "D2", "score": 0, "known": "-", "gap": "Process unknown; security review likely after the breach.", "next": "Map the process with the champion."},
+  {"l": "P", "score": 0, "known": "Microsoft/Accenture relationship (2020).", "gap": "Procurement path.", "next": "Check the Azure Marketplace path."},
+  {"l": "I", "score": 1, "known": "Pain from the cuts is public.", "gap": "No named slipped release.", "next": "Discovery."},
+  {"l": "C1", "score": 0, "known": "-", "gap": "No champion yet.", "next": "Target Landmark engineering directors."},
+  {"l": "C2", "score": 1, "known": "In-house multi-agent build (LangChain/AutoGen); Accenture/Avanade.", "gap": "Which coding tools are in use.", "next": "Ask about current AI coding tools."}
+ ],
+ "stakeholders": [
+  {"name": "Tony Antoun", "title": "SVP, Landmark Software & Services", "role": "Economic buyer (Landmark)", "letter": "E", "src": "leaders:4", "verify": false, "cares": "Landmark growth, InformatiQ, product velocity", "approach": "Exec letter on roadmap velocity after rightsizing; meet at LIFE (Landmark Innovation Forum)."},
+  {"name": "J. Shannon Slocum", "title": "EVP & COO (worldwide technology)", "role": "Economic sponsor", "letter": "E", "src": "leaders:1", "verify": false, "cares": "Technology differentiation, operations", "approach": "Reach him later through Antoun."},
+  {"name": "Lawrence J. Pope", "title": "EVP & Chief Administrative Officer", "role": "Economic buyer (corporate IT/security)", "letter": "E", "src": "leaders:2", "verify": false, "cares": "Cyber posture after the breach; IT cost", "approach": "Security-led entry for corporate IT."},
+  {"name": "TBD (20+ yr veteran)", "title": "Chief Information Officer", "role": "Economic / technical buyer", "letter": "E", "src": "leaders:8", "verify": true, "cares": "S/4 migration, IT operations", "approach": "Find the name first.", "q": "Halliburton \"chief information officer\""},
+  {"name": "TBD", "title": "Chief Information Security Officer", "role": "Technical buyer / blocker", "letter": "D1", "src": "leaders:9", "verify": true, "cares": "Post-breach remediation", "approach": "Lead with Security Swarm.", "q": "Halliburton CISO"},
+  {"name": "Josh Sears", "title": "SVP, Drilling & Evaluation", "role": "Influencer", "letter": "I", "src": "leaders:5", "verify": true, "cares": "Digital as an enabler for D&E", "approach": "Field software thread (LOGIX)."},
+  {"name": "TBD", "title": "Landmark VP / Director of Engineering (DecisionSpace 365)", "role": "Champion candidate", "letter": "C1", "src": "", "verify": true, "cares": "Release velocity", "approach": "Primary champion target.", "q": "Halliburton Landmark \"director\" engineering DecisionSpace"},
+  {"name": "TBD", "title": "Landmark AI Agent Architect lead (Bengaluru)", "role": "Technical buyer / build-vs-buy", "letter": "C2", "src": "", "verify": true, "cares": "Multi-agent frameworks", "approach": "Bring them in as allies: Devin builds their agents faster.", "q": "Halliburton Landmark \"AI agent\" architect"}
+ ],
+ "searches": [
+  {"label": "Landmark engineering leaders", "q": "Halliburton Landmark (\"engineering manager\" OR director OR \"VP\") software"},
+  {"label": "SAP S/4 program", "q": "Halliburton S/4HANA (manager OR lead OR director)"},
+  {"label": "Security engineering", "q": "Halliburton (cybersecurity OR \"security engineering\") manager"}
+ ],
+ "engagement": {
+  "entry": "Two entry points: Landmark product engineering (champion) to Antoun, and corporate IT security through the CISO.",
+  "phases": [
+   {"when": "Weeks 1-3", "what": ["Name the CIO and CISO", "Build the Landmark director list"]},
+   {"when": "Weeks 3-8", "what": ["Outreach sequence; discovery on release velocity", "Security pre-read"]},
+   {"when": "Weeks 8-14", "what": ["Scoped POV: InformatiQ integration tests or CVE backlog"]}
+  ],
+  "pg": [
+   {"to": "Landmark engineering directors", "channel": "LinkedIn + email", "message": "Same roadmap, smaller team. Parallel Devins on DecisionSpace upgrades and InformatiQ integration, with tests attached."},
+   {"to": "CISO", "channel": "Email + CISO forum", "message": "Close the post-incident remediation backlog across repos with an audit trail."},
+   {"to": "Tony Antoun", "channel": "Exec letter", "message": "Landmark velocity after rightsizing."}
+  ],
+  "events": ["LIFE (Landmark Innovation Forum & Expo)", "Halliburton Technology Showcase (Houston)", "Houston CISO Forum"],
+  "partners": ["Microsoft (Azure)", "Accenture/Avanade (verify current role)"]
+ },
+ "map": [
+  {"wk": 0, "step": "Discovery with a Landmark engineering director", "owner": "Joint", "letter": "I", "exit": "Backlog named"},
+  {"wk": 2, "step": "Baseline release cycle and CVE age", "owner": "Halliburton", "letter": "M", "exit": "Numbers"},
+  {"wk": 4, "step": "Meeting with Antoun", "owner": "Joint", "letter": "E", "exit": "Sponsor"},
+  {"wk": 5, "step": "Security review", "owner": "Halliburton", "letter": "D2", "exit": "Approved"},
+  {"wk": 6, "step": "Go/no-go and POV plan", "owner": "Joint", "letter": "D1", "exit": "Signed criteria"},
+  {"wk": 7, "step": "POV", "owner": "Cognition", "letter": "M", "exit": "Results"},
+  {"wk": 12, "step": "Readout and proposal; procurement", "owner": "Joint", "letter": "P", "exit": "Signed"}
+ ],
+ "risks": [
+  {"r": "Landmark builds its own agents", "m": "Position Devin as capacity for the agent builders."},
+  {"r": "Post-layoff freeze on new spend", "m": "Tie spend directly to labor already removed."}
+ ],
+ "next": ["Find the CIO and CISO names", "Build the Landmark director list", "Draft the exec letter to Antoun"]
+}

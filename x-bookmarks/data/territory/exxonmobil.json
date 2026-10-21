@@ -1,0 +1,520 @@
+{
+ "id": "exxonmobil",
+ "account": "ExxonMobil",
+ "research": "exxonmobil",
+ "tier": 1,
+ "stage": "Prospect: no relationship yet",
+ "thesis": "ExxonMobil has told the market it will hit $20B of structural savings by 2030 and run a single SAP S/4HANA instance by 2028, while cutting about 2,000 roles and centralizing IT. The ~65M lines of ECC6 custom code are on the critical path to both commitments. Devin is the extra engineering capacity that turns the custom-code triage, remediation and testing from SI hours into a measured, parallel workload, and the savings show up on the ledger the CFO already reports.",
+ "why_now": [
+  {
+   "t": "The 2028 S/4HANA target means custom-code decisions get made in the next 12-18 months, whether or not Devin is involved.",
+   "ref": "tech_posture:0"
+  },
+  {
+   "t": "The new CFO, Neil Hansen, ran Global Business Solutions (GBS), the group that owns the ERP and process program. The economic sponsor already knows the pain first-hand.",
+   "ref": "recent_events:3"
+  },
+  {
+   "t": "$16.3B of the $20B savings is banked. The last $3.7B is the hardest, and workforce cuts are a named lever, so capacity without headcount fits the plan.",
+   "ref": "snapshot:8"
+  },
+  {
+   "t": "Centralization into Global Operations plus the Budapest, Bengaluru and Buenos Aires centers concentrates engineering decisions in fewer hands, so fewer people need to say yes.",
+   "ref": "recent_events:1"
+  }
+ ],
+ "challenges": [
+  {
+   "stated": "Consolidate 12 ERP systems into one SAP S/4HANA instance by 2028. The CEO says it is 'already delivering results'.",
+   "who": "Darren Woods, CEO",
+   "ref": "tech_posture:0",
+   "devin": "Devin and Code Scans inventory and classify custom objects and interfaces as retire, rewrite or keep, then parallel Devins remediate and test them."
+  },
+  {
+   "stated": "About 65M lines of custom ECC6 code, which the CFO called a record among SAP customers, plus a decades-old consolidation mainframe to retire.",
+   "who": "CFO, via LeMondeInformatique",
+   "ref": "tech_posture:1",
+   "devin": "Legacy analysis and documentation at codebase scale, plus mainframe and interface rewrites with tests and recordings as proof of work."
+  },
+  {
+   "stated": "$20B structural cost savings vs 2019 by 2030, with operational efficiencies and workforce reductions named as drivers.",
+   "who": "Corporate release, Dec 2025",
+   "ref": "snapshot:5",
+   "devin": "Count Devin output in SI and contractor hours avoided, so it maps straight onto the savings ledger."
+  },
+  {
+   "stated": "Cut ~2,000 jobs by end-2027 and centralize ops, projects, technology and supply chain.",
+   "who": "OGJ, Sep and Nov 2025",
+   "ref": "recent_events:0",
+   "devin": "Keeps the backlog from growing as headcount falls, and captures legacy-system knowledge in DeepWiki and Knowledge before people leave."
+  },
+  {
+   "stated": "The board treats cyber as a priority: the VP of IT runs the cybersecurity program, and the Audit Committee reviews it every year.",
+   "who": "10-K FY2025",
+   "ref": "agent_signals:2",
+   "devin": "Each Devin runs in its own isolated machine, and every change comes with recorded proof of work. That gives the cyber review an audit trail instead of a black box."
+  },
+  {
+   "stated": "'Technology-led business with structurally stronger earnings power.'",
+   "who": "Darren Woods, CEO",
+   "ref": "snapshot:7",
+   "devin": "This is the CEO's own phrase. Use it to frame Devin as a technology lever on earnings, not an IT tool."
+  }
+ ],
+ "pain_chain": [
+  {
+   "level": "L1 CEO / CFO / Board",
+   "pain": "$20B savings and the 2030 plan depend on finishing the ERP consolidation on time.",
+   "measure": "Structural savings banked; ROCE > 17% by 2030"
+  },
+  {
+   "level": "L2 GBS President / VP IT",
+   "pain": "The S/4HANA date is at risk from custom-code volume and SI capacity, and IT headcount is falling.",
+   "measure": "Program milestones; SI run-rate; cyber findings open"
+  },
+  {
+   "level": "L3 IT Global Projects / Business Transformation directors",
+   "pain": "Custom-code triage and interface rewrites are slower than planned, and testing is the bottleneck.",
+   "measure": "Objects triaged per week; defects found in test; cutover readiness"
+  },
+  {
+   "level": "L4 SAP technical leads, GBC engineering managers",
+   "pain": "Undocumented ABAP, a shrinking pool of people who know it, and manual regression testing.",
+   "measure": "Hours per object; review backlog; on-call pages"
+  }
+ ],
+ "com": {
+  "elevator": "You've committed $20B of structural savings and a single S/4HANA instance by 2028, with fewer people. Devin is an autonomous AI software engineer that works through the custom-code and interface backlog in parallel, in isolated machines, with proof of work on every change. That moves the date in and the SI spend down.",
+  "before": [
+   "65M lines of custom code triaged mostly by people, with SI teams billing by the hour",
+   "Interface and mainframe rewrites queued behind a shrinking IT bench",
+   "Coding assistants in the IDE, if any, that don't move whole migration tasks",
+   "Cyber and OT security reviews slow down anything 'AI' that touches code"
+  ],
+  "negative": [
+   "S/4HANA dates slip, legacy ECC6 and the mainframe run in parallel for longer, and dual-running costs eat into savings",
+   "SI change orders grow the run-and-maintain line",
+   "Knowledge of legacy systems leaves with the people being cut",
+   "Regulatory and cyber exposure from rushed, under-tested cutover code"
+  ],
+  "after": [
+   "Every custom object classified and documented, with a remediation plan per object",
+   "Rewrite and test work running in parallel across Devins, with recordings for reviewers",
+   "SI hours and dual-running months come off the savings ledger",
+   "A governed, auditable AI engineering pattern IT can reuse across Upstream IT and the GBCs"
+  ],
+  "required": [
+   "Runs in isolated, customer-governed machines with no code leaving approved boundaries",
+   "Works at codebase scale: thousands of objects in parallel, deterministic and resumable",
+   "Proof of work: tests and recordings on every change, reviewed against their own standards",
+   "Fits the identity, repo and ticketing stack (SailPoint, ServiceNow, Kubernetes; confirm the SAP transport and CI path)",
+   "Spend tied to measured output, not seats"
+  ],
+  "metrics": [
+   "Custom objects triaged per week (baseline from the program office)",
+   "Hours per object remediated and tested vs SI baseline",
+   "Months of ECC6 and mainframe dual-running avoided",
+   "Defects escaping to integration test",
+   "Mean time to close critical vulnerabilities in scoped repos"
+  ],
+  "how": [
+   "Code Scans to inventory and classify the estate",
+   "Dynamic Workflows to run parallel Devins over the object list",
+   "DeepWiki and Knowledge to capture legacy logic",
+   "Devin Review and recordings for proof of work",
+   "Isolated VMs on Windows and Linux for the security review"
+  ],
+  "proof": [
+   "Use the customer stories from the playbook: swarms (parallel migration), harness, security",
+   "Confirm ABAP and SAP-side support with the solutions engineer before you scope it"
+  ]
+ },
+ "meddpicc": [
+  {
+   "l": "M",
+   "score": 1,
+   "known": "Public metrics: $20B savings, 2028 S/4 date, 65M lines.",
+   "gap": "No internal baseline yet for hours per object, SI run-rate or objects remaining.",
+   "next": "In the first discovery call, ask the program office for objects triaged to date and the SI rate card."
+  },
+  {
+   "l": "E",
+   "score": 1,
+   "known": "Likely EB: VP of IT (owns IT and cyber per the 10-K), the GBS President (successor not yet found), or CFO Hansen as sponsor.",
+   "gap": "EB not confirmed; GBS successor unknown.",
+   "next": "Find the new GBS President, then ask the champion: 'Who signs for capacity on the S/4 program?'"
+  },
+  {
+   "l": "D1",
+   "name": "Decision criteria",
+   "score": 0,
+   "known": "Probable criteria: security isolation, SAP fit, measured savings.",
+   "gap": "No written criteria.",
+   "next": "Co-write the criteria with the champion, and seed isolated machines and proof of work."
+  },
+  {
+   "l": "D2",
+   "name": "Decision process",
+   "score": 0,
+   "known": "AI governance and cyber review are almost certainly required, and OT has its own review.",
+   "gap": "Steps, owners and dates unknown.",
+   "next": "Map the steps: tech eval, then cyber/AI governance, then architecture, then EB, then procurement."
+  },
+  {
+   "l": "P",
+   "score": 0,
+   "known": "Large-enterprise supplier onboarding; SAP and SI contracts in place.",
+   "gap": "Paper process, vendor-onboarding lead time, MSA path (direct or via AWS Marketplace).",
+   "next": "Ask about AWS Marketplace and private offers early. ExxonMobil is a large AWS customer."
+  },
+  {
+   "l": "I",
+   "score": 1,
+   "known": "Pain is implied by public commitments.",
+   "gap": "Nobody has named a slipping milestone yet, or said who it hurts.",
+   "next": "Scoping: 'Which S/4 wave is most at risk, and who owns that date?'"
+  },
+  {
+   "l": "C1",
+   "name": "Champion",
+   "score": 0,
+   "known": "Candidates: Senior IT Director, IT Global Projects; VP Business Transformation; Upstream IT GM.",
+   "gap": "No champion yet. Test for power plus vested interest.",
+   "next": "Run the outreach sequence below. Give the champion the cost-justification draft to take forward."
+  },
+  {
+   "l": "C2",
+   "name": "Competition",
+   "score": 1,
+   "known": "SAP tooling (Joule, custom-code migration), SIs (Accenture, Deloitte, IBM, Infosys; verify which), Copilot or Amazon Q, internal Bedrock builds, Celonis.",
+   "gap": "Which SI runs the S/4 program, and what AI coding tools are already approved.",
+   "next": "Ask: 'What does the SI propose for custom-code remediation, and at what rate?' Position Devin as capacity that makes the SI faster, not a replacement for it."
+  }
+ ],
+ "stakeholders": [
+  {
+   "name": "Neil A. Hansen",
+   "title": "SVP & CFO (ex-President, GBS)",
+   "role": "Economic sponsor",
+   "letter": "E",
+   "src": "leaders:1",
+   "verify": false,
+   "cares": "Savings ledger; he owned the ERP program until Jan 2026",
+   "approach": "Don't open cold. Reach him through the GBS President or VP IT once you have a cost justification. Use a one-page savings narrative."
+  },
+  {
+   "name": "Michael Deal",
+   "title": "Vice President of IT",
+   "role": "Economic buyer (likely)",
+   "letter": "E",
+   "src": "leaders:2",
+   "verify": true,
+   "cares": "IT run cost, cyber program (10-K), centralized delivery",
+   "approach": "Exec-to-exec letter from Cognition leadership tied to the savings target. Ask for 30 minutes on AI engineering capacity and governance."
+  },
+  {
+   "name": "Bill Keillor",
+   "title": "VP, Business Transformation",
+   "role": "Economic buyer / sponsor",
+   "letter": "E",
+   "src": "leaders:3",
+   "verify": true,
+   "cares": "Transformation program delivery; former VP Global IT",
+   "approach": "Lead with the S/4 custom-code triage idea: 'what would it take to classify all custom objects in 30 days?'"
+  },
+  {
+   "name": "Paolo Biagi",
+   "title": "Senior IT Director, IT Global Projects",
+   "role": "Champion candidate",
+   "letter": "C1",
+   "src": "leaders:6",
+   "verify": true,
+   "cares": "Project dates, SI capacity, testing",
+   "approach": "Primary champion target. Offer a scoped custom-code audit on a sample of objects, with the result written in his program's terms."
+  },
+  {
+   "name": "Azmil Ab Aziz",
+   "title": "General Manager, Upstream IT",
+   "role": "Champion candidate (second thread)",
+   "letter": "C1",
+   "src": "leaders:7",
+   "verify": true,
+   "cares": "Upstream applications, Permian/Guyana growth",
+   "approach": "Second thread: upstream application modernization backlog, plus HPC and seismic tooling engineering."
+  },
+  {
+   "name": "Jon M. Gibbs",
+   "title": "Senior President, Global Operations",
+   "role": "Influencer",
+   "letter": "I",
+   "src": "leaders:4",
+   "verify": false,
+   "cares": "Running consolidated ops; OT reliability",
+   "approach": "Don't engage early. Bring him in later for ops and on-call use cases."
+  },
+  {
+   "name": "Whit McConnell",
+   "title": "Chief Automation & Process Control Engineer",
+   "role": "Technical buyer (OT)",
+   "letter": "D1",
+   "src": "leaders:8",
+   "verify": false,
+   "cares": "Open Process Automation, reusing control IP",
+   "approach": "Only for the OT expansion. Speaks at ARC and industry events; meet him there."
+  },
+  {
+   "name": "Andrew Curry",
+   "title": "Manager, Central Data Office",
+   "role": "Coach / influencer",
+   "letter": "I",
+   "src": "leaders:9",
+   "verify": true,
+   "cares": "Snowflake data ecosystem",
+   "approach": "Source is from 2023, so check he's still in the role. Useful coach on how AI programs get approved."
+  },
+  {
+   "name": "TBD",
+   "title": "President, Global Business Solutions (Hansen's successor)",
+   "role": "Economic buyer (likely)",
+   "letter": "E",
+   "src": "",
+   "verify": true,
+   "cares": "End-to-end process and the AI and automation agenda",
+   "approach": "Top research gap. Find the name on LinkedIn and in news, then re-rank the EB.",
+   "q": "\"Global Business Solutions\" President ExxonMobil"
+  },
+  {
+   "name": "TBD",
+   "title": "S/4HANA custom-code / technical architecture lead",
+   "role": "Technical buyer",
+   "letter": "D1",
+   "src": "",
+   "verify": true,
+   "cares": "ABAP remediation approach, transport path, test automation",
+   "approach": "Find through the champion. This person will write the evaluation criteria.",
+   "q": "ExxonMobil S/4HANA ABAP architect"
+  },
+  {
+   "name": "TBD",
+   "title": "IT/OT Cybersecurity Operations Manager; AI governance lead",
+   "role": "Technical buyer / potential blocker",
+   "letter": "D2",
+   "src": "",
+   "verify": true,
+   "cares": "Data boundaries, isolation, auditability",
+   "approach": "Bring them in by week 4 with the security pack. Don't let them first hear about Devin at the end.",
+   "q": "ExxonMobil cybersecurity manager OT"
+  },
+  {
+   "name": "TBD",
+   "title": "Procurement: IT category manager (software)",
+   "role": "Paper process",
+   "letter": "P",
+   "src": "",
+   "verify": true,
+   "cares": "Supplier onboarding, MSA, AWS Marketplace",
+   "approach": "Start onboarding as soon as the champion says yes to the scoped audit.",
+   "q": "ExxonMobil IT procurement category manager software"
+  }
+ ],
+ "searches": [
+  {
+   "label": "S/4HANA program leaders",
+   "q": "ExxonMobil (\"S/4HANA\" OR \"SAP\") (director OR manager OR lead)"
+  },
+  {
+   "label": "GBC engineering managers (Bengaluru, Budapest, Buenos Aires)",
+   "q": "ExxonMobil (Bengaluru OR Budapest OR \"Buenos Aires\") \"engineering manager\" OR \"IT manager\""
+  },
+  {
+   "label": "Platform / DevOps / SRE",
+   "q": "ExxonMobil (DevOps OR \"platform engineering\" OR SRE OR Kubernetes) manager"
+  },
+  {
+   "label": "AI / GenAI leaders in IT",
+   "q": "ExxonMobil (\"generative AI\" OR \"AI engineering\" OR \"AI platform\") manager OR director"
+  },
+  {
+   "label": "Cyber and AI governance",
+   "q": "ExxonMobil (cybersecurity OR \"AI governance\") manager OR director"
+  }
+ ],
+ "engagement": {
+  "entry": "Start with a custom-code triage offer to IT Global Projects and Business Transformation, then reach the VP IT and GBS President with a cost justification. Bring cyber and AI governance in early.",
+  "phases": [
+   {
+    "when": "Weeks 1-2",
+    "what": [
+     "Confirm every TBD stakeholder and the 'verify' names on LinkedIn",
+     "Find out which SI runs the S/4 program and which AI coding tools are already approved",
+     "Ask Cognition leadership to sign an exec letter to the VP IT"
+    ]
+   },
+   {
+    "when": "Weeks 2-4",
+    "what": [
+     "Run the multi-thread sequence: champion candidates, technical buyers, EB letter",
+     "Ask AWS (partner) whether there's an ExxonMobil account team intro or a Marketplace path",
+     "Get the first discovery call booked"
+    ]
+   },
+   {
+    "when": "Weeks 4-8",
+    "what": [
+     "Discovery and scoping: objects remaining, hours per object, SI rate, the at-risk wave",
+     "Security and AI governance pre-read",
+     "Go/no-go with the EB on a scoped custom-code audit"
+    ]
+   },
+   {
+    "when": "Weeks 8-14",
+    "what": [
+     "Proof of value: classify a sample of custom objects and remediate and test N of them",
+     "Weekly readout against the cost-justification metrics",
+     "Paper process in parallel"
+    ]
+   }
+  ],
+  "pg": [
+   {
+    "to": "Paolo Biagi / IT Global Projects",
+    "channel": "LinkedIn + email + phone",
+    "message": "Of the ~65M lines of ECC6 custom code, how much is triaged? We can classify a representative sample in two weeks in isolated machines and show the plan per object."
+   },
+   {
+    "to": "Bill Keillor / Business Transformation",
+    "channel": "Email + exec letter",
+    "message": "Your 2028 date and the $20B ledger share a critical path. Here's a one-page view of how parallel AI engineering takes SI hours off it."
+   },
+   {
+    "to": "Michael Deal / VP IT",
+    "channel": "Exec letter from Cognition leadership",
+    "message": "AI engineering capacity with the security and audit posture your 10-K describes. Isolated machines and proof of work on every change."
+   },
+   {
+    "to": "GBC engineering managers",
+    "channel": "LinkedIn",
+    "message": "Fewer people, same applications. How are you keeping the maintenance backlog flat?"
+   },
+   {
+    "to": "OT cyber / automation",
+    "channel": "Events (ARC, Digitalization in O&G)",
+    "message": "Save for the expansion. Build the relationship now."
+   }
+  ],
+  "events": [
+   "Digitalization in Oil & Gas Conference (ExxonMobil speakers listed)",
+   "ARC Industry Forum (OPA work)",
+   "AWS re:Invent energy track"
+  ],
+  "partners": [
+   "AWS (large customer; Marketplace private offer)",
+   "The S/4 SI once identified: make the SI faster, don't replace it"
+  ]
+ },
+ "map": [
+  {
+   "wk": 0,
+   "step": "Discovery working session with the champion and 2-3 S/4 program leads",
+   "owner": "Joint",
+   "letter": "I",
+   "exit": "Named waves, objects and pains written down"
+  },
+  {
+   "wk": 1,
+   "step": "Baseline: objects remaining, hours per object, SI rate, dual-run cost per month",
+   "owner": "ExxonMobil",
+   "letter": "M",
+   "exit": "Baseline numbers with owners"
+  },
+  {
+   "wk": 2,
+   "step": "Identify the EB and confirm their priorities (VP IT or GBS President)",
+   "owner": "Joint",
+   "letter": "E",
+   "exit": "EB meeting held"
+  },
+  {
+   "wk": 3,
+   "step": "Scoping: as-is and to-be for custom-code triage, remediation and test",
+   "owner": "Joint",
+   "letter": "M",
+   "exit": "Cost justification reviewed by the champion"
+  },
+  {
+   "wk": 4,
+   "step": "Security and AI governance pre-read and architecture review",
+   "owner": "ExxonMobil",
+   "letter": "D2",
+   "exit": "Approved access pattern for the POV"
+  },
+  {
+   "wk": 5,
+   "step": "Go/no-go with the EB on a scoped proof of value",
+   "owner": "Joint",
+   "letter": "E",
+   "exit": "EB sponsors the POV, or a clean no"
+  },
+  {
+   "wk": 5,
+   "step": "Start supplier onboarding and decide on the AWS Marketplace path",
+   "owner": "Joint",
+   "letter": "P",
+   "exit": "Vendor record opened"
+  },
+  {
+   "wk": 6,
+   "step": "Sign the POV plan with thresholds tied to the cost justification",
+   "owner": "Joint",
+   "letter": "D1",
+   "exit": "Signed POV criteria"
+  },
+  {
+   "wk": 6,
+   "step": "POV: classify the sample, remediate and test N objects, with weekly readouts",
+   "owner": "Cognition",
+   "letter": "M",
+   "exit": "Results against criteria"
+  },
+  {
+   "wk": 12,
+   "step": "EB readout and commercial proposal sized to the custom-code estate",
+   "owner": "Joint",
+   "letter": "E",
+   "exit": "Verbal award"
+  },
+  {
+   "wk": 14,
+   "step": "Legal, security and procurement close; mutual signature",
+   "owner": "Joint",
+   "letter": "P",
+   "exit": "Signed order"
+  }
+ ],
+ "risks": [
+  {
+   "r": "The SI owns custom-code remediation contractually",
+   "m": "Position Devin as capacity the SI uses: 'make your SI faster'. Bring the SI into the POV."
+  },
+  {
+   "r": "Devin's ABAP and SAP fit is not proven",
+   "m": "SE confirms before scoping. Fallback scope: interfaces, middleware, mainframe rewrite, test automation, non-SAP apps."
+  },
+  {
+   "r": "Cyber or AI governance blocks late",
+   "m": "Security pre-read in week 4, and name the AI governance owner."
+  },
+  {
+   "r": "Leadership churn (new CFO, unnamed GBS successor)",
+   "m": "Multi-thread at least 3 senior people. Re-check names every month."
+  }
+ ],
+ "next": [
+  "Find Neil Hansen's successor as GBS President",
+  "Verify Deal, Keillor, Biagi and Ab Aziz on LinkedIn (titles current?)",
+  "Identify the S/4 SI",
+  "Confirm Devin's ABAP/SAP scope with the SE",
+  "Draft the exec letter to the VP IT"
+ ],
+ "play": "Custom-code triage for the S/4HANA consolidation"
+}

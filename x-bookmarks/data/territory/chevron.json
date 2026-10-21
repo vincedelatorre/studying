@@ -1,0 +1,98 @@
+{
+ "id": "chevron", "account": "Chevron", "research": "chevron", "tier": 1,
+ "stage": "Prospect: no relationship yet",
+ "play": "Delivery capacity for the global engineering hubs",
+ "thesis": "Chevron is taking out $3-4B of structural cost by end-2026 and cutting 15-20% of its workforce. At the same time it is integrating Hess, moving engineering to Houston and the ~$1B ENGINE center in Bengaluru, and moving IT support to Manila and Buenos Aires. It already uses Copilot and Claude and is building agentic AI on Azure. Devin is the execution layer for the hubs: autonomous engineers that work Hess integration, backlog and code-security work through governed, human-approved pull requests.",
+ "why_now": [
+  {"t": "The cost target lands end-2026. Productivity through technology and global centers is the stated mechanism.", "ref": "snapshot:5"},
+  {"t": "Leadership reshuffle on Jan 1, 2027: a new CFO (Gustavson) and Brent Gros taking over AI strategy. New owners will re-set the agenda.", "ref": "recent_events:0"},
+  {"t": "ENGINE Bengaluru is staffing 1,000+ engineers now. Patterns set in the first year stick.", "ref": "tech_posture:4"},
+  {"t": "Hess systems integration is still under way after the synergy target was hit.", "ref": "snapshot:4"}
+ ],
+ "challenges": [
+  {"stated": "Structural cost reduction: $1.5B achieved in 2025, target raised to $3-4B by end-2026.", "who": "Q4 2025 earnings", "ref": "snapshot:5", "devin": "Engineering capacity without headcount, measured in contractor and SI hours avoided."},
+  {"stated": "Cut 15-20% of the workforce, move to global hubs, and consolidate IT support into Manila and Buenos Aires.", "who": "Restructuring announcement", "ref": "recent_events:4", "devin": "DeepWiki and Knowledge capture what the departing teams know. Devin keeps the maintenance backlog flat as people move."},
+  {"stated": "'Leveraging technology to enhance productivity' and 'expanded use of global centers'.", "who": "Restructuring statement", "ref": "agent_signals:0", "devin": "Use Chevron's own wording in the opener. Devin is the technology lever that gives the hubs more output."},
+  {"stated": "Copilot and Claude are already enterprise tools, and Enterprise AI is hiring to build agentic systems on Azure.", "who": "Fortune, job postings", "ref": "tech_posture:2", "devin": "Assistants help one engineer at a time. Devin takes a whole ticket from start to finished PR, in parallel, and fits beside Copilot."},
+  {"stated": "Cyber threats to operational technology and digital infrastructure from state actors; runs a Cyber Intelligence Center.", "who": "10-K risk factors", "ref": "agent_signals:4", "devin": "Security Swarm and Code Scans for vulnerability backlog, in isolated machines with an audit trail."},
+  {"stated": "A Responsible AI Institute member that assesses each AI system's readiness and limitations.", "who": "10-K", "ref": "agent_signals:7", "devin": "Bring governance evidence first: a human approves every PR, every session is recorded, access is scoped."}
+ ],
+ "pain_chain": [
+  {"level": "L1 CEO / CFO", "pain": "$3-4B structural cost and Hess synergies are promised to the market.", "measure": "Structural cost delivered; ROCE; FCF"},
+  {"level": "L2 CTEO (Booth) / IT leadership", "pain": "The same delivery commitments with 15-20% fewer people, spread over new hubs.", "measure": "Project delivery dates; IT cost per user; vulnerabilities open"},
+  {"level": "L3 Hub engineering directors (Houston, Bengaluru)", "pain": "Onboarding thousands of engineers while legacy and Hess backlogs keep growing.", "measure": "Backlog age; cycle time; knowledge-transfer completeness"},
+  {"level": "L4 Engineers on .NET/Azure", "pain": "Upgrades, test coverage and security fixes crowd out feature work.", "measure": "Tickets per sprint; PR review time"}
+ ],
+ "com": {
+  "elevator": "You're delivering $3-4B of structural savings with fewer people, through Houston and Bengaluru. Devin gives each hub autonomous engineers that finish Hess integration, upgrades and security tickets end-to-end, as tested, recorded pull requests your engineers approve.",
+  "before": ["Backlog grows as roles move to hubs", "Copilot and Claude help individuals, but whole tickets still need a person", "Hess integration and app rationalization compete for the same engineers", "Cyber findings on the OT and IT boundary wait in queues"],
+  "negative": ["Cost-out arrives late or turns into SI spend", "Knowledge is lost in the move from San Ramon and the regions", "Security debt keeps building on critical infrastructure"],
+  "after": ["Each hub team runs parallel Devins on a defined backlog", "Hess app retirement and migration done on a dated plan", "Vulnerability time-to-fix falls with a full audit trail", "A governed agent pattern that Enterprise AI can reuse across the company"],
+  "required": ["Passes Responsible AI readiness review", "Azure DevOps, AKS and .NET fit", "A human approves every merge, and every session is recorded", "Runs in isolated machines inside approved boundaries", "Output is measured against a baseline"],
+  "metrics": ["Backlog tickets closed per hub per month", "Hess applications retired or migrated", "Mean time to close critical vulnerabilities", "Contractor hours avoided"],
+  "how": ["Dynamic Workflows across parallel Devins", "Code Scans and Security Swarm", "DeepWiki for knowledge transfer", "Devin Review for PR quality"],
+  "proof": ["Customer stories: swarms, harness, security", "Tell them we complement Copilot and Claude"]
+ },
+ "meddpicc": [
+  {"l": "M", "score": 1, "known": "$3-4B cost target; 15-20% fewer people.", "gap": "No baseline for backlog or contractor spend in IT and engineering.", "next": "Ask a hub director for backlog size and contractor rate."},
+  {"l": "E", "score": 1, "known": "T. Ryder Booth, CTEO, owns IT, projects and engineering.", "gap": "Current CIO not named; post-Jan-2027 AI ownership moves to Gros.", "next": "Find the current CIO; ask who funds hub productivity tools."},
+  {"l": "D1", "score": 1, "known": "Responsible AI readiness review; Microsoft stack.", "gap": "Written criteria unknown.", "next": "Get the RAI assessment template; seed governance and audit-trail criteria."},
+  {"l": "D2", "score": 0, "known": "Enterprise AI catalog (~15 workflows) suggests an intake process.", "gap": "Intake steps and owners.", "next": "Ask how a workflow gets added to the enterprise AI catalog."},
+  {"l": "P", "score": 0, "known": "Large Microsoft EA in place.", "gap": "Vendor onboarding; whether Azure Marketplace counts against the MACC.", "next": "Check the Azure Marketplace path with the Microsoft account team."},
+  {"l": "I", "score": 1, "known": "Cost and headcount pain is public.", "gap": "No backlog or date has been tied to a named owner yet.", "next": "Discovery with a Bengaluru or Houston engineering lead."},
+  {"l": "C1", "score": 0, "known": "Candidates: Enterprise AI engineering leads, ENGINE leadership.", "gap": "No champion.", "next": "Run the sequence below."},
+  {"l": "C2", "score": 1, "known": "Copilot and Claude in use; internal Azure agent builds.", "gap": "Whether Enterprise AI sees Devin as build-vs-buy.", "next": "Position Devin as the execution layer the Enterprise AI team runs, not a rival to it."}
+ ],
+ "stakeholders": [
+  {"name": "T. Ryder Booth", "title": "Chief Technology & Engineering Officer", "role": "Economic buyer (likely)", "letter": "E", "src": "leaders:0", "verify": false, "cares": "IT, projects, engineering productivity across hubs", "approach": "Exec letter tied to the productivity statement and ENGINE. Ask for 30 minutes after a hub-level proof point."},
+  {"name": "Jeff Gustavson", "title": "President, New Energies; CFO from Jan 2027", "role": "Economic sponsor (future)", "letter": "E", "src": "leaders:2", "verify": false, "cares": "Enterprise AI value, cost delivery", "approach": "Reach him in 2027 with a savings narrative. Fortune names him as an AI overseer."},
+  {"name": "Brent Gros", "title": "President, New Energies from Jan 2027; AI strategy", "role": "Influencer / sponsor", "letter": "E", "src": "leaders:1", "verify": false, "cares": "AI for operational excellence", "approach": "Arrives in the role Jan 1. Time an intro through Booth's team."},
+  {"name": "Eimear Bonner", "title": "CFO; President OPG from Jan 2027", "role": "Influencer", "letter": "I", "src": "leaders:3", "verify": false, "cares": "Visible AI value; finance AI agents", "approach": "Ex-CTO and public AI advocate. Possible exec ally for the Downstream thread later."},
+  {"name": "TBD", "title": "Chief Information Officer / President Chevron IT Company", "role": "Economic buyer / technical", "letter": "E", "src": "leaders:9", "verify": true, "cares": "IT operating model, hubs", "approach": "Bill Braun is listed as former CIO. Find the successor first.", "q": "Chevron \"chief information officer\""},
+  {"name": "Justin Lo", "title": "Technical Manager, AI Engineering, Enterprise AI", "role": "Champion candidate", "letter": "C1", "src": "leaders:8", "verify": true, "cares": "Building agentic systems on Azure", "approach": "Source is from 2023; confirm the role. Pitch Devin as capacity that helps Enterprise AI ship its own agents."},
+  {"name": "Akshay Sahni", "title": "Country Head, Chevron India (ENGINE)", "role": "Influencer", "letter": "I", "src": "leaders:10", "verify": true, "cares": "Hub ramp-up and productivity", "approach": "A Bengaluru partner or team lead can open this door."},
+  {"name": "Sherry Hunyadi", "title": "GM, Cyber Intelligence Center", "role": "Technical buyer (security)", "letter": "D1", "src": "leaders:5", "verify": true, "cares": "OT threat intel; security backlog", "approach": "Houston CISO Forum. Bring the security pack early."},
+  {"name": "TBD", "title": "Hess integration IT lead", "role": "Champion candidate", "letter": "C1", "src": "", "verify": true, "cares": "Application rationalization", "approach": "Pitch Hess application retirement as a dated plan.", "q": "Chevron Hess integration IT manager"},
+  {"name": "TBD", "title": "Azure DevOps / platform engineering manager", "role": "Technical buyer", "letter": "D1", "src": "", "verify": true, "cares": "Toolchain fit, AKS, security", "approach": "Find through the champion.", "q": "Chevron \"platform engineering\" OR DevOps manager Azure"}
+ ],
+ "searches": [
+  {"label": "Enterprise AI engineering", "q": "Chevron \"Enterprise AI\" (manager OR lead OR director)"},
+  {"label": "ENGINE Bengaluru engineering leaders", "q": "Chevron ENGINE Bengaluru (manager OR director) software"},
+  {"label": "IT service centers (Manila, Buenos Aires)", "q": "Chevron (Manila OR \"Buenos Aires\") IT manager"},
+  {"label": "Cyber leaders", "q": "Chevron cybersecurity (manager OR director OR CISO)"}
+ ],
+ "engagement": {
+  "entry": "Engineering leads in Enterprise AI and ENGINE as champions, with the productivity statement as the hook. Reach Booth with hub results. Use the Microsoft co-sell path.",
+  "phases": [
+   {"when": "Weeks 1-2", "what": ["Identify the current CIO", "Confirm Lo and Sahni; build the Sales Nav lists", "Ask the Microsoft account team for an intro"]},
+   {"when": "Weeks 2-6", "what": ["Outreach sequence; discovery with a hub engineering lead", "Get the Responsible AI intake template"]},
+   {"when": "Weeks 6-10", "what": ["Scope one backlog: Hess application retirement or .NET upgrades", "Go/no-go with Booth's delegate"]},
+   {"when": "Weeks 10-16", "what": ["Proof of value in the hub with weekly readouts", "Jan 2027 leadership re-introductions"]}
+  ],
+  "pg": [
+   {"to": "Enterprise AI engineering", "channel": "LinkedIn + email", "message": "You're building agents on Azure. Devin is the coding agent your team can point at backlogs right away, governed the way the RAI review expects."},
+   {"to": "ENGINE Bengaluru leaders", "channel": "LinkedIn + local partner", "message": "1,000 new engineers ramping. Devin plus DeepWiki shortens the ramp and closes tickets in parallel."},
+   {"to": "T. Ryder Booth", "channel": "Exec letter", "message": "Your restructuring names 'technology to enhance productivity'. Here's what that looks like in engineering, measured."},
+   {"to": "Cyber Intelligence Center", "channel": "Houston CISO Forum", "message": "Close vulnerabilities across repos in parallel, with an audit trail."}
+  ],
+  "events": ["Houston CISO Forum", "CERAWeek (Houston, March)", "Microsoft Build / Ignite energy sessions"],
+  "partners": ["Microsoft (Azure Marketplace, MACC)", "Anthropic (Claude already in use)"]
+ },
+ "map": [
+  {"wk": 0, "step": "Discovery with a hub engineering lead", "owner": "Joint", "letter": "I", "exit": "Backlog and owner named"},
+  {"wk": 1, "step": "Baseline the backlog, contractor rate and vulnerability age", "owner": "Chevron", "letter": "M", "exit": "Numbers with owners"},
+  {"wk": 3, "step": "Meet the EB (Booth org / CIO)", "owner": "Joint", "letter": "E", "exit": "Priorities confirmed"},
+  {"wk": 4, "step": "Responsible AI readiness intake", "owner": "Chevron", "letter": "D2", "exit": "Assessment scheduled"},
+  {"wk": 5, "step": "Scoping and cost justification", "owner": "Joint", "letter": "M", "exit": "Champion signs off"},
+  {"wk": 6, "step": "Go/no-go; supplier onboarding via Microsoft Marketplace", "owner": "Joint", "letter": "P", "exit": "POV sponsored"},
+  {"wk": 7, "step": "POV in one hub team, with weekly readouts", "owner": "Cognition", "letter": "D1", "exit": "Criteria met"},
+  {"wk": 13, "step": "EB readout and proposal", "owner": "Joint", "letter": "E", "exit": "Verbal award"},
+  {"wk": 15, "step": "Close", "owner": "Joint", "letter": "P", "exit": "Signed"}
+ ],
+ "risks": [
+  {"r": "Enterprise AI builds its own coding agents", "m": "Make the Enterprise AI team the owner and hero of the rollout."},
+  {"r": "The Jan 2027 reshuffle stalls decisions", "m": "Close the POV with Booth before the change, or re-sponsor with Gros."},
+  {"r": "Responsible AI review takes a long time", "m": "Start intake in week 4 with a ready evidence pack."}
+ ],
+ "next": ["Find the current CIO", "Verify Lo, Sahni and Hunyadi", "Ask for a Microsoft co-sell intro", "Draft the exec letter to Booth"]
+}

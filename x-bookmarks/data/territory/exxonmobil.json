@@ -21,6 +21,10 @@
   {
    "t": "Centralization into Global Operations plus the Budapest, Bengaluru and Buenos Aires centers concentrates engineering decisions in fewer hands, so fewer people need to say yes.",
    "ref": "recent_events:1"
+  },
+  {
+   "t": "Four IT leaders are new in role (Brad Harris, Ryan Seager, James Lynch and others), and new leaders set new agendas.",
+   "ref": ""
   }
  ],
  "challenges": [
@@ -140,17 +144,17 @@
   {
    "l": "E",
    "score": 1,
-   "known": "Likely EB: VP of IT (owns IT and cyber per the 10-K), the GBS President (successor not yet found), or CFO Hansen as sponsor.",
-   "gap": "EB not confirmed; GBS successor unknown.",
-   "next": "Find the new GBS President, then ask the champion: 'Who signs for capacity on the S/4 program?'"
+   "known": "VP IT Michael Deal; new CIO Global Ops Brad Harris (Aug 2026); segment CIOs Khan and Comstock; VP Business Transformation Keillor; CFO Hansen as sponsor.",
+   "gap": "Which of them signs for S/4 program capacity. GBS successor still unknown.",
+   "next": "Ask the champion: 'Who signs for capacity on the S/4 program, Deal or Keillor?'"
   },
   {
    "l": "D1",
    "name": "Decision criteria",
    "score": 0,
-   "known": "Probable criteria: security isolation, SAP fit, measured savings.",
-   "gap": "No written criteria.",
-   "next": "Co-write the criteria with the champion, and seed isolated machines and proof of work."
+   "known": "Todd Benner sets rent/buy/build criteria for applications. Security criteria come from the CISO (Bryan P.) and the OT CISO (Shafi).",
+   "gap": "No written criteria yet.",
+   "next": "Co-write the criteria with Benner and the champion; seed isolated machines and proof of work."
   },
   {
    "l": "D2",
@@ -178,17 +182,17 @@
    "l": "C1",
    "name": "Champion",
    "score": 0,
-   "known": "Candidates: Senior IT Director, IT Global Projects; VP Business Transformation; Upstream IT GM.",
-   "gap": "No champion yet. Test for power plus vested interest.",
-   "next": "Run the outreach sequence below. Give the champion the cost-justification draft to take forward."
+   "known": "Shortlist from Sales Navigator: Aaron Surber (R2R IT, ERP consolidation), Neil Higgins (SAP Group Reporting), Ryan Seager (Global Ops IT projects). Paolo Biagi is a portfolio coach.",
+   "gap": "Nobody tested yet for power plus vested interest.",
+   "next": "Open with Surber; ask Biagi who owns custom-code remediation."
   },
   {
    "l": "C2",
    "name": "Competition",
    "score": 1,
-   "known": "SAP tooling (Joule, custom-code migration), SIs (Accenture, Deloitte, IBM, Infosys; verify which), Copilot or Amazon Q, internal Bedrock builds, Celonis.",
-   "gap": "Which SI runs the S/4 program, and what AI coding tools are already approved.",
-   "next": "Ask: 'What does the SI propose for custom-code remediation, and at what rate?' Position Devin as capacity that makes the SI faster, not a replacement for it."
+   "known": "SAP tooling and SIs; a copilot and LLM foundation and a Gen AI org exist (Sales Nav). AWS confirmed; no Azure or GCP seen at leadership level.",
+   "gap": "Whether coding is in scope for the existing AI program, and who the S/4 SI is.",
+   "next": "Ask Mathews or Biagi whether coding agents are in scope. Lead with AWS, not a multi-cloud message."
   }
  ],
  "stakeholders": [
@@ -204,53 +208,168 @@
   },
   {
    "name": "Michael Deal",
-   "title": "Vice President of IT",
+   "title": "Vice President of IT (since May 2023)",
    "role": "Economic buyer (likely)",
    "letter": "E",
-   "src": "leaders:2",
-   "verify": true,
-   "cares": "IT run cost, cyber program (10-K), centralized delivery",
-   "approach": "Exec-to-exec letter from Cognition leadership tied to the savings target. Ask for 30 minutes on AI engineering capacity and governance."
+   "src": "",
+   "verify": false,
+   "cares": "IT run cost; the 10-K places the cyber program under the VP of IT",
+   "approach": "Exec-to-exec letter from Cognition leadership tied to the $20B savings target. Ask for 30 minutes on governed AI engineering capacity.",
+   "src_url": "exxonmobil.html#people"
+  },
+  {
+   "name": "Brad Harris",
+   "title": "CIO, Global Operations (new, Aug 2026)",
+   "role": "Economic buyer / sponsor (Global Ops)",
+   "letter": "E",
+   "src": "",
+   "verify": false,
+   "cares": "Ex-Head of Upstream IT: global agile delivery, capability centers",
+   "approach": "New in role, so he's setting his agenda now. Pitch capacity for the consolidated Global Operations portfolio within his first 6 months.",
+   "src_url": "exxonmobil.html#people"
   },
   {
    "name": "Bill Keillor",
-   "title": "VP, Business Transformation",
-   "role": "Economic buyer / sponsor",
+   "title": "VP, Business Transformation (since May 2023)",
+   "role": "Economic buyer / sponsor (ERP)",
    "letter": "E",
-   "src": "leaders:3",
-   "verify": true,
-   "cares": "Transformation program delivery; former VP Global IT",
-   "approach": "Lead with the S/4 custom-code triage idea: 'what would it take to classify all custom objects in 30 days?'"
+   "src": "",
+   "verify": false,
+   "cares": "Transformation program delivery",
+   "approach": "Lead with S/4 custom-code triage: 'what would it take to classify all custom objects in 30 days?'",
+   "src_url": "exxonmobil.html#people"
+  },
+  {
+   "name": "Carla Khan",
+   "title": "CIO, Commercial, Supply Chain & Trading (since Jul 2025)",
+   "role": "Economic buyer (segment)",
+   "letter": "E",
+   "src": "",
+   "verify": false,
+   "cares": "Commercial and trading applications",
+   "approach": "Second EB thread for the supply chain and trading app backlog.",
+   "src_url": "exxonmobil.html#people"
+  },
+  {
+   "name": "Steve Comstock",
+   "title": "CIO, Upstream",
+   "role": "Economic buyer (segment)",
+   "letter": "E",
+   "src": "",
+   "verify": false,
+   "cares": "Upstream applications, Permian/Guyana growth",
+   "approach": "Upstream thread, alongside Azmil Ab Aziz.",
+   "src_url": "exxonmobil.html#people"
+  },
+  {
+   "name": "Aaron Surber",
+   "title": "Head of Record to Report IT (since Apr 2022)",
+   "role": "Champion candidate (ERP)",
+   "letter": "C1",
+   "src": "",
+   "verify": false,
+   "cares": "Consolidating legacy systems into a modern ERP; 250+ staff in 17 teams",
+   "approach": "Top champion target for the S/4 custom-code play. He owns a slice of the ERP work directly.",
+   "src_url": "exxonmobil.html#people"
+  },
+  {
+   "name": "Neil Higgins",
+   "title": "Director, Business Transformation: SAP Group Reporting",
+   "role": "Champion candidate (ERP)",
+   "letter": "C1",
+   "src": "",
+   "verify": false,
+   "cares": "SAP Group Reporting",
+   "approach": "Profile not opened yet. Check scope, then pitch custom-code triage for his workstream.",
+   "src_url": "exxonmobil.html#people"
   },
   {
    "name": "Paolo Biagi",
-   "title": "Senior IT Director, IT Global Projects",
-   "role": "Champion candidate",
+   "title": "Senior IT Director, IT Global Projects (since Apr 2023)",
+   "role": "Coach / champion candidate",
    "letter": "C1",
-   "src": "leaders:6",
-   "verify": true,
-   "cares": "Project dates, SI capacity, testing",
-   "approach": "Primary champion target. Offer a scoped custom-code audit on a sample of objects, with the result written in his program's terms."
+   "src": "",
+   "verify": false,
+   "cares": "$150-200M portfolio, ~35 projects a year; AWS migration of 3,000+ apps; GenAI foundation",
+   "approach": "Portfolio-level contact, not the ERP owner. Ask him who owns custom-code remediation.",
+   "src_url": "exxonmobil.html#people"
+  },
+  {
+   "name": "Ryan Seager",
+   "title": "Senior IT Director, Global Operations IT Projects (new, Aug 2026)",
+   "role": "Champion candidate (Global Ops)",
+   "letter": "C1",
+   "src": "",
+   "verify": false,
+   "cares": "Supply-chain modernization; SaaS and Snowflake",
+   "approach": "New in role. Pitch a delivery-capacity POV for Global Ops projects.",
+   "src_url": "exxonmobil.html#people"
+  },
+  {
+   "name": "Todd Benner",
+   "title": "Chief Enterprise Architect & IT Fellow; Chief Applications Architect",
+   "role": "Technical buyer (decision criteria)",
+   "letter": "D1",
+   "src": "",
+   "verify": false,
+   "cares": "Sets the rent / buy / build approach for applications; 36 years at ExxonMobil",
+   "approach": "Gatekeeper for the modernization approach. Co-write the evaluation criteria with him and lead with architecture fit.",
+   "src_url": "exxonmobil.html#people"
+  },
+  {
+   "name": "Bryan P.",
+   "title": "CISO and IT Risk Management Director (since Jan 2025)",
+   "role": "Technical buyer / potential blocker",
+   "letter": "D2",
+   "src": "",
+   "verify": false,
+   "cares": "IT risk; ex-Hosting & Platforms Manager",
+   "approach": "Bring him the security pack (isolated machines, audit trail) by week 4.",
+   "src_url": "exxonmobil.html#people"
+  },
+  {
+   "name": "Shazad Shafi",
+   "title": "OT Chief Information Security Officer (since Dec 2023)",
+   "role": "Technical buyer (OT)",
+   "letter": "D2",
+   "src": "",
+   "verify": false,
+   "cares": "OT resilience, critical infrastructure",
+   "approach": "Devin never touches OT. Get him to sign that boundary off early, then use it for the OT expansion later.",
+   "src_url": "exxonmobil.html#people"
+  },
+  {
+   "name": "Matthew Knies",
+   "title": "Senior Director, Identity & Access Management",
+   "role": "Technical buyer (access)",
+   "letter": "D1",
+   "src": "",
+   "verify": false,
+   "cares": "IAM modernization; 300+ staff in Bangalore",
+   "approach": "Agree the SailPoint/IAM pattern for Devin's machine identities.",
+   "src_url": "exxonmobil.html#people"
+  },
+  {
+   "name": "Darien Mathews",
+   "title": "Head of IT, AI Business & Strategy",
+   "role": "Influencer (AI program)",
+   "letter": "I",
+   "src": "",
+   "verify": false,
+   "cares": "Enterprise AI strategy",
+   "approach": "A copilot and LLM foundation already exists. Ask whether coding agents are in scope and who owns them.",
+   "src_url": "exxonmobil.html#people"
   },
   {
    "name": "Azmil Ab Aziz",
-   "title": "General Manager, Upstream IT",
-   "role": "Champion candidate (second thread)",
+   "title": "General Manager, Upstream IT (Kuala Lumpur)",
+   "role": "Champion candidate (Upstream)",
    "letter": "C1",
-   "src": "leaders:7",
-   "verify": true,
-   "cares": "Upstream applications, Permian/Guyana growth",
-   "approach": "Second thread: upstream application modernization backlog, plus HPC and seismic tooling engineering."
-  },
-  {
-   "name": "Jon M. Gibbs",
-   "title": "Senior President, Global Operations",
-   "role": "Influencer",
-   "letter": "I",
-   "src": "leaders:4",
+   "src": "",
    "verify": false,
-   "cares": "Running consolidated ops; OT reliability",
-   "approach": "Don't engage early. Bring him in later for ops and on-call use cases."
+   "cares": "Production technologies; IT workforce and location strategy",
+   "approach": "Upstream modernization backlog thread.",
+   "src_url": "exxonmobil.html#people"
   },
   {
    "name": "Whit McConnell",
@@ -263,16 +382,6 @@
    "approach": "Only for the OT expansion. Speaks at ARC and industry events; meet him there."
   },
   {
-   "name": "Andrew Curry",
-   "title": "Manager, Central Data Office",
-   "role": "Coach / influencer",
-   "letter": "I",
-   "src": "leaders:9",
-   "verify": true,
-   "cares": "Snowflake data ecosystem",
-   "approach": "Source is from 2023, so check he's still in the role. Useful coach on how AI programs get approved."
-  },
-  {
    "name": "TBD",
    "title": "President, Global Business Solutions (Hansen's successor)",
    "role": "Economic buyer (likely)",
@@ -280,30 +389,8 @@
    "src": "",
    "verify": true,
    "cares": "End-to-end process and the AI and automation agenda",
-   "approach": "Top research gap. Find the name on LinkedIn and in news, then re-rank the EB.",
+   "approach": "Not found in public coverage or Sales Navigator. Still the top research gap.",
    "q": "\"Global Business Solutions\" President ExxonMobil"
-  },
-  {
-   "name": "TBD",
-   "title": "S/4HANA custom-code / technical architecture lead",
-   "role": "Technical buyer",
-   "letter": "D1",
-   "src": "",
-   "verify": true,
-   "cares": "ABAP remediation approach, transport path, test automation",
-   "approach": "Find through the champion. This person will write the evaluation criteria.",
-   "q": "ExxonMobil S/4HANA ABAP architect"
-  },
-  {
-   "name": "TBD",
-   "title": "IT/OT Cybersecurity Operations Manager; AI governance lead",
-   "role": "Technical buyer / potential blocker",
-   "letter": "D2",
-   "src": "",
-   "verify": true,
-   "cares": "Data boundaries, isolation, auditability",
-   "approach": "Bring them in by week 4 with the security pack. Don't let them first hear about Devin at the end.",
-   "q": "ExxonMobil cybersecurity manager OT"
   },
   {
    "name": "TBD",
@@ -313,7 +400,7 @@
    "src": "",
    "verify": true,
    "cares": "Supplier onboarding, MSA, AWS Marketplace",
-   "approach": "Start onboarding as soon as the champion says yes to the scoped audit.",
+   "approach": "Start onboarding as soon as the champion says yes.",
    "q": "ExxonMobil IT procurement category manager software"
   }
  ],
@@ -377,9 +464,14 @@
   ],
   "pg": [
    {
-    "to": "Paolo Biagi / IT Global Projects",
+    "to": "Aaron Surber / Neil Higgins (ERP)",
     "channel": "LinkedIn + email + phone",
-    "message": "Of the ~65M lines of ECC6 custom code, how much is triaged? We can classify a representative sample in two weeks in isolated machines and show the plan per object."
+    "message": "You're consolidating legacy systems into one ERP with ~65M lines of custom code. We can classify a sample of objects in two weeks, in isolated machines, and hand you a per-object plan."
+   },
+   {
+    "to": "Brad Harris / Ryan Seager (new in Global Ops)",
+    "channel": "LinkedIn + email",
+    "message": "First 100 days in a consolidated Global Operations IT. Here's how parallel AI engineers add delivery capacity without headcount."
    },
    {
     "to": "Bill Keillor / Business Transformation",
@@ -511,10 +603,10 @@
  ],
  "next": [
   "Find Neil Hansen's successor as GBS President",
-  "Verify Deal, Keillor, Biagi and Ab Aziz on LinkedIn (titles current?)",
+  "Open Surber, Higgins and Benner profiles; finish pages 4-6 of the Sales Nav list",
   "Identify the S/4 SI",
   "Confirm Devin's ABAP/SAP scope with the SE",
-  "Draft the exec letter to the VP IT"
+  "Draft the exec letter to Michael Deal; time Brad Harris outreach to his first 6 months"
  ],
  "play": "Custom-code triage for the S/4HANA consolidation"
 }

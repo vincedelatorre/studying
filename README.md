@@ -2,7 +2,7 @@
 
 ## Technical Bookmark Library
 
-**[Energy MEDDPICC playbook](https://vincedelatorre.github.io/studying/x-bookmarks/playbook.html)** · **[Customer brief: Devin and the Agent Shift](https://vincedelatorre.github.io/studying/x-bookmarks/devin-agent-shift.html)** · **[Read the storylines](https://vincedelatorre.github.io/studying/x-bookmarks/storylines.html)** · **[Open the full library](https://vincedelatorre.github.io/studying/x-bookmarks/)** · **[ExxonMobil deep dive](https://vincedelatorre.github.io/studying/x-bookmarks/exxonmobil.html)**
+**[Energy MEDDPICC playbook](https://vincedelatorre.github.io/studying/x-bookmarks/playbook.html)** · **[Oil & Gas territory plan](https://vincedelatorre.github.io/studying/x-bookmarks/territory.html)** · **[Customer brief: Devin and the Agent Shift](https://vincedelatorre.github.io/studying/x-bookmarks/devin-agent-shift.html)** · **[Read the storylines](https://vincedelatorre.github.io/studying/x-bookmarks/storylines.html)** · **[Open the full library](https://vincedelatorre.github.io/studying/x-bookmarks/)** · **[ExxonMobil deep dive](https://vincedelatorre.github.io/studying/x-bookmarks/exxonmobil.html)**
 
 506 technical X bookmarks saved Aug 18 – Oct 18, 2026, sorted into 12 chapters and 74 topics. Each entry has a summary, a takeaway, the tools it names, the links from the post, and the full saved text. Politics, everyday life, gossip and memes are left out.
 
@@ -40,3 +40,9 @@
 ### Turning on the website link
 
 The link above is served by GitHub Pages. If it shows a 404, turn Pages on once: **Settings → Pages → Build and deployment → Source: Deploy from a branch → Branch: `main`, folder `/ (root)` → Save**. The site goes live a minute or two later.
+
+## Oil & Gas territory plan
+
+[`x-bookmarks/territory.html`](https://vincedelatorre.github.io/studying/x-bookmarks/territory.html) is a strategic account plan for ExxonMobil, Chevron, Halliburton, SLB and Enterprise Products. It follows MEDDPICC, Command of the Message and McMahon-style territory execution. It has a pipeline generation (PG) plan, publicly stated challenges with sources, pain chains, a stakeholder map with LinkedIn and Sales Navigator search links, mutual action plans and engagement sequences.
+
+To add an account, write `x-bookmarks/data/accounts/<id>.json` (research) and `x-bookmarks/data/territory/<id>.json` (plan), add the id to `order` in `data/territory/territory.json`, then run `python3 x-bookmarks/tools/build_territory.py`.

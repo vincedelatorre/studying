@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Oil & Gas Territory Plan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{--bg:#F2F4F3;--panel:#FFF;--ink:#18211F;--muted:#5B6863;--line:#D9DFDC;--accent:#0B7A6E;--accent-soft:#E0F0EC;--note:#9A5B00;--note-soft:#FBF0DE;--chip:#EAEEEC;--bad:#B4432A;--ok:#2F7D3A;
+--display:"Bricolage Grotesque",system-ui,sans-serif;--body:"IBM Plex Sans",system-ui,sans-serif;--mono:"IBM Plex Mono",ui-monospace,monospace}
+@media (prefers-color-scheme:dark){:root{--bg:#0F1513;--panel:#161E1B;--ink:#E4EBE8;--muted:#94A39D;--line:#27322E;--accent:#4FC7B6;--accent-soft:#16312C;--note:#E7A94A;--note-soft:#2E2414;--chip:#1F2926;--bad:#F08A70;--ok:#7BCB86;color-scheme:dark}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.6 var(--body)}a{color:var(--accent)}
+nav{position:fixed;top:0;left:0;bottom:0;width:260px;overflow:auto;background:var(--panel);border-right:1px solid var(--line);padding:18px 14px 40px}
+nav h1{font:700 19px/1.2 var(--display);margin:0 0 4px}nav .sub{color:var(--muted);font-size:12px;margin-bottom:14px}
+nav details{margin:2px 0}nav summary{cursor:pointer;font-weight:600;padding:5px 6px;border-radius:6px;list-style:none;display:flex;justify-content:space-between}
+nav summary:hover{background:var(--chip)}nav summary .sc{font:500 11px var(--mono);color:var(--muted)}
+nav a{display:block;padding:3px 6px 3px 16px;color:var(--muted);text-decoration:none;font-size:13.5px;border-radius:6px}nav a:hover,nav a.on{color:var(--accent);background:var(--accent-soft)}
+main{margin-left:260px;padding:28px 40px 120px;max-width:1260px}
+section{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:22px 26px;margin:0 0 18px;scroll-margin-top:16px}
+h2{font:700 24px/1.2 var(--display);margin:0 0 10px}h3{font:600 16px var(--display);margin:16px 0 6px}
+.acct-head{border-left:5px solid var(--accent)}.acct-head h2{font-size:32px}
+.kick{font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:4px}
+.muted{color:var(--muted)}.chip{display:inline-block;font:500 11.5px var(--mono);padding:1px 7px;border-radius:99px;background:var(--chip);margin:0 4px 2px 0;white-space:nowrap}
+.chip.v{background:var(--note-soft);color:var(--note)}.chip.ok{background:var(--accent-soft);color:var(--accent)}
+.src{font:500 11.5px var(--mono);white-space:nowrap}
+table{width:100%;border-collapse:collapse;font-size:14px}th,td{text-align:left;vertical-align:top;padding:8px 10px;border-bottom:1px solid var(--line)}th{font:600 12px var(--mono);text-transform:uppercase;color:var(--muted);letter-spacing:.04em}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}.card{border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+.card h4{margin:0 0 6px;font:600 13px var(--mono);text-transform:uppercase;color:var(--accent)}.card ul{margin:0;padding-left:18px}
+.thesis{font-size:16.5px;background:var(--accent-soft);border-radius:10px;padding:14px 16px}
+.elev{font-style:italic;border-left:3px solid var(--accent);padding:6px 14px;margin:8px 0 14px}
+.bar{display:inline-block;height:8px;border-radius:4px;background:var(--line);width:72px;vertical-align:middle;overflow:hidden}.bar i{display:block;height:100%;background:var(--accent)}
+.s0 i{background:var(--bad)}.s1 i{background:var(--note)}
+.L{font:700 15px var(--mono);color:var(--accent)}
+.search a{font:500 11.5px var(--mono);margin-right:8px;white-space:nowrap}
+.legend{font-size:13px;color:var(--muted);margin-top:8px}
+@media (max-width:860px){nav{position:static;width:auto;border-right:0}main{margin:0;padding:16px}}
+@media print{nav{display:none}main{margin:0}section{break-inside:avoid}}
+</style></head><body><nav id="nav"></nav><main id="main"></main>
+<script>
+const DATA=/*__DATA__*/null;
+const T=DATA.territory,A=DATA.accounts,$=s=>document.querySelector(s);
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const LN={M:"Metrics",E:"Economic buyer",D1:"Decision criteria",D2:"Decision process",P:"Paper process",I:"Identify pain",C1:"Champion",C2:"Competition"};
+const LL={M:"M",E:"E",D1:"D",D2:"D",P:"P",I:"I",C1:"C",C2:"C"};
+const SECS=[["summary","Why now"],["challenges","Public challenges"],["pain","Pain chain"],["com","Command of the Message"],["meddpicc","MEDDPICC"],["stakeholders","Stakeholders"],["engagement","Engagement & PG"],["map","Mutual action plan"],["risks","Risks & next steps"]];
+function ref(a,r){if(!r)return null;const[k,i]=r.split(":");return (a.research_data[k]||[])[+i]||null}
+function srcLink(a,r){const x=ref(a,r);if(!x)return'<span class="muted">-</span>';const u=x.src||x.url;const d=x.date?` · ${esc(x.date)}`:"";return u?`<a class="src" href="${esc(u)}" target="_blank" rel="noopener">source${d}</a>`:`<span class="src muted">${d}</span>`}
+function searches(q){const e=encodeURIComponent(q);return `<span class="search"><a target="_blank" rel="noopener" href="https://www.linkedin.com/sales/search/people?keywords=${e}">Sales Nav</a><a target="_blank" rel="noopener" href="https://www.linkedin.com/search/results/people/?keywords=${e}">LinkedIn</a><a target="_blank" rel="noopener" href="https://www.google.com/search?q=${encodeURIComponent('site:linkedin.com/in '+q)}">X-ray</a></span>`}
+const ul=xs=>`<ul>${(xs||[]).map(x=>`<li>${esc(x)}</li>`).join("")}</ul>`;
+const score=a=>(a.meddpicc||[]).reduce((s,x)=>s+(+x.score||0),0);
+function date(wk){const d=new Date(T.start+"T00:00:00Z");d.setUTCDate(d.getUTCDate()+7*wk);return d.toLocaleDateString("en-US",{month:"short",day:"numeric",year:"numeric",timeZone:"UTC"})}
+let nav=`<h1>${esc(T.title)}</h1><div class="sub">MEDDPICC · Command of the Message · McMahon</div>
+<details open><summary>Territory</summary><a href="#territory">Thesis & principles</a><a href="#tiers">Tiering</a><a href="#pg">Pipeline generation</a><a href="#cadence">Operating cadence</a><a href="#linkedin">LinkedIn method</a><a href="#scoreboard">Scoreboard</a></details>`;
+A.forEach((a,n)=>{nav+=`<details ${n===0?"open":""}><summary><span>${esc(a.account)}</span><span class="sc">T${a.tier} · ${score(a)}/24</span></summary>${SECS.map(([k,l])=>`<a href="#${a.id}-${k}">${l}</a>`).join("")}</details>`});
+$("#nav").innerHTML=nav;
+let h=`<section id="territory"><div class="kick">Territory plan</div><h2>${esc(T.title)}</h2><p class="thesis">${esc(T.thesis)}</p><h3>Operating principles</h3>${ul(T.principles)}</section>
+<section id="tiers"><div class="kick">McMahon: tier, then time-block</div><h2>Tiering</h2><div class="grid">${T.tiers.map(x=>`<div class="card"><h4>${esc(x.label)}</h4>${esc(x.rule)}<div style="margin-top:8px">${A.filter(a=>a.tier===x.tier).map(a=>`<a class="chip ok" href="#${a.id}-summary">${esc(a.account)}</a>`).join("")||'<span class="muted">-</span>'}</div></div>`).join("")}</div></section>
+<section id="pg"><div class="kick">Pipeline generation</div><h2>PG plan</h2><table><tr><th>Lever</th><th>How</th><th>Target</th></tr>${T.pg.map(x=>`<tr><td><b>${esc(x.lever)}</b></td><td>${esc(x.how)}</td><td>${esc(x.target)}</td></tr>`).join("")}</table></section>
+<section id="cadence"><div class="kick">Execution</div><h2>Operating cadence</h2><table>${T.cadence.map(x=>`<tr><td style="width:120px"><b>${esc(x.when)}</b></td><td>${esc(x.what)}</td></tr>`).join("")}</table></section>
+<section id="linkedin"><div class="kick">Stakeholder research</div><h2>LinkedIn method</h2>${ul(T.linkedin)}<p class="muted">${esc(T.add_account)}</p></section>
+<section id="scoreboard"><div class="kick">Inspection</div><h2>Territory scoreboard</h2><table><tr><th>Account</th><th>Tier</th><th>Stage</th>${Object.keys(LN).map(k=>`<th title="${LN[k]}">${LL[k]}</th>`).join("")}<th>Total</th><th>Play</th></tr>${A.map(a=>{const m={};(a.meddpicc||[]).forEach(x=>m[x.l]=x.score);return`<tr><td><a href="#${a.id}-summary"><b>${esc(a.account)}</b></a></td><td>T${a.tier}</td><td>${esc(a.stage)}</td>${Object.keys(LN).map(k=>`<td>${m[k]??"-"}</td>`).join("")}<td><b>${score(a)}</b>/24</td><td>${esc(a.play||"")}</td></tr>`}).join("")}</table><div class="legend">Score per letter: 0 unknown · 1 hypothesis from public sources · 2 confirmed by the customer · 3 confirmed and documented in the MAP.</div></section>`;
+A.forEach(a=>{const c=a.com||{},e=a.engagement||{};
+h+=`<section id="${a.id}-summary" class="acct-head"><div class="kick">Tier ${a.tier} · ${esc(a.stage)}</div><h2>${esc(a.account)}</h2>${a.play?`<p><b>Play:</b> ${esc(a.play)}</p>`:""}<p class="thesis">${esc(a.thesis)}</p><h3>Why now</h3><table>${(a.why_now||[]).map(x=>`<tr><td>${esc(x.t)}</td><td style="width:130px">${srcLink(a,x.ref)}</td></tr>`).join("")}</table></section>
+<section id="${a.id}-challenges"><div class="kick">Identify pain · in their words</div><h2>Publicly stated challenges</h2><table><tr><th>What they said</th><th>Who</th><th>Where Devin fits</th><th>Source</th></tr>${(a.challenges||[]).map(x=>`<tr><td>${esc(x.stated)}</td><td>${esc(x.who)}</td><td>${esc(x.devin)}</td><td>${srcLink(a,x.ref)}</td></tr>`).join("")}</table></section>
+<section id="${a.id}-pain"><div class="kick">Pain by altitude</div><h2>Pain chain</h2><table><tr><th>Level</th><th>Pain</th><th>How they measure it</th></tr>${(a.pain_chain||[]).map(x=>`<tr><td><b>${esc(x.level)}</b></td><td>${esc(x.pain)}</td><td>${esc(x.measure)}</td></tr>`).join("")}</table></section>
+<section id="${a.id}-com"><div class="kick">Command of the Message</div><h2>Value framework</h2><p class="elev">${esc(c.elevator)}</p><div class="grid">${[["Before scenario",c.before],["Negative consequences",c.negative],["After scenario",c.after],["Required capabilities",c.required],["Metrics",c.metrics],["How we do it",c.how],["Proof",c.proof]].map(([t,x])=>`<div class="card"><h4>${t}</h4>${ul(x)}</div>`).join("")}</div></section>
+<section id="${a.id}-meddpicc"><div class="kick">Qualification · ${score(a)}/24</div><h2>MEDDPICC scorecard</h2><table><tr><th></th><th>Letter</th><th>Score</th><th>What we know</th><th>Gap</th><th>Next action</th></tr>${(a.meddpicc||[]).map(x=>`<tr><td class="L">${LL[x.l]}</td><td><b>${LN[x.l]}</b></td><td><span class="bar s${x.score}"><i style="width:${x.score/3*100}%"></i></span> ${x.score}/3</td><td>${esc(x.known)}</td><td>${esc(x.gap)}</td><td>${esc(x.next)}</td></tr>`).join("")}</table></section>
+<section id="${a.id}-stakeholders"><div class="kick">Power map</div><h2>Stakeholders</h2><table><tr><th>Name / title</th><th>Role</th><th>Cares about</th><th>Approach</th><th>Source & search</th></tr>${(a.stakeholders||[]).map(x=>{const q=x.q||(x.name&&x.name!=="TBD"?`"${x.name}" ${a.account}`:`${a.account} ${x.title}`);return`<tr><td><b>${esc(x.name)}</b><br><span class="muted">${esc(x.title)}</span></td><td><span class="chip">${esc(x.role)}</span>${x.verify?'<span class="chip v">verify</span>':x.src_url?'<span class="chip ok">Sales Nav</span>':'<span class="chip ok">public source</span>'}</td><td>${esc(x.cares)}</td><td>${esc(x.approach)}</td><td>${x.src_url?`<a class="src" href="${esc(x.src_url)}">Sales Nav pull · Oct 21</a>`:srcLink(a,x.src)}<br>${searches(q)}</td></tr>`}).join("")}</table>${(a.searches||[]).length?`<h3>Role searches: find champions and technical buyers</h3><table>${a.searches.map(s=>`<tr><td><b>${esc(s.label)}</b><br><span class="muted src">${esc(s.q)}</span></td><td>${searches(s.q)}</td></tr>`).join("")}</table>`:""}</section>
+<section id="${a.id}-engagement"><div class="kick">Engagement strategy</div><h2>Engagement & pipeline generation</h2><p><b>Entry:</b> ${esc(e.entry)}</p><div class="grid">${(e.phases||[]).map(p=>`<div class="card"><h4>${esc(p.when)}</h4>${ul(p.what)}</div>`).join("")}</div><h3>PG sequence</h3><table><tr><th>Target</th><th>Channel</th><th>Message</th></tr>${(e.pg||[]).map(x=>`<tr><td><b>${esc(x.to)}</b></td><td>${esc(x.channel)}</td><td>${esc(x.message)}</td></tr>`).join("")}</table><div class="grid" style="margin-top:12px"><div class="card"><h4>Events</h4>${ul(e.events)}</div><div class="card"><h4>Partners</h4>${ul(e.partners)}</div></div></section>
+<section id="${a.id}-map"><div class="kick">Mutual action plan · draft dates from ${esc(date(0))}</div><h2>Mutual action plan</h2><table><tr><th>Target date</th><th>Step</th><th>Owner</th><th>Letter</th><th>Exit criteria</th></tr>${(a.map||[]).map(x=>`<tr><td class="src">${date(x.wk)}</td><td>${esc(x.step)}</td><td>${esc(x.owner)}</td><td class="L">${LL[x.letter]||""}</td><td>${esc(x.exit)}</td></tr>`).join("")}</table><div class="legend">These dates are a draft. They only count toward the forecast once the champion agrees them.</div></section>
+<section id="${a.id}-risks"><div class="kick">Inspect</div><h2>Risks & next steps</h2><table><tr><th>Risk</th><th>Mitigation</th></tr>${(a.risks||[]).map(x=>`<tr><td>${esc(x.r)}</td><td>${esc(x.m)}</td></tr>`).join("")}</table><h3>Next actions</h3>${ul(a.next)}</section>`});
+$("#main").innerHTML=h;
+function jump(){const id=location.hash.slice(1);if(!id)return;let el=document.getElementById(id)||document.getElementById(A[0].id+"-"+id);if(el)el.scrollIntoView()}
+addEventListener("hashchange",jump);jump();
+const links=[...document.querySelectorAll("nav a")];const io=new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting){links.forEach(l=>l.classList.toggle("on",l.getAttribute("href")==="#"+en.target.id))}}),{rootMargin:"-10% 0px -80% 0px"});document.querySelectorAll("section").forEach(s=>io.observe(s));
+</script></body></html>

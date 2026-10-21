@@ -1,0 +1,87 @@
+{
+ "id": "enterpriseproducts", "account": "Enterprise Products", "research": "enterpriseproducts", "tier": 2,
+ "stage": "Prospect: no relationship yet",
+ "play": "Commercial systems backlog and pipeline security directives",
+ "thesis": "Enterprise Products is at record volumes, has raised its 2026 growth capex to $2.9-3.4B, and keeps adding assets (Bahia, Neches River, Occidental/Permian). All of that runs through an in-house .NET/SQL Server commercial application estate kept up by a lean team, under the TSA pipeline security directives. Devin adds capacity to extend, test and secure that estate without building up headcount, and Randy Fowler, who historically oversaw IT, becomes sole CEO in January.",
+ "why_now": [
+  {"t": "Randy Fowler becomes sole CEO on Jan 4, 2027, and he has historically overseen IT. A new agenda window opens.", "ref": "recent_events:0"},
+  {"t": "Growth capex was raised in July 2026, so more assets reach the commercial systems.", "ref": "recent_events:2"},
+  {"t": "Acquired Occidental and Permian systems need integrating.", "ref": "recent_events:4"},
+  {"t": "TSA SD-02 directives require prompt patching and segmentation.", "ref": "agent_signals:4"}
+ ],
+ "challenges": [
+  {"stated": "Record volumes and multiple new assets due through 2026-2027.", "who": "Q2 2026 / 10-K", "ref": "agent_signals:6", "devin": "Extend and test nominations, scheduling, measurement and invoicing apps for new assets in parallel."},
+  {"stated": "In-house .NET, SQL Server and Angular apps for core commercial operations, tracked in Azure DevOps.", "who": "EPCO job postings", "ref": "agent_signals:0", "devin": "Fits the stack. Handles .NET upgrades, test coverage and documentation."},
+  {"stated": "TSA pipeline security directives: segmentation, monitoring, prompt patching.", "who": "TSA SD-02", "ref": "agent_signals:4", "devin": "Code Scans and Security Swarm shorten time-to-patch, with evidence for audits."},
+  {"stated": "OT/ICS segregated; quarterly board cyber updates; no cyber insurance.", "who": "10-K", "ref": "agent_signals:3", "devin": "Every Devin works in its own isolated machine and never touches OT. That lowers risk the company carries without insurance."},
+  {"stated": "Proprietary operational data is 'the new currency'.", "who": "Jim Teague, Co-CEO", "ref": "agent_signals:5", "devin": "Data-pipeline and analytics engineering capacity for the Data Science team."}
+ ],
+ "pain_chain": [
+  {"level": "L1 CEO / CFO / Office of the Chairman", "pain": "Grow volumes and DCF while staying famously lean.", "measure": "DCF; gross operating margin; G&A"},
+  {"level": "L2 Senior IT leadership at EPCO", "pain": "Commercial systems must scale with assets, and TSA compliance is ongoing.", "measure": "Time to onboard a new asset; patch SLAs"},
+  {"level": "L3 Application development managers", "pain": "A long-tenured, lean team carrying legacy .NET and stored-procedure code.", "measure": "Backlog; release cadence"},
+  {"level": "L4 Developers", "pain": "Stored procedures, .NET Framework upgrades, missing tests.", "measure": "Tickets per sprint"}
+ ],
+ "com": {
+  "elevator": "Record volumes and new assets keep landing on your in-house commercial systems, and TSA expects prompt patching. Devin is an autonomous AI engineer that extends, tests and secures those .NET apps in parallel, so the team keeps pace without adding headcount.",
+  "before": ["New assets queue behind a lean app team", "Legacy .NET and stored procedures with little test coverage", "Patching driven by TSA directives done by hand"],
+  "negative": ["Commercial onboarding of new assets is delayed, which delays revenue", "Compliance exposure with no insurance backstop", "Key-person risk on long-tenured developers"],
+  "after": ["Asset onboarding changes shipped faster with tests", "Patch time measured and falling", "Legacy code documented in DeepWiki"],
+  "required": ["Windows machines, .NET and SQL Server", "Azure DevOps integration", "Never touches OT", "Cost-disciplined pricing tied to output"],
+  "metrics": ["Days to onboard a new asset into commercial systems", "Critical patch time-to-fix", "Backlog closed per month"],
+  "how": ["Code Scans and Security Swarm", "Windows VMs", "Azure DevOps integration", "DeepWiki"],
+  "proof": ["Customer stories: security, harness"]
+ },
+ "meddpicc": [
+  {"l": "M", "score": 1, "known": "Record volumes; capex raised.", "gap": "No app or patch baseline.", "next": "Discovery on asset onboarding time."},
+  {"l": "E", "score": 1, "known": "Randy Fowler (IT historically), CFO Dan Boss.", "gap": "Senior IT leader at EPCO not named.", "next": "Find the EPCO VP of IT on LinkedIn."},
+  {"l": "D1", "score": 0, "known": "-", "gap": "-", "next": "Seed isolation, Windows support and Azure DevOps fit as criteria."},
+  {"l": "D2", "score": 0, "known": "Cross-functional cybersecurity committee.", "gap": "Process unknown.", "next": "Map it with the champion."},
+  {"l": "P", "score": 0, "known": "Contracts go through EPCO (the service company).", "gap": "Path unknown.", "next": "Confirm whether EPCO is the contracting entity."},
+  {"l": "I", "score": 1, "known": "Public signals only.", "gap": "Not confirmed by the customer.", "next": "Discovery."},
+  {"l": "C1", "score": 0, "known": "-", "gap": "No champion.", "next": "Target app development managers."},
+  {"l": "C2", "score": 0, "known": "Status quo and build-in-house culture; possibly a Microsoft EA with Copilot (unconfirmed).", "gap": "Whether Copilot is in use.", "next": "Ask."}
+ ],
+ "stakeholders": [
+  {"name": "W. Randall 'Randy' Fowler", "title": "Co-CEO; sole CEO from Jan 4, 2027", "role": "Economic sponsor", "letter": "E", "src": "leaders:0", "verify": false, "cares": "Finance, IT, risk (historically)", "approach": "Exec letter timed around the transition, once IT leaders are engaged."},
+  {"name": "R. Daniel Boss", "title": "CFO; Office of the Chairman", "role": "Economic buyer", "letter": "E", "src": "leaders:2", "verify": false, "cares": "Cost discipline", "approach": "Bring the ROI story later."},
+  {"name": "Michael C. 'Tug' Hanley", "title": "Chief Commercial Officer", "role": "Influencer", "letter": "I", "src": "leaders:3", "verify": false, "cares": "Commercial systems for new assets", "approach": "Business owner of the nominations and scheduling apps."},
+  {"name": "TBD", "title": "VP / Senior Director of IT (EPCO)", "role": "Economic buyer (likely)", "letter": "E", "src": "leaders:7", "verify": true, "cares": "IT delivery, TSA compliance", "approach": "Top research gap.", "q": "EPCO OR \"Enterprise Products\" \"vice president\" information technology"},
+  {"name": "TBD", "title": "Manager, Application Development (commercial liquids / gas)", "role": "Champion candidate", "letter": "C1", "src": "", "verify": true, "cares": "Backlog for new assets", "approach": "Primary champion target.", "q": "\"Enterprise Products\" \"application development\" manager"},
+  {"name": "TBD", "title": "IT Security / OT security lead", "role": "Technical buyer", "letter": "D1", "src": "", "verify": true, "cares": "TSA SD-02 compliance", "approach": "Security-led entry.", "q": "\"Enterprise Products\" cybersecurity manager"},
+  {"name": "TBD", "title": "Data Science lead", "role": "Influencer", "letter": "I", "src": "", "verify": true, "cares": "Data pipelines", "approach": "Second thread.", "q": "\"Enterprise Products\" \"data science\" manager"}
+ ],
+ "searches": [
+  {"label": "EPCO IT leadership", "q": "EPCO Houston (\"IT director\" OR \"vice president\" OR \"CIO\")"},
+  {"label": ".NET developers and architects", "q": "\"Enterprise Products\" (.NET OR \"software architect\")"}
+ ],
+ "engagement": {
+  "entry": "Security-led (TSA patching) or backlog-led through app development managers, then the EPCO IT VP, timed with Fowler's transition.",
+  "phases": [
+   {"when": "Weeks 1-3", "what": ["Name EPCO's IT leadership", "Build the Houston list"]},
+   {"when": "Weeks 3-8", "what": ["Outreach sequence; discovery", "Security pre-read"]},
+   {"when": "Weeks 8-14", "what": ["POV on one commercial app and a CVE backlog"]}
+  ],
+  "pg": [
+   {"to": "App development managers", "channel": "LinkedIn + email", "message": "Every new asset lands in your nominations and measurement apps. Devin ships those changes with tests, in parallel."},
+   {"to": "IT security lead", "channel": "Email", "message": "Shorter TSA patch cycles, with evidence for audits."},
+   {"to": "Randy Fowler", "channel": "Exec letter (Jan 2027)", "message": "Lean growth: more output from IT without more headcount."}
+  ],
+  "events": ["Houston CISO Forum", "Houston .NET / DevOps meetups"],
+  "partners": ["Microsoft (Azure DevOps stack)"]
+ },
+ "map": [
+  {"wk": 0, "step": "Discovery with an app development manager", "owner": "Joint", "letter": "I", "exit": "Backlog named"},
+  {"wk": 2, "step": "Baseline asset onboarding and patch time", "owner": "EPD", "letter": "M", "exit": "Numbers"},
+  {"wk": 4, "step": "Meeting with the IT VP", "owner": "Joint", "letter": "E", "exit": "Sponsor"},
+  {"wk": 5, "step": "Security committee review", "owner": "EPD", "letter": "D2", "exit": "Approved"},
+  {"wk": 6, "step": "POV plan", "owner": "Joint", "letter": "D1", "exit": "Criteria"},
+  {"wk": 7, "step": "POV", "owner": "Cognition", "letter": "M", "exit": "Results"},
+  {"wk": 12, "step": "Readout and EPCO paper", "owner": "Joint", "letter": "P", "exit": "Signed"}
+ ],
+ "risks": [
+  {"r": "Lean, build-in-house culture resists new vendors", "m": "Tie pricing to output and start very small."},
+  {"r": "IT leaders are not publicly visible", "m": "Use LinkedIn and ZoomInfo, plus partner intros."}
+ ],
+ "next": ["Find the EPCO IT VP", "Find app development managers", "Plan the exec letter for the Jan 2027 transition"]
+}

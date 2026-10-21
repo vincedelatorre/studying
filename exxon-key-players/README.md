@@ -66,3 +66,12 @@ Karam Mahmoud (profile not visible), Robert Bohan (title reads "Director of cons
 - Pull job postings and press mentions for Splunk, Datadog, Dynatrace, ServiceNow and AWS at ExxonMobil to fill the observability gap.
 - Paolo Biagi, Ryan Seager and Matthew Knies are the clearest entry points on stated modernization, cloud and identity programs.
 - Repeat the same filters for Halliburton, Chevron and Enterprise Products once this format is approved.
+
+## Update Oct 21, 2026 (evening): Datadog angle and sales plays
+
+- Keegan Cotton is a Datadog Director, Key Accounts (Houston) and a 1st-degree LinkedIn connection. His profile does not list his Exxon contacts, so that list needs to come from him.
+- Sales Navigator showed a reactivation page and regular LinkedIn reported the profile-search limit, so no further profile browsing was done. Nothing was purchased or reactivated.
+- Datadog's event page for "ExxonMobil: Datadog Day" (ExxonMobil Tower, Kuala Lumpur; no year stated, Oct 2 on a Wednesday points to 2024) shows Datadog is in use at Exxon, with Keegan listed as a speaker and AWS and Kubernetes among the topics. Splunk and Dynatrace remain unconfirmed.
+- Devin has an official Datadog MCP integration and a webhook path from Datadog monitors to Devin sessions.
+- An HCLTech case study on a "leading American petroleum company" (216 applications to Azure) does not name Exxon and was not used.
+- Five sales plays are on the site: x-bookmarks/exxon.html#plays

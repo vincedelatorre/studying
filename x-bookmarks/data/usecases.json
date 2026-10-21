@@ -16,8 +16,8 @@
   {
    "k": "D3",
    "name": "Parallel agents at codebase scale",
-   "what": "Code Scans (Agentic MapReduce), managed child Devins several levels deep, and Dynamic Workflows whose plan is code you can read and version.",
-   "why": "Built for multi-million-line monoliths. Single-session assistants can't split, coordinate and merge a migration."
+   "what": "Code Scans (Agentic MapReduce), managed child Devins several levels deep, and Dynamic Workflows: a deterministic Python script Devin writes to run a team of agents, with pipeline() stages that don't wait on each other, every agent call recorded and resumable, and each agent on its own VM and branch.",
+   "why": "Built for multi-million-line monoliths. Single-session assistants can't split, coordinate, resume and merge a migration with a plan people can read."
   },
   {
    "k": "D4",

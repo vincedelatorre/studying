@@ -49,7 +49,7 @@
    "story": "swarms",
    "shift": "Large work gets done by many agents in parallel.",
    "means": "Codebase-wide jobs such as audits, upgrades and migrations are too big for one agent session. Parallel agents need a plan that people can read and approve.",
-   "devin": "Code Scans run an audit across a whole codebase for any goal, such as code that is safe to delete, slow queries or outdated libraries, then open the pull requests. Devin sessions can start managed child Devins several levels deep. Dynamic Workflows split a job across Devins and merge the results, and the plan lives in code you can read and version.",
+   "devin": "Code Scans run an audit across a whole codebase for any goal, such as code that is safe to delete, slow queries or outdated libraries, then open the pull requests. Dynamic Workflows go further: Devin writes a deterministic Python script that runs a team of agents, each on its own machine and branch. Stages don't wait on each other, so one module can be verified while another is still being audited; every agent call is recorded, runs can be paused, resumed or set to require approval, and a working workflow can be saved to the repo for reuse.",
    "refs": [
     "2026-09-16 cognition 803404",
     "2026-09-16 jeffwang 674045",

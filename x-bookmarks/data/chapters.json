@@ -113,10 +113,10 @@
      "exit": "Review time and merge rate measured against baseline"
     },
     {
-     "step": "Modernize: one bounded migration as a Dynamic Workflow",
+     "step": "Modernize: one bounded migration as a Dynamic Workflow, sized on a small slice first",
      "owner": "Joint",
      "letter": "M",
-     "exit": "Migration plan versioned; changes merged and tested"
+     "exit": "Workflow script versioned; per-agent ACUs reviewed; changes merged and tested; saved as a skill"
     },
     {
      "step": "Operate: Devin Oncall on one service, human approves fixes",
@@ -986,6 +986,38 @@
    "q": "Who besides you would need to agree this is a priority to solve now?",
    "listen": "Path to the go/no-go with the EB",
    "lvl": "Any"
+  },
+  {
+   "t": "Dynamic Workflows",
+   "l": "I",
+   "p": "Platform lead",
+   "q": "Which jobs on your list break into five or more independent pieces that each need judgment?",
+   "listen": "Fit for a fan-out or staged pipeline workflow",
+   "lvl": "L4"
+  },
+  {
+   "t": "Dynamic Workflows",
+   "l": "I",
+   "p": "Platform lead",
+   "q": "Where does one stage's output feed the next: audit, then fix, then verify?",
+   "listen": "Fit for a fan-out or staged pipeline workflow",
+   "lvl": "L4"
+  },
+  {
+   "t": "Dynamic Workflows",
+   "l": "D",
+   "p": "Platform lead",
+   "q": "Who would need to approve a multi-agent run before it starts?",
+   "listen": "Fit for a fan-out or staged pipeline workflow",
+   "lvl": "L4"
+  },
+  {
+   "t": "Dynamic Workflows",
+   "l": "M",
+   "p": "Platform lead",
+   "q": "How would you want to see per-agent cost before scaling a run across the whole estate?",
+   "listen": "Fit for a fan-out or staged pipeline workflow",
+   "lvl": "L4"
   }
  ],
  "trees": [
@@ -1816,6 +1848,42 @@
        "if": "They engage",
        "say": "Which part of the codebase would be the hardest test? Let's scope the POV around it.",
        "next": "Scope a POV on their hardest case (D)."
+      }
+     ]
+    },
+    {
+     "dw": true,
+     "if": "\"Fifty agents at once sounds out of control.\"",
+     "say": "The plan is a deterministic script you can read and version, runs can require approval, every agent call is recorded and visible in the panel, and you can stop or resume at any point.",
+     "then": [
+      {
+       "if": "They engage",
+       "say": "Could we pick one job with five or more independent pieces and run it on a small slice first?",
+       "next": "Workflow-sized POV scope (D, M)."
+      }
+     ]
+    },
+    {
+     "dw": true,
+     "if": "\"It'll burn through usage.\"",
+     "say": "Start on a small slice, read per-agent ACUs in the panel, and pin high-volume stages to cheaper modes like Devin Lite before running at full scope.",
+     "then": [
+      {
+       "if": "They engage",
+       "say": "Could we pick one job with five or more independent pieces and run it on a small slice first?",
+       "next": "Workflow-sized POV scope (D, M)."
+      }
+     ]
+    },
+    {
+     "dw": true,
+     "if": "\"Agents will step on each other.\"",
+     "say": "By default each agent has its own VM and repo clone and hands work off through git branches.",
+     "then": [
+      {
+       "if": "They engage",
+       "say": "Could we pick one job with five or more independent pieces and run it on a small slice first?",
+       "next": "Workflow-sized POV scope (D, M)."
       }
      ]
     }

@@ -1,0 +1,170 @@
+{
+ "story": "devin",
+ "id": "dynwf",
+ "title": "Dynamic Workflows: a team of Devins run by a script",
+ "source": {
+  "author": "Devin Docs",
+  "date": "2026-10-20",
+  "url": "https://docs.devin.ai/work-with-devin/dynamic-workflows"
+ },
+ "thesis": "A dynamic workflow is a deterministic Python script that orchestrates a team of Devin agents. Devin writes the script and runs it; the script decides which agents run, in what order, and what each one is told. Later agents can use the structured results of earlier ones. Every agent call is recorded, so a run can be watched live and resumed if it's interrupted.",
+ "labels": {
+  "how": "How it works",
+  "renderers": "Where the agents run",
+  "gates": "How to run one, step by step",
+  "template": "Example requests and the script's building blocks",
+  "games": "Rules that keep a run reliable and affordable"
+ },
+ "how": [
+  {
+   "k": "Devin writes the script",
+   "d": "Describe the task and ask Devin to run it as a workflow (\"Use a workflow to...\"). Devin writes the script to a file and starts the run."
+  },
+  {
+   "k": "The script runs the team",
+   "d": "It registers phases, then calls agents one by one, in pipelines or in parallel, each returning structured output against a small JSON schema."
+  },
+  {
+   "k": "You watch and steer",
+   "d": "Runs go in the background. A workflow panel shows phases, agents and live status; open any agent's session, ask for a summary, or stop the run."
+  }
+ ],
+ "why": "Use a workflow for a wide fan-out with a combine step (roughly five or more independent units, such as files, modules, endpoints or tickets, that each need judgment or verification) or a staged pipeline where later stages consume earlier output, such as audit, then fix, then verify. Don't use one for mechanical changes a codemod or linter can do, for one or two independent sessions, or for tightly coupled work with shared state.",
+ "facts": [
+  {
+   "stat": "5+ units",
+   "ctx": "Rough threshold where a fan-out workflow beats separate sessions"
+  },
+  {
+   "stat": "7 days",
+   "ctx": "Default and maximum run budget; interrupted runs resume by run ID"
+  },
+  {
+   "stat": "Resumable",
+   "ctx": "Each agent call is keyed by a hash of prompt, schema and settings; completed calls replay on resume"
+  },
+  {
+   "stat": "Approval",
+   "ctx": "Runs auto-approve by default; turn off Settings → Preferences → Auto-approve workflows to approve each run"
+  },
+  {
+   "stat": "Enterprise",
+   "ctx": "An admin enables Dynamic workflows under Enterprise Settings → Devin before it runs in the org"
+  }
+ ],
+ "renderers": [
+  {
+   "name": "Separate VM (default)",
+   "when": "Each agent is a full child session with its own machine, repo clones and environment. It can't see the orchestrator's files, so handoffs go through git branches that later stages read from structured output."
+  },
+  {
+   "name": "Shared VM",
+   "when": "The agent runs on the orchestrator's machine and shares its working tree, including uncommitted changes. It competes for CPU, memory and disk at a lower concurrency cap; parallel writers need strictly separate files or directories."
+  },
+  {
+   "name": "Pinned modes",
+   "when": "Agents can be pinned to a Devin mode, such as the cheaper Devin Lite for high-volume per-item classification, to keep wide fan-outs affordable."
+  }
+ ],
+ "gates": [
+  {
+   "n": "Confirm it's a workflow job",
+   "d": "Five or more independent units that each need judgment, or a staged pipeline that passes structured results forward.",
+   "check": "Fan-out or staged pipeline identified"
+  },
+  {
+   "n": "Check it's enabled",
+   "d": "On enterprise accounts an admin turns on Dynamic workflows under Enterprise Settings → Devin. Decide whether runs need approval and set Auto-approve workflows accordingly.",
+   "check": "Enabled; approval setting chosen"
+  },
+  {
+   "n": "Test on a small slice",
+   "d": "One directory, three modules or a narrower question. Every agent is a Devin session, so a full run can use far more ACUs than one session.",
+   "check": "Small-slice run completed"
+  },
+  {
+   "n": "Read cost per agent",
+   "d": "Check per-agent ACU usage in the workflow panel and pin high-volume stages to cheaper modes such as Devin Lite.",
+   "check": "Per-agent ACUs reviewed"
+  },
+  {
+   "n": "Run at full scope",
+   "d": "Run in the background, watch the panel, open any agent's session, and stop or resume as needed. Failed agents are skipped, defaulted, retried or failed by the script; a resume retries them in new sessions.",
+   "check": "Full run reviewed in the panel"
+  },
+  {
+   "n": "Save it as a skill",
+   "d": "Ask Devin to save the workflow: it commits a workflow.py next to a SKILL.md that says when to use it, so the next run reuses the script instead of writing a new one.",
+   "check": "workflow.py and SKILL.md committed"
+  }
+ ],
+ "template": "EXAMPLE REQUESTS (the doc's five patterns)\nMigration: \"Use a workflow to migrate each job to the new scheduler, one agent per job on its own branch, then roll up the jobs that need manual attention.\"\nResearch: \"Use a workflow to evaluate these options in parallel, then have a final agent compare them and recommend one.\"\nCode review: \"Use a workflow to review each changed file with its own reviewer, then merge the findings, deduplicated and ordered by severity.\"\nCodebase-wide audit: \"Use a workflow to audit, fix and verify across these modules.\"\nLoop: \"Use a workflow to get the flaky integration suite green: run it, fix whatever failed, and repeat until it passes three consecutive runs or a round fixes nothing new.\" (Nick White's example)\n\nBUILDING BLOCKS IN THE SCRIPT\nregister_workflow(meta)            Name, description and phases. Must be awaited before any agent runs.\nagent(prompt, phase=..., schema=...)  Runs one agent; returns its structured output as a dict. Keep the JSON schema small and flat.\npipeline(items, stage1, stage2, ...)  Runs each item through the stages independently, with no barrier between stages.\nparallel([...])                    Runs async calls concurrently and waits for all. Use only where a stage needs every prior result.\nlog(\"message\")                     Writes a progress line visible during the run.",
+ "habits": [
+  "Keep the script deterministic: no dependence on time, randomness, generated IDs, environment variables, filesystem state or network responses. Anything that inspects the outside world goes inside an agent() call.",
+  "Editing a prompt re-runs that agent and everything downstream of it; completed upstream calls replay from the record.",
+  "With separate VMs, pass work between stages through git branches named in the structured output.",
+  "With shared VMs, give parallel writers strictly non-overlapping files or directories.",
+  "Use pipeline() by default and parallel() only where a stage truly needs every earlier result.",
+  "Start small, read per-agent ACUs, then widen the scope."
+ ],
+ "related": [
+  "2026-10-13 dabit3 320819",
+  "2026-10-09 devindevelopers 758936",
+  "2026-09-16 cognition 803404",
+  "2026-09-16 jeffwang 674045"
+ ],
+ "sales": "This is the mechanism behind \"parallel agents deliver 5-12x faster\" on migrations. For energy buyers, lead with control: the plan is a readable script, runs can require approval, every agent call is recorded, a run resumes where it stopped, and each agent works on its own branch. Size POVs on a small slice first so the ACU picture is clear before full scope. Nick White's demo point lands well with platform leads: because pipeline() has no barrier, the fastest module finishes verify while slow ones are still in audit, so a migration doesn't wait on its slowest piece.",
+ "energy": [
+  {
+   "uc": "ERP custom-code remediation",
+   "pattern": "Staged pipeline: audit each custom object, fix, then verify, with branches per object and a roll-up of items needing manual attention.",
+   "acct": "ExxonMobil, ConocoPhillips, Halliburton"
+  },
+  {
+   "uc": "M&A integration and carve-outs",
+   "pattern": "Migration fan-out: one agent per application or job on its own branch, then a roll-up.",
+   "acct": "Chevron, Baker Hughes, ConocoPhillips, SLB"
+  },
+  {
+   "uc": "Security backlog",
+   "pattern": "Codebase-wide audit, fix and verify across modules.",
+   "acct": "Enterprise Products, Halliburton"
+  },
+  {
+   "uc": "Code review at scale",
+   "pattern": "One reviewer per file, then a deduplicated, severity-ordered merge.",
+   "acct": "Chevron"
+  },
+  {
+   "uc": "Platform choice",
+   "pattern": "Research: parallel evaluation of options, then a comparing agent that recommends.",
+   "acct": "Any account with a build-versus-buy decision"
+  }
+ ],
+ "questions": [
+  "Which jobs on your list break into five or more independent pieces that each need judgment?",
+  "Where does one stage's output feed the next: audit, then fix, then verify?",
+  "Who would need to approve a multi-agent run before it starts?",
+  "How would you want to see per-agent cost before scaling a run across the whole estate?"
+ ],
+ "objections": [
+  {
+   "o": "Fifty agents at once sounds out of control.",
+   "r": "The plan is a deterministic script you can read and version, runs can require approval, every agent call is recorded and visible in the panel, and you can stop or resume at any point."
+  },
+  {
+   "o": "It'll burn through usage.",
+   "r": "Start on a small slice, read per-agent ACUs in the panel, and pin high-volume stages to cheaper modes like Devin Lite before running at full scope."
+  },
+  {
+   "o": "Agents will step on each other.",
+   "r": "By default each agent has its own VM and repo clone and hands work off through git branches."
+  }
+ ],
+ "community": {
+  "who": "Nick White (@nick_white) on X, Oct 20, 2026",
+  "text": "Calls Dynamic Workflows an underrated Devin feature. You ask Devin to \"use a workflow\" and it writes a plain Python script that orchestrates other Devin agents; each agent() call takes a JSON schema, so one stage's output becomes the next stage's prompt. Use it for 5+ independent units with a roll-up, or staged audit, fix, verify pipelines; skip it for codemods. The standout: pipeline() has no barrier between stages, so module A can be in verify while module B is still being audited, and because every agent call is recorded against a run ID, an interrupted run replays finished agents and reruns only the rest.",
+  "prompt": "Use a workflow to get the flaky integration suite green: run it, fix whatever failed, and repeat until it passes three consecutive runs or a round fixes nothing new."
+ },
+ "diagram": true
+}

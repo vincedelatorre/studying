@@ -381,5 +381,19 @@
    "posts/cognition-devin/2026-10-16%20AngelList%20809832.md",
    "Bookmarked post; secondhand, not checked at source"
   ]
- }
+ },
+ "intro": "Plays built on the platforms your accounts already run: Snowflake, Databricks, MongoDB, Datadog, Dynatrace and New Relic. Devin complements these vendors rather than competing with them, taking the code work around a data platform or the fix after an observability tool diagnoses a problem. Most are discovery plays: they tell you which question to ask and which reference to bring, not what the account runs. Two are labelled hypotheses because they rest on a public footprint, not a known project.",
+ "facts": [
+  "ExxonMobil is a documented Snowflake customer: its Central Data Office built on it (Computer Weekly, 2023), and Snowflake's Jan 27, 2026 energy release names it in a customer list, with no quote or detail.",
+  "Chevron has one Databricks signal: a March 2026 Enterprise AI job posting on Azure and Databricks.",
+  "Nothing public ties any target account to MongoDB, Datadog, Dynatrace or New Relic, including Halliburton, SLB, Baker Hughes and ConocoPhillips.",
+  "Cognition side: Devin Oncall launched Oct 15, 2026 with Dynatrace as a launch partner; Devin's docs describe a Datadog integration; Cognition's six-week vulnerability remediation program (July 2, 2026) works with Snyk, SonarQube, Checkmarx, Semgrep, Wiz and Veracode."
+ ],
+ "cautions": [
+  "Don't cite DreamFactory's \"ExxonMobil Snowflake\" case study: it's vendor-written, undated and has no ExxonMobil voice.",
+  "Devin Oncall details come from the launch coverage and Dynatrace's post; the Oncall product guide didn't load during research.",
+  "Devin integrations for New Relic, Splunk, Elastic and PagerDuty weren't re-verified. Confirm with your solutions engineer before naming them to a customer.",
+  "OT and plant-floor remediation are deliberately left out: no source supports them.",
+  "Earlier Nubank and FI-to-Databricks Devin examples were left out of these plays because they couldn't be re-verified here; the Nubank figures in the sales play come from Cognition's own play."
+ ]
 }

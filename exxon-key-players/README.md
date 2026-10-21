@@ -1,3 +1,5 @@
+> **Update, Oct 21, 2026:** this pilot is the starting point for two pages: [`x-bookmarks/exxon.html`](../x-bookmarks/exxon.html) (IT leaders by altitude and deal role) and [`x-bookmarks/exxonmobil.html`](../x-bookmarks/exxonmobil.html) (the deep dive: it merges this pilot with a second pass of mainframe, cloud, Kubernetes, OT, security and AI sweeps; data in [`exxonmobil-linkedin.json`](../x-bookmarks/data/exxonmobil-linkedin.json)). Keep this file as the record of the first pass.
+
 # ExxonMobil key players: pilot pass (Oct 21, 2026)
 
 First test of the LinkedIn / Sales Navigator comb for the Cognition Industrial & Energy territory plan. Read-only: no connection requests, messages, saves or InMails. Source for every line below is the person's own LinkedIn profile, self-reported, and only ExxonMobil roles that were active on or after Oct 2023 are used. Past-employer experience is left out.

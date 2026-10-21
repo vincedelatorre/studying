@@ -1,0 +1,1150 @@
+{
+ "company": "ExxonMobil",
+ "coverage": {
+  "collected": "Oct 21, 2026",
+  "results": 129,
+  "rows_captured": 69,
+  "pages_note": "Pages 1 to 3 of 6 (25 results a page; some rows on page 1 did not load before capture)",
+  "profiles_opened": 11,
+  "pilot_profiles": 27,
+  "sweeps": [
+   "Director+ in Engineering + IT at ExxonMobil, three pages",
+   "Mainframe, COBOL, z/OS, CICS, DB2, IBM Z, legacy modernization (first page, 21 rows)",
+   "Kubernetes, OpenShift, VMware, virtualization, hyperconverged, Nutanix, edge computing (first page, 22 rows)",
+   "IIoT, SCADA, OT security, operational technology, digital twin, cloud migration, modernization, Director+ (16 rows)",
+   "Cloud migration, hybrid cloud, landing zone, cloud architect, cloud strategy, AWS, Azure, Google Cloud: Director+ returned 2 rows; a wider query returned 23 (its seniority filter could not be verified)",
+   "Generative AI, LLM, machine learning, AI platform, AI strategy, copilot, agentic, Director+ (16 rows)",
+   "Dynatrace, Datadog, Snyk, Splunk, New Relic, AppDynamics: 0 at Director+; about 20 practitioners at all levels (tools not captured per person)"
+  ],
+  "method": "Sales Navigator, current company = ExxonMobil, read-only. No connection requests, messages, saves or InMails. Titles, tenure and role text are what each person put on their own LinkedIn profile. Contact details shown in Sales Navigator are deliberately not recorded. Practitioner-level people are listed by role, not by name."
+ },
+ "groups": [
+  {
+   "k": "it",
+   "name": "IT and technology leadership"
+  },
+  {
+   "k": "sec",
+   "name": "Security and identity"
+  },
+  {
+   "k": "delivery",
+   "name": "Programs and delivery"
+  },
+  {
+   "k": "arch",
+   "name": "Architecture"
+  },
+  {
+   "k": "segment",
+   "name": "Segment and regional IT"
+  },
+  {
+   "k": "aidata",
+   "name": "AI and data"
+  },
+  {
+   "k": "eng",
+   "name": "Engineering and technology leadership (software scope not confirmed)"
+  },
+  {
+   "k": "public",
+   "name": "Public-source leaders (from the account research)"
+  }
+ ],
+ "people": [
+  {
+   "n": "Michael Deal",
+   "t": "Vice President of IT",
+   "g": "it",
+   "when": "since May 2023",
+   "ev": "profile",
+   "tags": [
+    "sec"
+   ],
+   "sig": [],
+   "note": "Public account research says the 10-K puts the cybersecurity program under the VP of IT. LinkedIn shows the title only, with no role description.",
+   "new": false,
+   "conf": "normal"
+  },
+  {
+   "n": "Brad Harris",
+   "t": "CIO, Global Operations",
+   "g": "it",
+   "when": "since Aug 2026",
+   "ev": "profile",
+   "tags": [],
+   "sig": [
+    "Head of Upstream IT, Dec 2019 to Mar 2024: global agile delivery teams and capability centers for Wells, Global Operations, and Global Gas Optimization & Trading",
+    "IT Discipline Manager, Apr 2024 to Aug 2026: IT talent and leadership development"
+   ],
+   "note": "",
+   "new": true,
+   "conf": "normal"
+  },
+  {
+   "n": "Carla Khan",
+   "t": "CIO, Commercial, Supply Chain & Trading",
+   "g": "it",
+   "when": "since Jul 2025",
+   "ev": "profile",
+   "tags": [],
+   "sig": [],
+   "note": "No role description on the profile.",
+   "new": false,
+   "conf": "normal"
+  },
+  {
+   "n": "Steve Comstock",
+   "t": "CIO, Upstream",
+   "g": "it",
+   "when": "start date not shown",
+   "ev": "title",
+   "tags": [],
+   "sig": [],
+   "note": "Profile shows the title and no experience detail.",
+   "new": false,
+   "conf": "normal"
+  },
+  {
+   "n": "William Cirioli",
+   "t": "Vice President, Global Technology",
+   "g": "it",
+   "when": "start date not shown",
+   "ev": "title",
+   "tags": [],
+   "sig": [],
+   "note": "Profile not visible in Sales Navigator during the earlier pilot.",
+   "new": false,
+   "conf": "normal"
+  },
+  {
+   "n": "Kevin Garcia",
+   "t": "Chief Technology Officer",
+   "g": "it",
+   "when": "start date not shown",
+   "ev": "title",
+   "tags": [],
+   "sig": [],
+   "note": "Appeared in the Engineering/IT results. Scope (corporate, segment or affiliate) is not verified, and account research found no published corporate CTO. Verify before using.",
+   "new": false,
+   "conf": "low"
+  },
+  {
+   "n": "Shazad Shafi",
+   "t": "OT Chief Information Security Officer",
+   "g": "sec",
+   "when": "since Dec 2023",
+   "ev": "profile",
+   "tags": [
+    "ot",
+    "sec"
+   ],
+   "sig": [
+    "OT cybersecurity resilience: protecting sensitive data and critical infrastructure so operations stay safe and uninterrupted"
+   ],
+   "note": "",
+   "new": false,
+   "conf": "normal"
+  },
+  {
+   "n": "Bryan P.",
+   "t": "CISO and IT Risk Management Director",
+   "g": "sec",
+   "when": "since Jan 2025",
+   "ev": "profile",
+   "tags": [
+    "sec",
+    "platform"
+   ],
+   "sig": [
+    "Hosting & Platforms Manager, Jun 2023 to Feb 2025",
+    "Manager, Upstream Platforms & Services, 2018 to 2021",
+    "Business & Application Architecture Manager, 2014 to 2016"
+   ],
+   "note": "Surname is not shown in Sales Navigator.",
+   "new": false,
+   "conf": "normal"
+  },
+  {
+   "n": "Matthew Knies",
+   "t": "Senior Director, Identity and Access Management",
+   "g": "sec",
+   "when": "since Sep 2021",
+   "ev": "profile",
+   "tags": [
+    "sec"
+   ],
+   "sig": [
+    "Transformational program to modernize internal IAM tools, processes and standards alignment",
+    "Leads 300+ people in the Bangalore IAM organization"
+   ],
+   "note": "",
+   "new": false,
+   "conf": "normal"
+  },
+  {
+   "n": "Paolo Biagi",
+   "t": "Senior IT Director, IT Global Projects",
+   "g": "delivery",
+   "when": "since Apr 2023",
+   "ev": "profile",
+   "tags": [
+    "cloud",
+    "sec",
+    "ai"
+   ],
+   "sig": [
+    "Stewards a $150-200M annual IT project portfolio (about 35 projects a year, 100+ steered under SAFe)",
+    "Cloud migration of 3,000+ applications and servers from on-prem to AWS",
+    "Zero Trust deployment for a new global client, about 70K+ users",
+    "Identity governance transformation on SailPoint",
+    "Generative AI foundation: copilots and LLMs",
+    "Global Zoom rollout",
+    "Before this: IT Director and Global Talent Manager 2019 to Apr 2023 (5-year framework for 6,000+ IT staff); Executive Project Execution Manager 2015 to 2019 (40+ technical and engineering projects)"
+   ],
+   "note": "2nd-degree connection with 27 mutual connections. His profile does not mention SAP or S/4HANA.",
+   "new": false,
+   "conf": "normal"
+  },
+  {
+   "n": "Ryan Seager",
+   "t": "Senior IT Director, Global Operations IT Projects",
+   "g": "delivery",
+   "when": "since Aug 2026",
+   "ev": "profile",
+   "tags": [
+    "erp",
+    "data"
+   ],
+   "sig": [
+    "Senior Technical Program Manager, Mar 2023 to Dec 2024: led a program to modernize the Energy Products supply chain, including SaaS and a Snowflake data platform",
+    "Corporate IT Projects Execution Manager, Jan 2025 to Aug 2026"
+   ],
+   "note": "",
+   "new": true,
+   "conf": "normal"
+  },
+  {
+   "n": "Aaron Surber",
+   "t": "Head of Record to Report IT",
+   "g": "delivery",
+   "when": "since Apr 2022",
+   "ev": "profile",
+   "tags": [
+    "erp",
+    "legacy"
+   ],
+   "sig": [
+    "Global finance transformation: 250+ staff across 17 teams",
+    "Consolidating multiple legacy systems into modern ERP platforms"
+   ],
+   "note": "",
+   "new": false,
+   "conf": "normal"
+  },
+  {
+   "n": "Neil Higgins",
+   "t": "Director, Business Transformation - SAP Group Reporting",
+   "g": "delivery",
+   "when": "about 3 yrs in role",
+   "ev": "title",
+   "tags": [
+    "erp"
+   ],
+   "sig": [],
+   "note": "Title seen in the mainframe/legacy search; profile not opened.",
+   "new": false,
+   "conf": "normal"
+  },
+  {
+   "n": "LeAnne Fulton",
+   "t": "Senior Director / Portfolio Manager, Technology Architecture",
+   "g": "delivery",
+   "when": "since Jun 2025",
+   "ev": "profile",
+   "tags": [
+    "erp"
+   ],
+   "sig": [
+    "HCM implementation leader, Apr 2023 to May 2025"
+   ],
+   "note": "No description on the current role.",
+   "new": false,
+   "conf": "normal"
+  },
+  {
+   "n": "Daniel Wieczynski",
+   "t": "Vice President, Central Project Management",
+   "g": "delivery",
+   "when": "about 2 yrs in role",
+   "ev": "title",
+   "tags": [],
+   "sig": [],
+   "note": "Capital and engineering project management; not confirmed as IT.",
+   "new": false,
+   "conf": "normal"
+  },
+  {
+   "n": "Todd Benner",
+   "t": "Chief Enterprise Architect and IT Fellow; Chief Applications Architect",
+   "g": "arch",
+   "when": "since Feb 2021",
+   "ev": "profile",
+   "tags": [
+    "legacy",
+    "erp"
+   ],
+   "sig": [
+    "Drives the strategy for how applications are selected, designed, developed, integrated and delivered, whether rented, bought or built",
+    "Also responsible for enterprise-wide architecture (the profile text was cut off in the capture)",
+    "36 years at ExxonMobil"
+   ],
+   "note": "Surfaced in the mainframe/legacy search. Likely gatekeeper for modernization approach.",
+   "new": false,
+   "conf": "normal"
+  },
+  {
+   "n": "Sarah Parsons",
+   "t": "Senior Director, Supply Chain & Trading IT",
+   "g": "segment",
+   "when": "since Jan 2025",
+   "ev": "profile",
+   "tags": [
+    "data"
+   ],
+   "sig": [
+    "Heads the global IT organization that architects, builds and supports Supply Chain and Trading enterprise IT",
+    "Oct 2023 to Dec 2024: site infrastructure and end-user support across the Americas"
+   ],
+   "note": "",
+   "new": false,
+   "conf": "normal"
+  },
+  {
+   "n": "James Lynch",
+   "t": "Senior Director, Production, Distribution & Wells IT",
+   "g": "segment",
+   "when": "about 4 months in role",
+   "ev": "profile",
+   "tags": [],
+   "sig": [],
+   "note": "No experience detail visible. Reshared a post on AI and skill atrophy shortly before collection.",
+   "new": true,
+   "conf": "normal"
+  },
+  {
+   "n": "Azmil Ab Aziz",
+   "t": "General Manager, Upstream IT",
+   "g": "segment",
+   "when": "since Apr 2022",
+   "ev": "profile",
+   "tags": [],
+   "sig": [
+    "Leads Production Technologies support to optimize upstream oil and gas production",
+    "Recent post on IT workforce and location strategy for the Kuala Lumpur technology organization"
+   ],
+   "note": "",
+   "new": false,
+   "conf": "normal"
+  },
+  {
+   "n": "Rhoda G.",
+   "t": "Director of IT Operations, Strathcona Refinery & Canada Midstream",
+   "g": "segment",
+   "when": "since Oct 2021",
+   "ev": "profile",
+   "tags": [
+    "cloud",
+    "platform"
+   ],
+   "sig": [
+    "New enterprise data center",
+    "IT infrastructure for a $750M bio-diesel facility",
+    "IT readiness for $100M+ refinery turnarounds"
+   ],
+   "note": "Surname is not shown in Sales Navigator.",
+   "new": false,
+   "conf": "normal"
+  },
+  {
+   "n": "Tom Denslow",
+   "t": "Applications & Plant Computing Group Head",
+   "g": "segment",
+   "when": "about 7 yrs in role",
+   "ev": "profile",
+   "tags": [
+    "ot"
+   ],
+   "sig": [
+    "Process control, real-time optimization and plant information systems"
+   ],
+   "note": "OT-adjacent; not a software-engineering buyer on paper.",
+   "new": false,
+   "conf": "normal"
+  },
+  {
+   "n": "Sebastian Ronneberger",
+   "t": "Head of IT Operations (Germany/Poland)",
+   "g": "segment",
+   "when": "about 5 yrs in role",
+   "ev": "profile",
+   "tags": [],
+   "sig": [
+    "Affiliate-level infrastructure and desktop services"
+   ],
+   "note": "",
+   "new": false,
+   "conf": "normal"
+  },
+  {
+   "n": "Shiv Kumar Sambasivan",
+   "t": "Director of Gen AI",
+   "g": "aidata",
+   "when": "since Aug 2026",
+   "ev": "profile",
+   "tags": [
+    "ai",
+    "data"
+   ],
+   "sig": [
+    "Building and leading the Gen AI organization to drive enterprise-wide AI/ML adoption across a $20B+ global supply chain portfolio, including talent strategy",
+    "Director of Product, Gen AI for Supply Chain, Jul 2024 to Aug 2026: led global deployment of a flagship enterprise Gen AI analytics platform",
+    "Directed a 50-person global team across product, data science and engineering; secured alignment across senior VPs for multi-million-dollar Gen AI investments"
+   ],
+   "note": "Found through the cloud and AI sweeps.",
+   "new": true,
+   "conf": "normal"
+  },
+  {
+   "n": "Darien Mathews",
+   "t": "Head of IT, AI Business and Strategy",
+   "g": "aidata",
+   "when": "since Apr 2016",
+   "ev": "profile",
+   "tags": [
+    "ai"
+   ],
+   "sig": [],
+   "note": "The only description on the profile (Watson analytics, 'Intelligent ITaaS') reads like an earlier employer's work and is not counted. The first summary overstated it.",
+   "new": false,
+   "conf": "normal"
+  },
+  {
+   "n": "Alex Bobrek",
+   "t": "Head of Data Science & AI, Carbon Capture and Sequestration",
+   "g": "aidata",
+   "when": "about 3 yrs in role",
+   "ev": "title",
+   "tags": [
+    "ai",
+    "data"
+   ],
+   "sig": [],
+   "note": "Profile not opened.",
+   "new": false,
+   "conf": "normal"
+  },
+  {
+   "n": "Chris Romano",
+   "t": "Director, Data & Business Intelligence",
+   "g": "aidata",
+   "when": "about 2 yrs in role",
+   "ev": "title",
+   "tags": [
+    "data",
+    "cloud"
+   ],
+   "sig": [],
+   "note": "Matched the cloud keyword search; profile not opened.",
+   "new": false,
+   "conf": "normal"
+  },
+  {
+   "n": "Erwann Lemenager",
+   "t": "Global Supply Chain DNA (Digital, Network and Analytics) leader",
+   "g": "aidata",
+   "when": "about 2 yrs in role",
+   "ev": "title",
+   "tags": [
+    "data",
+    "ai"
+   ],
+   "sig": [],
+   "note": "Profile not opened.",
+   "new": false,
+   "conf": "normal"
+  },
+  {
+   "n": "Michael Zamora",
+   "t": "President, ExxonMobil Technology and Engineering Company",
+   "g": "eng",
+   "when": "about 2 yrs 8 mos in role",
+   "ev": "title",
+   "tags": [],
+   "sig": [],
+   "note": "Most senior technology and engineering title seen. Missed in the first summary.",
+   "new": false,
+   "conf": "normal"
+  },
+  {
+   "n": "Tim McMinn",
+   "t": "VP, Process Engineering & Products, Technology & Engineering",
+   "g": "eng",
+   "when": "about 4 yrs 7 mos in role",
+   "ev": "title",
+   "tags": [],
+   "sig": [],
+   "note": "",
+   "new": false,
+   "conf": "normal"
+  },
+  {
+   "n": "James Ritchie",
+   "t": "VP, Upstream Technology",
+   "g": "eng",
+   "when": "since Jun 2023",
+   "ev": "profile",
+   "tags": [],
+   "sig": [],
+   "note": "Previously VP Catalyst & Licensing (Oct 2020 to Jun 2023). No descriptions on either role.",
+   "new": false,
+   "conf": "normal"
+  },
+  {
+   "n": "Matt Reeves",
+   "t": "VP of Technology, Low Carbon Solutions",
+   "g": "eng",
+   "when": "about 1 yr in role",
+   "ev": "title",
+   "tags": [],
+   "sig": [],
+   "note": "",
+   "new": false,
+   "conf": "normal"
+  },
+  {
+   "n": "Dylan Pugh",
+   "t": "VP of Engineering",
+   "g": "eng",
+   "when": "about 2 yrs 5 mos in role",
+   "ev": "title",
+   "tags": [],
+   "sig": [],
+   "note": "",
+   "new": false,
+   "conf": "normal"
+  },
+  {
+   "n": "Harvey Ward",
+   "t": "VP of Engineering",
+   "g": "eng",
+   "when": "about 15 yrs in role",
+   "ev": "title",
+   "tags": [],
+   "sig": [],
+   "note": "",
+   "new": false,
+   "conf": "normal"
+  },
+  {
+   "n": "Mark De Sevilla",
+   "t": "VP of Engineering",
+   "g": "eng",
+   "when": "about 19 yrs in role",
+   "ev": "title",
+   "tags": [],
+   "sig": [],
+   "note": "",
+   "new": false,
+   "conf": "normal"
+  },
+  {
+   "n": "Stanley Rong",
+   "t": "Director of Software Engineering",
+   "g": "eng",
+   "when": "about 5 yrs 10 mos in role",
+   "ev": "title",
+   "tags": [
+    "platform"
+   ],
+   "sig": [],
+   "note": "The only Director+ software-titled engineering role found. No description seen.",
+   "new": false,
+   "conf": "normal"
+  },
+  {
+   "n": "Tal Domany",
+   "t": "Director of Engineering",
+   "g": "eng",
+   "when": "about 1 yr in role",
+   "ev": "title",
+   "tags": [],
+   "sig": [],
+   "note": "",
+   "new": false,
+   "conf": "normal"
+  },
+  {
+   "n": "Shaun Zdroykowski",
+   "t": "Rovuma LNG Project, Power Director",
+   "g": "eng",
+   "when": "about 5 months in role",
+   "ev": "title",
+   "tags": [
+    "ot"
+   ],
+   "sig": [],
+   "note": "Capital project owner; OT-adjacent.",
+   "new": false,
+   "conf": "normal"
+  },
+  {
+   "n": "William Biggers",
+   "t": "Director of CO2 Pipelines",
+   "g": "eng",
+   "when": "about 2 yrs 6 mos in role",
+   "ev": "title",
+   "tags": [
+    "ot"
+   ],
+   "sig": [],
+   "note": "Capital project owner; OT-adjacent.",
+   "new": false,
+   "conf": "normal"
+  }
+ ],
+ "public_exclude": [
+  "Michael Deal",
+  "Paolo Biagi",
+  "Azmil Ab Aziz"
+ ],
+ "sub": [
+  {
+   "theme": "legacy",
+   "role": "Mainframe DB2 DBA (one tagged to SAP)",
+   "n": "2",
+   "tenure": "14 and 18 years in role"
+  },
+  {
+   "theme": "legacy",
+   "role": "IBM i DB2 data engineer",
+   "n": "1",
+   "tenure": "1.5 years"
+  },
+  {
+   "theme": "legacy",
+   "role": "Consultant, jBASE legacy application and data conversion",
+   "n": "1",
+   "tenure": "3 years"
+  },
+  {
+   "theme": "platform",
+   "role": "Virtualization engineer / virtualization infrastructure engineer",
+   "n": "2",
+   "tenure": "5 and 6 years"
+  },
+  {
+   "theme": "platform",
+   "role": "DevSecOps engineer",
+   "n": "2",
+   "tenure": "6 months and 2 years"
+  },
+  {
+   "theme": "platform",
+   "role": "Server / DevOps engineer, infrastructure engineers, HPC systems engineer, cloud developer",
+   "n": "5+",
+   "tenure": "mixed"
+  },
+  {
+   "theme": "platform",
+   "role": "AI-exploration DevOps lead",
+   "n": "1",
+   "tenure": "2 months"
+  },
+  {
+   "theme": "sec",
+   "role": "Senior cloud security engineer",
+   "n": "1",
+   "tenure": "about 8 years"
+  },
+  {
+   "theme": "sec",
+   "role": "Threat and vulnerability management",
+   "n": "1",
+   "tenure": "about 12 years"
+  },
+  {
+   "theme": "sec",
+   "role": "Network security engineer / analyst / transformation manager",
+   "n": "3",
+   "tenure": "1 to 5 years"
+  },
+  {
+   "theme": "sec",
+   "role": "Penetration tester; insider-risk analyst; cyber security data specialist",
+   "n": "3",
+   "tenure": "mixed"
+  },
+  {
+   "theme": "sec",
+   "role": "Principal technology architect, cyber security",
+   "n": "1",
+   "tenure": "1 year"
+  },
+  {
+   "theme": "ot",
+   "role": "OT cyber security engineer; industrial cybersecurity engineer",
+   "n": "2",
+   "tenure": "3 and 5 years"
+  },
+  {
+   "theme": "ot",
+   "role": "Advanced process control applications lead (Baytown refinery)",
+   "n": "1",
+   "tenure": "4 years"
+  },
+  {
+   "theme": "ai",
+   "role": "AI lead, global audit technology; Global Trading AI product manager",
+   "n": "2",
+   "tenure": "mixed"
+  },
+  {
+   "theme": "cloud",
+   "role": "Program manager, Foundation Digital Backbone Infrastructure",
+   "n": "1",
+   "tenure": "2 years"
+  },
+  {
+   "theme": "erp",
+   "role": "Program managers on named programs (for example Polaris S&M/OTC; data and analytics for energy trading)",
+   "n": "3+",
+   "tenure": "mixed"
+  }
+ ],
+ "themes": [
+  {
+   "key": "cloud",
+   "name": "Cloud and hybrid",
+   "summary": "AWS is the confirmed cloud. No Director-level Azure or GCP initiative surfaced, and there is no explicit hybrid or data-center-exit program.",
+   "confirmed": [
+    {
+     "what": "Migration of 3,000+ applications and servers from on-prem to AWS, inside a $150-200M annual IT project portfolio",
+     "owner": "Paolo Biagi",
+     "ev": "profile"
+    },
+    {
+     "what": "Large AWS customer, with Snowflake as the data platform",
+     "owner": "",
+     "ev": "public",
+     "src": "constellationr"
+    },
+    {
+     "what": "New enterprise data center at the Strathcona refinery and Canada midstream site (an on-prem build, so a hybrid signal)",
+     "owner": "Rhoda G.",
+     "ev": "profile"
+    },
+    {
+     "what": "Foundational Digital Backbone: long-term agreement with Cerebre for an operational data and industrial knowledge graph",
+     "owner": "",
+     "ev": "public",
+     "src": "cerebre"
+    }
+   ],
+   "signals": [
+    "A Program Manager title for Foundation Digital Backbone Infrastructure was seen in the cloud sweep (2 years in role)."
+   ],
+   "notfound": [
+    "Azure: only the 2019 Permian partnership (public, old)",
+    "GCP: nothing confirmed. One result's title mentions Google Cloud Logistics, which is ambiguous and not counted",
+    "An explicit hybrid or data-center-exit program"
+   ]
+  },
+  {
+   "key": "legacy",
+   "name": "Mainframe, COBOL and legacy modernization",
+   "summary": "The ERP and mainframe retirement is the largest legacy program, per public sources. LinkedIn corroborates the people and skills around it. No profile names COBOL.",
+   "confirmed": [
+    {
+     "what": "12 ERP systems into one SAP S/4HANA instance by 2028; about 65M lines of custom ECC6 code; a decades-old mainframe being retired",
+     "owner": "Program owners not named publicly",
+     "ev": "public",
+     "src": "lemonde"
+    },
+    {
+     "what": "Global finance transformation: 250+ staff in 17 teams consolidating multiple legacy systems into modern ERP platforms",
+     "owner": "Aaron Surber",
+     "ev": "profile"
+    },
+    {
+     "what": "Business transformation for SAP Group Reporting",
+     "owner": "Neil Higgins",
+     "ev": "title"
+    },
+    {
+     "what": "Energy Products supply chain modernization (SaaS and a Snowflake data platform), Mar 2023 to Dec 2024",
+     "owner": "Ryan Seager",
+     "ev": "profile"
+    },
+    {
+     "what": "Sets application strategy (rent, buy or build) and enterprise architecture",
+     "owner": "Todd Benner",
+     "ev": "profile"
+    }
+   ],
+   "signals": [
+    "Mainframe skills are still staffed: two Mainframe DB2 DBAs (14 and 18 years in role, one tied to SAP), an IBM i DB2 data engineer, and a consultant on jBASE legacy application and data conversion. This fits the public claim that a mainframe is still being retired, but it is an inference.",
+    "Warm path: one of your shared connections with Paolo Biagi leads the IBM Z ecosystem, which could help the mainframe angle."
+   ],
+   "notfound": [
+    "No profile mentions COBOL",
+    "No named COBOL or mainframe-to-cloud modernization program",
+    "Job postings are the likelier place for COBOL; they have not been pulled yet"
+   ]
+  },
+  {
+   "key": "platform",
+   "name": "Kubernetes, virtualization and DevOps",
+   "summary": "The people exist; the programs are not named. Everything here is practitioner-level.",
+   "confirmed": [
+    {
+     "what": "Job postings cite ServiceNow, Kubernetes, SailPoint and DevOps secrets engineering; IT was reorganized into centralized service delivery groups from 2022",
+     "owner": "",
+     "ev": "public",
+     "src": "stack-org"
+    }
+   ],
+   "signals": [
+    "About 22 practitioners on the first search page for Kubernetes, OpenShift, VMware, virtualization, hyperconverged, Nutanix and edge computing: DevSecOps engineers, virtualization engineers, an HPC systems engineer, server/DevOps and infrastructure engineers, a cloud developer and an AI-exploration DevOps lead.",
+    "An HPC technical architect (IT Fellow) is a listed speaker at the 2026 Digitalization in Oil and Gas conference (public).",
+    "Stanley Rong, Director of Software Engineering, is the only Director+ software-titled engineering role found."
+   ],
+   "notfound": [
+    "No named Kubernetes, OpenShift or VMware overhaul",
+    "No platform vendor named on any virtualization profile captured"
+   ]
+  },
+  {
+   "key": "ot",
+   "name": "IIoT and OT",
+   "summary": "OT security has a named executive, and public sources add the Open Process Automation work. No leader names an IIoT platform.",
+   "confirmed": [
+    {
+     "what": "OT cybersecurity resilience for safe, uninterrupted operations",
+     "owner": "Shazad Shafi (OT CISO)",
+     "ev": "profile"
+    },
+    {
+     "what": "First live Open Process Automation DCS at Baton Rouge Resins Finishing Plant (cut over end of 2024); second, PLC-oriented project at Anchorage Chemical Terminal",
+     "owner": "Whit McConnell (public)",
+     "ev": "public",
+     "src": "arc"
+    },
+    {
+     "what": "Plant computing: process control, real-time optimization and plant information systems",
+     "owner": "Tom Denslow",
+     "ev": "profile"
+    },
+    {
+     "what": "Industrial knowledge graph work with Cerebre (Foundational Digital Backbone)",
+     "owner": "",
+     "ev": "public",
+     "src": "cerebre"
+    }
+   ],
+   "signals": [
+    "OT cyber practitioners seen: an OT cyber security engineer, an industrial cybersecurity engineer, and an advanced process control applications lead at Baytown.",
+    "An OT SOC supervisor and an OT cybersecurity expertise manager present at 2026 industry events (public).",
+    "Capital projects with OT scope: Rovuma LNG (Power Director) and CO2 pipelines (Director)."
+   ],
+   "notfound": [
+    "No IIoT platform, edge or digital twin program named by a leader",
+    "The IIoT / SCADA / OT security / digital twin search at Director+ returned 16 rows, mostly titles and not project text"
+   ]
+  },
+  {
+   "key": "sec",
+   "name": "Security and identity",
+   "summary": "The best-evidenced programs: Zero Trust, SailPoint identity governance and IAM modernization, plus a dedicated OT CISO.",
+   "confirmed": [
+    {
+     "what": "Zero Trust deployment for a new global client, about 70K+ users",
+     "owner": "Paolo Biagi",
+     "ev": "profile"
+    },
+    {
+     "what": "Identity governance transformation on SailPoint",
+     "owner": "Paolo Biagi",
+     "ev": "profile"
+    },
+    {
+     "what": "Modernizing internal IAM tools, processes and standards; leads 300+ people",
+     "owner": "Matthew Knies",
+     "ev": "profile"
+    },
+    {
+     "what": "CISO and IT Risk Management Director, previously Hosting & Platforms Manager",
+     "owner": "Bryan P.",
+     "ev": "profile"
+    },
+    {
+     "what": "Cybersecurity program sits under the VP of IT, with an annual Audit Committee review",
+     "owner": "Michael Deal (title)",
+     "ev": "public",
+     "src": "10k"
+    }
+   ],
+   "signals": [
+    "Practitioners seen: cloud security, threat and vulnerability management, network security, penetration testing, insider risk, a network security transformation manager, a principal technology architect for cyber security."
+   ],
+   "notfound": [
+    "Observability and security tools (Splunk, Datadog, Dynatrace, Snyk, New Relic, AppDynamics): zero Director+ matches. At all levels the search returns security, cloud and network engineers, but the tool each person names was not captured",
+    "No Application Security lead surfaced at Director+ (the likely owner for code scanning and remediation)"
+   ]
+  },
+  {
+   "key": "ai",
+   "name": "AI projects",
+   "summary": "AI has named owners and one named platform. Whether coding assistants are in use is still unknown.",
+   "confirmed": [
+    {
+     "what": "Generative AI foundation: copilots and LLMs, inside IT Global Projects",
+     "owner": "Paolo Biagi",
+     "ev": "profile"
+    },
+    {
+     "what": "Gen AI organization for a $20B+ supply chain portfolio; earlier led the global rollout of a flagship Gen AI analytics platform with a 50-person team, tied to annual EBIT impact",
+     "owner": "Shiv Kumar Sambasivan",
+     "ev": "profile"
+    },
+    {
+     "what": "Head of IT, AI Business and Strategy (description not counted)",
+     "owner": "Darien Mathews",
+     "ev": "title"
+    },
+    {
+     "what": "Data science and AI for carbon capture and sequestration",
+     "owner": "Alex Bobrek",
+     "ev": "title"
+    },
+    {
+     "what": "Deep learning, ML and HPC used to identify four new Guyana exploration opportunities (Aug 2026)",
+     "owner": "",
+     "ev": "public",
+     "src": "worldoil"
+    },
+    {
+     "what": "GBS runs AI and process automation with Celonis; the Central Data Office built the data ecosystem on Snowflake",
+     "owner": "",
+     "ev": "public",
+     "src": "constellationr"
+    },
+    {
+     "what": "Bangalore Technology Center AI work combining sensor data, images and VR",
+     "owner": "",
+     "ev": "public",
+     "src": "india"
+    }
+   ],
+   "signals": [
+    "Practitioners seen: an AI lead for global audit technology, a Global Trading AI product manager, an AI-exploration DevOps lead."
+   ],
+   "notfound": [
+    "No profile or source confirms GitHub Copilot, Amazon Q Developer or another coding assistant in use",
+    "No agentic software-engineering program named"
+   ]
+  }
+ ],
+ "ties": {
+  "play": {
+   "said_who": "Entry through the IT Global Projects and Business Transformation leaders; the CFO, who ran Global Business Solutions until this year, is the likely economic sponsor.",
+   "adds": [
+    "IT Global Projects is Paolo Biagi. His profile lists AWS, Zero Trust, SailPoint, generative AI and Zoom, and does not mention SAP or S/4HANA. Treat him as the portfolio and governance champion, not yet as the ERP program owner.",
+    "ERP-adjacent program owners seen: Aaron Surber (Record to Report IT, consolidating legacy systems into modern ERP, 250+ staff) and Neil Higgins (Business Transformation, SAP Group Reporting). Bill Keillor, VP Business Transformation, is the public-source link above them.",
+    "Mainframe leg: Todd Benner owns application strategy and architecture, and a DB2 mainframe DBA team is still visible. That supports the public 'mainframe being retired' claim, as an inference.",
+    "Security gate: Shazad Shafi (OT CISO) and Bryan P. (CISO) are the two people to answer early, which is what the play's 'use Devin's isolated machines to answer IT and OT security questions' step needs."
+   ]
+  },
+  "usecases": [
+   {
+    "k": "erp",
+    "owners": "Aaron Surber, Neil Higgins, Ryan Seager, Todd Benner",
+    "gap": "Who owns custom-code remediation inside the S/4HANA program, and which SI is engaged."
+   },
+   {
+    "k": "sec",
+    "owners": "Shazad Shafi, Bryan P., Matthew Knies",
+    "gap": "No Application Security lead surfaced at Director+. Find who owns code scanning and remediation."
+   },
+   {
+    "k": "debt",
+    "owners": "Todd Benner, LeAnne Fulton, mainframe DB2 team (practitioners)",
+    "gap": "COBOL is not named anywhere yet. Check job postings."
+   },
+   {
+    "k": "oncall",
+    "owners": "Sarah Parsons, James Lynch, Azmil Ab Aziz, Rhoda G.",
+    "gap": "No SRE or production-support lead surfaced."
+   },
+   {
+    "k": "knowledge",
+    "owners": "Matthew Knies (300+ Bangalore IAM organization), Azmil Ab Aziz (Kuala Lumpur upstream IT), Shiv Kumar Sambasivan (Bengaluru Gen AI organization)",
+    "gap": "Which hubs take on new programs, and how they ramp."
+   },
+   {
+    "k": "review",
+    "owners": "Paolo Biagi (copilots and LLM foundation), Shiv Kumar Sambasivan",
+    "gap": "Not scored for ExxonMobil in the playbook. A Gen AI foundation and Gen AI organization now exist, so it is worth scoring once coding-assistant status is known."
+   }
+  ],
+  "meddpicc": [
+   {
+    "l": "M",
+    "name": "Metrics",
+    "docs": "$20B structural savings by 2030, 2028 S/4HANA target, about 65M lines of custom code, about 2,000 job cuts.",
+    "adds": "Biagi's $150-200M annual IT portfolio (about 35 projects a year) gives a spend anchor for the IT project budget.",
+    "ask": "As-is numbers for a named system: hours per component, SI hours, review time."
+   },
+   {
+    "l": "E",
+    "name": "Economic buyer",
+    "docs": "Hypotheses: VP of IT (owns IT and the cyber program per the 10-K), President of Global Business Solutions, CFO as sponsor.",
+    "adds": "Michael Deal is confirmed on LinkedIn as VP of IT since May 2023 (title only). Bill Keillor, VP Business Transformation, is public-source only.",
+    "ask": "Who signs for the custom-code remediation budget inside the S/4HANA program?"
+   },
+   {
+    "l": "D",
+    "name": "Decision criteria",
+    "docs": "IT and OT security scrutiny; proof inside Devin's own sandbox.",
+    "adds": "Three likely gatekeepers: Shazad Shafi (OT security), Bryan P. (CISO and IT risk), Todd Benner (rent, buy or build application strategy).",
+    "ask": "What must an agent prove before it touches production-adjacent code?"
+   },
+   {
+    "l": "D",
+    "name": "Decision process",
+    "docs": "Not known.",
+    "adds": "Biagi's profile mentions SAFe portfolio steering across 100+ projects, so formal portfolio gates are likely (inference).",
+    "ask": "How does a new tool or scope get onto the portfolio, and who reviews it?"
+   },
+   {
+    "l": "P",
+    "name": "Paper process",
+    "docs": "Not known. An Infosys relationship exists on the product side.",
+    "adds": "LinkedIn cannot show this.",
+    "ask": "Procurement route and security review path, and whether a global business center runs it."
+   },
+   {
+    "l": "I",
+    "name": "Identify pain",
+    "docs": "65M-line ECC6 estate, mainframe retirement, fewer people after cuts, security backlog.",
+    "adds": "Surber's legacy-into-ERP consolidation and the mainframe DB2 roles corroborate the first two. Four leaders new in role (Harris, Seager, Sambasivan, Lynch) mean fresh agendas.",
+    "ask": "What does each new leader inherit that is behind schedule?"
+   },
+   {
+    "l": "C",
+    "name": "Champion",
+    "docs": "Hypothesis: Senior IT Director, IT Global Projects (Biagi) or the S/4HANA custom-code lead.",
+    "adds": "Add Aaron Surber, Ryan Seager (led a modernization program before this role) and Matthew Knies as candidates.",
+    "ask": "Run the discovery working session from the mutual action plan with one of them."
+   },
+   {
+    "l": "C",
+    "name": "Competition",
+    "docs": "SI labor (Infosys and others), possible Copilot or Amazon Q Developer, Celonis absorbing AI budget.",
+    "adds": "An internal AI capability exists (copilots and LLM foundation under IT Global Projects, Gen AI organization under supply chain). Coding-assistant use is still unknown.",
+    "ask": "Where do AI coding assistants sit today, and what are they not covering?"
+   }
+  ],
+  "altitude": [
+   {
+    "lvl": "L1",
+    "who": "Darren Woods (CEO) and Neil Hansen (CFO), public source",
+    "note": "Hansen ran Global Business Solutions until Jan 2026."
+   },
+   {
+    "lvl": "L2",
+    "who": "Bill Keillor (VP Business Transformation), Staale Gjervik (President, Global Projects Co.), Jon Gibbs (Global Operations), public source",
+    "note": "Program sponsors; the person who owns the date."
+   },
+   {
+    "lvl": "L3",
+    "who": "Michael Deal (VP of IT), Brad Harris, Carla Khan, Steve Comstock (CIOs), Shazad Shafi (OT CISO), Bryan P. (CISO), Todd Benner (Chief Enterprise Architect)",
+    "note": "ExxonMobil publishes no corporate CIO or CTO; the VP of IT is the top IT title."
+   },
+   {
+    "lvl": "L4",
+    "who": "Paolo Biagi, Ryan Seager, Aaron Surber, Neil Higgins, Matthew Knies, Sarah Parsons, James Lynch, LeAnne Fulton, Shiv Kumar Sambasivan, Stanley Rong",
+    "note": "Directors who own the programs and the backlog."
+   },
+   {
+    "lvl": "L5",
+    "who": "Practitioners: mainframe DB2 DBAs, DevSecOps and virtualization engineers, cloud and OT security engineers",
+    "note": "Names are not published here; see the practitioner list."
+   }
+  ],
+  "stories": [
+   {
+    "k": "swarms",
+    "to": "Aaron Surber, Ryan Seager, Todd Benner",
+    "why": "Large legacy code and interface migration, the 65M-line estate."
+   },
+   {
+    "k": "harness",
+    "to": "Paolo Biagi, Shiv Kumar Sambasivan",
+    "why": "They already run a copilot and LLM foundation, so verification and code quality is the live question."
+   },
+   {
+    "k": "security",
+    "to": "Shazad Shafi, Bryan P., Matthew Knies",
+    "why": "Security backlog and validated remediation for IT and OT."
+   },
+   {
+    "k": "enterprise",
+    "to": "Shiv Kumar Sambasivan, Brad Harris",
+    "why": "Named platform rollouts at scale are the closest ExxonMobil parallel to agents moving past pilots."
+   },
+   {
+    "k": "cost",
+    "to": "Michael Deal, Brad Harris, Carla Khan",
+    "why": "Spend control under a $20B structural savings target."
+   },
+   {
+    "k": "sandbox",
+    "to": "Bryan P., Shazad Shafi, Todd Benner",
+    "why": "Where an agent runs matters most to security and architecture gatekeepers."
+   }
+  ]
+ },
+ "plan_changes": [
+  "Champion: Biagi is a portfolio-level contact, and the ERP-program owners are different people. Add Surber and Higgins to the shortlist, and ask Biagi who owns custom-code remediation.",
+  "AI: the playbook hypothesis that the AI program lacks a software-engineering productivity lever needs softening. A copilot and LLM foundation and a Gen AI organization exist. Whether coding is in scope is the question to ask.",
+  "Add Todd Benner to the decision-criteria list. He sets the rent, buy or build approach for applications.",
+  "Mainframe: there is now evidence of a live DB2 estate and an architecture owner, but still no named COBOL program. Pull job postings next.",
+  "Timing: four leaders are new in role (Harris, Seager, Sambasivan, Lynch).",
+  "Tooling: observability and security tooling is still unknown. Keep it as a discovery question.",
+  "Cloud: AWS is confirmed. Azure and GCP are not evidenced at leadership level, so do not lead with a multi-cloud message."
+ ],
+ "corrections": [
+  "Coverage: the first summary said pages 3 to 6 of the Engineering + IT list were mostly process, petroleum and facilities engineering. Only page 3 was viewed. Pages 4 to 6 have not been reviewed.",
+  "Darien Mathews: the Watson description probably belongs to an earlier employer, so it is not counted as an ExxonMobil project.",
+  "Google: one result whose title mentions Google Cloud Logistics is ambiguous. It is not evidence of a Google presence at ExxonMobil.",
+  "Kevin Garcia (CTO): scope is not verified. Treat as low confidence.",
+  "Michael Zamora (President, ExxonMobil Technology and Engineering Company) was missed in the first summary and is now listed.",
+  "Earlier pilot: this page merges the 27 IT-function profiles from the earlier pilot with this session's sweeps. Where they overlap, the pilot's more detailed role text is used."
+ ],
+ "gaps": [
+  "Pages 4 to 6 of the Director+ Engineering + IT list.",
+  "Profiles for Neil Higgins, Alex Bobrek, Chris Romano, Erwann Lemenager, Stanley Rong, Michael Zamora and the engineering VPs. Most are likely thin.",
+  "Which tool each security, cloud and DevOps practitioner names (Splunk, Datadog, Dynatrace and so on).",
+  "ExxonMobil job postings for COBOL, mainframe, AWS, Azure, GCP, Kubernetes and OpenShift.",
+  "Public sources for the AWS migration and the Gen AI platform (talks, vendor case studies).",
+  "The successor to Neil Hansen as President of Global Business Solutions (not found in public coverage)."
+ ],
+ "next": [
+  "Pull ExxonMobil job postings. They name platforms and legacy languages directly.",
+  "Open the title-only profiles above and finish pages 4 to 6.",
+  "Capture the tools named by the security, cloud and DevOps practitioners.",
+  "Repeat the same sweeps for Halliburton, Chevron and Enterprise Products."
+ ]
+}

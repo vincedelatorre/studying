@@ -9498,5 +9498,23 @@
   "links": [
    "https://unity.com/install.sh"
   ]
+ },
+ {
+  "id": "2026-10-21 coordinator-updates tip",
+  "date": "2026-10-21",
+  "author": "X post (shared by you)",
+  "handle": "X post",
+  "url": "https://x.com/search?q=%22send%20me%20more%20updates%22%20threads%20blocked%20project%20memory&f=live",
+  "text": "The X post recommends telling your Claude Code project coordinator: \"I want you to send me more updates on what's going on with the threads including when they're blocked and when they finish something, save this to the project memory.\"\n\nThis instruction, saved to project memory, makes the coordinator actively notify you of thread blocks and milestones with one-line notes and links.\n\nThe tip reportedly 10x'd the user's project experience by turning the coordinator into a proactive manager that provides key updates it previously omitted.",
+  "chapter": "Coding Agents & Harnesses",
+  "section": "Prompts, instruction files & tips",
+  "title": "Make the Claude Code coordinator report blocks and finishes",
+  "summary": "Tell the project coordinator to send updates on its threads, including when one is blocked and when one finishes something, and to save that instruction to project memory. From then on it posts one-line notes with links at each block and milestone instead of staying silent until asked. The poster says it 10x'd their project experience.",
+  "takeaway": "Paste the instruction once per project so it persists in project memory; pair it with a request for links to each thread.",
+  "entities": [
+   "Claude Code",
+   "project memory"
+  ],
+  "links": []
  }
 ]

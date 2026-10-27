@@ -29,7 +29,7 @@
    "k": "D5",
    "name": "First responder for production",
    "what": "Devin Oncall investigates alerts and bugs, finds root cause and often remediates first, with a person approving the fix.",
-   "why": "#1 on SREGym; already handles thousands of alerts a day at large companies; AngelList root-causes about 70% of incidents with it."
+   "why": "#1 on SREGym; already handles thousands of alerts a day at large companies; AngelList root-causes about 70% of incidents with it. Launched Oct 15, 2026 with Dynatrace as a launch partner; Datadog connects through an integration described in Devin's docs."
   },
   {
    "k": "D6",

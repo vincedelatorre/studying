@@ -1,0 +1,399 @@
+{
+ "plays": [
+  {
+   "group": "Migration",
+   "id": "m1",
+   "title": "Code around the Snowflake estate",
+   "accounts": "ExxonMobil",
+   "why": "ExxonMobil's Central Data Office built its enterprise data ecosystem on Snowflake, and Snowflake's January 2026 energy release names ExxonMobil. A Snowflake footprint means pipelines, stored procedures, SQL and downstream apps that someone has to keep converting as data products move in.",
+   "motion": "Do not pitch against Snowflake. Position Devin as capacity for the code work its migration tools leave over: SnowConvert AI converts SQL; Devin handles the surrounding application code, orchestration, tests and cutover scripts. Enter through the Central Data Office or the S/4HANA data work, not IT infrastructure.",
+   "who": "Central Data Office (Andrew Curry's group), Global Business Solutions data leaders. Ask who owns the pipelines feeding Snowflake.",
+   "sources": [
+    {
+     "label": "Computer Weekly: CDO interview, Andrew Curry",
+     "date": "2023-10",
+     "url": "https://www.computerweekly.com/news/366553452/CDO-interview-Andrew-Curry-manager-of-the-Central-Data-Office-ExxonMobil"
+    },
+    {
+     "label": "Constellation Research: ExxonMobil process automation and AI",
+     "date": "2024-11",
+     "url": "https://www.constellationr.com/insights/news/exxonmobil-outline-process-automation-ai-efforts"
+    },
+    {
+     "label": "Snowflake: Energy Solutions press release",
+     "date": "2026-01-27",
+     "url": "https://www.snowflake.com/en/news/press-releases/snowflake-launches-energy-solutions-for-the-ai-data-cloud-to-accelerate-shift-to-a-lower-carbon-future/"
+    },
+    {
+     "label": "Snowflake: What's new in SnowConvert AI",
+     "date": "2026-02",
+     "url": "https://www.snowflake.com/en/blog/snowconvert-ai-new-features-feb-2026/"
+    }
+   ],
+   "not_found": "No public record of a specific ExxonMobil migration project. The play is a hypothesis built on the footprint. DreamFactory's ExxonMobil case study is vendor-written and unverified, so do not cite it to the customer.",
+   "usecase": "debt",
+   "usecase_account": "exxonmobil",
+   "stories": [
+    "swarms",
+    "harness"
+   ],
+   "fit": "Hypothesis"
+  },
+  {
+   "group": "Migration",
+   "id": "m2",
+   "title": "Databricks and Azure agent build-out",
+   "accounts": "Chevron",
+   "why": "A March 2026 Chevron Enterprise AI posting asks software engineers to build agentic AI systems on Azure (App Services, Functions, AKS, Azure DevOps) with AzureML and Databricks, including Databricks Genie. It is the only Databricks signal found at any target account.",
+   "motion": "Offer Devin as extra engineering capacity for the Enterprise AI team's pipelines, agent scaffolding and tests, and as the engine for moving older warehouse code onto Databricks. Databricks' own Lakebridge covers assessment and SQL conversion from T-SQL, Teradata, Oracle and others; Devin covers the app code that queries those systems.",
+   "who": "Enterprise AI engineering leaders in Houston. Verify names on LinkedIn; none are in the current key-player data.",
+   "sources": [
+    {
+     "label": "Chevron Enterprise AI software engineer posting (Azure, AKS, Databricks)",
+     "date": "2026-03",
+     "url": "https://www.careerbuilder.com/job-details/software-engineer-enterprise-ai-houston-tx--63ef7576-35d8-429b-9a71-154e06be09bc"
+    },
+    {
+     "label": "Databricks: Lakebridge migration update",
+     "date": "2026-03-05",
+     "url": "https://www.databricks.com/blog/new-migrations-faster-and-more-predictable"
+    }
+   ],
+   "not_found": "One posting. It shows the stack, not a migration program. No Chevron leader has been tied to it.",
+   "usecase": "debt",
+   "usecase_account": "chevron",
+   "stories": [
+    "enterprise",
+    "harness"
+   ],
+   "fit": "Strongest account-specific signal outside ExxonMobil"
+  },
+  {
+   "group": "Migration",
+   "id": "m3",
+   "title": "In-house .NET and SQL Server estate",
+   "accounts": "Enterprise Products",
+   "why": "EPCO builds its own liquids nominations, scheduling, measurement and accounting software on .NET, SQL Server, Kafka and Elasticsearch. That is a classic modernization candidate and the use-case map already scores it 3 for legacy debt.",
+   "motion": "Lead with the existing legacy-modernization play. Use Lakebridge, SnowConvert and MongoDB AMP only as competitive context: all three are data-platform vendors selling a migration into their own platform, while Devin is platform-neutral.",
+   "who": "EPCO software engineering leadership. See the account play in the playbook.",
+   "sources": [
+    {
+     "label": "EPCO senior systems analyst posting (.NET, SQL Server, Kafka, Elasticsearch)",
+     "date": "2026",
+     "url": "https://jofdav.com/jobs/52458534-analyst-senior-systems"
+    },
+    {
+     "label": "MongoDB: AI-powered Application Modernization Platform (AMP)",
+     "date": "2025-09-16",
+     "url": "https://investors.mongodb.com/news-releases/news-release-details/mongodb-launches-ai-powered-application-modernization-platform"
+    }
+   ],
+   "not_found": "No evidence EPCO uses Snowflake, Databricks or MongoDB. AMP's release does not name .NET or SQL Server as sources, so do not assume it competes here.",
+   "usecase": "debt",
+   "usecase_account": "enterpriseproducts",
+   "stories": [
+    "swarms"
+   ],
+   "fit": "Hypothesis"
+  },
+  {
+   "group": "Real-time analysis and remediation",
+   "id": "r1",
+   "title": "Oncall for alert-to-fix",
+   "accounts": "ExxonMobil, Enterprise Products, Chevron",
+   "why": "Devin Oncall launched Oct 15, 2026 with Dynatrace as a launch partner. Devin can read Dynatrace problems, root-cause findings, logs, traces and deployment events, and open a pull request. Datadog is wired in through an MCP integration plus a webhook bridge. AngelList is cited putting Devin on its rotation.",
+   "motion": "Make it vendor-neutral: whatever APM or alerting each team runs, Devin plugs in. The discovery question is which tool fires the alert and who carries the pager. Start with one low-severity monitor, as Devin's own Datadog guide recommends, and measure root-cause time and merged PRs.",
+   "who": "Application support and SRE leads. At ExxonMobil, ServiceNow and Kubernetes appear in postings; at EPCO, nominations and scheduling failures cost money directly.",
+   "sources": [
+    {
+     "label": "RuntimeWire: Cognition launches Devin Oncall",
+     "date": "2026-10-15",
+     "url": "https://runtimewire.com/article/cognition-devin-oncall-production-incidents"
+    },
+    {
+     "label": "Dynatrace: launch partner for Devin Oncall",
+     "date": "2026-10-15",
+     "url": "https://www.dynatrace.com/news/?p=75611"
+    },
+    {
+     "label": "Devin docs: Datadog integration",
+     "date": "current",
+     "url": "https://docs.devin.ai/enterprise/integrations/datadog.md"
+    },
+    {
+     "label": "Your library: AngelList puts Devin on its on-call rotation",
+     "date": "2026-10-16",
+     "url": "posts/cognition-devin/2026-10-16%20AngelList%20809832.md"
+    },
+    {
+     "label": "The Stack: ExxonMobil IT shake-up (ServiceNow, Kubernetes, SailPoint)",
+     "date": "2024-08",
+     "url": "https://thestack.technology/exxonmobil-shakeup-created-very-focused-technology-organisation"
+    }
+   ],
+   "not_found": "No public evidence that any target account runs Dynatrace, Datadog or New Relic. The integrations for New Relic, Splunk, Elastic and PagerDuty came from earlier research on Devin's release notes and were not re-read this session. Confirm them with your solutions engineer before naming them to a customer.",
+   "usecase": "oncall",
+   "usecase_account": "enterpriseproducts",
+   "stories": [
+    "swarms",
+    "enterprise"
+   ],
+   "fit": "Product-ready, account fit unproven"
+  },
+  {
+   "group": "Real-time analysis and remediation",
+   "id": "r2",
+   "title": "Fix half of the observability vendors' diagnose half",
+   "accounts": "Any account running Datadog, Dynatrace or New Relic",
+   "why": "Datadog's Bits AI SRE (Dec 2, 2025) investigates alerts and delivers a likely root cause before the engineer logs in. Its release does not mention opening a pull request. Dynatrace says its root-cause analysis is deterministic, so an agent can act on it.",
+   "motion": "Frame Devin as the step after the diagnosis: take the root cause, write and test the fix, open the PR for human review. Where a customer already pays for an observability agent, this is additive; where a vendor ships its own coding agent, expect competition and check before promising.",
+   "who": "Observability platform owners and SRE directors; they hold the vendor relationship and can sponsor an integration pilot.",
+   "sources": [
+    {
+     "label": "Datadog: Bits AI SRE press release",
+     "date": "2025-12-02",
+     "url": "https://www.datadoghq.com/about/latest-news/press-releases/datadog-launches-bits-ai-sre-agent-to-resolve-incidents-faster/"
+    },
+    {
+     "label": "Dynatrace: launch partner for Devin Oncall",
+     "date": "2026-10-15",
+     "url": "https://www.dynatrace.com/news/?p=75611"
+    },
+    {
+     "label": "Devin docs: Datadog integration",
+     "date": "current",
+     "url": "https://docs.devin.ai/enterprise/integrations/datadog.md"
+    }
+   ],
+   "not_found": "Datadog's page names no third-party coding agents. The Devin-Datadog path that is documented is the MCP integration, not a vendor-announced partnership.",
+   "usecase": "oncall",
+   "usecase_account": "chevron",
+   "stories": [
+    "swarms",
+    "security"
+   ],
+   "fit": "Depends on discovery"
+  },
+  {
+   "group": "Security",
+   "id": "s1",
+   "title": "Vulnerability backlog program",
+   "accounts": "Halliburton, Enterprise Products, ExxonMobil",
+   "why": "Cognition's six-week program (Jul 2, 2026) puts forward-deployed engineers with the customer to clear a scanner backlog as validated pull requests, then run Security Swarm for logic flaws scanners miss. It reads Snyk, SonarQube, Checkmarx, Semgrep, Wiz and Veracode output. Halliburton's August 2024 breach (about $35M) and EPCO's TSA pipeline directives are the pressure points.",
+   "motion": "Use as the expansion step after a first Devin deployment, since eligibility is enterprise Devin Cloud customers at meaningful scale. Discovery: which scanner, how big is the backlog, who owns merge approval. Pair with Devin's isolated machines to answer IT and OT security questions early.",
+   "who": "Application security and engineering leaders; at Halliburton, whoever owns post-breach remediation.",
+   "sources": [
+    {
+     "label": "Cognition: Devin Security Vulnerability Remediation Program",
+     "date": "2026-07-02",
+     "url": "https://cognition.com/blog/devin-security-vulnerability-remediation-program"
+    }
+   ],
+   "not_found": "No fix-rate or time-to-remediate figures are published, and no customers are named. The program page does not state pricing. No scanner vendor is confirmed at any target account.",
+   "usecase": "sec",
+   "usecase_account": "halliburton",
+   "stories": [
+    "security",
+    "swarms"
+   ],
+   "fit": "Strong fit for Halliburton and EPCO"
+  },
+  {
+   "group": "Security",
+   "id": "s2",
+   "title": "Fix what is exploitable first",
+   "accounts": "Any account running Dynatrace",
+   "why": "Dynatrace says Devin can check runtime context before opening a PR, such as whether a workload is exposed to a specific CVE. That turns a long scanner list into a ranked one.",
+   "motion": "Sell prioritization as the objection-handler to 'we cannot merge hundreds of PRs'. Use only where Dynatrace is present.",
+   "who": "Application security with the observability owner.",
+   "sources": [
+    {
+     "label": "Dynatrace: launch partner for Devin Oncall",
+     "date": "2026-10-15",
+     "url": "https://www.dynatrace.com/news/?p=75611"
+    }
+   ],
+   "not_found": "A vendor description of a capability, not a customer result. No target account is tied to Dynatrace.",
+   "usecase": "sec",
+   "usecase_account": "exxonmobil",
+   "stories": [
+    "security"
+   ],
+   "fit": "Conditional"
+  }
+ ],
+ "ledger": [
+  {
+   "account": "ExxonMobil",
+   "vendor": "Snowflake",
+   "result": "Found",
+   "note": "cw, cr, sfe"
+  },
+  {
+   "account": "ExxonMobil",
+   "vendor": "Databricks, MongoDB",
+   "result": "Not found",
+   "note": ""
+  },
+  {
+   "account": "ExxonMobil",
+   "vendor": "Datadog, Dynatrace, New Relic",
+   "result": "Not found",
+   "note": "Searches returned only generic observability pages"
+  },
+  {
+   "account": "ExxonMobil",
+   "vendor": "Named security vendors (IT or OT)",
+   "result": "Partial",
+   "note": "SailPoint appears in postings; no scanner, SIEM or OT-security vendor found"
+  },
+  {
+   "account": "Chevron",
+   "vendor": "Databricks",
+   "result": "Found (one posting)",
+   "note": "chev"
+  },
+  {
+   "account": "Chevron",
+   "vendor": "Snowflake, MongoDB, observability vendors",
+   "result": "Not found",
+   "note": ""
+  },
+  {
+   "account": "Enterprise Products",
+   "vendor": "Elasticsearch, Kafka (stack only)",
+   "result": "Partial",
+   "note": "epco"
+  },
+  {
+   "account": "Enterprise Products",
+   "vendor": "Snowflake, Databricks, MongoDB, APM vendors",
+   "result": "Not found",
+   "note": ""
+  },
+  {
+   "account": "Halliburton, SLB, Baker Hughes, ConocoPhillips",
+   "vendor": "Any of the six vendors",
+   "result": "Not found",
+   "note": "Account files hold no mentions; Baker Hughes has an OT vulnerability signal only"
+  }
+ ],
+ "sources": {
+  "cw": [
+   "Computer Weekly: CDO interview, Andrew Curry",
+   "2023-10",
+   "https://www.computerweekly.com/news/366553452/CDO-interview-Andrew-Curry-manager-of-the-Central-Data-Office-ExxonMobil",
+   "Independent press, first-party interview"
+  ],
+  "cr": [
+   "Constellation Research: ExxonMobil process automation and AI",
+   "2024-11",
+   "https://www.constellationr.com/insights/news/exxonmobil-outline-process-automation-ai-efforts",
+   "Independent analyst, conference remarks"
+  ],
+  "sfe": [
+   "Snowflake: Energy Solutions press release",
+   "2026-01-27",
+   "https://www.snowflake.com/en/news/press-releases/snowflake-launches-energy-solutions-for-the-ai-data-cloud-to-accelerate-shift-to-a-lower-carbon-future/",
+   "Vendor release. Names ExxonMobil in a customer list; no quote or detail"
+  ],
+  "df": [
+   "DreamFactory: energy Snowflake case study",
+   "undated",
+   "https://www.dreamfactory.com/case-studies/energy-snowflake-modernization/",
+   "Vendor-written, no ExxonMobil voice, no date. Treat as unverified"
+  ],
+  "chev": [
+   "Chevron Enterprise AI software engineer posting (Azure, AKS, Databricks)",
+   "2026-03",
+   "https://www.careerbuilder.com/job-details/software-engineer-enterprise-ai-houston-tx--63ef7576-35d8-429b-9a71-154e06be09bc",
+   "Job board posting"
+  ],
+  "stack": [
+   "The Stack: ExxonMobil IT shake-up (ServiceNow, Kubernetes, SailPoint)",
+   "2024-08",
+   "https://thestack.technology/exxonmobil-shakeup-created-very-focused-technology-organisation",
+   "Independent press citing job postings"
+  ],
+  "epco": [
+   "EPCO senior systems analyst posting (.NET, SQL Server, Kafka, Elasticsearch)",
+   "2026",
+   "https://jofdav.com/jobs/52458534-analyst-senior-systems",
+   "Job board posting"
+  ],
+  "nozomi": [
+   "ITWire: Nozomi finds flaws in Bently Nevada 3500",
+   "2023-09",
+   "https://itwire.com/security/nozomi-networks-discovers-flaws-in-bently-nevada-protection-systems.html",
+   "Independent press on a security vendor's finding"
+  ],
+  "oncall": [
+   "RuntimeWire: Cognition launches Devin Oncall",
+   "2026-10-15",
+   "https://runtimewire.com/article/cognition-devin-oncall-production-incidents",
+   "Trade press"
+  ],
+  "dyna": [
+   "Dynatrace: launch partner for Devin Oncall",
+   "2026-10-15",
+   "https://www.dynatrace.com/news/?p=75611",
+   "Vendor blog, first-party. Says no GA date or pricing stated"
+  ],
+  "ddi": [
+   "Devin docs: Datadog integration",
+   "current",
+   "https://docs.devin.ai/enterprise/integrations/datadog.md",
+   "Product documentation"
+  ],
+  "bits": [
+   "Datadog: Bits AI SRE press release",
+   "2025-12-02",
+   "https://www.datadoghq.com/about/latest-news/press-releases/datadog-launches-bits-ai-sre-agent-to-resolve-incidents-faster/",
+   "Vendor release. Does not mention PRs or coding-agent handoff"
+  ],
+  "sec": [
+   "Cognition: Devin Security Vulnerability Remediation Program",
+   "2026-07-02",
+   "https://cognition.com/blog/devin-security-vulnerability-remediation-program",
+   "Vendor blog. No customers, metrics or pricing"
+  ],
+  "lake": [
+   "Databricks: Lakebridge migration update",
+   "2026-03-05",
+   "https://www.databricks.com/blog/new-migrations-faster-and-more-predictable",
+   "Vendor blog. Claims, no benchmarks"
+  ],
+  "snowc": [
+   "Snowflake: What's new in SnowConvert AI",
+   "2026-02",
+   "https://www.snowflake.com/en/blog/snowconvert-ai-new-features-feb-2026/",
+   "Vendor blog. Found in search; page not read in full"
+  ],
+  "amp": [
+   "MongoDB: AI-powered Application Modernization Platform (AMP)",
+   "2025-09-16",
+   "https://investors.mongodb.com/news-releases/news-release-details/mongodb-launches-ai-powered-application-modernization-platform",
+   "Vendor release. Bank case figures are vendor-reported"
+  ],
+  "bm": [
+   "Your library: AngelList puts Devin on its on-call rotation",
+   "2026-10-16",
+   "posts/cognition-devin/2026-10-16%20AngelList%20809832.md",
+   "Bookmarked post; secondhand, not checked at source"
+  ]
+ },
+ "intro": "Plays built on the platforms your accounts already run: Snowflake, Databricks, MongoDB, Datadog, Dynatrace and New Relic. Devin complements these vendors rather than competing with them, taking the code work around a data platform or the fix after an observability tool diagnoses a problem. Most are discovery plays: they tell you which question to ask and which reference to bring, not what the account runs. Two are labelled hypotheses because they rest on a public footprint, not a known project.",
+ "facts": [
+  "ExxonMobil is a documented Snowflake customer: its Central Data Office built on it (Computer Weekly, 2023), and Snowflake's Jan 27, 2026 energy release names it in a customer list, with no quote or detail.",
+  "Chevron has one Databricks signal: a March 2026 Enterprise AI job posting on Azure and Databricks.",
+  "Nothing public ties any target account to MongoDB, Datadog, Dynatrace or New Relic, including Halliburton, SLB, Baker Hughes and ConocoPhillips.",
+  "Cognition side: Devin Oncall launched Oct 15, 2026 with Dynatrace as a launch partner; Devin's docs describe a Datadog integration; Cognition's six-week vulnerability remediation program (July 2, 2026) works with Snyk, SonarQube, Checkmarx, Semgrep, Wiz and Veracode."
+ ],
+ "cautions": [
+  "Don't cite DreamFactory's \"ExxonMobil Snowflake\" case study: it's vendor-written, undated and has no ExxonMobil voice.",
+  "Devin Oncall details come from the launch coverage and Dynatrace's post; the Oncall product guide didn't load during research.",
+  "Devin integrations for New Relic, Splunk, Elastic and PagerDuty weren't re-verified. Confirm with your solutions engineer before naming them to a customer.",
+  "OT and plant-floor remediation are deliberately left out: no source supports them.",
+  "Earlier Nubank and FI-to-Databricks Devin examples were left out of these plays because they couldn't be re-verified here; the Nubank figures in the sales play come from Cognition's own play."
+ ]
+}

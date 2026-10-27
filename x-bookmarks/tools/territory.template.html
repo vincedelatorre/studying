@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Oil & Gas Territory Plan</title>
+<title>Territory Account Plan</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
@@ -51,7 +51,7 @@ let nav=`<h1>${esc(T.title)}</h1><div class="sub">MEDDPICC · Command of the Mes
 <details open><summary>Territory</summary><a href="#territory">Thesis & principles</a><a href="#tiers">Tiering</a><a href="#pg">Pipeline generation</a><a href="#cadence">Operating cadence</a><a href="#linkedin">LinkedIn method</a><a href="#scoreboard">Scoreboard</a></details>`;
 A.forEach((a,n)=>{nav+=`<details ${n===0?"open":""}><summary><span>${esc(a.account)}</span><span class="sc">T${a.tier} · ${score(a)}/24</span></summary>${SECS.map(([k,l])=>`<a href="#${a.id}-${k}">${l}</a>`).join("")}</details>`});
 $("#nav").innerHTML=nav;
-let h=`<section id="territory"><div class="kick">Territory plan</div><h2>${esc(T.title)}</h2><p class="thesis">${esc(T.thesis)}</p><h3>Operating principles</h3>${ul(T.principles)}</section>
+let h=`<section id="territory"><div class="kick">Territory account plan</div><h2>${esc(T.title)}</h2><p class="thesis">${esc(T.thesis)}</p><h3>Operating principles</h3>${ul(T.principles)}</section>
 <section id="tiers"><div class="kick">McMahon: tier, then time-block</div><h2>Tiering</h2><div class="grid">${T.tiers.map(x=>`<div class="card"><h4>${esc(x.label)}</h4>${esc(x.rule)}<div style="margin-top:8px">${A.filter(a=>a.tier===x.tier).map(a=>`<a class="chip ok" href="#${a.id}-summary">${esc(a.account)}</a>`).join("")||'<span class="muted">-</span>'}</div></div>`).join("")}</div></section>
 <section id="pg"><div class="kick">Pipeline generation</div><h2>PG plan</h2><table><tr><th>Lever</th><th>How</th><th>Target</th></tr>${T.pg.map(x=>`<tr><td><b>${esc(x.lever)}</b></td><td>${esc(x.how)}</td><td>${esc(x.target)}</td></tr>`).join("")}</table></section>
 <section id="cadence"><div class="kick">Execution</div><h2>Operating cadence</h2><table>${T.cadence.map(x=>`<tr><td style="width:120px"><b>${esc(x.when)}</b></td><td>${esc(x.what)}</td></tr>`).join("")}</table></section>
